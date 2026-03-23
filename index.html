@@ -665,7 +665,7 @@ async function loadData() {
   // normalizar clave señal (el JSON tiene 'seńal' con tilde extraña a veces)
   allData = allData.map(r => ({
     ...r,
-    señal: r['señal'] || r['se\u0301al'] || r['senal'] || 'NEUTRO',
+    señal: r['senal'] || r['señal'] || r['se\u0301al'] || 'NEUTRO',
     alertas: r.alertas || []
   }));
   renderAll();
