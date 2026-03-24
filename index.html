@@ -770,54 +770,8 @@ function renderRanking() {
 
 // ─── MODAL ───────────────────────────────────────────────────────────────────
 function openModal(r) {
-  document.getElementById('m-ticker').textContent = r.ticker;
-  document.getElementById('m-nombre').textContent = `${r.nombre} · ${r.sector} · €${r.precio}`;
-
-  // Score cards
-  const dims = [
-    { label: 'Score compuesto', val: r.composite, color: scoreToColor(r.composite) },
-    { label: 'Calidad',         val: r.quality,   color: scoreToColor(r.quality) },
-    { label: 'Valoración',      val: r.valuation, color: scoreToColor(r.valuation) },
-    { label: 'Momentum',        val: r.momentum,  color: scoreToColor(r.momentum) },
-    { label: 'Seguridad',       val: r.safety,    color: scoreToColor(r.safety) },
-  ];
-  document.getElementById('m-scores').innerHTML = dims.map(d => `
-    <div class="modal-score-card">
-      <div class="modal-score-label">${d.label}</div>
-      <div class="modal-score-value" style="color:${d.color}">${d.val}</div>
-      <div class="modal-score-bar">
-        <div class="modal-score-bar-fill" style="width:${d.val}%;background:${d.color}"></div>
-      </div>
-    </div>`).join('');
-
-  // Capas
-  const capasHtml = [0,1,2].map(n =>
-    `<div class="capa-dot ${n < r.capas ? 'on' : ''}" style="width:10px;height:10px;display:inline-block;border-radius:50%;margin-right:4px;background:${n < r.capas ? 'var(--compra)' : 'var(--border2)'}"></div>`
-  ).join('');
-  document.getElementById('m-capas').innerHTML =
-    `<div style="display:flex;align-items:center;gap:6px;margin-bottom:10px">
-       ${capasHtml}
-       <span style="font-size:11px;color:var(--muted)">${r.capas}/3 capas alineadas · señal: </span>
-       <span class="señal-badge s-${r.señal}" style="margin-left:4px">${labelSeñal(r.señal)}</span>
-     </div>`;
-
-  // Razones (vacías — futuro: vendrán del resultados.json)
-  document.getElementById('m-razones').innerHTML = '';
-
-  // Alertas
-  const alertasWrap = document.getElementById('m-alertas-wrap');
-  const alertasDiv  = document.getElementById('m-alertas');
-  if (r.alertas && r.alertas.length > 0) {
-    alertasWrap.style.display = 'block';
-    alertasDiv.innerHTML = r.alertas.map(a =>
-      `<div class="alerta-modal-item">${a}</div>`
-    ).join('');
-  } else {
-    alertasWrap.style.display = 'none';
-  }
-
-  document.getElementById('modal').classList.add('open');
-  document.body.style.overflow = 'hidden';
+  const ticker = r.ticker || r['ticker'];
+  window.location.href = `empresa.html?ticker=${encodeURIComponent(ticker)}`;
 }
 
 function closeModal(e) {

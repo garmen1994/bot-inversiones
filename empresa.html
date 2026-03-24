@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0a0f">
+<title>Ficha empresa · Bot Inversiones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root {
+  --bg:      #0a0a0f;
+  --bg2:     #111118;
+  --bg3:     #18181f;
+  --border:  rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.13);
+  --text:    #e8e8f0;
+  --muted:   #6b6b80;
+  --compra:  #00e896;
+  --vigilar: #f5c542;
+  --alerta:  #ff4d6d;
+  --accent:  #6c63ff;
+  --mono:    'DM Mono', monospace;
+  --display: 'Syne', sans-serif;
+  --c-composite: #6c63ff;
+  --c-quality:   #00e896;
+  --c-valuation: #f5c542;
+  --c-momentum:  #ff6b35;
+  --c-safety:    #4ecdc4;
+  --c-fscore:    #a78bfa;
+  --c-precio:    #94a3b8;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 13px;
+  min-height: 100vh;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+.shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+  position: relative;
+  z-index: 1;
+}
+
+/* NAV */
+nav {
+  padding: 20px 0 0;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20px;
+}
+.back-btn {
+  background: none;
+  border: 1px solid var(--border2);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.back-btn:hover { border-color: var(--accent); color: var(--accent); }
+.nav-breadcrumb { color: var(--muted); font-size: 11px; letter-spacing: 0.06em; }
+.nav-breadcrumb span { color: var(--text); }
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+.hero-ticker {
+  font-family: var(--display);
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.hero-nombre {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+.hero-meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.meta-pill {
+  font-size: 10px;
+  padding: 3px 9px;
+  border-radius: 3px;
+  border: 1px solid var(--border2);
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+.hero-right {
+  text-align: right;
+}
+.hero-precio {
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+.hero-señal {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+.señal-badge {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.s-COMPRA        { background: rgba(0,232,150,0.12); color: var(--compra);  border: 1px solid rgba(0,232,150,0.3); }
+.s-VIGILAR       { background: rgba(245,197,66,0.10); color: var(--vigilar); border: 1px solid rgba(245,197,66,0.3); }
+.s-NEUTRO        { background: rgba(90,90,114,0.15);  color: var(--muted);   border: 1px solid var(--border2); }
+.s-ALERTA_SALIDA { background: rgba(255,77,109,0.10); color: var(--alerta);  border: 1px solid rgba(255,77,109,0.3); }
+
+/* SCORE CARDS */
+.scores-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.score-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 14px 12px;
+  transition: border-color 0.2s;
+}
+.score-card:hover { border-color: var(--border2); }
+.sc-label {
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.sc-value {
+  font-family: var(--display);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.sc-bar {
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.sc-bar-fill { height: 100%; border-radius: 2px; transition: width 0.8s ease; }
+
+/* CAPAS */
+.capas-section {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.capas-title {
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  min-width: 100px;
+}
+.capa-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+.capa-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.capa-dot.on  { background: var(--compra); }
+.capa-dot.off { background: var(--border2); }
+.capa-label   { color: var(--muted); }
+.capa-label.on { color: var(--text); }
+
+/* ALERTAS */
+.alertas-section { margin-bottom: 28px; }
+.alerta-item {
+  background: rgba(255,77,109,0.07);
+  border: 1px solid rgba(255,77,109,0.2);
+  border-left: 3px solid var(--alerta);
+  border-radius: 0 6px 6px 0;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #c0a0a8;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.alerta-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--alerta);
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* SECCIÓN TÍTULO */
+.section-title {
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* GRÁFICO */
+.chart-section { margin-bottom: 32px; }
+.chart-container {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.chart-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.serie-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+  opacity: 0.4;
+}
+.serie-btn.active {
+  opacity: 1;
+  border-color: var(--border2);
+  color: var(--text);
+}
+.serie-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.chart-wrap {
+  position: relative;
+  height: 300px;
+}
+.chart-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  flex-direction: column;
+  gap: 8px;
+}
+.chart-empty small { font-size: 11px; opacity: 0.6; }
+
+/* MÉTRICAS DETALLE */
+.metricas-section { margin-bottom: 32px; }
+.metricas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.metrica-grupo {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.metrica-grupo-title {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 10px 14px 8px;
+  border-bottom: 1px solid var(--border);
+}
+.metrica-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+.metrica-row:last-child { border-bottom: none; }
+.metrica-row:hover { background: var(--bg3); }
+.metrica-key { color: var(--muted); font-size: 11px; }
+.metrica-val { font-weight: 500; font-size: 12px; }
+.val-good    { color: var(--compra); }
+.val-warn    { color: var(--vigilar); }
+.val-bad     { color: var(--alerta); }
+.val-neutral { color: var(--text); }
+
+/* FSCORE DETALLE */
+.fscore-section { margin-bottom: 32px; }
+.fscore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+.fscore-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+.fscore-check {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  flex-shrink: 0;
+}
+.fscore-check.ok  { background: rgba(0,232,150,0.15); color: var(--compra); border: 1px solid rgba(0,232,150,0.3); }
+.fscore-check.ko  { background: rgba(255,77,109,0.10); color: var(--alerta); border: 1px solid rgba(255,77,109,0.2); }
+.fscore-text { color: var(--muted); line-height: 1.4; }
+.fscore-text.ok { color: var(--text); }
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 24px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  border-top: 1px solid var(--border);
+  margin-top: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .scores-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .metricas-grid { grid-template-columns: 1fr; }
+  .fscore-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { text-align: left; }
+  .hero-señal { justify-content: flex-start; }
+  .capas-section { gap: 12px; }
+}
+
+@keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+.anim { animation: fadeIn 0.35s ease forwards; }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <nav>
+    <a href="index.html" class="back-btn">&#8592; Ranking</a>
+    <span class="nav-breadcrumb">Bot Inversiones · <span id="nav-ticker">—</span></span>
+  </nav>
+
+  <div id="contenido">
+    <div style="text-align:center;padding:60px 0;color:var(--muted);font-size:12px;letter-spacing:0.1em">
+      CARGANDO DATOS...
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Bot Inversiones · datos via Yahoo Finance · actualizacion diaria al cierre
+</footer>
+
+<script>
+// ─── SERIES CONFIG ────────────────────────────────────────────────────────────
+const SERIES = [
+  { key: 'composite', label: 'Score compuesto', color: '#6c63ff', active: true  },
+  { key: 'quality',   label: 'Calidad',          color: '#00e896', active: true  },
+  { key: 'valuation', label: 'Valoracion',        color: '#f5c542', active: true  },
+  { key: 'momentum',  label: 'Momentum',          color: '#ff6b35', active: false },
+  { key: 'safety',    label: 'Seguridad',          color: '#4ecdc4', active: false },
+  { key: 'fscore',    label: 'F-Score x10',        color: '#a78bfa', active: false },
+  { key: 'precio',    label: 'Precio (norm.)',      color: '#94a3b8', active: false },
+];
+
+// ─── ESTADO ───────────────────────────────────────────────────────────────────
+let chartInstance = null;
+let historialEmpresa = [];
+let rankingEmpresa   = null;
+let ticker = '';
+
+// ─── CARGA ────────────────────────────────────────────────────────────────────
+async function init() {
+  const params = new URLSearchParams(window.location.search);
+  ticker = (params.get('ticker') || '').toUpperCase();
+
+  if (!ticker) {
+    document.getElementById('contenido').innerHTML =
+      '<div style="text-align:center;padding:60px;color:var(--muted)">Ticker no especificado. <a href="index.html" style="color:var(--accent)">Volver al ranking</a></div>';
+    return;
+  }
+
+  document.getElementById('nav-ticker').textContent = ticker;
+  document.title = `${ticker} · Bot Inversiones`;
+
+  const [ranking, historial] = await Promise.all([
+    loadJSON('data/ranking.json'),
+    loadJSON('data/historial_scores.json'),
+  ]);
+
+  rankingEmpresa   = (ranking?.ranking || []).find(r => r.ticker === ticker) || null;
+  historialEmpresa = historial?.[ticker] || [];
+
+  render();
+}
+
+async function loadJSON(path) {
+  try {
+    const r = await fetch(path + '?t=' + Date.now());
+    if (!r.ok) throw new Error();
+    return await r.json();
+  } catch { return null; }
+}
+
+// ─── RENDER PRINCIPAL ─────────────────────────────────────────────────────────
+function render() {
+  const c = document.getElementById('contenido');
+  if (!rankingEmpresa) {
+    c.innerHTML = `<div style="text-align:center;padding:60px;color:var(--muted)">
+      No se encontraron datos para <strong style="color:var(--text)">${ticker}</strong>.
+      <br><br><a href="index.html" style="color:var(--accent);font-size:12px">Volver al ranking</a></div>`;
+    return;
+  }
+
+  const r = rankingEmpresa;
+  const señal = r.senal || r['señal'] || 'NEUTRO';
+  const alertas = r.alertas || [];
+
+  c.innerHTML = `
+    <!-- HERO -->
+    <div class="hero anim">
+      <div>
+        <div class="hero-ticker">${r.ticker}</div>
+        <div class="hero-nombre">${r.nombre}</div>
+        <div class="hero-meta">
+          <span class="meta-pill">${r.sector || '—'}</span>
+          <span class="meta-pill">Confianza: ${r.confianza || '—'}</span>
+          <span class="meta-pill">${historialEmpresa.length} dia${historialEmpresa.length !== 1 ? 's' : ''} de historial</span>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-precio">${r.precio != null ? formatPrecio(r.precio, r.ticker) : '—'}</div>
+        <div class="hero-señal"><span class="señal-badge s-${señal}">${señal}</span></div>
+      </div>
+    </div>
+
+    <!-- SCORE CARDS -->
+    <div class="scores-grid anim" style="animation-delay:0.05s">
+      ${scoreCard('Score',      r.composite, '#6c63ff')}
+      ${scoreCard('Calidad',    r.quality,   '#00e896')}
+      ${scoreCard('Valoracion', r.valuation, '#f5c542')}
+      ${scoreCard('Seguridad',  r.safety,    '#4ecdc4')}
+      ${scoreCard('Momentum',   r.momentum,  '#ff6b35')}
+    </div>
+
+    <!-- CAPAS -->
+    <div class="capas-section anim" style="animation-delay:0.1s">
+      <div class="capas-title">Capas alineadas</div>
+      ${capaItem(r.capas >= 1, 'Valoracion atractiva')}
+      ${capaItem(r.capas >= 2, 'Fundamentales solidos')}
+      ${capaItem(r.capas >= 3, 'Momentum positivo')}
+      <div style="margin-left:auto;font-size:11px;color:var(--muted)">${r.capas}/3</div>
+    </div>
+
+    <!-- ALERTAS -->
+    ${alertas.length > 0 ? `
+    <div class="alertas-section anim" style="animation-delay:0.12s">
+      ${alertas.map(a => `
+        <div class="alerta-item">
+          <div class="alerta-dot"></div>
+          <span>${a}</span>
+        </div>`).join('')}
+    </div>` : ''}
+
+    <!-- GRAFICO EVOLUCION -->
+    <div class="chart-section anim" style="animation-delay:0.15s">
+      <div class="section-title">
+        <span>Evolucion de scores</span>
+        <span style="color:var(--muted);font-size:10px">${historialEmpresa.length} registro${historialEmpresa.length !== 1 ? 's' : ''}</span>
+      </div>
+      <div class="chart-container">
+        <div class="chart-filters" id="chart-filters"></div>
+        <div class="chart-wrap">
+          ${historialEmpresa.length >= 1
+            ? '<canvas id="chart-canvas"></canvas>'
+            : `<div class="chart-empty">
+                 Sin historial suficiente
+                 <small>El grafico aparece tras ejecutar el analisis varios dias</small>
+               </div>`}
+        </div>
+      </div>
+    </div>
+
+    <!-- METRICAS DETALLADAS -->
+    <div class="metricas-section anim" style="animation-delay:0.2s">
+      <div class="section-title"><span>Metricas detalladas</span></div>
+      <div class="metricas-grid" id="metricas-grid"></div>
+    </div>
+
+    <!-- FSCORE DETALLE -->
+    <div class="fscore-section anim" style="animation-delay:0.25s">
+      <div class="section-title"><span>F-Score Piotroski · detalle</span></div>
+      <div class="fscore-grid" id="fscore-grid"></div>
+    </div>
+  `;
+
+  // Render dinámico post-DOM
+  renderChartFilters();
+  if (historialEmpresa.length >= 1) {
+    setTimeout(() => renderChart(), 50);
+  }
+  renderMetricas();
+  renderFscore();
+}
+
+// ─── SCORE CARD ───────────────────────────────────────────────────────────────
+function scoreCard(label, val, color) {
+  const v = val ?? 0;
+  return `
+    <div class="score-card">
+      <div class="sc-label">${label}</div>
+      <div class="sc-value" style="color:${color}">${v}</div>
+      <div class="sc-bar"><div class="sc-bar-fill" style="width:${v}%;background:${color}"></div></div>
+    </div>`;
+}
+
+function capaItem(active, label) {
+  return `
+    <div class="capa-item">
+      <div class="capa-dot ${active ? 'on' : 'off'}"></div>
+      <span class="capa-label ${active ? 'on' : ''}">${label}</span>
+    </div>`;
+}
+
+// ─── CHART FILTERS ────────────────────────────────────────────────────────────
+function renderChartFilters() {
+  const wrap = document.getElementById('chart-filters');
+  if (!wrap) return;
+  wrap.innerHTML = SERIES.map((s, i) => `
+    <button class="serie-btn ${s.active ? 'active' : ''}"
+            onclick="toggleSerie(${i})" id="sbtn-${i}">
+      <div class="serie-dot" style="background:${s.color}"></div>
+      ${s.label}
+    </button>`).join('');
+}
+
+function toggleSerie(i) {
+  SERIES[i].active = !SERIES[i].active;
+  document.getElementById(`sbtn-${i}`).classList.toggle('active', SERIES[i].active);
+  renderChart();
+}
+
+// ─── CHART ────────────────────────────────────────────────────────────────────
+function renderChart() {
+  const canvas = document.getElementById('chart-canvas');
+  if (!canvas) return;
+
+  if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
+
+  const labels = historialEmpresa.map(d => formatFecha(d.fecha));
+
+  // Normalizar precio a escala 0-100
+  const precios = historialEmpresa.map(d => d.precio || 0).filter(p => p > 0);
+  const pMin = Math.min(...precios);
+  const pMax = Math.max(...precios);
+  const normPrecio = historialEmpresa.map(d => {
+    if (!d.precio || pMax === pMin) return 50;
+    return Math.round(((d.precio - pMin) / (pMax - pMin)) * 100);
+  });
+
+  const datasets = SERIES
+    .filter(s => s.active)
+    .map(s => {
+      let data;
+      if (s.key === 'precio') {
+        data = normPrecio;
+      } else if (s.key === 'fscore') {
+        data = historialEmpresa.map(d => (d.fscore || 0) * 10);
+      } else {
+        data = historialEmpresa.map(d => d[s.key] ?? null);
+      }
+      return {
+        label:           s.label,
+        data:            data,
+        borderColor:     s.color,
+        backgroundColor: s.color + '18',
+        borderWidth:     2,
+        pointRadius:     historialEmpresa.length <= 10 ? 4 : 2,
+        pointHoverRadius: 6,
+        tension:         0.35,
+        fill:            false,
+      };
+    });
+
+  chartInstance = new Chart(canvas, {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive:          true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#18181f',
+          borderColor:     'rgba(255,255,255,0.1)',
+          borderWidth:     1,
+          titleColor:      '#6b6b80',
+          bodyColor:       '#e8e8f0',
+          padding:         10,
+          titleFont:       { family: "'DM Mono', monospace", size: 11 },
+          bodyFont:        { family: "'DM Mono', monospace", size: 12 },
+          callbacks: {
+            label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y}`,
+          }
+        },
+      },
+      scales: {
+        x: {
+          grid:  { color: 'rgba(255,255,255,0.04)' },
+          ticks: { color: '#6b6b80', font: { family: "'DM Mono'", size: 10 }, maxTicksLimit: 8 },
+          border: { color: 'rgba(255,255,255,0.07)' },
+        },
+        y: {
+          min:   0,
+          max:   100,
+          grid:  { color: 'rgba(255,255,255,0.04)' },
+          ticks: { color: '#6b6b80', font: { family: "'DM Mono'", size: 10 }, stepSize: 20 },
+          border: { color: 'rgba(255,255,255,0.07)' },
+        },
+      },
+    },
+  });
+}
+
+// ─── MÉTRICAS ─────────────────────────────────────────────────────────────────
+function renderMetricas() {
+  const grid = document.getElementById('metricas-grid');
+  if (!grid || !rankingEmpresa) return;
+
+  // Usamos los scores del ranking (lo que tenemos disponible en ranking.json)
+  // Los datos completos de metrics vendrán de resultados.json en futuras versiones
+  const r = rankingEmpresa;
+
+  const grupos = [
+    {
+      titulo: 'Rentabilidad',
+      items: [
+        { key: 'Score calidad',    val: r.quality,    fmt: 'score' },
+        { key: 'Score valoracion', val: r.valuation,  fmt: 'score' },
+        { key: 'Score seguridad',  val: r.safety,     fmt: 'score' },
+        { key: 'Score momentum',   val: r.momentum,   fmt: 'score' },
+      ]
+    },
+    {
+      titulo: 'Resumen señal',
+      items: [
+        { key: 'Señal',           val: r.senal || r['señal'] || '—', fmt: 'text' },
+        { key: 'Capas alineadas', val: `${r.capas}/3`,               fmt: 'text' },
+        { key: 'Confianza',       val: r.confianza || '—',           fmt: 'text' },
+        { key: 'Posicion ranking',val: `#${r.pos}`,                   fmt: 'text' },
+      ]
+    },
+  ];
+
+  grid.innerHTML = grupos.map(g => `
+    <div class="metrica-grupo">
+      <div class="metrica-grupo-title">${g.titulo}</div>
+      ${g.items.map(item => `
+        <div class="metrica-row">
+          <span class="metrica-key">${item.key}</span>
+          <span class="metrica-val ${item.fmt === 'score' ? scoreClass(item.val) : 'val-neutral'}">${
+            item.val != null ? item.val : '—'
+          }</span>
+        </div>`).join('')}
+    </div>`).join('');
+}
+
+// ─── FSCORE ───────────────────────────────────────────────────────────────────
+function renderFscore() {
+  const grid = document.getElementById('fscore-grid');
+  if (!grid) return;
+
+  // Los nombres de los 9 criterios
+  const criterios = [
+    { key: 'A1', label: 'ROA positivo' },
+    { key: 'A2', label: 'CFO positivo' },
+    { key: 'A3', label: 'ROA mejora YoY' },
+    { key: 'A4', label: 'Accruals bajos' },
+    { key: 'B1', label: 'Deuda LP disminuye' },
+    { key: 'B2', label: 'Liquidez mejora' },
+    { key: 'B3', label: 'Sin dilucion' },
+    { key: 'C1', label: 'Margen bruto mejora' },
+    { key: 'C2', label: 'Rotacion activos mejora' },
+  ];
+
+  // El detalle del F-Score vendrá de resultados.json cuando esté integrado
+  // Por ahora mostramos el score total con distribución estimada
+  const fscore = historialEmpresa.length > 0
+    ? historialEmpresa[historialEmpresa.length - 1].fscore
+    : null;
+
+  if (fscore === null) {
+    grid.innerHTML = '<div style="color:var(--muted);font-size:12px;padding:12px;grid-column:1/-1">Ejecuta el analisis para obtener el F-Score detallado.</div>';
+    return;
+  }
+
+  grid.innerHTML = `
+    <div style="grid-column:1/-1;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 14px;display:flex;align-items:center;gap:16px;">
+      <div style="font-family:var(--display);font-size:36px;font-weight:800;color:${fscoreColor(fscore)};line-height:1">${fscore}</div>
+      <div>
+        <div style="font-size:11px;color:var(--muted);letter-spacing:0.06em;margin-bottom:4px">F-SCORE PIOTROSKI</div>
+        <div style="font-size:12px;color:${fscoreColor(fscore)}">${fscoreLabel(fscore)}</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px">Detalle completo disponible tras integrar resultados.json</div>
+      </div>
+      <div style="margin-left:auto;display:flex;gap:4px">
+        ${Array.from({length:9}, (_,i) =>
+          `<div style="width:8px;height:24px;border-radius:2px;background:${i < fscore ? fscoreColor(fscore) : 'var(--border2)'}"></div>`
+        ).join('')}
+      </div>
+    </div>
+    ${criterios.map(c => `
+      <div class="fscore-item">
+        <div class="fscore-check" style="background:rgba(107,99,255,0.1);color:var(--accent);border:1px solid rgba(107,99,255,0.2)">?</div>
+        <span class="fscore-text">${c.label}</span>
+      </div>`).join('')}
+  `;
+}
+
+// ─── HELPERS ──────────────────────────────────────────────────────────────────
+function scoreClass(v) {
+  if (v === null || v === undefined) return 'val-neutral';
+  if (v >= 75) return 'val-good';
+  if (v >= 50) return 'val-warn';
+  return 'val-bad';
+}
+
+function fscoreColor(v) {
+  if (v >= 7) return 'var(--compra)';
+  if (v >= 4) return 'var(--vigilar)';
+  return 'var(--alerta)';
+}
+
+function fscoreLabel(v) {
+  if (v >= 7) return 'Señal fuerte — fundamentales mejorando';
+  if (v >= 4) return 'Señal neutral';
+  return 'Señal debil — posible deterioro';
+}
+
+function formatFecha(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso + 'T12:00:00');
+  return d.toLocaleDateString('es-ES', { day:'2-digit', month:'short' });
+}
+
+function formatPrecio(precio, ticker) {
+  const eur = ticker && ticker.endsWith('.MC');
+  return (eur ? '' : '$') + precio.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + (eur ? ' €' : '');
+}
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>
