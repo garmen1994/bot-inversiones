@@ -655,6 +655,7 @@ async function loadData() {
     const res = await fetch('data/ranking.json?t=' + Date.now());
     if (!res.ok) throw new Error('no file');
     const json = await res.json();
+    window._rankingData = json;
     allData = json.ranking || [];
     renderFecha(json.fecha);
   } catch {
@@ -698,6 +699,7 @@ function renderStats() {
   document.getElementById('stat-vigilar').textContent = vigilar;
   document.getElementById('stat-alerta').textContent  = alerta;
   document.getElementById('stat-medio').textContent   = medio;
+  renderMacroBanner();
 }
 
 function renderAlertas() {
@@ -781,7 +783,57 @@ function closeModalBtn() {
   document.getElementById('modal').classList.remove('open');
   document.body.style.overflow = '';
 }
+// RENDER
+function renderMacroBanner() {
+  // Lee el contexto macro del ranking.json (ya viene incluido)
+  const macro = window._rankingData?.macro;
+  if (!macro) return;
 
+  const colors = {
+    FAVORABLE:  '#00e896',
+    NEUTRAL:    '#6c63ff',
+    PRECAUCION: '#f5c542',
+    RIESGO:     '#ff4d6d',
+  };
+  const color = colors[macro.regimen] || '#6b6b80';
+
+  // Insertar banner justo antes de los filtros
+  const filtros = document.querySelector('.filtros');
+  if (!filtros) return;
+
+  const existing = document.getElementById('macro-banner');
+  if (existing) existing.remove();
+
+  const banner = document.createElement('div');
+  banner.id = 'macro-banner';
+  banner.style.cssText = `
+    display:flex;align-items:center;justify-content:space-between;
+    background:var(--bg2);border:1px solid ${color}33;border-left:3px solid ${color};
+    border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:16px;gap:12px;flex-wrap:wrap;
+  `;
+  banner.innerHTML = `
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span style="font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase">Régimen macro</span>
+      <span style="font-size:12px;font-weight:500;color:${color}">${macro.regimen}</span>
+      <span style="font-size:11px;color:var(--muted)">Umbral compra: <strong style="color:var(--text)">${macro.umbral_compra}</strong></span>
+    </div>
+    <a href="macro.html" style="font-size:11px;color:var(--accent);text-decoration:none;border:1px solid rgba(108,99,255,.3);padding:3px 10px;border-radius:4px;">
+      Ver análisis macro →
+    </a>
+  `;
+
+  // Alertas macro si las hay
+  if (macro.alertas && macro.alertas.length > 0) {
+    macro.alertas.forEach(a => {
+      const div = document.createElement('div');
+      div.className = 'alerta-item';
+      div.innerHTML = `<div class="alerta-dot"></div><span class="alerta-ticker" style="color:var(--alerta)">MACRO</span><span class="alerta-texto">${a}</span>`;
+      document.getElementById('alertas-banner').appendChild(div);
+    });
+  }
+
+  filtros.parentNode.insertBefore(banner, filtros);
+}
 // ─── FILTROS Y SORT ──────────────────────────────────────────────────────────
 function setFiltro(f, btn) {
   filtro = f;

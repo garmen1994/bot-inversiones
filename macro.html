@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0a0f">
+<title>Macro · Bot Inversiones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{
+  --bg:#0a0a0f;--bg2:#111118;--bg3:#18181f;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --text:#e8e8f0;--muted:#6b6b80;
+  --compra:#00e896;--vigilar:#f5c542;--alerta:#ff4d6d;--accent:#6c63ff;
+  --mono:'DM Mono',monospace;--display:'Syne',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13px;min-height:100vh;}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:0.5;}
+.shell{max-width:960px;margin:0 auto;padding:0 16px 60px;position:relative;z-index:1;}
+nav{padding:20px 0;margin-bottom:24px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);}
+.back{background:none;border:1px solid var(--border2);color:var(--muted);font-family:var(--mono);font-size:11px;padding:5px 12px;border-radius:4px;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s;display:inline-flex;align-items:center;gap:6px;}
+.back:hover{border-color:var(--accent);color:var(--accent);}
+.nbc{color:var(--muted);font-size:11px;letter-spacing:.06em;}
+.nbc span{color:var(--text);}
+
+.rh{border-radius:12px;padding:28px 28px 24px;margin-bottom:24px;border:1px solid var(--border2);position:relative;overflow:hidden;}
+.rh-lbl{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.rh-title{font-family:var(--display);font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:8px;}
+.rh-sub{font-size:12px;color:var(--muted);margin-bottom:16px;}
+.rh-meta{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
+.rh-um{font-size:12px;color:var(--muted);}
+.rh-um strong{color:var(--text);}
+.rh-fecha{font-size:11px;color:var(--muted);}
+.rh-glow{position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;opacity:.06;pointer-events:none;}
+
+.alerta-item{background:rgba(255,77,109,.07);border:1px solid rgba(255,77,109,.2);border-left:3px solid var(--alerta);border-radius:0 6px 6px 0;padding:10px 14px;font-size:12px;color:#c0a0a8;margin-bottom:6px;display:flex;align-items:center;gap:10px;}
+.adot{width:6px;height:6px;border-radius:50%;background:var(--alerta);flex-shrink:0;animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+.stitle{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+
+/* GRID INDICADORES */
+.ind-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:8px;}
+.ind-grid-2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:28px;}
+.ind{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:16px;transition:border-color .2s;}
+.ind:hover{border-color:var(--border2);}
+.ind-lbl{font-size:10px;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;margin-bottom:8px;}
+.ind-val{font-family:var(--display);font-size:26px;font-weight:700;line-height:1;margin-bottom:4px;}
+.ind-mom{font-size:11px;color:var(--muted);margin-bottom:8px;line-height:1.4;}
+.badge{display:inline-block;font-size:10px;padding:2px 8px;border-radius:3px;letter-spacing:.05em;}
+.b-favorable{background:rgba(0,232,150,.12);color:#00e896;border:1px solid rgba(0,232,150,.25);}
+.b-neutral{background:rgba(108,99,255,.12);color:#6c63ff;border:1px solid rgba(108,99,255,.25);}
+.b-precaucion{background:rgba(245,197,66,.10);color:#f5c542;border:1px solid rgba(245,197,66,.25);}
+.b-riesgo{background:rgba(255,77,109,.10);color:#ff4d6d;border:1px solid rgba(255,77,109,.25);}
+
+/* SEÑALES */
+.slist{display:flex;flex-direction:column;gap:4px;margin-bottom:28px;}
+.srow{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:11px 16px;display:grid;grid-template-columns:170px 1fr auto;gap:16px;align-items:center;}
+.sr-ind{font-size:12px;font-weight:500;}
+.sr-nota{font-size:11px;color:var(--muted);}
+
+/* CHARTS */
+.charts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:28px;}
+.chart-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;}
+.chart-card-title{font-size:10px;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;margin-bottom:12px;}
+.cwrap{position:relative;height:180px;}
+
+/* EFECTO */
+.efecto-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:28px;}
+.ef{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:14px;}
+.ef-lbl{font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;}
+.ef-val{font-family:var(--display);font-size:22px;font-weight:700;line-height:1;}
+.ef-sub{font-size:11px;color:var(--muted);margin-top:4px;}
+
+footer{text-align:center;padding:24px 0 0;color:var(--muted);font-size:10px;letter-spacing:.08em;border-top:1px solid var(--border);margin-top:16px;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.anim{animation:fadeIn .35s ease forwards;}
+
+@media(max-width:620px){
+  .ind-grid,.ind-grid-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .efecto-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .charts-grid{grid-template-columns:1fr;}
+  .srow{grid-template-columns:1fr auto;}.sr-nota{display:none;}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav>
+    <a href="index.html" class="back">&#8592; Ranking</a>
+    <span class="nbc">Bot Inversiones · <span>Macro</span></span>
+  </nav>
+  <div id="main">
+    <div style="text-align:center;padding:60px;color:var(--muted);font-size:12px;letter-spacing:.1em">CARGANDO...</div>
+  </div>
+</div>
+<footer>Bot Inversiones · datos via Yahoo Finance · actualizacion diaria al cierre</footer>
+
+<script>
+const RC={
+  FAVORABLE: {color:'#00e896',bg:'rgba(0,232,150,.06)',  hex:'#00e896'},
+  NEUTRAL:   {color:'#6c63ff',bg:'rgba(108,99,255,.06)', hex:'#6c63ff'},
+  PRECAUCION:{color:'#f5c542',bg:'rgba(245,197,66,.06)', hex:'#f5c542'},
+  RIESGO:    {color:'#ff4d6d',bg:'rgba(255,77,109,.06)', hex:'#ff4d6d'},
+};
+const RDESC={
+  FAVORABLE: 'Condiciones favorables para invertir con normalidad.',
+  NEUTRAL:   'Mercado en territorio neutral. Ser selectivo.',
+  PRECAUCION:'Señales de alerta. Elevar criterios de entrada.',
+  RIESGO:    'Riesgo elevado. Maxima selectividad y prudencia.',
+};
+const BCLS={favorable:'b-favorable',neutral:'b-neutral',precaucion:'b-precaucion',riesgo:'b-riesgo'};
+
+let macro=null;
+
+async function init(){
+  macro=await loadJ('data/macro.json');
+  if(!macro){
+    document.getElementById('main').innerHTML=
+      '<div style="text-align:center;padding:60px;color:var(--muted)">No hay datos macro.<br>'+
+      '<small style="opacity:.6">Ejecuta python run_analysis.py para generarlos.</small><br><br>'+
+      '<a href="index.html" style="color:var(--accent);font-size:12px">Volver al ranking</a></div>';
+    return;
+  }
+  render();
+}
+
+async function loadJ(p){
+  try{const r=await fetch(p+'?t='+Date.now());if(!r.ok)throw 0;return await r.json();}catch{return null;}
+}
+
+function render(){
+  const reg=macro.regimen||'NEUTRAL';
+  const rc=RC[reg]||RC.NEUTRAL;
+  const d=macro.datos||{};
+  const señales=macro.señales||[];
+  const alertas=macro.alertas||[];
+  const fecha=macro.fecha?new Date(macro.fecha).toLocaleString('es-ES',
+    {day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}):'—';
+
+  document.getElementById('main').innerHTML=`
+
+    <div class="rh anim" style="background:${rc.bg};border-color:${rc.hex}33">
+      <div class="rh-glow" style="background:${rc.hex}"></div>
+      <div class="rh-lbl">Regimen de mercado</div>
+      <div class="rh-title" style="color:${rc.color}">${reg}</div>
+      <div class="rh-sub">${RDESC[reg]||''}</div>
+      <div class="rh-meta">
+        <div class="rh-um">Umbral de compra activo: <strong>${macro.umbral_compra||65}</strong></div>
+        <div class="rh-um">Puntuacion: <strong>${macro.puntos??'—'}</strong></div>
+        <div class="rh-fecha">Actualizado: ${fecha}</div>
+      </div>
+    </div>
+
+    ${alertas.length?`<div style="margin-bottom:20px" class="anim">
+      ${alertas.map(a=>'<div class="alerta-item"><div class="adot"></div><span>'+a+'</span></div>').join('')}
+    </div>`:''}
+
+    <div class="stitle anim" style="animation-delay:.08s">Mercado y tipos</div>
+    <div class="ind-grid anim" style="animation-delay:.1s">
+      ${indC('VIX',    d.vix,   '',    vixE(d.vix),  vixN(d.vix))}
+      ${indC('SP500',  fmt0(d.sp500), '', mmE(d.sp500_vs_ma200),
+        d.sp500_vs_ma200!=null?'vs MM200: '+sgn(d.sp500_vs_ma200)+'%  |  mom6M: '+sgn(d.sp500_mom6m)+'%':'—')}
+      ${indC('Eurostoxx', fmt0(d.eurostoxx), '', mmE(d.eurostoxx_vs_ma200),
+        d.eurostoxx_vs_ma200!=null?'vs MM200: '+sgn(d.eurostoxx_vs_ma200)+'%  |  mom6M: '+sgn(d.eurostoxx_mom6m)+'%':'—')}
+      ${indC('T10Y',   d.t10y!=null?d.t10y+'%':'—', '', t10E(d.t10y),  t10N(d.t10y))}
+      ${indC('T2Y',    d.t2y!=null?d.t2y+'%':'—',   '', 'neutral', 'Tipos corto plazo')}
+      ${indC('Curva 10Y-2Y', d.curva_10y_2y!=null?sgn(d.curva_10y_2y)+'%':'—', '', crvE(d.curva_10y_2y), crvN(d.curva_10y_2y))}
+    </div>
+
+    <div class="stitle anim" style="animation-delay:.13s">Materias primas</div>
+    <div class="ind-grid-2 anim" style="animation-delay:.15s">
+      ${indC('Petroleo WTI', d.wti!=null?d.wti.toFixed(1)+' $':'—', '',
+        estad(señales,'Petroleo WTI'),
+        d.wti_mom3m!=null?'mom3M: '+sgn(d.wti_mom3m)+'%  |  mom6M: '+sgn(d.wti_mom6m)+'%':'—',
+        'Riesgo inflacion costes')}
+      ${indC('Oro', d.oro!=null?fmt0(d.oro)+' $':'—', '',
+        estad(señales,'Oro'),
+        d.oro_mom3m!=null?'mom3M: '+sgn(d.oro_mom3m)+'%  |  mom6M: '+sgn(d.oro_mom6m)+'%':'—',
+        'Indicador de miedo soberano')}
+      ${indC('Cobre (Dr. Copper)', d.cobre!=null?d.cobre.toFixed(2)+' $':'—', '',
+        estad(señales,'Cobre'),
+        d.cobre_mom3m!=null?'mom3M: '+sgn(d.cobre_mom3m)+'%  |  mom6M: '+sgn(d.cobre_mom6m)+'%':'—',
+        'Indicador lider ciclo economico')}
+    </div>
+
+    <div class="stitle anim" style="animation-delay:.18s">Analisis por indicador</div>
+    <div class="slist anim" style="animation-delay:.2s">
+      ${señales.map(s=>`
+        <div class="srow">
+          <div class="sr-ind">${s.indicador}</div>
+          <div class="sr-nota">${s.nota||''}</div>
+          <span class="badge ${BCLS[s.estado]||'b-neutral'}">${(s.estado||'').toUpperCase()}</span>
+        </div>`).join('')}
+    </div>
+
+    <div class="stitle anim" style="animation-delay:.22s">Evolucion reciente</div>
+    <div class="charts-grid anim" style="animation-delay:.24s">
+      <div class="chart-card">
+        <div class="chart-card-title">Momentum indices 6M (%)</div>
+        <div class="cwrap"><canvas id="ch-indices"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-title">Momentum materias primas 3M (%)</div>
+        <div class="cwrap"><canvas id="ch-materias"></canvas></div>
+      </div>
+    </div>
+
+    <div class="stitle anim" style="animation-delay:.26s">Efecto en el analisis de acciones</div>
+    <div class="efecto-grid anim" style="animation-delay:.28s">
+      ${efC('Umbral compra',   (macro.umbral_compra||65)+'',  'Score minimo para COMPRA', rc.color)}
+      ${efC('Penalizador mom.',
+        reg==='RIESGO'?'x0.8':reg==='PRECAUCION'?'x0.9':'x1.0',
+        'Factor sobre momentum', rc.color)}
+      ${efC('Selectividad',
+        reg==='FAVORABLE'?'Normal':reg==='NEUTRAL'?'Alta':reg==='PRECAUCION'?'Muy alta':'Maxima',
+        'Nivel de exigencia', rc.color)}
+      ${efC('Puntuacion macro', (macro.puntos??0)+'', 'Suma de señales (+/-)', 'var(--muted)')}
+    </div>
+  `;
+
+  setTimeout(()=>{renderBar('ch-indices',['SP500 6M','Eurostoxx 6M'],[d.sp500_mom6m??0,d.eurostoxx_mom6m??0]);},50);
+  setTimeout(()=>{renderBar('ch-materias',['WTI 3M','Oro 3M','Cobre 3M'],[d.wti_mom3m??0,d.oro_mom3m??0,d.cobre_mom3m??0]);},80);
+}
+
+function indC(lbl,val,unit,estado,sub,tooltip){
+  return `<div class="ind" ${tooltip?'title="'+tooltip+'"':''}>
+    <div class="ind-lbl">${lbl}</div>
+    <div class="ind-val" style="color:${eColor(estado)}">${val}${unit}</div>
+    <div class="ind-mom">${sub}</div>
+    <span class="badge b-${estado}">${estado.toUpperCase()}</span>
+  </div>`;
+}
+function efC(lbl,val,sub,color){
+  return `<div class="ef">
+    <div class="ef-lbl">${lbl}</div>
+    <div class="ef-val" style="color:${color}">${val}</div>
+    <div class="ef-sub">${sub}</div>
+  </div>`;
+}
+
+function renderBar(id,labels,vals){
+  const canvas=document.getElementById(id);
+  if(!canvas)return;
+  const colors=vals.map(v=>v>=0?'#00e896':'#ff4d6d');
+  new Chart(canvas,{
+    type:'bar',
+    data:{labels,datasets:[{data:vals,backgroundColor:colors.map(c=>c+'30'),
+      borderColor:colors,borderWidth:1.5,borderRadius:4}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},
+        tooltip:{backgroundColor:'#18181f',borderColor:'rgba(255,255,255,0.1)',borderWidth:1,
+          titleColor:'#6b6b80',bodyColor:'#e8e8f0',padding:10,
+          titleFont:{family:"'DM Mono',monospace",size:11},bodyFont:{family:"'DM Mono',monospace",size:12},
+          callbacks:{label:ctx=>' '+ctx.parsed.y.toFixed(1)+'%'}}},
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'#6b6b80',font:{family:"'DM Mono'",size:11}},border:{color:'rgba(255,255,255,0.07)'}},
+        y:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'#6b6b80',font:{family:"'DM Mono'",size:10},callback:v=>v+'%'},border:{color:'rgba(255,255,255,0.07)'}},
+      },
+    },
+  });
+}
+
+// ── HELPERS ───────────────────────────────────────────────────────────────────
+function estad(señales,ind){
+  const s=señales.find(x=>x.indicador===ind);
+  return s?.estado||'neutral';
+}
+function eColor(e){return{favorable:'#00e896',neutral:'var(--text)',precaucion:'#f5c542',riesgo:'#ff4d6d'}[e]||'var(--text)';}
+function sgn(v){if(v==null)return '—';return (v>0?'+':'')+v;}
+function fmt0(v){if(v==null)return '—';return v.toLocaleString('es-ES',{maximumFractionDigits:0});}
+function vixE(v){if(v==null)return 'neutral';return v<15?'favorable':v<20?'neutral':v<30?'precaucion':'riesgo';}
+function vixN(v){if(v==null)return '—';return v<15?'Baja volatilidad':v<20?'Volatilidad moderada':v<30?'Volatilidad elevada':'Panico de mercado';}
+function mmE(v){if(v==null)return 'neutral';return v>5?'favorable':v>0?'neutral':v>-5?'precaucion':'riesgo';}
+function t10E(v){if(v==null)return 'neutral';return v>4.5?'precaucion':v>3?'neutral':'favorable';}
+function t10N(v){if(v==null)return '—';return v>4.5?'Tipos altos — penaliza growth':v>3?'Tipos moderados':'Tipos bajos — favorece valoracion';}
+function crvE(v){if(v==null)return 'neutral';return v>0.5?'favorable':v>0?'neutral':'riesgo';}
+function crvN(v){if(v==null)return '—';return v>0.5?'Curva positiva':v>0?'Curva plana — atencion':'Curva invertida — señal recesion';}
+
+init();
+</script>
+</body>
+</html>

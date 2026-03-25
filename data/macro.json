@@ -1,0 +1,84 @@
+{
+  "fecha": "2026-03-25T21:16:14.684619",
+  "regimen": "RIESGO",
+  "puntos": -3,
+  "umbral_compra": 75,
+  "alertas": [
+    "VIX elevado (25.28) — mercado en precaucion",
+    "SP500 bajo MM200 (-0.59%)",
+    "WTI +40.27% en 6M — presion inflacionista severa"
+  ],
+  "señales": [
+    {
+      "indicador": "VIX",
+      "valor": 25.28,
+      "estado": "precaucion",
+      "nota": "Volatilidad elevada (25.28)"
+    },
+    {
+      "indicador": "SP500 vs MM200",
+      "valor": -0.59,
+      "estado": "precaucion",
+      "nota": "SP500 bajo MM200 (-0.59%)"
+    },
+    {
+      "indicador": "Eurostoxx vs MM200",
+      "valor": 0.55,
+      "estado": "neutral",
+      "nota": "Eurostoxx sobre MM200 (+0.55%)"
+    },
+    {
+      "indicador": "Curva 10Y-2Y",
+      "valor": 0.07,
+      "estado": "neutral",
+      "nota": "Curva plana (0.07%) — atencion"
+    },
+    {
+      "indicador": "T10Y",
+      "valor": 0.43,
+      "estado": "favorable",
+      "nota": "Tipos bajos (0.43%) — favorece valoracion"
+    },
+    {
+      "indicador": "Petroleo WTI",
+      "valor": 91.16,
+      "estado": "riesgo",
+      "nota": "WTI +40.27% en 6M — presion inflacionista severa"
+    },
+    {
+      "indicador": "Oro",
+      "valor": 4533.3999,
+      "estado": "neutral",
+      "nota": "Oro estable (1.13% en 3M)"
+    },
+    {
+      "indicador": "Cobre",
+      "valor": 5.527,
+      "estado": "neutral",
+      "nota": "Cobre estable (0.93% en 3M) — ciclo neutro"
+    }
+  ],
+  "datos": {
+    "vix": 25.28,
+    "sp500": 6591.8999,
+    "sp500_ma200": 6630.8278,
+    "sp500_vs_ma200": -0.59,
+    "sp500_mom6m": -0.69,
+    "eurostoxx": 5649.3301,
+    "eurostoxx_ma200": 5618.3264,
+    "eurostoxx_vs_ma200": 0.55,
+    "eurostoxx_mom6m": 3.23,
+    "t10y": 0.43,
+    "t2y": 0.36,
+    "curva_10y_2y": 0.07,
+    "wti": 91.16,
+    "wti_mom3m": 56.15,
+    "wti_mom6m": 40.27,
+    "oro": 4533.3999,
+    "oro_mom3m": 1.13,
+    "oro_mom6m": 21.47,
+    "cobre": 5.527,
+    "cobre_mom3m": 0.93,
+    "cobre_mom6m": 16.3
+  }
+}
