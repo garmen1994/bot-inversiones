@@ -1,12 +1,28 @@
 {
-  "fecha": "2026-03-30T13:33:41.891175",
+  "fecha": "2026-03-30T13:35:33.154694",
   "ranking": [
     {
       "pos": 1,
+      "ticker": "IAG.MC",
+      "nombre": "International Consolidated Airlines Group S.A.",
+      "sector": "Industrials",
+      "precio": 4.042,
+      "composite": 82.2,
+      "quality": 84,
+      "valuation": 100,
+      "safety": 91,
+      "momentum": 30,
+      "senal": "COMPRA",
+      "capas": 2,
+      "alertas": [],
+      "confianza": "alta"
+    },
+    {
+      "pos": 2,
       "ticker": "VID.MC",
       "nombre": "Vidrala, S.A.",
       "sector": "Consumer Cyclical",
-      "precio": 78.1,
+      "precio": 78.3,
       "composite": 79.8,
       "quality": 84,
       "valuation": 100,
@@ -20,7 +36,7 @@
       "confianza": "alta"
     },
     {
-      "pos": 2,
+      "pos": 3,
       "ticker": "REP.MC",
       "nombre": "Repsol, S.A.",
       "sector": "Energy",
@@ -36,11 +52,11 @@
       "confianza": "alta"
     },
     {
-      "pos": 3,
+      "pos": 4,
       "ticker": "CAF.MC",
       "nombre": "Construcciones y Auxiliar de Ferrocarriles, S.A.",
       "sector": "Industrials",
-      "precio": 56.1,
+      "precio": 56.2,
       "composite": 76.1,
       "quality": 72,
       "valuation": 78,
@@ -52,11 +68,29 @@
       "confianza": "alta"
     },
     {
-      "pos": 4,
+      "pos": 5,
+      "ticker": "ENG.MC",
+      "nombre": "Enagás, S.A.",
+      "sector": "Utilities",
+      "precio": 17.0,
+      "composite": 75.8,
+      "quality": 77,
+      "valuation": 84,
+      "safety": 37,
+      "momentum": 79,
+      "senal": "COMPRA",
+      "capas": 3,
+      "alertas": [
+        "Deuda/EBITDA elevada (4.5x)"
+      ],
+      "confianza": "alta"
+    },
+    {
+      "pos": 6,
       "ticker": "ACS.MC",
       "nombre": "ACS, Actividades de Construcción y Servicios, S.A.",
       "sector": "Industrials",
-      "precio": 103.0,
+      "precio": 103.1,
       "composite": 74.6,
       "quality": 82,
       "valuation": 63,
@@ -68,11 +102,11 @@
       "confianza": "alta"
     },
     {
-      "pos": 5,
+      "pos": 7,
       "ticker": "ITX.MC",
       "nombre": "Industria de Diseño Textil, S.A.",
       "sector": "Consumer Cyclical",
-      "precio": 49.58,
+      "precio": 49.59,
       "composite": 68.4,
       "quality": 90,
       "valuation": 40,
@@ -86,7 +120,7 @@
       "confianza": "alta"
     },
     {
-      "pos": 6,
+      "pos": 8,
       "ticker": "PG",
       "nombre": "The Procter & Gamble Company",
       "sector": "Consumer Defensive",
@@ -102,7 +136,7 @@
       "confianza": "alta"
     },
     {
-      "pos": 7,
+      "pos": 9,
       "ticker": "JNJ",
       "nombre": "Johnson & Johnson",
       "sector": "Healthcare",
@@ -120,11 +154,11 @@
       "confianza": "alta"
     },
     {
-      "pos": 8,
+      "pos": 10,
       "ticker": "ASML.AS",
       "nombre": "ASML Holding N.V.",
       "sector": "Technology",
-      "precio": 1143.6,
+      "precio": 1143.8,
       "composite": 61.5,
       "quality": 89,
       "valuation": 11,
@@ -138,7 +172,7 @@
       "confianza": "alta"
     },
     {
-      "pos": 9,
+      "pos": 11,
       "ticker": "AAPL",
       "nombre": "Apple Inc.",
       "sector": "Technology",
@@ -156,7 +190,7 @@
       "confianza": "alta"
     },
     {
-      "pos": 10,
+      "pos": 12,
       "ticker": "MSFT",
       "nombre": "Microsoft Corporation",
       "sector": "Technology",
@@ -175,7 +209,7 @@
       "confianza": "alta"
     },
     {
-      "pos": 11,
+      "pos": 13,
       "ticker": "V",
       "nombre": "Visa Inc.",
       "sector": "Financial Services",
@@ -194,11 +228,11 @@
       "confianza": "alta"
     },
     {
-      "pos": 12,
+      "pos": 14,
       "ticker": "FER.MC",
       "nombre": "Ferrovial SE",
       "sector": "Industrials",
-      "precio": 54.76,
+      "precio": 54.84,
       "composite": 50.4,
       "quality": 74,
       "valuation": 19,
@@ -213,11 +247,11 @@
       "confianza": "alta"
     },
     {
-      "pos": 13,
+      "pos": 15,
       "ticker": "SAN.MC",
       "nombre": "Banco Santander, S.A.",
       "sector": "Financial Services",
-      "precio": 9.417,
+      "precio": 9.42,
       "composite": 46.9,
       "quality": 41,
       "valuation": 41,
@@ -231,35 +265,15 @@
         "Score o F-Score en zona de deterioro severo"
       ],
       "confianza": "baja"
-    },
-    {
-      "pos": 14,
-      "ticker": "ENAG.MC",
-      "nombre": "ENAG.MC",
-      "sector": "Desconocido",
-      "precio": null,
-      "composite": 28.5,
-      "quality": 0,
-      "valuation": 50,
-      "safety": 50,
-      "momentum": 40,
-      "senal": "ALERTA_SALIDA",
-      "capas": 0,
-      "alertas": [
-        "F-Score débil (0/9) — posible deterioro",
-        "Precio muy por debajo de MM200 — tendencia bajista",
-        "Score o F-Score en zona de deterioro severo"
-      ],
-      "confianza": "baja"
     }
   ],
   "macro": {
     "regimen": "RIESGO",
     "umbral_compra": 75,
     "alertas": [
-      "VIX extremo (30.86) — panico en el mercado",
+      "VIX extremo (30.73) — panico en el mercado",
       "SP500 bajo MM200 (-4.01%)",
-      "WTI +59.13% en 6M — presion inflacionista severa"
+      "WTI +58.99% en 6M — presion inflacionista severa"
     ]
   }
 }
