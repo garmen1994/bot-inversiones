@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0a0f">
+<title>Backtest · Bot Inversiones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{
+  --bg:#0a0a0f;--bg2:#111118;--bg3:#18181f;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --text:#e8e8f0;--muted:#6b6b80;
+  --compra:#00e896;--vigilar:#f5c542;--alerta:#ff4d6d;--accent:#6c63ff;
+  --ca:#6c63ff;--cb:#00e896;--cbh:#f5c542;--csp:#94a3b8;
+  --mono:'DM Mono',monospace;--display:'Syne',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13px;min-height:100vh;}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:0.5;}
+.shell{max-width:960px;margin:0 auto;padding:0 16px 60px;position:relative;z-index:1;}
+nav{padding:20px 0;margin-bottom:24px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);}
+.back{background:none;border:1px solid var(--border2);color:var(--muted);font-family:var(--mono);font-size:11px;padding:5px 12px;border-radius:4px;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s;display:inline-flex;align-items:center;gap:6px;}
+.back:hover{border-color:var(--accent);color:var(--accent);}
+.nbc{color:var(--muted);font-size:11px;}
+.nbc span{color:var(--text);}
+
+/* HEADER */
+.page-header{margin-bottom:28px;}
+.page-title{font-family:var(--display);font-size:clamp(24px,5vw,36px);font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:6px;}
+.page-sub{color:var(--muted);font-size:12px;}
+
+/* LEGEND */
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px;}
+.leg-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);}
+.leg-dot{width:10px;height:10px;border-radius:2px;}
+
+/* CHART PRINCIPAL */
+.main-chart-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:24px;}
+.chart-title{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;}
+.chart-inner{position:relative;height:340px;}
+
+/* MÉTRICAS GRID */
+.stitle{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+.metricas-comp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:28px;}
+.mc-col{background:var(--bg2);border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+.mc-header{padding:10px 14px 8px;border-bottom:1px solid var(--border);font-size:11px;font-weight:500;}
+.mc-row{display:flex;justify-content:space-between;align-items:center;padding:7px 14px;border-bottom:1px solid var(--border);}
+.mc-row:last-child{border-bottom:none;}
+.mc-key{font-size:10px;color:var(--muted);}
+.mc-val{font-size:11px;font-weight:500;}
+.pos{color:var(--compra);}
+.neg{color:var(--alerta);}
+.neu{color:var(--text);}
+
+/* MEJOR/PEOR */
+.verdict{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.verdict-icon{font-family:var(--display);font-size:32px;font-weight:800;line-height:1;}
+.verdict-text{font-size:12px;color:var(--muted);line-height:1.6;}
+.verdict-text strong{color:var(--text);}
+
+/* OPERACIONES */
+.ops-section{margin-bottom:28px;}
+.ops-filters{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;}
+.of-btn{background:none;border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:11px;padding:4px 12px;border-radius:20px;cursor:pointer;transition:all .15s;}
+.of-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+.ops-table{width:100%;border-collapse:collapse;font-size:11px;}
+.ops-table th{font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;text-align:left;border-bottom:1px solid var(--border);}
+.ops-table td{padding:7px 10px;border-bottom:1px solid var(--border);color:var(--muted);}
+.ops-table tr:last-child td{border-bottom:none;}
+.ops-table tr:hover td{background:var(--bg3);}
+.t-buy{color:var(--compra);}
+.t-sell{color:var(--alerta);}
+.ticker-lbl{color:var(--text);font-weight:500;}
+
+/* DRAWDOWN CHART */
+.dd-chart-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:28px;}
+.dd-inner{position:relative;height:200px;}
+
+footer{text-align:center;padding:24px 0 0;color:var(--muted);font-size:10px;letter-spacing:.08em;border-top:1px solid var(--border);margin-top:16px;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.anim{animation:fadeIn .35s ease forwards;}
+
+@media(max-width:620px){
+  .metricas-comp{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav>
+    <a href="index.html" class="back">&#8592; Ranking</a>
+    <span class="nbc">Bot Inversiones · <span>Backtest</span></span>
+  </nav>
+  <div id="main">
+    <div style="text-align:center;padding:60px;color:var(--muted);font-size:12px;letter-spacing:.1em">CARGANDO...</div>
+  </div>
+</div>
+<footer>Bot Inversiones · backtest con datos reales Yahoo Finance</footer>
+
+<script>
+const COLORS={a:'#6c63ff',b:'#00e896',bh:'#f5c542',sp:'#94a3b8'};
+let data=null, filtroOps='A';
+
+async function init(){
+  data=await loadJ('data/backtest.json');
+  if(!data){
+    document.getElementById('main').innerHTML=
+      '<div style="text-align:center;padding:60px;color:var(--muted)">'+
+      'No hay datos de backtest.<br>'+
+      '<small style="opacity:.6">Ejecuta: python backtester.py</small><br><br>'+
+      '<a href="index.html" style="color:var(--accent);font-size:12px">Volver al ranking</a></div>';
+    return;
+  }
+  render();
+}
+
+async function loadJ(p){
+  try{const r=await fetch(p+'?t='+Date.now());if(!r.ok)throw 0;return await r.json();}catch{return null;}
+}
+
+function render(){
+  const desde=data.desde||'—';
+  const capital=data.capital||10000;
+  const nSemanas=data.n_semanas||0;
+  const tickers=(data.tickers||[]).join(', ');
+
+  const ma=data.estrategia_a?.metricas||{};
+  const mb=data.estrategia_b?.metricas||{};
+  const mbh=data.buy_and_hold?.metricas||{};
+  const msp=data.sp500?.metricas||{};
+
+  // Determinar ganador
+  const ganador=mejor([
+    {nombre:'Bot con recompra',  cagr:ma.cagr||0, sharpe:ma.sharpe||0},
+    {nombre:'Bot sin recompra',  cagr:mb.cagr||0, sharpe:mb.sharpe||0},
+    {nombre:'Buy & Hold watchlist',cagr:mbh.cagr||0,sharpe:mbh.sharpe||0},
+    {nombre:'SP500',             cagr:msp.cagr||0, sharpe:msp.sharpe||0},
+  ]);
+
+  document.getElementById('main').innerHTML=`
+    <div class="page-header anim">
+      <div class="page-title">Backtest</div>
+      <div class="page-sub">${desde} → hoy · ${nSemanas} semanas · capital inicial: ${fmt$(capital)} · ${tickers}</div>
+    </div>
+
+    <div class="legend anim" style="animation-delay:.03s">
+      ${legItem(COLORS.a,'Bot (con recompra)')}
+      ${legItem(COLORS.b,'Bot (sin recompra)')}
+      ${legItem(COLORS.bh,'Buy & Hold watchlist')}
+      ${legItem(COLORS.sp,'SP500')}
+    </div>
+
+    <div class="main-chart-wrap anim" style="animation-delay:.05s">
+      <div class="chart-title">
+        <span>Evolucion del capital (€)</span>
+        <span style="color:var(--muted);font-size:10px">Capital inicial: ${fmt$(capital)}</span>
+      </div>
+      <div class="chart-inner"><canvas id="ch-main"></canvas></div>
+    </div>
+
+    <div class="stitle anim" style="animation-delay:.1s">Comparativa de metricas</div>
+    <div class="metricas-comp anim" style="animation-delay:.12s">
+      ${mcCol('Bot recompra',  COLORS.a, ma)}
+      ${mcCol('Bot sin recomp.',COLORS.b, mb)}
+      ${mcCol('Buy & Hold',    COLORS.bh,mbh)}
+      ${mcCol('SP500',         COLORS.sp,msp)}
+    </div>
+
+    <div class="verdict anim" style="animation-delay:.15s">
+      <div class="verdict-icon" style="color:${ganador.color}">${ganador.emoji}</div>
+      <div class="verdict-text">
+        <strong>${ganador.nombre}</strong> es la estrategia con mejor relacion rentabilidad/riesgo.<br>
+        CAGR: <strong>${ganador.cagr.toFixed(1)}%</strong> · Sharpe: <strong>${ganador.sharpe.toFixed(2)}</strong>
+      </div>
+    </div>
+
+    <div class="dd-chart-wrap anim" style="animation-delay:.17s">
+      <div class="chart-title"><span>Drawdown comparado (%)</span></div>
+      <div class="dd-inner"><canvas id="ch-dd"></canvas></div>
+    </div>
+
+    <div class="ops-section anim" style="animation-delay:.2s">
+      <div class="stitle">Operaciones del bot</div>
+      <div class="ops-filters">
+        <button class="of-btn active" onclick="setOps('A',this)">Con recompra</button>
+        <button class="of-btn"       onclick="setOps('B',this)">Sin recompra</button>
+      </div>
+      <div id="ops-table-wrap"></div>
+    </div>
+  `;
+
+  setTimeout(()=>{ renderMainChart(); renderDDChart(); renderOpsTable(); },60);
+}
+
+// ── CHARTS ────────────────────────────────────────────────────────────────────
+function renderMainChart(){
+  const canvas=document.getElementById('ch-main');
+  if(!canvas)return;
+
+  const series=[
+    {key:'estrategia_a', color:COLORS.a, label:'Bot (recompra)'},
+    {key:'estrategia_b', color:COLORS.b, label:'Bot (sin recompra)'},
+    {key:'buy_and_hold', color:COLORS.bh,label:'Buy & Hold'},
+    {key:'sp500',        color:COLORS.sp,label:'SP500'},
+  ];
+
+  const labels=data.estrategia_a?.valor_hist?.map(x=>fmtF(x.fecha))||[];
+  // Decimado para no pintar 400 puntos
+  const step=Math.max(1,Math.floor(labels.length/80));
+  const lblDec=labels.filter((_,i)=>i%step===0);
+
+  const datasets=series.map(s=>{
+    const hist=data[s.key]?.valor_hist||[];
+    const vals=hist.filter((_,i)=>i%step===0).map(x=>x.valor);
+    return{
+      label:s.label, data:vals,
+      borderColor:s.color, backgroundColor:'transparent',
+      borderWidth:2, pointRadius:0, tension:.3,
+    };
+  });
+
+  new Chart(canvas,{
+    type:'line',
+    data:{labels:lblDec,datasets},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'#18181f',borderColor:'rgba(255,255,255,.1)',borderWidth:1,
+          titleColor:'#6b6b80',bodyColor:'#e8e8f0',padding:10,
+          titleFont:{family:"'DM Mono',monospace",size:11},
+          bodyFont:{family:"'DM Mono',monospace",size:12},
+          callbacks:{label:ctx=>' '+ctx.dataset.label+': '+fmt$(ctx.parsed.y)}
+        },
+      },
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#6b6b80',font:{family:"'DM Mono'",size:10},maxTicksLimit:10},border:{color:'rgba(255,255,255,.07)'}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#6b6b80',font:{family:"'DM Mono'",size:10},callback:v=>fmt$(v)},border:{color:'rgba(255,255,255,.07)'}},
+      },
+    },
+  });
+}
+
+function renderDDChart(){
+  const canvas=document.getElementById('ch-dd');
+  if(!canvas)return;
+
+  function calcDD(hist){
+    const vals=hist.map(x=>x.valor);
+    let peak=vals[0],dds=[];
+    for(const v of vals){
+      if(v>peak)peak=v;
+      dds.push(((v-peak)/peak)*100);
+    }
+    return dds;
+  }
+
+  const step=Math.max(1,Math.floor((data.estrategia_a?.valor_hist?.length||1)/80));
+  const labels=(data.estrategia_a?.valor_hist||[]).filter((_,i)=>i%step===0).map(x=>fmtF(x.fecha));
+
+  const series=[
+    {key:'estrategia_a',color:COLORS.a,label:'Bot (recompra)'},
+    {key:'estrategia_b',color:COLORS.b,label:'Bot (sin recompra)'},
+    {key:'buy_and_hold',color:COLORS.bh,label:'Buy & Hold'},
+    {key:'sp500',       color:COLORS.sp,label:'SP500'},
+  ];
+
+  const datasets=series.map(s=>{
+    const hist=data[s.key]?.valor_hist||[];
+    const dd=calcDD(hist).filter((_,i)=>i%step===0);
+    return{
+      label:s.label, data:dd,
+      borderColor:s.color, backgroundColor:s.color+'18',
+      borderWidth:1.5, pointRadius:0, tension:.3, fill:true,
+    };
+  });
+
+  new Chart(canvas,{
+    type:'line',
+    data:{labels,datasets},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'#18181f',borderColor:'rgba(255,255,255,.1)',borderWidth:1,
+          titleColor:'#6b6b80',bodyColor:'#e8e8f0',padding:10,
+          titleFont:{family:"'DM Mono',monospace",size:11},bodyFont:{family:"'DM Mono',monospace",size:12},
+          callbacks:{label:ctx=>' '+ctx.dataset.label+': '+ctx.parsed.y.toFixed(1)+'%'}
+        },
+      },
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#6b6b80',font:{family:"'DM Mono'",size:10},maxTicksLimit:10},border:{color:'rgba(255,255,255,.07)'}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#6b6b80',font:{family:"'DM Mono'",size:10},callback:v=>v.toFixed(0)+'%'},border:{color:'rgba(255,255,255,.07)'}},
+      },
+    },
+  });
+}
+
+// ── OPERACIONES ───────────────────────────────────────────────────────────────
+function renderOpsTable(){
+  const wrap=document.getElementById('ops-table-wrap');
+  if(!wrap)return;
+  const key=filtroOps==='A'?'estrategia_a':'estrategia_b';
+  const ops=(data[key]?.ops||[]).slice().reverse().slice(0,50);
+  if(!ops.length){
+    wrap.innerHTML='<div style="color:var(--muted);font-size:12px;padding:16px 0">Sin operaciones registradas.</div>';
+    return;
+  }
+  wrap.innerHTML=`
+    <table class="ops-table">
+      <thead><tr>
+        <th>Fecha</th><th>Tipo</th><th>Ticker</th>
+        <th style="text-align:right">Precio</th>
+        <th style="text-align:right">Valor</th>
+        <th style="text-align:right">Score</th>
+      </tr></thead>
+      <tbody>
+        ${ops.map(o=>`<tr>
+          <td>${o.fecha||'—'}</td>
+          <td class="${o.tipo==='COMPRA'?'t-buy':'t-sell'}">${o.tipo}</td>
+          <td class="ticker-lbl">${o.ticker}</td>
+          <td style="text-align:right">${o.precio?.toFixed(2)||'—'}</td>
+          <td style="text-align:right">${fmt$(o.valor)}</td>
+          <td style="text-align:right">${o.score!=null?o.score:'—'}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>
+    <div style="font-size:11px;color:var(--muted);margin-top:8px">Mostrando las 50 operaciones mas recientes</div>
+  `;
+}
+
+function setOps(modo, btn){
+  filtroOps=modo;
+  document.querySelectorAll('.of-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderOpsTable();
+}
+
+// ── HELPERS UI ────────────────────────────────────────────────────────────────
+function mcCol(nombre, color, m){
+  const rows=[
+    {k:'Valor final',    v:fmt$(m.valor_final),    c:m.ret_total>0?'pos':'neg'},
+    {k:'Ret. total',     v:sgn(m.ret_total)+'%',   c:m.ret_total>0?'pos':'neg'},
+    {k:'CAGR',           v:sgn(m.cagr)+'%',        c:m.cagr>0?'pos':'neg'},
+    {k:'Sharpe',         v:m.sharpe?.toFixed(2),   c:m.sharpe>1?'pos':m.sharpe>0?'neu':'neg'},
+    {k:'Sortino',        v:m.sortino?.toFixed(2),  c:m.sortino>1?'pos':m.sortino>0?'neu':'neg'},
+    {k:'Max Drawdown',   v:m.max_drawdown?.toFixed(1)+'%', c:'neg'},
+    {k:'Calmar',         v:m.calmar?.toFixed(2),   c:m.calmar>0.5?'pos':'neu'},
+    {k:'Volatilidad',    v:m.volatilidad?.toFixed(1)+'%',  c:'neu'},
+    {k:'N operaciones',  v:m.n_operaciones??'—',   c:'neu'},
+    {k:'Win rate',       v:m.win_rate!=null?m.win_rate+'%':'—', c:m.win_rate>50?'pos':m.win_rate!=null?'neg':'neu'},
+    {k:'Profit factor',  v:m.profit_factor?.toFixed(2)??'—', c:m.profit_factor>1?'pos':m.profit_factor!=null?'neg':'neu'},
+    {k:'Avg win',        v:m.avg_win!=null?sgn(m.avg_win)+'%':'—', c:'pos'},
+    {k:'Avg loss',       v:m.avg_loss!=null?m.avg_loss.toFixed(1)+'%':'—', c:'neg'},
+  ];
+  return `<div class="mc-col">
+    <div class="mc-header" style="color:${color};border-left:3px solid ${color};padding-left:11px">${nombre}</div>
+    ${rows.map(r=>`<div class="mc-row">
+      <span class="mc-key">${r.k}</span>
+      <span class="mc-val ${r.c}">${r.v??'—'}</span>
+    </div>`).join('')}
+  </div>`;
+}
+
+function legItem(color, label){
+  return `<div class="leg-item"><div class="leg-dot" style="background:${color}"></div>${label}</div>`;
+}
+
+function mejor(estrategias){
+  // Score combinado: 60% CAGR + 40% Sharpe (normalizados)
+  const maxCagr=Math.max(...estrategias.map(e=>e.cagr));
+  const maxSharpe=Math.max(...estrategias.map(e=>e.sharpe));
+  let best=estrategias[0], bestScore=-999;
+  for(const e of estrategias){
+    const s=(e.cagr/Math.max(maxCagr,.01))*0.6 + (e.sharpe/Math.max(maxSharpe,.01))*0.4;
+    if(s>bestScore){bestScore=s;best=e;}
+  }
+  const colors={
+    'Bot con recompra':COLORS.a,'Bot sin recompra':COLORS.b,
+    'Buy & Hold watchlist':COLORS.bh,'SP500':COLORS.sp
+  };
+  return{...best, color:colors[best.nombre]||COLORS.a, emoji:'★'};
+}
+
+function fmt$(v){
+  if(v==null||v===undefined)return '—';
+  return v.toLocaleString('es-ES',{minimumFractionDigits:0,maximumFractionDigits:0})+'€';
+}
+function sgn(v){if(v==null)return '—';return (v>0?'+':'')+v.toFixed(1);}
+function fmtF(iso){
+  if(!iso)return '—';
+  const d=new Date(iso+'T12:00:00');
+  return d.toLocaleDateString('es-ES',{month:'short',year:'2-digit'});
+}
+
+init();
+</script>
+</body>
+</html>
