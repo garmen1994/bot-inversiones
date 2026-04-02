@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backtest Individual · Bot Inversiones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{
+  --bg:#0a0a0f;--bg2:#111118;--bg3:#18181f;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --text:#e8e8f0;--muted:#6b6b80;
+  --compra:#00e896;--vigilar:#f5c542;--alerta:#ff4d6d;--accent:#6c63ff;
+  --mono:'DM Mono',monospace;--display:'Syne',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13px;min-height:100vh;}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:0.5;}
+.shell{max-width:960px;margin:0 auto;padding:0 16px 60px;position:relative;z-index:1;}
+nav{padding:20px 0;margin-bottom:24px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);}
+.back{background:none;border:1px solid var(--border2);color:var(--muted);font-family:var(--mono);font-size:11px;padding:5px 12px;border-radius:4px;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s;display:inline-flex;align-items:center;gap:6px;}
+.back:hover{border-color:var(--accent);color:var(--accent);}
+.nbc{color:var(--muted);font-size:11px;}
+.nbc span{color:var(--text);}
+
+.page-title{font-family:var(--display);font-size:clamp(22px,5vw,34px);font-weight:800;letter-spacing:-.03em;margin-bottom:6px;}
+.page-sub{color:var(--muted);font-size:12px;margin-bottom:28px;}
+
+/* RESUMEN GLOBAL */
+.resumen-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:28px;}
+.rg-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:14px;}
+.rg-lbl{font-size:10px;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;margin-bottom:6px;}
+.rg-val{font-family:var(--display);font-size:24px;font-weight:700;line-height:1;}
+
+/* TABLA EMPRESAS */
+.stitle{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+.emp-table{width:100%;border-collapse:collapse;margin-bottom:28px;}
+.emp-table th{font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;text-align:left;border-bottom:1px solid var(--border);}
+.emp-table td{padding:9px 10px;border-bottom:1px solid var(--border);font-size:12px;}
+.emp-table tr:last-child td{border-bottom:none;}
+.emp-table tr{cursor:pointer;transition:background .1s;}
+.emp-table tr:hover td{background:var(--bg3);}
+.emp-table tr.selected td{background:rgba(108,99,255,.08);}
+.tk{font-weight:500;color:var(--text);}
+.pos{color:var(--compra);}
+.neg{color:var(--alerta);}
+.neu{color:var(--text);}
+.alpha-bar{display:flex;align-items:center;gap:6px;}
+.abar{height:4px;border-radius:2px;min-width:4px;}
+.marca{font-size:14px;}
+
+/* DETALLE EMPRESA */
+.detalle{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:28px;}
+.det-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:12px;}
+.det-ticker{font-family:var(--display);font-size:24px;font-weight:800;letter-spacing:-.02em;}
+.det-badges{display:flex;gap:8px;}
+.badge{font-size:10px;padding:3px 10px;border-radius:3px;letter-spacing:.05em;}
+.b-pos{background:rgba(0,232,150,.12);color:var(--compra);border:1px solid rgba(0,232,150,.3);}
+.b-neg{background:rgba(255,77,109,.10);color:var(--alerta);border:1px solid rgba(255,77,109,.3);}
+.b-neu{background:rgba(90,90,114,.15);color:var(--muted);border:1px solid var(--border2);}
+.det-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:16px;}
+.dm{background:var(--bg3);border-radius:8px;padding:10px 12px;}
+.dm-lbl{font-size:10px;color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:.07em;}
+.dm-bot{font-size:14px;font-weight:500;line-height:1;}
+.dm-bh{font-size:11px;color:var(--muted);margin-top:2px;}
+.chart-inner{position:relative;height:260px;}
+
+/* OPS */
+.ops-wrap{margin-top:16px;}
+.ops-title{font-size:10px;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;margin-bottom:8px;}
+.ops-list{display:flex;flex-direction:column;gap:3px;max-height:200px;overflow-y:auto;}
+.op-row{display:grid;grid-template-columns:90px 60px 80px 80px 80px 1fr;gap:8px;padding:6px 10px;background:var(--bg3);border-radius:6px;font-size:11px;align-items:center;}
+.op-buy{border-left:2px solid var(--compra);}
+.op-sell{border-left:2px solid var(--alerta);}
+.op-tipo-b{color:var(--compra);}
+.op-tipo-s{color:var(--alerta);}
+.op-ret-pos{color:var(--compra);}
+.op-ret-neg{color:var(--alerta);}
+.op-motivo{color:var(--muted);font-size:10px;}
+
+footer{text-align:center;padding:24px 0 0;color:var(--muted);font-size:10px;letter-spacing:.08em;border-top:1px solid var(--border);margin-top:16px;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.anim{animation:fadeIn .3s ease forwards;}
+@media(max-width:600px){
+  .resumen-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .det-metrics{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .op-row{grid-template-columns:80px 50px 70px 70px 1fr;}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav>
+    <a href="index.html" class="back">&#8592; Ranking</a>
+    <span class="nbc">Bot Inversiones · <span>Backtest individual</span></span>
+  </nav>
+  <div id="main">
+    <div style="text-align:center;padding:60px;color:var(--muted);font-size:12px;letter-spacing:.1em">CARGANDO...</div>
+  </div>
+</div>
+<footer>Bot Inversiones · backtest por activo individual · Yahoo Finance</footer>
+
+<script>
+let data=null, selTicker=null, chartInst=null;
+
+async function init(){
+  data=await loadJ('data/backtest_individual.json');
+  if(!data){
+    document.getElementById('main').innerHTML=
+      '<div style="text-align:center;padding:60px;color:var(--muted)">Sin datos.<br>'+
+      '<small style="opacity:.6">Ejecuta: python backtester_individual.py</small><br><br>'+
+      '<a href="index.html" style="color:var(--accent);font-size:12px">Volver</a></div>';
+    return;
+  }
+  render();
+}
+
+async function loadJ(p){
+  try{const r=await fetch(p+'?t='+Date.now());if(!r.ok)throw 0;return await r.json();}
+  catch{return null;}
+}
+
+function render(){
+  const res=data.resultados||[];
+  const desde=data.desde||'—';
+  const capital=data.capital||10000;
+
+  const botGana=res.filter(r=>r.alpha_cagr>0).length;
+  const alphas=res.map(r=>r.alpha_cagr);
+  const avgAlpha=alphas.length?alphas.reduce((a,b)=>a+b,0)/alphas.length:0;
+  const mejorAlpha=alphas.length?Math.max(...alphas):0;
+  const peorAlpha=alphas.length?Math.min(...alphas):0;
+
+  document.getElementById('main').innerHTML=`
+    <div class="anim">
+      <div class="page-title">Backtest individual</div>
+      <div class="page-sub">${desde} → hoy · capital ${fmt$(capital)} por empresa · ${res.length} tickers analizados</div>
+    </div>
+
+    <div class="resumen-grid anim" style="animation-delay:.05s">
+      ${rgCard('Bot supera B&H', botGana+'/'+res.length, botGana/res.length>=0.5?'var(--compra)':'var(--alerta)')}
+      ${rgCard('Alpha medio', sgn(avgAlpha)+'%', avgAlpha>0?'var(--compra)':'var(--alerta)')}
+      ${rgCard('Mejor empresa', sgn(mejorAlpha)+'%', 'var(--compra)')}
+      ${rgCard('Peor empresa',  sgn(peorAlpha)+'%',  'var(--alerta)')}
+    </div>
+
+    <div class="stitle anim" style="animation-delay:.08s">Resultados por empresa — clic para ver detalle</div>
+    <table class="emp-table anim" style="animation-delay:.1s">
+      <thead><tr>
+        <th></th><th>Ticker</th>
+        <th>CAGR Bot</th><th>CAGR B&H</th><th>Alpha</th>
+        <th>Sharpe Bot</th><th>Sharpe B&H</th>
+        <th>MaxDD Bot</th><th>Win Rate</th><th>Ops</th><th>% Inv.</th>
+      </tr></thead>
+      <tbody>
+        ${res.sort((a,b)=>b.alpha_cagr-a.alpha_cagr).map(r=>{
+          const mb=r.metricas_bot||{}, mbh=r.metricas_bh||{};
+          const gana=r.alpha_cagr>0;
+          const wr=mb.win_rate!=null?mb.win_rate+'%':'—';
+          const barW=Math.min(Math.abs(r.alpha_cagr)*5,60);
+          return `<tr onclick="selectTicker('${r.ticker}')" id="row-${r.ticker}">
+            <td class="marca">${gana?'✓':'✗'}</td>
+            <td class="tk">${r.ticker}</td>
+            <td class="${mb.cagr>0?'pos':'neg'}">${sgn(mb.cagr)}%</td>
+            <td class="${mbh.cagr>0?'pos':'neg'}">${sgn(mbh.cagr)}%</td>
+            <td><div class="alpha-bar">
+              <div class="abar" style="width:${barW}px;background:${gana?'var(--compra)':'var(--alerta)'}"></div>
+              <span class="${gana?'pos':'neg'}">${sgn(r.alpha_cagr)}%</span>
+            </div></td>
+            <td class="${mb.sharpe>0?'pos':'neg'}">${(mb.sharpe||0).toFixed(2)}</td>
+            <td class="neu">${(mbh.sharpe||0).toFixed(2)}</td>
+            <td class="neg">${(mb.max_drawdown||0).toFixed(1)}%</td>
+            <td class="${mb.win_rate>50?'pos':mb.win_rate!=null?'neg':'neu'}">${wr}</td>
+            <td class="neu">${mb.n_compras||0}</td>
+            <td class="neu">${r.pct_invertido||0}%</td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+    </table>
+
+    <div id="detalle-wrap"></div>
+  `;
+
+  // Seleccionar la primera empresa automáticamente
+  if(res.length>0) selectTicker(res.sort((a,b)=>b.alpha_cagr-a.alpha_cagr)[0].ticker);
+}
+
+function selectTicker(ticker){
+  // Quitar selección anterior
+  document.querySelectorAll('.emp-table tr').forEach(r=>r.classList.remove('selected'));
+  const row=document.getElementById('row-'+ticker);
+  if(row) row.classList.add('selected');
+
+  selTicker=ticker;
+  const r=(data.resultados||[]).find(x=>x.ticker===ticker);
+  if(!r) return;
+
+  const mb=r.metricas_bot||{}, mbh=r.metricas_bh||{};
+  const gana=r.alpha_cagr>0;
+  const alphaClass=gana?'b-pos':'b-neg';
+
+  const wrap=document.getElementById('detalle-wrap');
+  wrap.innerHTML=`
+    <div class="detalle anim">
+      <div class="det-header">
+        <div class="det-ticker">${ticker}</div>
+        <div class="det-badges">
+          <span class="badge ${alphaClass}">Alpha: ${sgn(r.alpha_cagr)}%</span>
+          <span class="badge b-neu">${r.pct_invertido}% invertido</span>
+          <span class="badge b-neu">${mb.n_compras||0} operaciones</span>
+        </div>
+      </div>
+
+      <div class="det-metrics">
+        ${dm('CAGR', sgn(mb.cagr)+'%', sgn(mbh.cagr)+'%', mb.cagr>mbh.cagr)}
+        ${dm('Sharpe', (mb.sharpe||0).toFixed(2), (mbh.sharpe||0).toFixed(2), mb.sharpe>mbh.sharpe)}
+        ${dm('Max Drawdown', (mb.max_drawdown||0).toFixed(1)+'%', (mbh.max_drawdown||0).toFixed(1)+'%', mb.max_drawdown>mbh.max_drawdown)}
+        ${dm('Win Rate', mb.win_rate!=null?mb.win_rate+'%':'—', 'B&H: 100%', mb.win_rate>50)}
+        ${dm('Valor final', fmt$(mb.valor_final), fmt$(mbh.valor_final), mb.valor_final>mbh.valor_final)}
+        ${dm('Profit Factor', mb.profit_factor?.toFixed(2)??'—', '—', mb.profit_factor>1)}
+        ${dm('Avg Win', mb.avg_win!=null?sgn(mb.avg_win)+'%':'—', '—', true)}
+        ${dm('Avg Loss', mb.avg_loss!=null?mb.avg_loss.toFixed(1)+'%':'—', '—', false)}
+      </div>
+
+      <div class="chart-inner"><canvas id="det-chart"></canvas></div>
+
+      <div class="ops-wrap">
+        <div class="ops-title">Operaciones (${(r.ops||[]).length} total)</div>
+        <div class="ops-list">
+          ${(r.ops||[]).slice().reverse().map(o=>{
+            const esBuy=o.tipo==='COMPRA';
+            const ret=o.retorno!=null?`<span class="${o.retorno>0?'op-ret-pos':'op-ret-neg'}">${sgn(o.retorno)}%</span>`:'—';
+            return `<div class="op-row ${esBuy?'op-buy':'op-sell'}">
+              <span>${o.fecha||'—'}</span>
+              <span class="${esBuy?'op-tipo-b':'op-tipo-s'}">${o.tipo}</span>
+              <span>${o.precio?.toFixed(2)||'—'}</span>
+              <span>${ret}</span>
+              <span>${fmt$(o.valor)}</span>
+              <span class="op-motivo">${o.motivo||o.score!=null?'score:'+o.score:''}</span>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+
+  setTimeout(()=>renderDetChart(r), 50);
+}
+
+function dm(lbl, valBot, valBH, botMejor){
+  const c=botMejor?'var(--compra)':'var(--alerta)';
+  return `<div class="dm">
+    <div class="dm-lbl">${lbl}</div>
+    <div class="dm-bot" style="color:${c}">${valBot}</div>
+    <div class="dm-bh">B&H: ${valBH}</div>
+  </div>`;
+}
+
+function rgCard(lbl,val,color){
+  return `<div class="rg-card">
+    <div class="rg-lbl">${lbl}</div>
+    <div class="rg-val" style="color:${color}">${val}</div>
+  </div>`;
+}
+
+function renderDetChart(r){
+  const canvas=document.getElementById('det-chart');
+  if(!canvas) return;
+  if(chartInst){chartInst.destroy();chartInst=null;}
+
+  const step=Math.max(1,Math.floor((r.valor_bot_hist||[]).length/80));
+  const labels=(r.valor_bot_hist||[]).filter((_,i)=>i%step===0).map(x=>fmtF(x.fecha));
+  const bot=(r.valor_bot_hist||[]).filter((_,i)=>i%step===0).map(x=>x.valor);
+  const bh= (r.valor_bh_hist||[]).filter((_,i)=>i%step===0).map(x=>x.valor);
+
+  chartInst=new Chart(canvas,{
+    type:'line',
+    data:{labels,datasets:[
+      {label:'Bot',      data:bot, borderColor:'#6c63ff',backgroundColor:'transparent',borderWidth:2,pointRadius:0,tension:.3},
+      {label:'Buy&Hold', data:bh,  borderColor:'#f5c542',backgroundColor:'transparent',borderWidth:1.5,pointRadius:0,tension:.3,borderDash:[4,3]},
+    ]},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{display:true,position:'top',labels:{color:'#6b6b80',font:{family:"'DM Mono'",size:11},boxWidth:12,padding:16}},
+        tooltip:{backgroundColor:'#18181f',borderColor:'rgba(255,255,255,.1)',borderWidth:1,
+          titleColor:'#6b6b80',bodyColor:'#e8e8f0',padding:10,
+          titleFont:{family:"'DM Mono',monospace",size:11},bodyFont:{family:"'DM Mono',monospace",size:12},
+          callbacks:{label:ctx=>' '+ctx.dataset.label+': '+fmt$(ctx.parsed.y)}},
+      },
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#6b6b80',font:{family:"'DM Mono'",size:10},maxTicksLimit:10},border:{color:'rgba(255,255,255,.07)'}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#6b6b80',font:{family:"'DM Mono'",size:10},callback:v=>fmt$(v)},border:{color:'rgba(255,255,255,.07)'}},
+      },
+    },
+  });
+}
+
+function fmt$(v){if(v==null)return '—';return v.toLocaleString('es-ES',{minimumFractionDigits:0,maximumFractionDigits:0})+'€';}
+function sgn(v){if(v==null)return '—';return (v>0?'+':'')+v.toFixed(1);}
+function fmtF(iso){if(!iso)return '—';const d=new Date(iso+'T12:00:00');return d.toLocaleDateString('es-ES',{month:'short',year:'2-digit'});}
+
+init();
+</script>
+</body>
+</html>
