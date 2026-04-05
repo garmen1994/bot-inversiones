@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-04-05T18:59:13.824439",
+  "fecha": "2026-04-05T19:24:32.543250",
   "empresas": [
     {
       "ticker": "VID.MC",
@@ -1527,6 +1527,4043 @@
         "momentum_12m": -12.5,
         "precio_vs_ma200": -10.33,
         "ma200": 335.4409
+      }
+    },
+    {
+      "ticker": "RGTI",
+      "nombre": "Rigetti Computing, Inc.",
+      "sector": "Technology",
+      "precio": 14.19,
+      "scores": {
+        "composite": 25.6,
+        "confianza": "alta",
+        "quality": {
+          "score": 30,
+          "detalle": {
+            "roic": 0,
+            "gross_profit_assets": 0,
+            "fscore": 10,
+            "altman_z": 15,
+            "fcf_conversion": 5
+          },
+          "pts_raw": "30/100"
+        },
+        "valuation": {
+          "score": 0,
+          "detalle": {
+            "fcf_yield": 0
+          },
+          "pts_raw": "0/35"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60
+          },
+          "pts_raw": "60/60"
+        },
+        "momentum": {
+          "score": 24,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 30
+          },
+          "pts_raw": "30/100"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 0,
+        "razones": [],
+        "alertas": [
+          "Valoración cara — múltiplos elevados",
+          "F-Score débil (3/9) — posible deterioro",
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Score o F-Score en zona de deterioro severo"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "RGTI",
+        "nombre": "Rigetti Computing, Inc.",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 14.19,
+        "roic": -33.59,
+        "gross_profit_to_assets": 0.31,
+        "gross_margin": 29.12,
+        "ebit_margin": -3050.37,
+        "net_margin": -3050.37,
+        "roe": -39.58,
+        "roa": -32.44,
+        "fcf_conversion": 35.71,
+        "fscore": 3,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 2827929905.32,
+        "ev_ebitda": -61.13,
+        "ev_fcf": -60.55,
+        "fcf_yield": -1.64,
+        "per": null,
+        "peg": null,
+        "price_to_book": 8.61,
+        "deuda_ebitda": 0.49,
+        "cobertura_intereses": null,
+        "momentum_6m": -59.92,
+        "momentum_12m": 67.14,
+        "precio_vs_ma200": -36.68,
+        "ma200": 22.4101
+      }
+    },
+    {
+      "ticker": "BRK-B",
+      "nombre": "Berkshire Hathaway Inc.",
+      "sector": "Financial Services",
+      "precio": 477.35,
+      "scores": {
+        "composite": 57.7,
+        "confianza": "alta",
+        "quality": {
+          "score": 45,
+          "detalle": {
+            "roic": 13,
+            "fscore": 6,
+            "altman_z": 15,
+            "fcf_conversion": 5
+          },
+          "pts_raw": "39/85"
+        },
+        "valuation": {
+          "score": 72,
+          "detalle": {
+            "ev_ebitda": 39,
+            "fcf_yield": 9,
+            "per": 24
+          },
+          "pts_raw": "72/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 30,
+          "detalle": {
+            "vs_ma200": 18,
+            "momentum_6m": 11,
+            "momentum_12m": 9
+          },
+          "pts_raw": "38/100"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [
+          "F-Score débil (2/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro severo"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "BRK-B",
+        "nombre": "Berkshire Hathaway Inc.",
+        "sector": "Financial Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 477.35,
+        "roic": 8.7,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": 21.32,
+        "net_margin": 16.31,
+        "roe": 9.33,
+        "roa": 5.48,
+        "fcf_conversion": 37.39,
+        "fscore": 2,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 617749413889.45,
+        "ev_ebitda": 10.01,
+        "ev_fcf": 44.2,
+        "fcf_yield": 2.43,
+        "per": 15.38,
+        "peg": null,
+        "price_to_book": 0.0,
+        "deuda_ebitda": 0.7,
+        "cobertura_intereses": 17.27,
+        "momentum_6m": -3.74,
+        "momentum_12m": -11.23,
+        "precio_vs_ma200": -2.7,
+        "ma200": 490.5959
+      }
+    },
+    {
+      "ticker": "PFE",
+      "nombre": "Pfizer Inc.",
+      "sector": "Healthcare",
+      "precio": 28.32,
+      "scores": {
+        "composite": 68.3,
+        "confianza": "alta",
+        "quality": {
+          "score": 61,
+          "detalle": {
+            "roic": 8,
+            "gross_profit_assets": 7,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "61/100"
+        },
+        "valuation": {
+          "score": 77,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 25,
+            "per": 12
+          },
+          "pts_raw": "77/100"
+        },
+        "safety": {
+          "score": 63,
+          "detalle": {
+            "deuda_ebitda": 41,
+            "cobertura_intereses": 22
+          },
+          "pts_raw": "63/100"
+        },
+        "momentum": {
+          "score": 71,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 23,
+            "momentum_12m": 26
+          },
+          "pts_raw": "89/100"
+        }
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (8.7x)",
+          "FCF Yield atractivo (5.6%)",
+          "Fundamentales neutrales (F-Score 5/9)",
+          "Momentum positivo (+8.2% 6M, precio sobre MM200)"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "PFE",
+        "nombre": "Pfizer Inc.",
+        "sector": "Healthcare",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 28.32,
+        "roic": 5.39,
+        "gross_profit_to_assets": 22.34,
+        "gross_margin": 74.33,
+        "ebit_margin": 16.29,
+        "net_margin": 12.42,
+        "roe": 8.99,
+        "roa": 3.73,
+        "fcf_conversion": 116.78,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 96656552756.47,
+        "ev_ebitda": 8.71,
+        "ev_fcf": 24.67,
+        "fcf_yield": 5.63,
+        "per": 20.82,
+        "peg": null,
+        "price_to_book": 1.86,
+        "deuda_ebitda": 2.44,
+        "cobertura_intereses": 3.82,
+        "momentum_6m": 8.2,
+        "momentum_12m": 22.98,
+        "precio_vs_ma200": 13.81,
+        "ma200": 24.8842
+      }
+    },
+    {
+      "ticker": "UNH",
+      "nombre": "UnitedHealth Group Incorporated",
+      "sector": "Healthcare",
+      "precio": 277.26,
+      "scores": {
+        "composite": 56.5,
+        "confianza": "alta",
+        "quality": {
+          "score": 68,
+          "detalle": {
+            "roic": 14,
+            "gross_profit_assets": 8,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "68/100"
+        },
+        "valuation": {
+          "score": 65,
+          "detalle": {
+            "ev_ebitda": 23,
+            "fcf_yield": 30,
+            "per": 12
+          },
+          "pts_raw": "65/100"
+        },
+        "safety": {
+          "score": 65,
+          "detalle": {
+            "deuda_ebitda": 40,
+            "cobertura_intereses": 25
+          },
+          "pts_raw": "65/100"
+        },
+        "momentum": {
+          "score": 0,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 0
+          },
+          "pts_raw": "0/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "FCF Yield atractivo (6.4%)",
+          "Fundamentales neutrales (F-Score 5/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "UNH",
+        "nombre": "UnitedHealth Group Incorporated",
+        "sector": "Healthcare",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 277.26,
+        "roic": 9.97,
+        "gross_profit_to_assets": 26.78,
+        "gross_margin": 18.53,
+        "ebit_margin": 4.18,
+        "net_margin": 2.69,
+        "roe": 12.81,
+        "roa": 3.89,
+        "fcf_conversion": 133.34,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 150997322958.78,
+        "ev_ebitda": 14.14,
+        "ev_fcf": 19.02,
+        "fcf_yield": 6.39,
+        "per": 20.96,
+        "peg": null,
+        "price_to_book": 2.67,
+        "deuda_ebitda": 2.5,
+        "cobertura_intereses": 4.67,
+        "momentum_6m": -20.48,
+        "momentum_12m": -45.51,
+        "precio_vs_ma200": -10.14,
+        "ma200": 308.5321
+      }
+    },
+    {
+      "ticker": "MNST",
+      "nombre": "Monster Beverage Corporation",
+      "sector": "Consumer Defensive",
+      "precio": 72.37,
+      "scores": {
+        "composite": 58.8,
+        "confianza": "alta",
+        "quality": {
+          "score": 86,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 15,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "86/100"
+        },
+        "valuation": {
+          "score": 14,
+          "detalle": {
+            "ev_ebitda": 2,
+            "fcf_yield": 10,
+            "per": 2
+          },
+          "pts_raw": "14/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60
+          },
+          "pts_raw": "60/60"
+        },
+        "momentum": {
+          "score": 63,
+          "detalle": {
+            "vs_ma200": 32,
+            "momentum_6m": 22,
+            "momentum_12m": 25
+          },
+          "pts_raw": "79/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Fundamentales neutrales (F-Score 5/9)",
+          "Momentum positivo (+7.1% 6M, precio sobre MM200)"
+        ],
+        "alertas": [
+          "Valoración cara — múltiplos elevados"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "MNST",
+        "nombre": "Monster Beverage Corporation",
+        "sector": "Consumer Defensive",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 72.37,
+        "roic": 31.0,
+        "gross_profit_to_assets": 46.37,
+        "gross_margin": 55.85,
+        "ebit_margin": 29.17,
+        "net_margin": 22.97,
+        "roe": 23.08,
+        "roa": 19.08,
+        "fcf_conversion": 101.85,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 42478470761.81,
+        "ev_ebitda": 25.85,
+        "ev_fcf": 35.41,
+        "fcf_yield": 2.74,
+        "per": 37.3,
+        "peg": null,
+        "price_to_book": 8.58,
+        "deuda_ebitda": -0.79,
+        "cobertura_intereses": null,
+        "momentum_6m": 7.09,
+        "momentum_12m": 21.92,
+        "precio_vs_ma200": 2.66,
+        "ma200": 70.4976
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "nombre": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "precio": 295.77,
+      "scores": {
+        "composite": 59.3,
+        "confianza": "alta",
+        "quality": {
+          "score": 82,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 13,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 9
+          },
+          "pts_raw": "82/100"
+        },
+        "valuation": {
+          "score": 13,
+          "detalle": {
+            "ev_ebitda": 2,
+            "fcf_yield": 7,
+            "per": 4
+          },
+          "pts_raw": "13/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 80,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Fundamentales neutrales (F-Score 6/9)",
+          "Momentum positivo (+20.6% 6M, precio sobre MM200)"
+        ],
+        "alertas": [
+          "Valoración cara — múltiplos elevados"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "GOOGL",
+        "nombre": "Alphabet Inc.",
+        "sector": "Communication Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 295.77,
+        "roic": 28.4,
+        "gross_profit_to_assets": 40.37,
+        "gross_margin": 59.65,
+        "ebit_margin": 39.61,
+        "net_margin": 32.81,
+        "roe": 31.83,
+        "roa": 22.2,
+        "fcf_conversion": 55.43,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 2146757876124.13,
+        "ev_ebitda": 24.02,
+        "ev_fcf": 49.22,
+        "fcf_yield": 2.05,
+        "per": 27.39,
+        "peg": null,
+        "price_to_book": 8.61,
+        "deuda_ebitda": 0.19,
+        "cobertura_intereses": 216.8,
+        "momentum_6m": 20.55,
+        "momentum_12m": 88.99,
+        "precio_vs_ma200": 11.74,
+        "ma200": 264.6898
+      }
+    },
+    {
+      "ticker": "BABA",
+      "nombre": "Alibaba Group Holding Limited",
+      "sector": "Consumer Cyclical",
+      "precio": 122.05,
+      "scores": {
+        "composite": 68.3,
+        "confianza": "alta",
+        "quality": {
+          "score": 68,
+          "detalle": {
+            "roic": 16,
+            "gross_profit_assets": 7,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 10
+          },
+          "pts_raw": "68/100"
+        },
+        "valuation": {
+          "score": 85,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 10
+          },
+          "pts_raw": "85/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 9,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 12
+          },
+          "pts_raw": "12/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (2.8x)",
+          "FCF Yield atractivo (26.6%)",
+          "Fundamentales neutrales (F-Score 6/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "BABA",
+        "nombre": "Alibaba Group Holding Limited",
+        "sector": "Consumer Cyclical",
+        "pais": "Hong Kong",
+        "moneda": "USD",
+        "precio": 122.05,
+        "roic": 11.72,
+        "gross_profit_to_assets": 22.06,
+        "gross_margin": 39.95,
+        "ebit_margin": 16.57,
+        "net_margin": 13.06,
+        "roe": 12.88,
+        "roa": 7.21,
+        "fcf_conversion": 59.59,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 174830243022.31,
+        "ev_ebitda": 2.84,
+        "ev_fcf": 5.08,
+        "fcf_yield": 26.61,
+        "per": 21.76,
+        "peg": null,
+        "price_to_book": 1.88,
+        "deuda_ebitda": 0.74,
+        "cobertura_intereses": 17.2,
+        "momentum_6m": -35.54,
+        "momentum_12m": -4.37,
+        "precio_vs_ma200": -16.55,
+        "ma200": 146.2561
+      }
+    },
+    {
+      "ticker": "JD",
+      "nombre": "JD.com, Inc.",
+      "sector": "Consumer Cyclical",
+      "precio": 28.46,
+      "scores": {
+        "composite": 63.6,
+        "confianza": "baja",
+        "quality": {
+          "score": 46,
+          "detalle": {
+            "fscore": 6,
+            "altman_z": 15
+          },
+          "pts_raw": "21/45"
+        },
+        "valuation": {
+          "score": 99,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 24
+          },
+          "pts_raw": "99/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60
+          },
+          "pts_raw": "60/60"
+        },
+        "momentum": {
+          "score": 4,
+          "detalle": {
+            "vs_ma200": 6,
+            "momentum_6m": 0,
+            "momentum_12m": 0
+          },
+          "pts_raw": "6/100"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (1.7x)",
+          "FCF Yield atractivo (107.5%)",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [
+          "F-Score débil (2/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro severo"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "JD",
+        "nombre": "JD.com, Inc.",
+        "sector": "Consumer Cyclical",
+        "pais": "China",
+        "moneda": "USD",
+        "precio": 28.46,
+        "roic": null,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": null,
+        "net_margin": null,
+        "roe": null,
+        "roa": null,
+        "fcf_conversion": null,
+        "fscore": 2,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 24703760793.9,
+        "ev_ebitda": 1.68,
+        "ev_fcf": 0.51,
+        "fcf_yield": 107.54,
+        "per": 15.22,
+        "peg": null,
+        "price_to_book": 1.19,
+        "deuda_ebitda": -1.38,
+        "cobertura_intereses": null,
+        "momentum_6m": -20.9,
+        "momentum_12m": -28.7,
+        "precio_vs_ma200": -7.59,
+        "ma200": 30.7983
+      }
+    },
+    {
+      "ticker": "0LG5.L",
+      "nombre": "Toyota Motor Corporation",
+      "sector": "",
+      "precio": 206.94,
+      "scores": {
+        "composite": 28.5,
+        "confianza": "baja",
+        "quality": {
+          "score": 0,
+          "detalle": {
+            "fscore": 0
+          },
+          "pts_raw": "0/30"
+        },
+        "valuation": {
+          "score": 50,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "safety": {
+          "score": 50,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "momentum": {
+          "score": 40,
+          "detalle": {},
+          "pts_raw": "0/0"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 0,
+        "razones": [
+          "Valoración justa (no en descuento claro)"
+        ],
+        "alertas": [
+          "F-Score débil (0/9) — posible deterioro",
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Score o F-Score en zona de deterioro severo"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "0LG5.L",
+        "nombre": "Toyota Motor Corporation",
+        "sector": "",
+        "pais": "Japan",
+        "moneda": "USD",
+        "precio": 206.94,
+        "roic": null,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": null,
+        "net_margin": null,
+        "roe": null,
+        "roa": null,
+        "fcf_conversion": null,
+        "fscore": 0,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": null,
+        "ev_ebitda": null,
+        "ev_fcf": null,
+        "fcf_yield": null,
+        "per": null,
+        "peg": null,
+        "price_to_book": 10.97,
+        "deuda_ebitda": null,
+        "cobertura_intereses": null,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      }
+    },
+    {
+      "ticker": "3918.HK",
+      "nombre": "NagaCorp Ltd.",
+      "sector": "Consumer Cyclical",
+      "precio": 4.03,
+      "scores": {
+        "composite": 40.6,
+        "confianza": "baja",
+        "quality": {
+          "score": 46,
+          "detalle": {
+            "fscore": 6,
+            "altman_z": 15
+          },
+          "pts_raw": "21/45"
+        },
+        "valuation": {
+          "score": 28,
+          "detalle": {
+            "ev_ebitda": 0,
+            "fcf_yield": 4,
+            "per": 25
+          },
+          "pts_raw": "29/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60
+          },
+          "pts_raw": "60/60"
+        },
+        "momentum": {
+          "score": 16,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 21
+          },
+          "pts_raw": "21/100"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 0,
+        "razones": [],
+        "alertas": [
+          "Valoración cara — múltiplos elevados",
+          "F-Score débil (2/9) — posible deterioro",
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Score o F-Score en zona de deterioro severo"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "3918.HK",
+        "nombre": "NagaCorp Ltd.",
+        "sector": "Consumer Cyclical",
+        "pais": "Cambodia",
+        "moneda": "HKD",
+        "precio": 4.03,
+        "roic": null,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": null,
+        "net_margin": null,
+        "roe": null,
+        "roa": null,
+        "fcf_conversion": null,
+        "fscore": 2,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 10694790758.94,
+        "ev_ebitda": 44.83,
+        "ev_fcf": 93.49,
+        "fcf_yield": 1.07,
+        "per": 7.33,
+        "peg": null,
+        "price_to_book": 0.95,
+        "deuda_ebitda": 0.0,
+        "cobertura_intereses": null,
+        "momentum_6m": -30.52,
+        "momentum_12m": 13.67,
+        "precio_vs_ma200": -15.4,
+        "ma200": 4.7636
+      }
+    },
+    {
+      "ticker": "ASTS",
+      "nombre": "AST SpaceMobile, Inc.",
+      "sector": "Technology",
+      "precio": 92.62,
+      "scores": {
+        "composite": 35.2,
+        "confianza": "alta",
+        "quality": {
+          "score": 43,
+          "detalle": {
+            "roic": 0,
+            "gross_profit_assets": 0,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "43/100"
+        },
+        "valuation": {
+          "score": 0,
+          "detalle": {
+            "fcf_yield": 0
+          },
+          "pts_raw": "0/35"
+        },
+        "safety": {
+          "score": 60,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 0
+          },
+          "pts_raw": "60/100"
+        },
+        "momentum": {
+          "score": 80,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Fundamentales neutrales (F-Score 4/9)",
+          "Momentum positivo (+40.0% 6M, precio sobre MM200)"
+        ],
+        "alertas": [
+          "Valoración cara — múltiplos elevados"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "ASTS",
+        "nombre": "AST SpaceMobile, Inc.",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 92.62,
+        "roic": -19.06,
+        "gross_profit_to_assets": 0.71,
+        "gross_margin": 50.34,
+        "ebit_margin": -593.7,
+        "net_margin": -482.16,
+        "roe": -18.57,
+        "roa": -6.82,
+        "fcf_conversion": 348.79,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 21230029209.66,
+        "ev_ebitda": -149.14,
+        "ev_fcf": -29.59,
+        "fcf_yield": -3.37,
+        "per": null,
+        "peg": null,
+        "price_to_book": 14.36,
+        "deuda_ebitda": 0.41,
+        "cobertura_intereses": -11.67,
+        "momentum_6m": 39.99,
+        "momentum_12m": 313.3,
+        "precio_vs_ma200": 32.17,
+        "ma200": 70.0779
+      }
+    },
+    {
+      "ticker": "KSB.DE",
+      "nombre": "KSB SE & Co. KGaA",
+      "sector": "Industrials",
+      "precio": 1010.0,
+      "scores": {
+        "composite": 91.0,
+        "confianza": "alta",
+        "quality": {
+          "score": 90,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 15,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "90/100"
+        },
+        "valuation": {
+          "score": 99,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 24
+          },
+          "pts_raw": "99/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 69,
+          "detalle": {
+            "vs_ma200": 33,
+            "momentum_6m": 24,
+            "momentum_12m": 30
+          },
+          "pts_raw": "87/100"
+        }
+      },
+      "señal": {
+        "señal": "COMPRA",
+        "capas": 2,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (4.6x)",
+          "FCF Yield atractivo (7.5%)",
+          "Fundamentales neutrales (F-Score 6/9)",
+          "Momentum positivo (+9.8% 6M, precio sobre MM200)"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "KSB.DE",
+        "nombre": "KSB SE & Co. KGaA",
+        "sector": "Industrials",
+        "pais": "Germany",
+        "moneda": "EUR",
+        "precio": 1010.0,
+        "roic": 25.44,
+        "gross_profit_to_assets": 62.67,
+        "gross_margin": 60.62,
+        "ebit_margin": 8.49,
+        "net_margin": 3.98,
+        "roe": 10.81,
+        "roa": 4.12,
+        "fcf_conversion": 113.12,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 1061304193.72,
+        "ev_ebitda": 4.58,
+        "ev_fcf": 10.91,
+        "fcf_yield": 7.55,
+        "per": 15.06,
+        "peg": null,
+        "price_to_book": 1.52,
+        "deuda_ebitda": -0.98,
+        "cobertura_intereses": 12.28,
+        "momentum_6m": 9.78,
+        "momentum_12m": 44.74,
+        "precio_vs_ma200": 2.68,
+        "ma200": 983.6
+      }
+    },
+    {
+      "ticker": "SN",
+      "nombre": "SharkNinja, Inc.",
+      "sector": "Consumer Cyclical",
+      "precio": 104.38,
+      "scores": {
+        "composite": 66.8,
+        "confianza": "alta",
+        "quality": {
+          "score": 87,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 15,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 12
+          },
+          "pts_raw": "87/100"
+        },
+        "valuation": {
+          "score": 47,
+          "detalle": {
+            "ev_ebitda": 24,
+            "fcf_yield": 12,
+            "per": 11
+          },
+          "pts_raw": "47/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 37,
+          "detalle": {
+            "vs_ma200": 14,
+            "momentum_6m": 9,
+            "momentum_12m": 24
+          },
+          "pts_raw": "47/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 0,
+        "razones": [
+          "Valoración justa (no en descuento claro)",
+          "Fundamentales neutrales (F-Score 6/9)",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "SN",
+        "nombre": "SharkNinja, Inc.",
+        "sector": "Consumer Cyclical",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 104.38,
+        "roic": 26.77,
+        "gross_profit_to_assets": 58.63,
+        "gross_margin": 49.01,
+        "ebit_margin": 14.83,
+        "net_margin": 10.96,
+        "roe": 26.21,
+        "roa": 13.11,
+        "fcf_conversion": 67.63,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 8845757647.42,
+        "ev_ebitda": 13.92,
+        "ev_fcf": 31.34,
+        "fcf_yield": 3.22,
+        "per": 21.13,
+        "peg": null,
+        "price_to_book": 5.51,
+        "deuda_ebitda": 0.12,
+        "cobertura_intereses": 19.52,
+        "momentum_6m": 3.21,
+        "momentum_12m": 18.04,
+        "precio_vs_ma200": -4.24,
+        "ma200": 108.9991
+      }
+    },
+    {
+      "ticker": "GEST.MC",
+      "nombre": "Gestamp Automoción, S.A.",
+      "sector": "Consumer Cyclical",
+      "precio": 3.0,
+      "scores": {
+        "composite": 78.6,
+        "confianza": "alta",
+        "quality": {
+          "score": 78,
+          "detalle": {
+            "roic": 14,
+            "gross_profit_assets": 14,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "78/100"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100"
+        },
+        "safety": {
+          "score": 67,
+          "detalle": {
+            "deuda_ebitda": 53,
+            "cobertura_intereses": 14
+          },
+          "pts_raw": "67/100"
+        },
+        "momentum": {
+          "score": 38,
+          "detalle": {
+            "vs_ma200": 15,
+            "momentum_6m": 6,
+            "momentum_12m": 27
+          },
+          "pts_raw": "48/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (3.3x)",
+          "FCF Yield atractivo (12.2%)",
+          "Fundamentales neutrales (F-Score 6/9)",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "GEST.MC",
+        "nombre": "Gestamp Automoción, S.A.",
+        "sector": "Consumer Cyclical",
+        "pais": "Spain",
+        "moneda": "EUR",
+        "precio": 3.0,
+        "roic": 9.72,
+        "gross_profit_to_assets": 43.64,
+        "gross_margin": 38.61,
+        "ebit_margin": 4.63,
+        "net_margin": 1.34,
+        "roe": 6.88,
+        "roa": 1.52,
+        "fcf_conversion": 136.64,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 1024209870.48,
+        "ev_ebitda": 3.33,
+        "ev_fcf": 18.1,
+        "fcf_yield": 12.18,
+        "per": 11.11,
+        "peg": null,
+        "price_to_book": 0.77,
+        "deuda_ebitda": 1.82,
+        "cobertura_intereses": 2.47,
+        "momentum_6m": -8.34,
+        "momentum_12m": 24.37,
+        "precio_vs_ma200": -3.97,
+        "ma200": 3.124
+      }
+    },
+    {
+      "ticker": "FISV",
+      "nombre": "Fiserv, Inc.",
+      "sector": "Desconocido",
+      "precio": 56.16,
+      "scores": {
+        "composite": 63.8,
+        "confianza": "alta",
+        "quality": {
+          "score": 60,
+          "detalle": {
+            "roic": 12,
+            "gross_profit_assets": 5,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "60/100"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100"
+        },
+        "safety": {
+          "score": 48,
+          "detalle": {
+            "deuda_ebitda": 26,
+            "cobertura_intereses": 22
+          },
+          "pts_raw": "48/100"
+        },
+        "momentum": {
+          "score": 0,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 0
+          },
+          "pts_raw": "0/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (6.5x)",
+          "FCF Yield atractivo (14.2%)",
+          "Fundamentales neutrales (F-Score 4/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "FISV",
+        "nombre": "Fiserv, Inc.",
+        "sector": "Desconocido",
+        "pais": "Desconocido",
+        "moneda": "USD",
+        "precio": 56.16,
+        "roic": 8.46,
+        "gross_profit_to_assets": 15.7,
+        "gross_margin": 59.36,
+        "ebit_margin": 27.34,
+        "net_margin": 16.42,
+        "roe": 13.49,
+        "roa": 4.34,
+        "fcf_conversion": 123.53,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 18123458151.39,
+        "ev_ebitda": 6.54,
+        "ev_fcf": 13.61,
+        "fcf_yield": 14.23,
+        "per": 8.86,
+        "peg": null,
+        "price_to_book": 1.16,
+        "deuda_ebitda": 3.16,
+        "cobertura_intereses": 3.79,
+        "momentum_6m": -55.46,
+        "momentum_12m": -74.7,
+        "precio_vs_ma200": -43.93,
+        "ma200": 100.1678
+      }
+    },
+    {
+      "ticker": "1211.HK",
+      "nombre": "BYD Company Limited",
+      "sector": "Consumer Cyclical",
+      "precio": 103.9,
+      "scores": {
+        "composite": 49.9,
+        "confianza": "alta",
+        "quality": {
+          "score": 49,
+          "detalle": {
+            "roic": 16,
+            "gross_profit_assets": 5,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 0
+          },
+          "pts_raw": "49/100"
+        },
+        "valuation": {
+          "score": 46,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 0,
+            "per": 6
+          },
+          "pts_raw": "46/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 28,
+          "detalle": {
+            "vs_ma200": 19,
+            "momentum_6m": 12,
+            "momentum_12m": 4
+          },
+          "pts_raw": "35/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 0,
+        "razones": [
+          "Valoración justa (no en descuento claro)",
+          "Fundamentales neutrales (F-Score 4/9)",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "1211.HK",
+        "nombre": "BYD Company Limited",
+        "sector": "Consumer Cyclical",
+        "pais": "China",
+        "moneda": "HKD",
+        "precio": 103.9,
+        "roic": 11.53,
+        "gross_profit_to_assets": 16.14,
+        "gross_margin": 17.74,
+        "ebit_margin": 5.26,
+        "net_margin": 4.06,
+        "roe": 13.24,
+        "roa": 3.69,
+        "fcf_conversion": -299.43,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 616738573517.92,
+        "ev_ebitda": 9.77,
+        "ev_fcf": -10.97,
+        "fcf_yield": -9.5,
+        "per": 25.53,
+        "peg": null,
+        "price_to_book": 3.64,
+        "deuda_ebitda": 0.4,
+        "cobertura_intereses": 16.58,
+        "momentum_6m": -2.44,
+        "momentum_12m": -20.9,
+        "precio_vs_ma200": -2.21,
+        "ma200": 106.2515
+      }
+    },
+    {
+      "ticker": "ASST",
+      "nombre": "Strive Asset Management, LLC",
+      "sector": "Financial Services",
+      "precio": 9.75,
+      "scores": {
+        "composite": 25.5,
+        "confianza": "alta",
+        "quality": {
+          "score": 36,
+          "detalle": {
+            "roic": 0,
+            "gross_profit_assets": 0,
+            "fscore": 6,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "36/100"
+        },
+        "valuation": {
+          "score": 0,
+          "detalle": {
+            "fcf_yield": 0
+          },
+          "pts_raw": "0/35"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60
+          },
+          "pts_raw": "60/60"
+        },
+        "momentum": {
+          "score": 7,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 9
+          },
+          "pts_raw": "9/100"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 0,
+        "razones": [],
+        "alertas": [
+          "Valoración cara — múltiplos elevados",
+          "F-Score débil (2/9) — posible deterioro",
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Score o F-Score en zona de deterioro severo"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "ASST",
+        "nombre": "Strive Asset Management, LLC",
+        "sector": "Financial Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 9.75,
+        "roic": -2.68,
+        "gross_profit_to_assets": -1.39,
+        "gross_margin": -283.62,
+        "ebit_margin": -620.66,
+        "net_margin": -591.23,
+        "roe": -2.95,
+        "roa": -2.89,
+        "fcf_conversion": 100.18,
+        "fscore": 2,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 404578866.31,
+        "ev_ebitda": -2.42,
+        "ev_fcf": -28.23,
+        "fcf_yield": -3.21,
+        "per": null,
+        "peg": null,
+        "price_to_book": 0.75,
+        "deuda_ebitda": 0.25,
+        "cobertura_intereses": null,
+        "momentum_6m": -81.67,
+        "momentum_12m": -11.36,
+        "precio_vs_ma200": -78.88,
+        "ma200": 46.1617
+      }
+    },
+    {
+      "ticker": "JET2.L",
+      "nombre": "Jet2 plc",
+      "sector": "Consumer Cyclical",
+      "precio": 1136.0,
+      "scores": {
+        "composite": 78.3,
+        "confianza": "alta",
+        "quality": {
+          "score": 80,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 5,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "80/100"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 9,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 12
+          },
+          "pts_raw": "12/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (3.2x)",
+          "FCF Yield atractivo (31.8%)",
+          "Fundamentales neutrales (F-Score 6/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "JET2.L",
+        "nombre": "Jet2 plc",
+        "sector": "Consumer Cyclical",
+        "pais": "United Kingdom",
+        "moneda": "GBp",
+        "precio": 1136.0,
+        "roic": 32.89,
+        "gross_profit_to_assets": 15.21,
+        "gross_margin": 12.53,
+        "ebit_margin": 9.08,
+        "net_margin": 6.23,
+        "roe": 27.72,
+        "roa": 7.56,
+        "fcf_conversion": 147.52,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 1243325877.33,
+        "ev_ebitda": 3.24,
+        "ev_fcf": 3.07,
+        "fcf_yield": 31.81,
+        "per": 4.85,
+        "peg": null,
+        "price_to_book": 110.1,
+        "deuda_ebitda": -0.08,
+        "cobertura_intereses": 11.23,
+        "momentum_6m": -20.5,
+        "momentum_12m": -4.04,
+        "precio_vs_ma200": -19.25,
+        "ma200": 1406.8237
+      }
+    },
+    {
+      "ticker": "300750.SZ",
+      "nombre": "Contemporary Amperex Technology Co., Limited",
+      "sector": "Industrials",
+      "precio": 386.46,
+      "scores": {
+        "composite": 69.1,
+        "confianza": "alta",
+        "quality": {
+          "score": 81,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 3,
+            "fscore": 23,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "81/100"
+        },
+        "valuation": {
+          "score": 48,
+          "detalle": {
+            "ev_ebitda": 18,
+            "fcf_yield": 22,
+            "per": 8
+          },
+          "pts_raw": "48/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 66,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 13,
+            "momentum_12m": 30
+          },
+          "pts_raw": "83/100"
+        }
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Valoración justa (no en descuento claro)",
+          "Fundamentales fuertes (F-Score 7/9)",
+          "Momentum positivo (+4.4% 6M, precio sobre MM200)"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "300750.SZ",
+        "nombre": "Contemporary Amperex Technology Co., Limited",
+        "sector": "Industrials",
+        "pais": "China",
+        "moneda": "CNY",
+        "precio": 386.46,
+        "roic": 59.14,
+        "gross_profit_to_assets": 11.42,
+        "gross_margin": 26.27,
+        "ebit_margin": 21.77,
+        "net_margin": 17.04,
+        "roe": 21.42,
+        "roa": 7.41,
+        "fcf_conversion": 125.86,
+        "fscore": 7,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 1058251682612.49,
+        "ev_ebitda": 15.37,
+        "ev_fcf": 17.06,
+        "fcf_yield": 5.15,
+        "per": 23.96,
+        "peg": null,
+        "price_to_book": 5.2,
+        "deuda_ebitda": -2.12,
+        "cobertura_intereses": 33.75,
+        "momentum_6m": 4.43,
+        "momentum_12m": 54.55,
+        "precio_vs_ma200": 13.5,
+        "ma200": 340.4951
+      }
+    },
+    {
+      "ticker": "GMAB",
+      "nombre": "Genmab A/S",
+      "sector": "Healthcare",
+      "precio": 27.5,
+      "scores": {
+        "composite": 61.8,
+        "confianza": "alta",
+        "quality": {
+          "score": 64,
+          "detalle": {
+            "roic": 15,
+            "gross_profit_assets": 9,
+            "fscore": 10,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "64/100"
+        },
+        "valuation": {
+          "score": 66,
+          "detalle": {
+            "ev_ebitda": 16,
+            "fcf_yield": 32,
+            "per": 18
+          },
+          "pts_raw": "66/100"
+        },
+        "safety": {
+          "score": 72,
+          "detalle": {
+            "deuda_ebitda": 32,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "72/100"
+        },
+        "momentum": {
+          "score": 39,
+          "detalle": {
+            "vs_ma200": 19,
+            "momentum_6m": 0,
+            "momentum_12m": 30
+          },
+          "pts_raw": "49/100"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "FCF Yield atractivo (6.7%)",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [
+          "F-Score débil (3/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro severo"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "GMAB",
+        "nombre": "Genmab A/S",
+        "sector": "Healthcare",
+        "pais": "Denmark",
+        "moneda": "USD",
+        "precio": 27.5,
+        "roic": 10.46,
+        "gross_profit_to_assets": 27.05,
+        "gross_margin": 93.6,
+        "ebit_margin": 34.01,
+        "net_margin": 25.89,
+        "roe": 16.47,
+        "roa": 7.48,
+        "fcf_conversion": 117.45,
+        "fscore": 3,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 10187190682.79,
+        "ev_ebitda": 16.04,
+        "ev_fcf": 18.29,
+        "fcf_yield": 6.66,
+        "per": 17.86,
+        "peg": null,
+        "price_to_book": 0.29,
+        "deuda_ebitda": 2.88,
+        "cobertura_intereses": 20.74,
+        "momentum_6m": -14.38,
+        "momentum_12m": 46.12,
+        "precio_vs_ma200": -2.24,
+        "ma200": 28.1289
+      }
+    },
+    {
+      "ticker": "TRI.PA",
+      "nombre": "Trigano S.A.",
+      "sector": "Consumer Cyclical",
+      "precio": 141.5,
+      "scores": {
+        "composite": 79.6,
+        "confianza": "alta",
+        "quality": {
+          "score": 73,
+          "detalle": {
+            "roic": 19,
+            "gross_profit_assets": 11,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "73/100"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 36,
+          "detalle": {
+            "vs_ma200": 5,
+            "momentum_6m": 11,
+            "momentum_12m": 30
+          },
+          "pts_raw": "46/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (6.7x)",
+          "FCF Yield atractivo (19.1%)",
+          "Fundamentales neutrales (F-Score 4/9)",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "TRI.PA",
+        "nombre": "Trigano S.A.",
+        "sector": "Consumer Cyclical",
+        "pais": "France",
+        "moneda": "EUR",
+        "precio": 141.5,
+        "roic": 14.4,
+        "gross_profit_to_assets": 35.96,
+        "gross_margin": 32.18,
+        "ebit_margin": 8.97,
+        "net_margin": 6.54,
+        "roe": 11.5,
+        "roa": 7.31,
+        "fcf_conversion": 217.59,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 1637729896.42,
+        "ev_ebitda": 6.65,
+        "ev_fcf": 4.71,
+        "fcf_yield": 19.08,
+        "per": 11.4,
+        "peg": null,
+        "price_to_book": 1.31,
+        "deuda_ebitda": -0.76,
+        "cobertura_intereses": 52.11,
+        "momentum_6m": -3.07,
+        "momentum_12m": 48.03,
+        "precio_vs_ma200": -7.71,
+        "ma200": 153.3214
+      }
+    },
+    {
+      "ticker": "HLBBF",
+      "nombre": "H. Lundbeck A/S",
+      "sector": "Healthcare",
+      "precio": 5.9,
+      "scores": {
+        "composite": 82.6,
+        "confianza": "alta",
+        "quality": {
+          "score": 85,
+          "detalle": {
+            "roic": 16,
+            "gross_profit_assets": 13,
+            "fscore": 26,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "85/100"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 24,
+          "detalle": {
+            "vs_ma200": 6,
+            "momentum_6m": 0,
+            "momentum_12m": 25
+          },
+          "pts_raw": "31/100"
+        }
+      },
+      "señal": {
+        "señal": "COMPRA",
+        "capas": 2,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (1.9x)",
+          "FCF Yield atractivo (80.3%)",
+          "Fundamentales fuertes (F-Score 8/9)",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "HLBBF",
+        "nombre": "H. Lundbeck A/S",
+        "sector": "Healthcare",
+        "pais": "Denmark",
+        "moneda": "USD",
+        "precio": 5.9,
+        "roic": 11.93,
+        "gross_profit_to_assets": 39.12,
+        "gross_margin": 82.68,
+        "ebit_margin": 20.3,
+        "net_margin": 12.96,
+        "roe": 12.82,
+        "roa": 6.13,
+        "fcf_conversion": 152.35,
+        "fscore": 8,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 3635510785.54,
+        "ev_ebitda": 1.87,
+        "ev_fcf": 2.94,
+        "fcf_yield": 80.26,
+        "per": 12.2,
+        "peg": null,
+        "price_to_book": 1.57,
+        "deuda_ebitda": 1.07,
+        "cobertura_intereses": 9.73,
+        "momentum_6m": -18.17,
+        "momentum_12m": 21.67,
+        "precio_vs_ma200": -7.52,
+        "ma200": 6.3798
+      }
+    },
+    {
+      "ticker": "GRF.MC",
+      "nombre": "Grifols, S.A.",
+      "sector": "Healthcare",
+      "precio": 9.204,
+      "scores": {
+        "composite": 64.8,
+        "confianza": "alta",
+        "quality": {
+          "score": 68,
+          "detalle": {
+            "roic": 8,
+            "gross_profit_assets": 4,
+            "fscore": 26,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "68/100"
+        },
+        "valuation": {
+          "score": 96,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 21
+          },
+          "pts_raw": "96/100"
+        },
+        "safety": {
+          "score": 13,
+          "detalle": {
+            "deuda_ebitda": 6,
+            "cobertura_intereses": 7
+          },
+          "pts_raw": "13/100"
+        },
+        "momentum": {
+          "score": 18,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 23
+          },
+          "pts_raw": "23/100"
+        }
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (9.1x)",
+          "FCF Yield atractivo (8.5%)",
+          "Fundamentales fuertes (F-Score 8/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Deuda/EBITDA elevada (5.4x)"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "GRF.MC",
+        "nombre": "Grifols, S.A.",
+        "sector": "Healthcare",
+        "pais": "Spain",
+        "moneda": "EUR",
+        "precio": 9.204,
+        "roic": 5.52,
+        "gross_profit_to_assets": 13.06,
+        "gross_margin": 38.75,
+        "ebit_margin": 14.51,
+        "net_margin": 2.18,
+        "roe": 2.67,
+        "roa": 0.73,
+        "fcf_conversion": 338.26,
+        "fscore": 8,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 3758409216.71,
+        "ev_ebitda": 9.06,
+        "ev_fcf": 28.96,
+        "fcf_yield": 8.47,
+        "per": 16.73,
+        "peg": null,
+        "price_to_book": 1.19,
+        "deuda_ebitda": 5.37,
+        "cobertura_intereses": 1.74,
+        "momentum_6m": -23.97,
+        "momentum_12m": 16.08,
+        "precio_vs_ma200": -17.5,
+        "ma200": 11.1559
+      }
+    },
+    {
+      "ticker": "WZZZY",
+      "nombre": "Wizz Air Holdings Plc",
+      "sector": "Industrials",
+      "precio": 3.0,
+      "scores": {
+        "composite": 51.8,
+        "confianza": "alta",
+        "quality": {
+          "score": 48,
+          "detalle": {
+            "roic": 4,
+            "gross_profit_assets": 1,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "48/100"
+        },
+        "valuation": {
+          "score": 93,
+          "detalle": {
+            "ev_ebitda": 33,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "93/100"
+        },
+        "safety": {
+          "score": 0,
+          "detalle": {
+            "deuda_ebitda": 0,
+            "cobertura_intereses": 0
+          },
+          "pts_raw": "0/100"
+        },
+        "momentum": {
+          "score": 0,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 0
+          },
+          "pts_raw": "0/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "FCF Yield atractivo (33.8%)",
+          "Fundamentales neutrales (F-Score 4/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Deuda/EBITDA elevada (9.6x)"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "WZZZY",
+        "nombre": "Wizz Air Holdings Plc",
+        "sector": "Industrials",
+        "pais": "Hungary",
+        "moneda": "USD",
+        "precio": 3.0,
+        "roic": 3.33,
+        "gross_profit_to_assets": 3.48,
+        "gross_margin": 6.36,
+        "ebit_margin": 5.11,
+        "net_margin": 4.29,
+        "roe": 61.59,
+        "roa": 2.34,
+        "fcf_conversion": 186.05,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 744920525.32,
+        "ev_ebitda": 11.55,
+        "ev_fcf": 17.28,
+        "fcf_yield": 33.84,
+        "per": 5.77,
+        "peg": null,
+        "price_to_book": 0.38,
+        "deuda_ebitda": 9.58,
+        "cobertura_intereses": 1.08,
+        "momentum_6m": -20.84,
+        "momentum_12m": -42.97,
+        "precio_vs_ma200": -26.15,
+        "ma200": 4.0621
+      }
+    },
+    {
+      "ticker": "CUK",
+      "nombre": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical",
+      "precio": 25.58,
+      "scores": {
+        "composite": 75.8,
+        "confianza": "alta",
+        "quality": {
+          "score": 77,
+          "detalle": {
+            "roic": 12,
+            "gross_profit_assets": 5,
+            "fscore": 30,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "77/100"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100"
+        },
+        "safety": {
+          "score": 38,
+          "detalle": {
+            "deuda_ebitda": 18,
+            "cobertura_intereses": 20
+          },
+          "pts_raw": "38/100"
+        },
+        "momentum": {
+          "score": 41,
+          "detalle": {
+            "vs_ma200": 11,
+            "momentum_6m": 11,
+            "momentum_12m": 30
+          },
+          "pts_raw": "52/100"
+        }
+      },
+      "señal": {
+        "señal": "COMPRA",
+        "capas": 2,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (8.5x)",
+          "FCF Yield atractivo (7.3%)",
+          "Fundamentales fuertes (F-Score 9/9)",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "CUK",
+        "nombre": "Carnival Corporation & plc",
+        "sector": "Consumer Cyclical",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 25.58,
+        "roic": 8.49,
+        "gross_profit_to_assets": 15.25,
+        "gross_margin": 29.62,
+        "ebit_margin": 15.48,
+        "net_margin": 10.37,
+        "roe": 22.47,
+        "roa": 5.34,
+        "fcf_conversion": 94.46,
+        "fscore": 9,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 21269965210.3,
+        "ev_ebitda": 8.48,
+        "ev_fcf": 23.6,
+        "fcf_yield": 7.35,
+        "per": 11.27,
+        "peg": null,
+        "price_to_book": 2.72,
+        "deuda_ebitda": 3.59,
+        "cobertura_intereses": 3.05,
+        "momentum_6m": -3.2,
+        "momentum_12m": 42.69,
+        "precio_vs_ma200": -5.6,
+        "ma200": 27.0978
+      }
+    },
+    {
+      "ticker": "UNPRF",
+      "nombre": "Uniper SE",
+      "sector": "Utilities",
+      "precio": 41.56,
+      "scores": {
+        "composite": 56.5,
+        "confianza": "alta",
+        "quality": {
+          "score": 56,
+          "detalle": {
+            "roic": 22,
+            "gross_profit_assets": 3,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 0
+          },
+          "pts_raw": "56/100"
+        },
+        "valuation": {
+          "score": 56,
+          "detalle": {
+            "ev_ebitda": 31,
+            "fcf_yield": 0,
+            "per": 25
+          },
+          "pts_raw": "56/100"
+        },
+        "safety": {
+          "score": 91,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 31
+          },
+          "pts_raw": "91/100"
+        },
+        "momentum": {
+          "score": 36,
+          "detalle": {
+            "vs_ma200": 30,
+            "momentum_6m": 4,
+            "momentum_12m": 11
+          },
+          "pts_raw": "45/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración justa (no en descuento claro)",
+          "Fundamentales neutrales (F-Score 5/9)",
+          "Momentum positivo (+1.4% 6M, precio sobre MM200)"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "UNPRF",
+        "nombre": "Uniper SE",
+        "sector": "Utilities",
+        "pais": "Germany",
+        "moneda": "USD",
+        "precio": 41.56,
+        "roic": 17.92,
+        "gross_profit_to_assets": 9.39,
+        "gross_margin": 4.87,
+        "ebit_margin": 2.37,
+        "net_margin": 2.29,
+        "roe": 11.75,
+        "roa": 4.42,
+        "fcf_conversion": -113.67,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 10385229007.34,
+        "ev_ebitda": 12.23,
+        "ev_fcf": -7.43,
+        "fcf_yield": -9.17,
+        "per": 10.71,
+        "peg": null,
+        "price_to_book": 1.26,
+        "deuda_ebitda": -5.72,
+        "cobertura_intereses": 6.31,
+        "momentum_6m": 1.37,
+        "momentum_12m": -6.27,
+        "precio_vs_ma200": 1.73,
+        "ma200": 40.8513
+      }
+    },
+    {
+      "ticker": "DMX",
+      "nombre": "DoubleLine Multi-Sector Income ETF",
+      "sector": "Desconocido",
+      "precio": 49.935,
+      "scores": {
+        "composite": 27.6,
+        "confianza": "baja",
+        "quality": {
+          "score": 0,
+          "detalle": {
+            "fscore": 0
+          },
+          "pts_raw": "0/30"
+        },
+        "valuation": {
+          "score": 50,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "safety": {
+          "score": 50,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "momentum": {
+          "score": 34,
+          "detalle": {
+            "vs_ma200": 29,
+            "momentum_6m": 5,
+            "momentum_12m": 9
+          },
+          "pts_raw": "43/100"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 1,
+        "razones": [
+          "Valoración justa (no en descuento claro)",
+          "Momentum positivo (+1.7% 6M, precio sobre MM200)"
+        ],
+        "alertas": [
+          "F-Score débil (0/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro severo"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "DMX",
+        "nombre": "DoubleLine Multi-Sector Income ETF",
+        "sector": "Desconocido",
+        "pais": "Desconocido",
+        "moneda": "USD",
+        "precio": 49.935,
+        "roic": null,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": null,
+        "net_margin": null,
+        "roe": null,
+        "roa": null,
+        "fcf_conversion": null,
+        "fscore": 0,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": null,
+        "ev_ebitda": null,
+        "ev_fcf": null,
+        "fcf_yield": null,
+        "per": null,
+        "peg": null,
+        "price_to_book": null,
+        "deuda_ebitda": null,
+        "cobertura_intereses": null,
+        "momentum_6m": 1.72,
+        "momentum_12m": 6.5,
+        "precio_vs_ma200": 1.5,
+        "ma200": 49.195
+      }
+    },
+    {
+      "ticker": "NVAX",
+      "nombre": "Novavax, Inc.",
+      "sector": "Healthcare",
+      "precio": 7.7,
+      "scores": {
+        "composite": 56.2,
+        "confianza": "alta",
+        "quality": {
+          "score": 46,
+          "detalle": {
+            "roic": 0,
+            "gross_profit_assets": 15,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 0
+          },
+          "pts_raw": "46/100"
+        },
+        "valuation": {
+          "score": 65,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 0,
+            "per": 25
+          },
+          "pts_raw": "65/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 34,
+          "detalle": {
+            "vs_ma200": 14,
+            "momentum_6m": 0,
+            "momentum_12m": 29
+          },
+          "pts_raw": "43/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (2.1x)",
+          "Fundamentales neutrales (F-Score 5/9)",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "NVAX",
+        "nombre": "Novavax, Inc.",
+        "sector": "Healthcare",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 7.7,
+        "roic": -307.02,
+        "gross_profit_to_assets": 89.28,
+        "gross_margin": 93.5,
+        "ebit_margin": 41.36,
+        "net_margin": 39.19,
+        "roe": -344.65,
+        "roa": 37.42,
+        "fcf_conversion": -57.01,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 752764106.15,
+        "ev_ebitda": 2.14,
+        "ev_fcf": -5.03,
+        "fcf_yield": -20.01,
+        "per": 2.98,
+        "peg": null,
+        "price_to_book": -9.8,
+        "deuda_ebitda": 0.01,
+        "cobertura_intereses": 20.61,
+        "momentum_6m": -19.37,
+        "momentum_12m": 28.76,
+        "precio_vs_ma200": -4.16,
+        "ma200": 8.0345
+      }
+    },
+    {
+      "ticker": "TLW.L",
+      "nombre": "Tullow Oil plc",
+      "sector": "Energy",
+      "precio": 12.86,
+      "scores": {
+        "composite": 83.2,
+        "confianza": "alta",
+        "quality": {
+          "score": 84,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 6,
+            "fscore": 23,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "84/100"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35
+          },
+          "pts_raw": "75/75"
+        },
+        "safety": {
+          "score": 49,
+          "detalle": {
+            "deuda_ebitda": 40,
+            "cobertura_intereses": 9
+          },
+          "pts_raw": "49/100"
+        },
+        "momentum": {
+          "score": 65,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 12
+          },
+          "pts_raw": "82/100"
+        }
+      },
+      "señal": {
+        "señal": "COMPRA",
+        "capas": 3,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (2.7x)",
+          "FCF Yield atractivo (281.5%)",
+          "Fundamentales fuertes (F-Score 7/9)",
+          "Momentum positivo (+16.9% 6M, precio sobre MM200)"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "TLW.L",
+        "nombre": "Tullow Oil plc",
+        "sector": "Energy",
+        "pais": "United Kingdom",
+        "moneda": "GBp",
+        "precio": 12.86,
+        "roic": 27.8,
+        "gross_profit_to_assets": 18.61,
+        "gross_margin": 49.12,
+        "ebit_margin": 43.27,
+        "net_margin": 3.56,
+        "roe": -20.02,
+        "roa": 1.35,
+        "fcf_conversion": 978.02,
+        "fscore": 7,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 113812780.84,
+        "ev_ebitda": 2.68,
+        "ev_fcf": 4.4,
+        "fcf_yield": 281.51,
+        "per": null,
+        "peg": null,
+        "price_to_book": -75.69,
+        "deuda_ebitda": 2.46,
+        "cobertura_intereses": 1.94,
+        "momentum_6m": 16.91,
+        "momentum_12m": -5.44,
+        "precio_vs_ma200": 24.28,
+        "ma200": 10.348
+      }
+    },
+    {
+      "ticker": "OKLO",
+      "nombre": "Oklo Inc.",
+      "sector": "Utilities",
+      "precio": 48.13,
+      "scores": {
+        "composite": 23.2,
+        "confianza": "media",
+        "quality": {
+          "score": 47,
+          "detalle": {
+            "roic": 0,
+            "fscore": 10,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "40/85"
+        },
+        "valuation": {
+          "score": 0,
+          "detalle": {
+            "fcf_yield": 0
+          },
+          "pts_raw": "0/35"
+        },
+        "safety": {
+          "score": 8,
+          "detalle": {
+            "deuda_ebitda": 5
+          },
+          "pts_raw": "5/60"
+        },
+        "momentum": {
+          "score": 24,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 30
+          },
+          "pts_raw": "30/100"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 0,
+        "razones": [],
+        "alertas": [
+          "Valoración cara — múltiplos elevados",
+          "F-Score débil (3/9) — posible deterioro",
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Score o F-Score en zona de deterioro severo",
+          "Deuda/EBITDA elevada (5.7x)"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "OKLO",
+        "nombre": "Oklo Inc.",
+        "sector": "Utilities",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 48.13,
+        "roic": -15.97,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": null,
+        "net_margin": null,
+        "roe": -7.16,
+        "roa": -6.91,
+        "fcf_conversion": 109.2,
+        "fscore": 3,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 5012319437.24,
+        "ev_ebitda": -54.53,
+        "ev_fcf": -65.58,
+        "fcf_yield": -1.38,
+        "per": null,
+        "peg": null,
+        "price_to_book": 5.23,
+        "deuda_ebitda": 5.67,
+        "cobertura_intereses": null,
+        "momentum_6m": -62.63,
+        "momentum_12m": 112.03,
+        "precio_vs_ma200": -43.88,
+        "ma200": 85.7586
+      }
+    },
+    {
+      "ticker": "VKTX",
+      "nombre": "Viking Therapeutics, Inc.",
+      "sector": "Healthcare",
+      "precio": 34.8,
+      "scores": {
+        "composite": 36.8,
+        "confianza": "media",
+        "quality": {
+          "score": 37,
+          "detalle": {
+            "roic": 0,
+            "fscore": 3,
+            "altman_z": 15,
+            "fcf_conversion": 14
+          },
+          "pts_raw": "32/85"
+        },
+        "valuation": {
+          "score": 0,
+          "detalle": {
+            "fcf_yield": 0
+          },
+          "pts_raw": "0/35"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60
+          },
+          "pts_raw": "60/60"
+        },
+        "momentum": {
+          "score": 80,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 1,
+        "razones": [
+          "Momentum positivo (+24.8% 6M, precio sobre MM200)"
+        ],
+        "alertas": [
+          "Valoración cara — múltiplos elevados",
+          "F-Score débil (1/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro severo"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "VKTX",
+        "nombre": "Viking Therapeutics, Inc.",
+        "sector": "Healthcare",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 34.8,
+        "roic": -65.64,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": null,
+        "net_margin": null,
+        "roe": -56.28,
+        "roa": -50.25,
+        "fcf_conversion": 77.49,
+        "fscore": 1,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 2412773680.8,
+        "ev_ebitda": -9.81,
+        "ev_fcf": -13.84,
+        "fcf_yield": -6.93,
+        "per": null,
+        "peg": null,
+        "price_to_book": 6.25,
+        "deuda_ebitda": 0.42,
+        "cobertura_intereses": null,
+        "momentum_6m": 24.82,
+        "momentum_12m": 35.51,
+        "precio_vs_ma200": 8.01,
+        "ma200": 32.2207
+      }
+    },
+    {
+      "ticker": "KIN.BR",
+      "nombre": "Kinepolis Group NV",
+      "sector": "Communication Services",
+      "precio": 26.6,
+      "scores": {
+        "composite": 60.5,
+        "confianza": "alta",
+        "quality": {
+          "score": 60,
+          "detalle": {
+            "roic": 11,
+            "gross_profit_assets": 3,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "60/100"
+        },
+        "valuation": {
+          "score": 92,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 17
+          },
+          "pts_raw": "92/100"
+        },
+        "safety": {
+          "score": 32,
+          "detalle": {
+            "deuda_ebitda": 14,
+            "cobertura_intereses": 18
+          },
+          "pts_raw": "32/100"
+        },
+        "momentum": {
+          "score": 7,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 9
+          },
+          "pts_raw": "9/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (8.3x)",
+          "FCF Yield atractivo (13.3%)",
+          "Fundamentales neutrales (F-Score 5/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "KIN.BR",
+        "nombre": "Kinepolis Group NV",
+        "sector": "Communication Services",
+        "pais": "Belgium",
+        "moneda": "EUR",
+        "precio": 26.6,
+        "roic": 7.42,
+        "gross_profit_to_assets": 11.65,
+        "gross_margin": 23.21,
+        "ebit_margin": 13.74,
+        "net_margin": 6.71,
+        "roe": 16.37,
+        "roa": 3.37,
+        "fcf_conversion": 249.98,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 426907930.45,
+        "ev_ebitda": 8.31,
+        "ev_fcf": 13.79,
+        "fcf_yield": 13.32,
+        "per": 18.73,
+        "peg": null,
+        "price_to_book": 3.05,
+        "deuda_ebitda": 3.78,
+        "cobertura_intereses": 2.83,
+        "momentum_6m": -14.88,
+        "momentum_12m": -11.43,
+        "precio_vs_ma200": -13.55,
+        "ma200": 30.7707
+      }
+    },
+    {
+      "ticker": "CLNX.MC",
+      "nombre": "Cellnex Telecom, S.A.",
+      "sector": "Real Estate",
+      "precio": 28.75,
+      "scores": {
+        "composite": 32.2,
+        "confianza": "media",
+        "quality": {
+          "score": 34,
+          "detalle": {
+            "roic": 1,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 0
+          },
+          "pts_raw": "29/85"
+        },
+        "valuation": {
+          "score": 36,
+          "detalle": {
+            "ev_ebitda": 17,
+            "fcf_yield": 10
+          },
+          "pts_raw": "27/75"
+        },
+        "safety": {
+          "score": 0,
+          "detalle": {
+            "deuda_ebitda": 0,
+            "cobertura_intereses": 0
+          },
+          "pts_raw": "0/100"
+        },
+        "momentum": {
+          "score": 40,
+          "detalle": {
+            "vs_ma200": 27,
+            "momentum_6m": 13,
+            "momentum_12m": 11
+          },
+          "pts_raw": "51/100"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 0,
+        "razones": [
+          "Fundamentales neutrales (F-Score 4/9)",
+          "Momentum neutro o débil"
+        ],
+        "alertas": [
+          "Valoración cara — múltiplos elevados",
+          "Score o F-Score en zona de deterioro severo",
+          "Deuda/EBITDA elevada (8.1x)"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "CLNX.MC",
+        "nombre": "Cellnex Telecom, S.A.",
+        "sector": "Real Estate",
+        "pais": "Spain",
+        "moneda": "EUR",
+        "precio": 28.75,
+        "roic": 0.77,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": 7.65,
+        "net_margin": -8.76,
+        "roe": -2.98,
+        "roa": -0.86,
+        "fcf_conversion": -145.75,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 11607570432.04,
+        "ev_ebitda": 15.77,
+        "ev_fcf": 75.58,
+        "fcf_yield": 2.72,
+        "per": null,
+        "peg": null,
+        "price_to_book": 1.6,
+        "deuda_ebitda": 8.1,
+        "cobertura_intereses": 0.41,
+        "momentum_6m": -1.36,
+        "momentum_12m": -7.71,
+        "precio_vs_ma200": 0.76,
+        "ma200": 28.5333
+      }
+    },
+    {
+      "ticker": "HGRAF",
+      "nombre": "HydroGraph Clean Power Inc.",
+      "sector": "Basic Materials",
+      "precio": 4.49,
+      "scores": {
+        "composite": 34.4,
+        "confianza": "alta",
+        "quality": {
+          "score": 41,
+          "detalle": {
+            "roic": 0,
+            "gross_profit_assets": 0,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 10
+          },
+          "pts_raw": "41/100"
+        },
+        "valuation": {
+          "score": 0,
+          "detalle": {
+            "fcf_yield": 0
+          },
+          "pts_raw": "0/35"
+        },
+        "safety": {
+          "score": 60,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 0
+          },
+          "pts_raw": "60/100"
+        },
+        "momentum": {
+          "score": 80,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Fundamentales neutrales (F-Score 5/9)",
+          "Momentum positivo (+173.3% 6M, precio sobre MM200)"
+        ],
+        "alertas": [
+          "Valoración cara — múltiplos elevados"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "HGRAF",
+        "nombre": "HydroGraph Clean Power Inc.",
+        "sector": "Basic Materials",
+        "pais": "Canada",
+        "moneda": "USD",
+        "precio": 4.49,
+        "roic": -356.25,
+        "gross_profit_to_assets": -0.04,
+        "gross_margin": -13.18,
+        "ebit_margin": -18902.35,
+        "net_margin": -18929.39,
+        "roe": -77.76,
+        "roa": -60.18,
+        "fcf_conversion": 60.43,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 932448072.94,
+        "ev_ebitda": -196.8,
+        "ev_fcf": -313.83,
+        "fcf_yield": -0.32,
+        "per": null,
+        "peg": null,
+        "price_to_book": 61.51,
+        "deuda_ebitda": 1.1,
+        "cobertura_intereses": -699.05,
+        "momentum_6m": 173.28,
+        "momentum_12m": 2510.47,
+        "precio_vs_ma200": 98.29,
+        "ma200": 2.2644
+      }
+    },
+    {
+      "ticker": "CRMD",
+      "nombre": "CorMedix Inc.",
+      "sector": "Healthcare",
+      "precio": 7.05,
+      "scores": {
+        "composite": 80.2,
+        "confianza": "alta",
+        "quality": {
+          "score": 82,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 11,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "82/100"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 16,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 20
+          },
+          "pts_raw": "20/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (3.2x)",
+          "FCF Yield atractivo (31.0%)",
+          "Fundamentales neutrales (F-Score 5/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "CRMD",
+        "nombre": "CorMedix Inc.",
+        "sector": "Healthcare",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 7.05,
+        "roic": 29.49,
+        "gross_profit_to_assets": 33.38,
+        "gross_margin": 88.46,
+        "ebit_margin": 49.02,
+        "net_margin": 52.31,
+        "roe": 40.23,
+        "roa": 19.74,
+        "fcf_conversion": 105.97,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 334383168.97,
+        "ev_ebitda": 3.21,
+        "ev_fcf": 3.25,
+        "fcf_yield": 31.0,
+        "per": 3.46,
+        "peg": null,
+        "price_to_book": 1.38,
+        "deuda_ebitda": 0.02,
+        "cobertura_intereses": 54.92,
+        "momentum_6m": -36.2,
+        "momentum_12m": 11.9,
+        "precio_vs_ma200": -32.03,
+        "ma200": 10.3723
+      }
+    },
+    {
+      "ticker": "NXT.L",
+      "nombre": "NEXT plc",
+      "sector": "Consumer Cyclical",
+      "precio": 12950.0,
+      "scores": {
+        "composite": 65.2,
+        "confianza": "baja",
+        "quality": {
+          "score": 46,
+          "detalle": {
+            "fscore": 6,
+            "altman_z": 15
+          },
+          "pts_raw": "21/45"
+        },
+        "valuation": {
+          "score": 85,
+          "detalle": {
+            "ev_ebitda": 34,
+            "fcf_yield": 32,
+            "per": 19
+          },
+          "pts_raw": "85/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60
+          },
+          "pts_raw": "60/60"
+        },
+        "momentum": {
+          "score": 47,
+          "detalle": {
+            "vs_ma200": 25,
+            "momentum_6m": 12,
+            "momentum_12m": 22
+          },
+          "pts_raw": "59/100"
+        }
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Valoración atractiva",
+          "FCF Yield atractivo (6.6%)",
+          "Momentum positivo (+4.1% 6M, precio sobre MM200)"
+        ],
+        "alertas": [
+          "F-Score débil (2/9) — posible deterioro"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "NXT.L",
+        "nombre": "NEXT plc",
+        "sector": "Consumer Cyclical",
+        "pais": "United Kingdom",
+        "moneda": "GBp",
+        "precio": 12950.0,
+        "roic": null,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": null,
+        "net_margin": null,
+        "roe": null,
+        "roa": null,
+        "fcf_conversion": null,
+        "fscore": 2,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 8908231681.25,
+        "ev_ebitda": 11.37,
+        "ev_fcf": 16.91,
+        "fcf_yield": 6.58,
+        "per": 17.36,
+        "peg": null,
+        "price_to_book": 909.03,
+        "deuda_ebitda": 1.15,
+        "cobertura_intereses": null,
+        "momentum_6m": 4.09,
+        "momentum_12m": 15.37,
+        "precio_vs_ma200": 0.24,
+        "ma200": 12919.4454
+      }
+    },
+    {
+      "ticker": "APR.MC",
+      "nombre": "APR.MC",
+      "sector": "Desconocido",
+      "precio": null,
+      "scores": {
+        "composite": 28.5,
+        "confianza": "baja",
+        "quality": {
+          "score": 0,
+          "detalle": {
+            "fscore": 0
+          },
+          "pts_raw": "0/30"
+        },
+        "valuation": {
+          "score": 50,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "safety": {
+          "score": 50,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "momentum": {
+          "score": 40,
+          "detalle": {},
+          "pts_raw": "0/0"
+        }
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 0,
+        "razones": [
+          "Valoración justa (no en descuento claro)"
+        ],
+        "alertas": [
+          "F-Score débil (0/9) — posible deterioro",
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Score o F-Score en zona de deterioro severo"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "APR.MC",
+        "nombre": "APR.MC",
+        "sector": "Desconocido",
+        "pais": "Desconocido",
+        "moneda": "USD",
+        "precio": null,
+        "roic": null,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": null,
+        "net_margin": null,
+        "roe": null,
+        "roa": null,
+        "fcf_conversion": null,
+        "fscore": 0,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 0,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": null,
+        "ev_ebitda": null,
+        "ev_fcf": null,
+        "fcf_yield": null,
+        "per": null,
+        "peg": null,
+        "price_to_book": null,
+        "deuda_ebitda": null,
+        "cobertura_intereses": null,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      }
+    },
+    {
+      "ticker": "82E.F",
+      "nombre": "Itafos Inc.",
+      "sector": "Basic Materials",
+      "precio": 2.2,
+      "scores": {
+        "composite": 72.3,
+        "confianza": "alta",
+        "quality": {
+          "score": 62,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 5,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 1
+          },
+          "pts_raw": "62/100"
+        },
+        "valuation": {
+          "score": 73,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 8,
+            "per": 25
+          },
+          "pts_raw": "73/100"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 80,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        }
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (2.9x)",
+          "Fundamentales neutrales (F-Score 5/9)",
+          "Momentum positivo (+47.5% 6M, precio sobre MM200)"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "82E.F",
+        "nombre": "Itafos Inc.",
+        "sector": "Basic Materials",
+        "pais": "United States",
+        "moneda": "EUR",
+        "precio": 2.2,
+        "roic": 24.76,
+        "gross_profit_to_assets": 17.21,
+        "gross_margin": 25.85,
+        "ebit_margin": 26.58,
+        "net_margin": 20.81,
+        "roe": 26.69,
+        "roa": 13.86,
+        "fcf_conversion": 8.58,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 256367751.33,
+        "ev_ebitda": 2.94,
+        "ev_fcf": 46.73,
+        "fcf_yield": 2.33,
+        "per": 4.31,
+        "peg": null,
+        "price_to_book": 1.13,
+        "deuda_ebitda": 0.24,
+        "cobertura_intereses": 41.29,
+        "momentum_6m": 47.5,
+        "momentum_12m": 87.95,
+        "precio_vs_ma200": 25.7,
+        "ma200": 1.7502
+      }
+    },
+    {
+      "ticker": "ALTN.L",
+      "nombre": "AltynGold plc",
+      "sector": "Basic Materials",
+      "precio": 1230.0,
+      "scores": {
+        "composite": 77.3,
+        "confianza": "alta",
+        "quality": {
+          "score": 77,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 10,
+            "fscore": 23,
+            "altman_z": 15,
+            "fcf_conversion": 4
+          },
+          "pts_raw": "77/100"
+        },
+        "valuation": {
+          "score": 73,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 8,
+            "per": 25
+          },
+          "pts_raw": "73/100"
+        },
+        "safety": {
+          "score": 90,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 30
+          },
+          "pts_raw": "90/100"
+        },
+        "momentum": {
+          "score": 80,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        }
+      },
+      "señal": {
+        "señal": "COMPRA",
+        "capas": 3,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (5.0x)",
+          "Fundamentales fuertes (F-Score 7/9)",
+          "Momentum positivo (+29.5% 6M, precio sobre MM200)"
+        ],
+        "alertas": [],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "ALTN.L",
+        "nombre": "AltynGold plc",
+        "sector": "Basic Materials",
+        "pais": "United Kingdom",
+        "moneda": "GBp",
+        "precio": 1230.0,
+        "roic": 21.79,
+        "gross_profit_to_assets": 31.33,
+        "gross_margin": 50.84,
+        "ebit_margin": 37.69,
+        "net_margin": 27.38,
+        "roe": 32.16,
+        "roa": 16.87,
+        "fcf_conversion": 28.44,
+        "fscore": 7,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 201717063.92,
+        "ev_ebitda": 5.01,
+        "ev_fcf": 51.35,
+        "fcf_yield": 2.24,
+        "per": 9.92,
+        "peg": null,
+        "price_to_book": 407.63,
+        "deuda_ebitda": 0.65,
+        "cobertura_intereses": 6.04,
+        "momentum_6m": 29.47,
+        "momentum_12m": 289.86,
+        "precio_vs_ma200": 21.29,
+        "ma200": 1014.135
+      }
+    },
+    {
+      "ticker": "EH",
+      "nombre": "EHang Holdings Limited",
+      "sector": "Industrials",
+      "precio": 10.36,
+      "scores": {
+        "composite": 55.4,
+        "confianza": "alta",
+        "quality": {
+          "score": 36,
+          "detalle": {
+            "roic": 0,
+            "gross_profit_assets": 5,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 0
+          },
+          "pts_raw": "36/100"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "fcf_yield": 35
+          },
+          "pts_raw": "35/35"
+        },
+        "safety": {
+          "score": 60,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 0
+          },
+          "pts_raw": "60/100"
+        },
+        "momentum": {
+          "score": 0,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 0
+          },
+          "pts_raw": "0/100"
+        }
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (-1.5x)",
+          "FCF Yield atractivo (15.8%)",
+          "Fundamentales neutrales (F-Score 5/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "macro_regimen": "RIESGO",
+        "macro_umbral": 75
+      },
+      "metrics": {
+        "ticker": "EH",
+        "nombre": "EHang Holdings Limited",
+        "sector": "Industrials",
+        "pais": "China",
+        "moneda": "USD",
+        "precio": 10.36,
+        "roic": -30.32,
+        "gross_profit_to_assets": 17.67,
+        "gross_margin": 61.37,
+        "ebit_margin": -48.65,
+        "net_margin": -50.37,
+        "roe": -24.04,
+        "roa": -14.5,
+        "fcf_conversion": -51.3,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 0,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 447457841.94,
+        "ev_ebitda": -1.46,
+        "ev_fcf": 3.13,
+        "fcf_yield": 15.81,
+        "per": null,
+        "peg": null,
+        "price_to_book": 4.79,
+        "deuda_ebitda": 1.49,
+        "cobertura_intereses": -65.75,
+        "momentum_6m": -46.17,
+        "momentum_12m": -47.62,
+        "precio_vs_ma200": -32.1,
+        "ma200": 15.2578
       }
     }
   ]
