@@ -1,13 +1,13 @@
 {
-  "fecha": "2026-04-05T19:24:32.543250",
+  "fecha": "2026-04-11T22:30:23.085434",
   "empresas": [
     {
       "ticker": "VID.MC",
       "nombre": "Vidrala, S.A.",
       "sector": "Consumer Cyclical",
-      "precio": 78.1,
+      "precio": 79.1,
       "scores": {
-        "composite": 81.0,
+        "composite": 81.5,
         "confianza": "alta",
         "quality": {
           "score": 87,
@@ -21,13 +21,13 @@
           "pts_raw": "87/100"
         },
         "valuation": {
-          "score": 100,
+          "score": 99,
           "detalle": {
             "ev_ebitda": 40,
-            "fcf_yield": 35,
+            "fcf_yield": 34,
             "per": 25
           },
-          "pts_raw": "100/100"
+          "pts_raw": "99/100"
         },
         "safety": {
           "score": 100,
@@ -38,13 +38,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 8,
+          "score": 14,
           "detalle": {
-            "vs_ma200": 0,
-            "momentum_6m": 3,
-            "momentum_12m": 8
+            "vs_ma200": 3,
+            "momentum_6m": 6,
+            "momentum_12m": 7
           },
-          "pts_raw": "11/100"
+          "pts_raw": "16/100"
         }
       },
       "señal": {
@@ -52,15 +52,14 @@
         "capas": 2,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (6.6x)",
-          "FCF Yield atractivo (7.0%)",
-          "Fundamentales fuertes (F-Score 7/9)"
+          "EV/EBITDA bajo (6.7x)",
+          "FCF Yield atractivo (6.9%)",
+          "Fundamentales fuertes (F-Score 7/9)",
+          "Momentum neutro o débil"
         ],
-        "alertas": [
-          "Precio muy por debajo de MM200 — tendencia bajista"
-        ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "alertas": [],
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "VID.MC",
@@ -68,7 +67,7 @@
         "sector": "Consumer Cyclical",
         "pais": "Spain",
         "moneda": "EUR",
-        "precio": 78.1,
+        "precio": 79.1,
         "roic": 17.12,
         "gross_profit_to_assets": 38.16,
         "gross_margin": 60.19,
@@ -90,28 +89,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 1636270389.32,
-        "ev_ebitda": 6.61,
-        "ev_fcf": 14.25,
-        "fcf_yield": 7.03,
-        "per": 13.13,
+        "altman_z": 1657221275.72,
+        "ev_ebitda": 6.69,
+        "ev_fcf": 14.44,
+        "fcf_yield": 6.94,
+        "per": 13.29,
         "peg": null,
-        "price_to_book": 1.94,
+        "price_to_book": 1.97,
         "deuda_ebitda": 0.02,
         "cobertura_intereses": 9.92,
-        "momentum_6m": -11.79,
-        "momentum_12m": -12.97,
-        "precio_vs_ma200": -10.03,
-        "ma200": 86.8027
+        "momentum_6m": -8.42,
+        "momentum_12m": -14.2,
+        "precio_vs_ma200": -8.5,
+        "ma200": 86.4474
       }
     },
     {
       "ticker": "ITX.MC",
       "nombre": "Industria de Diseño Textil, S.A.",
       "sector": "Consumer Cyclical",
-      "precio": 50.8,
+      "precio": 54.0,
       "scores": {
-        "composite": 68.6,
+        "composite": 69.6,
         "confianza": "alta",
         "quality": {
           "score": 90,
@@ -125,13 +124,13 @@
           "pts_raw": "90/100"
         },
         "valuation": {
-          "score": 37,
+          "score": 31,
           "detalle": {
-            "ev_ebitda": 16,
-            "fcf_yield": 15,
-            "per": 6
+            "ev_ebitda": 12,
+            "fcf_yield": 14,
+            "per": 5
           },
-          "pts_raw": "37/100"
+          "pts_raw": "31/100"
         },
         "safety": {
           "score": 100,
@@ -142,13 +141,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 64,
+          "score": 85,
           "detalle": {
-            "vs_ma200": 36,
-            "momentum_6m": 21,
-            "momentum_12m": 24
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 25
           },
-          "pts_raw": "81/100"
+          "pts_raw": "95/100"
         }
       },
       "señal": {
@@ -156,13 +155,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum positivo (+6.9% 6M, precio sobre MM200)"
+          "Momentum positivo (+17.0% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "ITX.MC",
@@ -170,7 +169,7 @@
         "sector": "Consumer Cyclical",
         "pais": "Spain",
         "moneda": "EUR",
-        "precio": 50.8,
+        "precio": 54.0,
         "roic": 43.84,
         "gross_profit_to_assets": 65.16,
         "gross_margin": 58.25,
@@ -192,28 +191,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 94938090703.13,
-        "ev_ebitda": 16.3,
-        "ev_fcf": 23.46,
-        "fcf_yield": 4.12,
-        "per": 25.4,
+        "altman_z": 100918444034.33,
+        "ev_ebitda": 17.36,
+        "ev_fcf": 24.99,
+        "fcf_yield": 3.88,
+        "per": 27.0,
         "peg": null,
-        "price_to_book": 7.76,
+        "price_to_book": 8.25,
         "deuda_ebitda": -0.56,
         "cobertura_intereses": 22.66,
-        "momentum_6m": 6.91,
-        "momentum_12m": 19.53,
-        "precio_vs_ma200": 3.88,
-        "ma200": 48.9019
+        "momentum_6m": 16.96,
+        "momentum_12m": 21.27,
+        "precio_vs_ma200": 9.99,
+        "ma200": 49.0937
       }
     },
     {
       "ticker": "ACS.MC",
       "nombre": "ACS, Actividades de Construcción y Servicios, S.A.",
       "sector": "Industrials",
-      "precio": 111.1,
+      "precio": 120.0,
       "scores": {
-        "composite": 72.5,
+        "composite": 73.0,
         "confianza": "alta",
         "quality": {
           "score": 82,
@@ -227,13 +226,13 @@
           "pts_raw": "82/100"
         },
         "valuation": {
-          "score": 57,
+          "score": 54,
           "detalle": {
-            "ev_ebitda": 21,
+            "ev_ebitda": 17,
             "fcf_yield": 35,
             "per": 2
           },
-          "pts_raw": "58/100"
+          "pts_raw": "54/100"
         },
         "safety": {
           "score": 78,
@@ -244,7 +243,7 @@
           "pts_raw": "78/100"
         },
         "momentum": {
-          "score": 80,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
             "momentum_6m": 30,
@@ -259,11 +258,11 @@
         "razones": [
           "Valoración justa (no en descuento claro)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+58.2% 6M, precio sobre MM200)"
+          "Momentum positivo (+68.7% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "ACS.MC",
@@ -271,7 +270,7 @@
         "sector": "Industrials",
         "pais": "Spain",
         "moneda": "EUR",
-        "precio": 111.1,
+        "precio": 120.0,
         "roic": 30.27,
         "gross_profit_to_assets": 34.54,
         "gross_margin": 31.31,
@@ -293,28 +292,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 17365644903.83,
-        "ev_ebitda": 14.58,
-        "ev_fcf": 13.28,
-        "fcf_yield": 8.01,
-        "per": 30.19,
+        "altman_z": 18756771841.43,
+        "ev_ebitda": 15.68,
+        "ev_fcf": 14.28,
+        "fcf_yield": 7.41,
+        "per": 32.7,
         "peg": null,
-        "price_to_book": 5.99,
+        "price_to_book": 6.47,
         "deuda_ebitda": 0.87,
         "cobertura_intereses": 2.87,
-        "momentum_6m": 58.25,
-        "momentum_12m": 137.22,
-        "precio_vs_ma200": 40.24,
-        "ma200": 79.2237
+        "momentum_6m": 68.66,
+        "momentum_12m": 146.0,
+        "precio_vs_ma200": 49.14,
+        "ma200": 80.46
       }
     },
     {
       "ticker": "REP.MC",
       "nombre": "Repsol, S.A.",
       "sector": "Energy",
-      "precio": 24.27,
+      "precio": 21.6,
       "scores": {
-        "composite": 79.2,
+        "composite": 82.5,
         "confianza": "alta",
         "quality": {
           "score": 70,
@@ -328,13 +327,13 @@
           "pts_raw": "70/100"
         },
         "valuation": {
-          "score": 93,
+          "score": 98,
           "detalle": {
             "ev_ebitda": 40,
-            "fcf_yield": 28,
+            "fcf_yield": 33,
             "per": 25
           },
-          "pts_raw": "93/100"
+          "pts_raw": "98/100"
         },
         "safety": {
           "score": 67,
@@ -345,7 +344,7 @@
           "pts_raw": "67/100"
         },
         "momentum": {
-          "score": 80,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
             "momentum_6m": 30,
@@ -359,14 +358,14 @@
         "capas": 3,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (9.3x)",
-          "FCF Yield atractivo (6.0%)",
+          "EV/EBITDA bajo (8.5x)",
+          "FCF Yield atractivo (6.8%)",
           "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+64.1% 6M, precio sobre MM200)"
+          "Momentum positivo (+53.8% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "REP.MC",
@@ -374,7 +373,7 @@
         "sector": "Energy",
         "pais": "Spain",
         "moneda": "EUR",
-        "precio": 24.27,
+        "precio": 21.6,
         "roic": 7.76,
         "gross_profit_to_assets": 18.83,
         "gross_margin": 20.4,
@@ -396,28 +395,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 16071924942.5,
-        "ev_ebitda": 9.28,
-        "ev_fcf": 22.71,
-        "fcf_yield": 6.04,
-        "per": 14.98,
+        "altman_z": 14301597697.7,
+        "ev_ebitda": 8.54,
+        "ev_fcf": 20.89,
+        "fcf_yield": 6.79,
+        "per": 13.33,
         "peg": null,
-        "price_to_book": 1.21,
+        "price_to_book": 1.08,
         "deuda_ebitda": 2.52,
         "cobertura_intereses": 5.44,
-        "momentum_6m": 64.07,
-        "momentum_12m": 161.46,
-        "precio_vs_ma200": 54.49,
-        "ma200": 15.7093
+        "momentum_6m": 53.78,
+        "momentum_12m": 133.31,
+        "precio_vs_ma200": 35.58,
+        "ma200": 15.9316
       }
     },
     {
       "ticker": "FER.MC",
       "nombre": "Ferrovial SE",
       "sector": "Industrials",
-      "precio": 57.28,
+      "precio": 60.84,
       "scores": {
-        "composite": 50.4,
+        "composite": 51.5,
         "confianza": "alta",
         "quality": {
           "score": 74,
@@ -431,13 +430,13 @@
           "pts_raw": "74/100"
         },
         "valuation": {
-          "score": 18,
+          "score": 16,
           "detalle": {
             "ev_ebitda": 0,
-            "fcf_yield": 16,
+            "fcf_yield": 14,
             "per": 2
           },
-          "pts_raw": "18/100"
+          "pts_raw": "16/100"
         },
         "safety": {
           "score": 28,
@@ -448,13 +447,13 @@
           "pts_raw": "29/100"
         },
         "momentum": {
-          "score": 78,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
-            "momentum_6m": 28,
+            "momentum_6m": 30,
             "momentum_12m": 30
           },
-          "pts_raw": "98/100"
+          "pts_raw": "100/100"
         }
       },
       "señal": {
@@ -462,14 +461,14 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum positivo (+13.6% 6M, precio sobre MM200)"
+          "Momentum positivo (+19.2% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados",
           "Deuda/EBITDA elevada (4.5x)"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "FER.MC",
@@ -477,7 +476,7 @@
         "sector": "Industrials",
         "pais": "Netherlands",
         "moneda": "EUR",
-        "precio": 57.28,
+        "precio": 60.84,
         "roic": 9.61,
         "gross_profit_to_assets": 31.01,
         "gross_margin": 88.32,
@@ -499,28 +498,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 24675031450.31,
-        "ev_ebitda": 32.68,
-        "ev_fcf": 27.38,
-        "fcf_yield": 4.23,
-        "per": 47.34,
+        "altman_z": 26217757901.51,
+        "ev_ebitda": 34.44,
+        "ev_fcf": 28.86,
+        "fcf_yield": 3.98,
+        "per": 50.28,
         "peg": null,
-        "price_to_book": 6.99,
+        "price_to_book": 7.42,
         "deuda_ebitda": 4.45,
         "cobertura_intereses": 3.44,
-        "momentum_6m": 13.55,
-        "momentum_12m": 51.4,
-        "precio_vs_ma200": 8.95,
-        "ma200": 52.5756
+        "momentum_6m": 19.2,
+        "momentum_12m": 58.3,
+        "precio_vs_ma200": 15.06,
+        "ma200": 52.8776
       }
     },
     {
       "ticker": "CAF.MC",
       "nombre": "Construcciones y Auxiliar de Ferrocarriles, S.A.",
       "sector": "Industrials",
-      "precio": 59.4,
+      "precio": 61.1,
       "scores": {
-        "composite": 77.0,
+        "composite": 78.8,
         "confianza": "alta",
         "quality": {
           "score": 72,
@@ -551,13 +550,13 @@
           "pts_raw": "95/100"
         },
         "momentum": {
-          "score": 78,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
-            "momentum_6m": 28,
+            "momentum_6m": 30,
             "momentum_12m": 30
           },
-          "pts_raw": "98/100"
+          "pts_raw": "100/100"
         }
       },
       "señal": {
@@ -565,13 +564,13 @@
         "capas": 3,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (7.6x)",
+          "EV/EBITDA bajo (7.8x)",
           "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+13.1% 6M, precio sobre MM200)"
+          "Momentum positivo (+15.1% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "CAF.MC",
@@ -579,7 +578,7 @@
         "sector": "Industrials",
         "pais": "Spain",
         "moneda": "EUR",
-        "precio": 59.4,
+        "precio": 61.1,
         "roic": 16.3,
         "gross_profit_to_assets": 19.49,
         "gross_margin": 24.03,
@@ -601,28 +600,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 1220683469.9,
-        "ev_ebitda": 7.61,
-        "ev_fcf": 32.05,
-        "fcf_yield": 3.46,
-        "per": 13.91,
+        "altman_z": 1255618791.5,
+        "ev_ebitda": 7.81,
+        "ev_fcf": 32.88,
+        "fcf_yield": 3.36,
+        "per": 14.31,
         "peg": null,
-        "price_to_book": 2.07,
+        "price_to_book": 2.13,
         "deuda_ebitda": 0.74,
         "cobertura_intereses": 7.77,
-        "momentum_6m": 13.14,
-        "momentum_12m": 63.25,
-        "precio_vs_ma200": 9.34,
-        "ma200": 54.3276
+        "momentum_6m": 15.07,
+        "momentum_12m": 63.13,
+        "precio_vs_ma200": 11.83,
+        "ma200": 54.6388
       }
     },
     {
       "ticker": "ENG.MC",
       "nombre": "Enagás, S.A.",
       "sector": "Utilities",
-      "precio": 17.205,
+      "precio": 17.25,
       "scores": {
-        "composite": 75.9,
+        "composite": 77.0,
         "confianza": "alta",
         "quality": {
           "score": 77,
@@ -635,13 +634,13 @@
           "pts_raw": "66/85"
         },
         "valuation": {
-          "score": 84,
+          "score": 83,
           "detalle": {
-            "ev_ebitda": 24,
+            "ev_ebitda": 23,
             "fcf_yield": 35,
             "per": 25
           },
-          "pts_raw": "84/100"
+          "pts_raw": "83/100"
         },
         "safety": {
           "score": 37,
@@ -652,7 +651,7 @@
           "pts_raw": "37/100"
         },
         "momentum": {
-          "score": 80,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
             "momentum_6m": 30,
@@ -668,13 +667,13 @@
           "Valoración atractiva",
           "FCF Yield atractivo (8.0%)",
           "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+32.4% 6M, precio sobre MM200)"
+          "Momentum positivo (+30.7% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Deuda/EBITDA elevada (4.5x)"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "ENG.MC",
@@ -682,7 +681,7 @@
         "sector": "Utilities",
         "pais": "Spain",
         "moneda": "EUR",
-        "precio": 17.205,
+        "precio": 17.25,
         "roic": 8.82,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -704,28 +703,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 2683388314.06,
-        "ev_ebitda": 14.0,
-        "ev_fcf": 18.39,
-        "fcf_yield": 7.98,
-        "per": 13.34,
+        "altman_z": 2690406605.26,
+        "ev_ebitda": 14.03,
+        "ev_fcf": 18.43,
+        "fcf_yield": 7.96,
+        "per": 13.37,
         "peg": null,
-        "price_to_book": 1.94,
+        "price_to_book": 1.95,
         "deuda_ebitda": 4.47,
         "cobertura_intereses": 5.94,
-        "momentum_6m": 32.36,
-        "momentum_12m": 39.17,
-        "precio_vs_ma200": 26.06,
-        "ma200": 13.6486
+        "momentum_6m": 30.71,
+        "momentum_12m": 37.8,
+        "precio_vs_ma200": 25.77,
+        "ma200": 13.7152
       }
     },
     {
       "ticker": "SAN.MC",
       "nombre": "Banco Santander, S.A.",
       "sector": "Financial Services",
-      "precio": 9.814,
+      "precio": 10.516,
       "scores": {
-        "composite": 47.6,
+        "composite": 49.2,
         "confianza": "baja",
         "quality": {
           "score": 41,
@@ -750,28 +749,28 @@
           "pts_raw": "0/0"
         },
         "momentum": {
-          "score": 79,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
-            "momentum_6m": 29,
+            "momentum_6m": 30,
             "momentum_12m": 30
           },
-          "pts_raw": "99/100"
+          "pts_raw": "100/100"
         }
       },
       "señal": {
         "señal": "ALERTA_SALIDA",
         "capas": 1,
         "razones": [
-          "Momentum positivo (+14.4% 6M, precio sobre MM200)"
+          "Momentum positivo (+25.0% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados",
           "F-Score débil (3/9) — posible deterioro",
           "Score o F-Score en zona de deterioro severo"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "SAN.MC",
@@ -779,7 +778,7 @@
         "sector": "Financial Services",
         "pais": "Spain",
         "moneda": "EUR",
-        "precio": 9.814,
+        "precio": 10.516,
         "roic": null,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -801,28 +800,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 85218892185.71,
+        "altman_z": 91137726873.71,
         "ev_ebitda": null,
-        "ev_fcf": -12.85,
-        "fcf_yield": -15.84,
-        "per": 11.68,
+        "ev_fcf": -13.28,
+        "fcf_yield": -14.81,
+        "per": 12.52,
         "peg": null,
-        "price_to_book": 1.4,
+        "price_to_book": 1.5,
         "deuda_ebitda": null,
         "cobertura_intereses": null,
-        "momentum_6m": 14.36,
-        "momentum_12m": 83.71,
-        "precio_vs_ma200": 9.21,
-        "ma200": 8.9866
+        "momentum_6m": 25.03,
+        "momentum_12m": 86.87,
+        "precio_vs_ma200": 16.15,
+        "ma200": 9.0541
       }
     },
     {
       "ticker": "ASML.AS",
       "nombre": "ASML Holding N.V.",
       "sector": "Technology",
-      "precio": 1161.0,
+      "precio": 1270.0,
       "scores": {
-        "composite": 61.5,
+        "composite": 62.6,
         "confianza": "alta",
         "quality": {
           "score": 89,
@@ -836,13 +835,13 @@
           "pts_raw": "89/100"
         },
         "valuation": {
-          "score": 11,
+          "score": 10,
           "detalle": {
             "ev_ebitda": 0,
-            "fcf_yield": 9,
+            "fcf_yield": 8,
             "per": 2
           },
-          "pts_raw": "11/100"
+          "pts_raw": "10/100"
         },
         "safety": {
           "score": 100,
@@ -853,7 +852,7 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 80,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
             "momentum_6m": 30,
@@ -867,13 +866,13 @@
         "capas": 2,
         "razones": [
           "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+29.8% 6M, precio sobre MM200)"
+          "Momentum positivo (+56.5% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "ASML.AS",
@@ -881,7 +880,7 @@
         "sector": "Technology",
         "pais": "Netherlands",
         "moneda": "EUR",
-        "precio": 1161.0,
+        "precio": 1270.0,
         "roic": 82.12,
         "gross_profit_to_assets": 34.13,
         "gross_margin": 52.83,
@@ -903,28 +902,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 270383677442.04,
-        "ev_ebitda": 36.04,
-        "ev_fcf": 40.09,
-        "fcf_yield": 2.45,
-        "per": 46.95,
+        "altman_z": 295768522754.04,
+        "ev_ebitda": 39.49,
+        "ev_fcf": 43.93,
+        "fcf_yield": 2.24,
+        "per": 51.27,
         "peg": null,
-        "price_to_book": 22.82,
+        "price_to_book": 24.96,
         "deuda_ebitda": -0.69,
         "cobertura_intereses": 97.42,
-        "momentum_6m": 29.79,
-        "momentum_12m": 104.14,
-        "precio_vs_ma200": 28.43,
-        "ma200": 903.9845
+        "momentum_6m": 56.52,
+        "momentum_12m": 117.17,
+        "precio_vs_ma200": 38.88,
+        "ma200": 914.4903
       }
     },
     {
       "ticker": "IAG.MC",
       "nombre": "International Consolidated Airlines Group S.A.",
       "sector": "Industrials",
-      "precio": 4.208,
+      "precio": 4.457,
       "scores": {
-        "composite": 83.5,
+        "composite": 86.1,
         "confianza": "alta",
         "quality": {
           "score": 84,
@@ -955,13 +954,13 @@
           "pts_raw": "91/100"
         },
         "momentum": {
-          "score": 39,
+          "score": 56,
           "detalle": {
-            "vs_ma200": 9,
-            "momentum_6m": 10,
+            "vs_ma200": 22,
+            "momentum_6m": 11,
             "momentum_12m": 30
           },
-          "pts_raw": "49/100"
+          "pts_raw": "63/100"
         }
       },
       "señal": {
@@ -969,14 +968,14 @@
         "capas": 2,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (4.1x)",
-          "FCF Yield atractivo (16.5%)",
+          "EV/EBITDA bajo (4.3x)",
+          "FCF Yield atractivo (15.6%)",
           "Fundamentales fuertes (F-Score 7/9)",
           "Momentum neutro o débil"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "IAG.MC",
@@ -984,7 +983,7 @@
         "sector": "Industrials",
         "pais": "United Kingdom",
         "moneda": "EUR",
-        "precio": 4.208,
+        "precio": 4.457,
         "roic": 29.13,
         "gross_profit_to_assets": 19.52,
         "gross_margin": 25.19,
@@ -1006,28 +1005,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 11409222452.23,
-        "ev_ebitda": 4.1,
-        "ev_fcf": 8.22,
-        "fcf_yield": 16.54,
-        "per": 6.01,
+        "altman_z": 12101834343.43,
+        "ev_ebitda": 4.28,
+        "ev_fcf": 8.59,
+        "fcf_yield": 15.6,
+        "per": 6.46,
         "peg": null,
-        "price_to_book": 2.53,
+        "price_to_book": 2.68,
         "deuda_ebitda": 1.09,
         "cobertura_intereses": 6.51,
-        "momentum_6m": -4.77,
-        "momentum_12m": 54.99,
-        "precio_vs_ma200": -6.19,
-        "ma200": 4.4859
+        "momentum_6m": -3.93,
+        "momentum_12m": 60.36,
+        "precio_vs_ma200": -0.89,
+        "ma200": 4.4969
       }
     },
     {
       "ticker": "MSFT",
       "nombre": "Microsoft Corporation",
       "sector": "Technology",
-      "precio": 373.46,
+      "precio": 370.87,
       "scores": {
-        "composite": 56.0,
+        "composite": 56.2,
         "confianza": "alta",
         "quality": {
           "score": 82,
@@ -1041,13 +1040,13 @@
           "pts_raw": "82/100"
         },
         "valuation": {
-          "score": 33,
+          "score": 34,
           "detalle": {
-            "ev_ebitda": 16,
+            "ev_ebitda": 17,
             "fcf_yield": 9,
             "per": 8
           },
-          "pts_raw": "33/100"
+          "pts_raw": "34/100"
         },
         "safety": {
           "score": 100,
@@ -1058,13 +1057,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 11,
+          "score": 10,
           "detalle": {
             "vs_ma200": 0,
             "momentum_6m": 0,
-            "momentum_12m": 14
+            "momentum_12m": 12
           },
-          "pts_raw": "14/100"
+          "pts_raw": "12/100"
         }
       },
       "señal": {
@@ -1077,8 +1076,8 @@
           "Valoración cara — múltiplos elevados",
           "Precio muy por debajo de MM200 — tendencia bajista"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "MSFT",
@@ -1086,7 +1085,7 @@
         "sector": "Technology",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 373.46,
+        "precio": 370.87,
         "roic": 26.63,
         "gross_profit_to_assets": 31.32,
         "gross_margin": 68.82,
@@ -1108,28 +1107,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 1665417451931.36,
-        "ev_ebitda": 16.01,
-        "ev_fcf": 39.18,
-        "fcf_yield": 2.58,
-        "per": 23.37,
+        "altman_z": 1653867597006.56,
+        "ev_ebitda": 15.9,
+        "ev_fcf": 38.92,
+        "fcf_yield": 2.6,
+        "per": 23.21,
         "peg": null,
-        "price_to_book": 7.1,
+        "price_to_book": 7.05,
         "deuda_ebitda": 0.17,
         "cobertura_intereses": 52.84,
-        "momentum_6m": -27.29,
-        "momentum_12m": -1.52,
-        "precio_vs_ma200": -21.42,
-        "ma200": 475.262
+        "momentum_6m": -28.71,
+        "momentum_12m": -4.3,
+        "precio_vs_ma200": -21.52,
+        "ma200": 472.5899
       }
     },
     {
       "ticker": "AAPL",
       "nombre": "Apple Inc.",
       "sector": "Technology",
-      "precio": 255.92,
+      "precio": 260.48,
       "scores": {
-        "composite": 61.2,
+        "composite": 63.0,
         "confianza": "alta",
         "quality": {
           "score": 96,
@@ -1159,27 +1158,27 @@
           "pts_raw": "60/60"
         },
         "momentum": {
-          "score": 55,
+          "score": 67,
           "detalle": {
-            "vs_ma200": 33,
-            "momentum_6m": 14,
-            "momentum_12m": 22
+            "vs_ma200": 37,
+            "momentum_6m": 8,
+            "momentum_12m": 30
           },
-          "pts_raw": "69/100"
+          "pts_raw": "75/100"
         }
       },
       "señal": {
-        "señal": "NEUTRO",
-        "capas": 1,
+        "señal": "VIGILAR",
+        "capas": 2,
         "razones": [
           "Fundamentales fuertes (F-Score 8/9)",
-          "Momentum neutro o débil"
+          "Momentum positivo (+2.7% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "AAPL",
@@ -1187,7 +1186,7 @@
         "sector": "Technology",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 255.92,
+        "precio": 260.48,
         "roic": 77.03,
         "gross_profit_to_assets": 54.34,
         "gross_margin": 46.91,
@@ -1209,28 +1208,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 2256895790287.07,
-        "ev_ebitda": 25.01,
-        "ev_fcf": 38.72,
-        "fcf_yield": 2.63,
-        "per": 32.35,
+        "altman_z": 2297109518747.87,
+        "ev_ebitda": 25.45,
+        "ev_fcf": 39.4,
+        "fcf_yield": 2.58,
+        "per": 33.01,
         "peg": null,
-        "price_to_book": 42.67,
+        "price_to_book": 43.43,
         "deuda_ebitda": 0.41,
         "cobertura_intereses": null,
-        "momentum_6m": -0.28,
-        "momentum_12m": 14.8,
-        "precio_vs_ma200": 2.86,
-        "ma200": 248.804
+        "momentum_6m": 2.73,
+        "momentum_12m": 31.56,
+        "precio_vs_ma200": 4.06,
+        "ma200": 250.3051
       }
     },
     {
       "ticker": "JNJ",
       "nombre": "Johnson & Johnson",
       "sector": "Healthcare",
-      "precio": 243.04,
+      "precio": 238.46,
       "scores": {
-        "composite": 63.2,
+        "composite": 65.5,
         "confianza": "alta",
         "quality": {
           "score": 76,
@@ -1244,13 +1243,13 @@
           "pts_raw": "76/100"
         },
         "valuation": {
-          "score": 31,
+          "score": 33,
           "detalle": {
-            "ev_ebitda": 10,
+            "ev_ebitda": 11,
             "fcf_yield": 12,
-            "per": 9
+            "per": 10
           },
-          "pts_raw": "31/100"
+          "pts_raw": "33/100"
         },
         "safety": {
           "score": 100,
@@ -1261,7 +1260,7 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 80,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
             "momentum_6m": 30,
@@ -1275,13 +1274,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 4/9)",
-          "Momentum positivo (+32.2% 6M, precio sobre MM200)"
+          "Momentum positivo (+26.3% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "JNJ",
@@ -1289,7 +1288,7 @@
         "sector": "Healthcare",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 243.04,
+        "precio": 238.46,
         "roic": 24.15,
         "gross_profit_to_assets": 32.1,
         "gross_margin": 67.88,
@@ -1311,28 +1310,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 351421110682.64,
-        "ev_ebitda": 18.14,
-        "ev_fcf": 31.79,
-        "fcf_yield": 3.3,
-        "per": 22.03,
+        "altman_z": 344798724097.04,
+        "ev_ebitda": 17.82,
+        "ev_fcf": 31.22,
+        "fcf_yield": 3.36,
+        "per": 21.6,
         "peg": null,
-        "price_to_book": 7.18,
+        "price_to_book": 7.04,
         "deuda_ebitda": 0.83,
         "cobertura_intereses": 34.55,
-        "momentum_6m": 32.21,
-        "momentum_12m": 60.8,
-        "precio_vs_ma200": 23.6,
-        "ma200": 196.6353
+        "momentum_6m": 26.26,
+        "momentum_12m": 62.35,
+        "precio_vs_ma200": 19.87,
+        "ma200": 198.9265
       }
     },
     {
       "ticker": "PG",
       "nombre": "The Procter & Gamble Company",
       "sector": "Consumer Defensive",
-      "precio": 143.12,
+      "precio": 145.16,
       "scores": {
-        "composite": 64.8,
+        "composite": 65.9,
         "confianza": "alta",
         "quality": {
           "score": 86,
@@ -1346,13 +1345,13 @@
           "pts_raw": "86/100"
         },
         "valuation": {
-          "score": 48,
+          "score": 47,
           "detalle": {
             "ev_ebitda": 21,
-            "fcf_yield": 16,
+            "fcf_yield": 15,
             "per": 11
           },
-          "pts_raw": "48/100"
+          "pts_raw": "47/100"
         },
         "safety": {
           "score": 100,
@@ -1363,13 +1362,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 24,
+          "score": 34,
           "detalle": {
-            "vs_ma200": 12,
-            "momentum_6m": 10,
-            "momentum_12m": 8
+            "vs_ma200": 16,
+            "momentum_6m": 12,
+            "momentum_12m": 10
           },
-          "pts_raw": "30/100"
+          "pts_raw": "38/100"
         }
       },
       "señal": {
@@ -1381,8 +1380,8 @@
           "Momentum neutro o débil"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "PG",
@@ -1390,7 +1389,7 @@
         "sector": "Consumer Defensive",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 143.12,
+        "precio": 145.16,
         "roic": 21.37,
         "gross_profit_to_assets": 34.43,
         "gross_margin": 51.16,
@@ -1412,28 +1411,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 200659972917.78,
-        "ev_ebitda": 14.55,
-        "ev_fcf": 25.66,
-        "fcf_yield": 4.2,
-        "per": 21.17,
+        "altman_z": 203520147458.58,
+        "ev_ebitda": 14.74,
+        "ev_fcf": 26.0,
+        "fcf_yield": 4.14,
+        "per": 21.51,
         "peg": null,
-        "price_to_book": 6.36,
+        "price_to_book": 6.45,
         "deuda_ebitda": 1.05,
         "cobertura_intereses": 23.23,
-        "momentum_6m": -4.54,
-        "momentum_12m": -13.25,
-        "precio_vs_ma200": -4.97,
-        "ma200": 150.6054
+        "momentum_6m": -2.24,
+        "momentum_12m": -8.12,
+        "precio_vs_ma200": -3.42,
+        "ma200": 150.3066
       }
     },
     {
       "ticker": "V",
       "nombre": "Visa Inc.",
       "sector": "Financial Services",
-      "precio": 300.8,
+      "precio": 304.36,
       "scores": {
-        "composite": 50.6,
+        "composite": 51.5,
         "confianza": "alta",
         "quality": {
           "score": 81,
@@ -1464,27 +1463,27 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 8,
+          "score": 14,
           "detalle": {
-            "vs_ma200": 0,
-            "momentum_6m": 2,
-            "momentum_12m": 8
+            "vs_ma200": 2,
+            "momentum_6m": 3,
+            "momentum_12m": 11
           },
-          "pts_raw": "10/100"
+          "pts_raw": "16/100"
         }
       },
       "señal": {
         "señal": "NEUTRO",
         "capas": 0,
         "razones": [
-          "Fundamentales neutrales (F-Score 5/9)"
+          "Fundamentales neutrales (F-Score 5/9)",
+          "Momentum neutro o débil"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados",
-          "Precio muy por debajo de MM200 — tendencia bajista"
+          "Valoración cara — múltiplos elevados"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "V",
@@ -1492,7 +1491,7 @@
         "sector": "Financial Services",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 300.8,
+        "precio": 304.36,
         "roic": 42.64,
         "gross_profit_to_assets": 32.27,
         "gross_margin": 80.36,
@@ -1514,28 +1513,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 347972567041.47,
-        "ev_ebitda": 20.28,
-        "ev_fcf": 27.25,
-        "fcf_yield": 3.72,
-        "per": 28.24,
+        "altman_z": 352090836174.27,
+        "ev_ebitda": 20.52,
+        "ev_fcf": 27.57,
+        "fcf_yield": 3.68,
+        "per": 28.58,
         "peg": null,
-        "price_to_book": 15.01,
+        "price_to_book": 15.19,
         "deuda_ebitda": 0.28,
         "cobertura_intereses": 42.08,
-        "momentum_6m": -12.7,
-        "momentum_12m": -12.5,
-        "precio_vs_ma200": -10.33,
-        "ma200": 335.4409
+        "momentum_6m": -11.94,
+        "momentum_12m": -7.76,
+        "precio_vs_ma200": -9.0,
+        "ma200": 334.4676
       }
     },
     {
       "ticker": "RGTI",
       "nombre": "Rigetti Computing, Inc.",
       "sector": "Technology",
-      "precio": 14.19,
+      "precio": 14.68,
       "scores": {
-        "composite": 25.6,
+        "composite": 26.1,
         "confianza": "alta",
         "quality": {
           "score": 30,
@@ -1563,7 +1562,7 @@
           "pts_raw": "60/60"
         },
         "momentum": {
-          "score": 24,
+          "score": 27,
           "detalle": {
             "vs_ma200": 0,
             "momentum_6m": 0,
@@ -1582,8 +1581,8 @@
           "Precio muy por debajo de MM200 — tendencia bajista",
           "Score o F-Score en zona de deterioro severo"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "RGTI",
@@ -1591,7 +1590,7 @@
         "sector": "Technology",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 14.19,
+        "precio": 14.68,
         "roic": -33.59,
         "gross_profit_to_assets": 0.31,
         "gross_margin": 29.12,
@@ -1613,28 +1612,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 2827929905.32,
-        "ev_ebitda": -61.13,
-        "ev_fcf": -60.55,
-        "fcf_yield": -1.64,
+        "altman_z": 2925582334.12,
+        "ev_ebitda": -63.25,
+        "ev_fcf": -62.66,
+        "fcf_yield": -1.58,
         "per": null,
         "peg": null,
-        "price_to_book": 8.61,
+        "price_to_book": 8.9,
         "deuda_ebitda": 0.49,
         "cobertura_intereses": null,
-        "momentum_6m": -59.92,
-        "momentum_12m": 67.14,
-        "precio_vs_ma200": -36.68,
-        "ma200": 22.4101
+        "momentum_6m": -68.84,
+        "momentum_12m": 56.34,
+        "precio_vs_ma200": -34.72,
+        "ma200": 22.487
       }
     },
     {
       "ticker": "BRK-B",
       "nombre": "Berkshire Hathaway Inc.",
       "sector": "Financial Services",
-      "precio": 477.35,
+      "precio": 479.9,
       "scores": {
-        "composite": 57.7,
+        "composite": 58.6,
         "confianza": "alta",
         "quality": {
           "score": 45,
@@ -1664,13 +1663,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 30,
+          "score": 36,
           "detalle": {
-            "vs_ma200": 18,
+            "vs_ma200": 19,
             "momentum_6m": 11,
-            "momentum_12m": 9
+            "momentum_12m": 11
           },
-          "pts_raw": "38/100"
+          "pts_raw": "41/100"
         }
       },
       "señal": {
@@ -1684,8 +1683,8 @@
           "F-Score débil (2/9) — posible deterioro",
           "Score o F-Score en zona de deterioro severo"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "BRK-B",
@@ -1693,7 +1692,7 @@
         "sector": "Financial Services",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 477.35,
+        "precio": 479.9,
         "roic": 8.7,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -1715,28 +1714,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 617749413889.45,
-        "ev_ebitda": 10.01,
-        "ev_fcf": 44.2,
-        "fcf_yield": 2.43,
-        "per": 15.38,
+        "altman_z": 621049400526.25,
+        "ev_ebitda": 10.06,
+        "ev_fcf": 44.42,
+        "fcf_yield": 2.42,
+        "per": 15.46,
         "peg": null,
         "price_to_book": 0.0,
         "deuda_ebitda": 0.7,
         "cobertura_intereses": 17.27,
-        "momentum_6m": -3.74,
-        "momentum_12m": -11.23,
-        "precio_vs_ma200": -2.7,
-        "ma200": 490.5959
+        "momentum_6m": -3.39,
+        "momentum_12m": -7.96,
+        "precio_vs_ma200": -2.14,
+        "ma200": 490.4189
       }
     },
     {
       "ticker": "PFE",
       "nombre": "Pfizer Inc.",
       "sector": "Healthcare",
-      "precio": 28.32,
+      "precio": 26.92,
       "scores": {
-        "composite": 68.3,
+        "composite": 71.6,
         "confianza": "alta",
         "quality": {
           "score": 61,
@@ -1750,13 +1749,13 @@
           "pts_raw": "61/100"
         },
         "valuation": {
-          "score": 77,
+          "score": 81,
           "detalle": {
             "ev_ebitda": 40,
-            "fcf_yield": 25,
-            "per": 12
+            "fcf_yield": 27,
+            "per": 14
           },
-          "pts_raw": "77/100"
+          "pts_raw": "81/100"
         },
         "safety": {
           "score": 63,
@@ -1767,13 +1766,13 @@
           "pts_raw": "63/100"
         },
         "momentum": {
-          "score": 71,
+          "score": 84,
           "detalle": {
             "vs_ma200": 40,
-            "momentum_6m": 23,
-            "momentum_12m": 26
+            "momentum_6m": 25,
+            "momentum_12m": 29
           },
-          "pts_raw": "89/100"
+          "pts_raw": "94/100"
         }
       },
       "señal": {
@@ -1781,14 +1780,14 @@
         "capas": 2,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (8.7x)",
-          "FCF Yield atractivo (5.6%)",
+          "EV/EBITDA bajo (8.4x)",
+          "FCF Yield atractivo (5.9%)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+8.2% 6M, precio sobre MM200)"
+          "Momentum positivo (+10.3% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "PFE",
@@ -1796,7 +1795,7 @@
         "sector": "Healthcare",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 28.32,
+        "precio": 26.92,
         "roic": 5.39,
         "gross_profit_to_assets": 22.34,
         "gross_margin": 74.33,
@@ -1818,28 +1817,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 96656552756.47,
-        "ev_ebitda": 8.71,
-        "ev_fcf": 24.67,
-        "fcf_yield": 5.63,
-        "per": 20.82,
+        "altman_z": 91878329550.07,
+        "ev_ebitda": 8.4,
+        "ev_fcf": 23.8,
+        "fcf_yield": 5.93,
+        "per": 19.79,
         "peg": null,
-        "price_to_book": 1.86,
+        "price_to_book": 1.77,
         "deuda_ebitda": 2.44,
         "cobertura_intereses": 3.82,
-        "momentum_6m": 8.2,
-        "momentum_12m": 22.98,
-        "precio_vs_ma200": 13.81,
-        "ma200": 24.8842
+        "momentum_6m": 10.35,
+        "momentum_12m": 28.39,
+        "precio_vs_ma200": 7.7,
+        "ma200": 24.9959
       }
     },
     {
       "ticker": "UNH",
       "nombre": "UnitedHealth Group Incorporated",
       "sector": "Healthcare",
-      "precio": 277.26,
+      "precio": 304.33,
       "scores": {
-        "composite": 56.5,
+        "composite": 55.7,
         "confianza": "alta",
         "quality": {
           "score": 68,
@@ -1853,13 +1852,13 @@
           "pts_raw": "68/100"
         },
         "valuation": {
-          "score": 65,
+          "score": 55,
           "detalle": {
-            "ev_ebitda": 23,
-            "fcf_yield": 30,
-            "per": 12
+            "ev_ebitda": 19,
+            "fcf_yield": 27,
+            "per": 9
           },
-          "pts_raw": "65/100"
+          "pts_raw": "55/100"
         },
         "safety": {
           "score": 65,
@@ -1870,28 +1869,26 @@
           "pts_raw": "65/100"
         },
         "momentum": {
-          "score": 0,
+          "score": 18,
           "detalle": {
-            "vs_ma200": 0,
+            "vs_ma200": 21,
             "momentum_6m": 0,
             "momentum_12m": 0
           },
-          "pts_raw": "0/100"
+          "pts_raw": "21/100"
         }
       },
       "señal": {
         "señal": "NEUTRO",
-        "capas": 1,
+        "capas": 0,
         "razones": [
-          "Valoración atractiva",
-          "FCF Yield atractivo (6.4%)",
-          "Fundamentales neutrales (F-Score 5/9)"
+          "Valoración justa (no en descuento claro)",
+          "Fundamentales neutrales (F-Score 5/9)",
+          "Momentum neutro o débil"
         ],
-        "alertas": [
-          "Precio muy por debajo de MM200 — tendencia bajista"
-        ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "alertas": [],
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "UNH",
@@ -1899,7 +1896,7 @@
         "sector": "Healthcare",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 277.26,
+        "precio": 304.33,
         "roic": 9.97,
         "gross_profit_to_assets": 26.78,
         "gross_margin": 18.53,
@@ -1921,28 +1918,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 150997322958.78,
-        "ev_ebitda": 14.14,
-        "ev_fcf": 19.02,
-        "fcf_yield": 6.39,
-        "per": 20.96,
+        "altman_z": 165739777230.78,
+        "ev_ebitda": 15.27,
+        "ev_fcf": 20.54,
+        "fcf_yield": 5.82,
+        "per": 22.99,
         "peg": null,
-        "price_to_book": 2.67,
+        "price_to_book": 2.93,
         "deuda_ebitda": 2.5,
         "cobertura_intereses": 4.67,
-        "momentum_6m": -20.48,
-        "momentum_12m": -45.51,
-        "precio_vs_ma200": -10.14,
-        "ma200": 308.5321
+        "momentum_6m": -16.03,
+        "momentum_12m": -45.91,
+        "precio_vs_ma200": -1.38,
+        "ma200": 308.5982
       }
     },
     {
       "ticker": "MNST",
       "nombre": "Monster Beverage Corporation",
       "sector": "Consumer Defensive",
-      "precio": 72.37,
+      "precio": 75.72,
       "scores": {
-        "composite": 58.8,
+        "composite": 61.0,
         "confianza": "alta",
         "quality": {
           "score": 86,
@@ -1956,13 +1953,13 @@
           "pts_raw": "86/100"
         },
         "valuation": {
-          "score": 14,
+          "score": 12,
           "detalle": {
-            "ev_ebitda": 2,
-            "fcf_yield": 10,
+            "ev_ebitda": 1,
+            "fcf_yield": 9,
             "per": 2
           },
-          "pts_raw": "14/100"
+          "pts_raw": "12/100"
         },
         "safety": {
           "score": 100,
@@ -1972,13 +1969,13 @@
           "pts_raw": "60/60"
         },
         "momentum": {
-          "score": 63,
+          "score": 83,
           "detalle": {
-            "vs_ma200": 32,
-            "momentum_6m": 22,
-            "momentum_12m": 25
+            "vs_ma200": 40,
+            "momentum_6m": 24,
+            "momentum_12m": 29
           },
-          "pts_raw": "79/100"
+          "pts_raw": "93/100"
         }
       },
       "señal": {
@@ -1986,13 +1983,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+7.1% 6M, precio sobre MM200)"
+          "Momentum positivo (+9.7% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "MNST",
@@ -2000,7 +1997,7 @@
         "sector": "Consumer Defensive",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 72.37,
+        "precio": 75.72,
         "roic": 31.0,
         "gross_profit_to_assets": 46.37,
         "gross_margin": 55.85,
@@ -2022,28 +2019,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 42478470761.81,
-        "ev_ebitda": 25.85,
-        "ev_fcf": 35.41,
-        "fcf_yield": 2.74,
-        "per": 37.3,
+        "altman_z": 44444796521.81,
+        "ev_ebitda": 27.08,
+        "ev_fcf": 37.09,
+        "fcf_yield": 2.62,
+        "per": 39.03,
         "peg": null,
-        "price_to_book": 8.58,
+        "price_to_book": 8.97,
         "deuda_ebitda": -0.79,
         "cobertura_intereses": null,
-        "momentum_6m": 7.09,
-        "momentum_12m": 21.92,
-        "precio_vs_ma200": 2.66,
-        "ma200": 70.4976
+        "momentum_6m": 9.69,
+        "momentum_12m": 29.99,
+        "precio_vs_ma200": 6.97,
+        "ma200": 70.7866
       }
     },
     {
       "ticker": "GOOGL",
       "nombre": "Alphabet Inc.",
       "sector": "Communication Services",
-      "precio": 295.77,
+      "precio": 317.24,
       "scores": {
-        "composite": 59.3,
+        "composite": 60.1,
         "confianza": "alta",
         "quality": {
           "score": 82,
@@ -2057,13 +2054,13 @@
           "pts_raw": "82/100"
         },
         "valuation": {
-          "score": 13,
+          "score": 11,
           "detalle": {
             "ev_ebitda": 2,
             "fcf_yield": 7,
-            "per": 4
+            "per": 2
           },
-          "pts_raw": "13/100"
+          "pts_raw": "11/100"
         },
         "safety": {
           "score": 100,
@@ -2074,7 +2071,7 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 80,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
             "momentum_6m": 30,
@@ -2088,13 +2085,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum positivo (+20.6% 6M, precio sobre MM200)"
+          "Momentum positivo (+31.5% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "GOOGL",
@@ -2102,7 +2099,7 @@
         "sector": "Communication Services",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 295.77,
+        "precio": 317.24,
         "roic": 28.4,
         "gross_profit_to_assets": 40.37,
         "gross_margin": 59.65,
@@ -2124,28 +2121,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 2146757876124.13,
-        "ev_ebitda": 24.02,
-        "ev_fcf": 49.22,
-        "fcf_yield": 2.05,
-        "per": 27.39,
+        "altman_z": 2302591421647.33,
+        "ev_ebitda": 25.74,
+        "ev_fcf": 52.77,
+        "fcf_yield": 1.91,
+        "per": 29.32,
         "peg": null,
-        "price_to_book": 8.61,
+        "price_to_book": 9.23,
         "deuda_ebitda": 0.19,
         "cobertura_intereses": 216.8,
-        "momentum_6m": 20.55,
-        "momentum_12m": 88.99,
-        "precio_vs_ma200": 11.74,
-        "ma200": 264.6898
+        "momentum_6m": 31.52,
+        "momentum_12m": 100.58,
+        "precio_vs_ma200": 18.26,
+        "ma200": 268.2525
       }
     },
     {
       "ticker": "BABA",
       "nombre": "Alibaba Group Holding Limited",
       "sector": "Consumer Cyclical",
-      "precio": 122.05,
+      "precio": 127.33,
       "scores": {
-        "composite": 68.3,
+        "composite": 70.0,
         "confianza": "alta",
         "quality": {
           "score": 68,
@@ -2159,13 +2156,13 @@
           "pts_raw": "68/100"
         },
         "valuation": {
-          "score": 85,
+          "score": 84,
           "detalle": {
             "ev_ebitda": 40,
             "fcf_yield": 35,
-            "per": 10
+            "per": 9
           },
-          "pts_raw": "85/100"
+          "pts_raw": "84/100"
         },
         "safety": {
           "score": 100,
@@ -2176,13 +2173,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 9,
+          "score": 23,
           "detalle": {
             "vs_ma200": 0,
             "momentum_6m": 0,
-            "momentum_12m": 12
+            "momentum_12m": 26
           },
-          "pts_raw": "12/100"
+          "pts_raw": "26/100"
         }
       },
       "señal": {
@@ -2190,15 +2187,15 @@
         "capas": 1,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (2.8x)",
-          "FCF Yield atractivo (26.6%)",
+          "EV/EBITDA bajo (2.9x)",
+          "FCF Yield atractivo (25.5%)",
           "Fundamentales neutrales (F-Score 6/9)"
         ],
         "alertas": [
           "Precio muy por debajo de MM200 — tendencia bajista"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "BABA",
@@ -2206,7 +2203,7 @@
         "sector": "Consumer Cyclical",
         "pais": "Hong Kong",
         "moneda": "USD",
-        "precio": 122.05,
+        "precio": 127.33,
         "roic": 11.72,
         "gross_profit_to_assets": 22.06,
         "gross_margin": 39.95,
@@ -2228,28 +2225,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 174830243022.31,
-        "ev_ebitda": 2.84,
-        "ev_fcf": 5.08,
-        "fcf_yield": 26.61,
-        "per": 21.76,
+        "altman_z": 182725391156.71,
+        "ev_ebitda": 2.94,
+        "ev_fcf": 5.25,
+        "fcf_yield": 25.46,
+        "per": 22.46,
         "peg": null,
-        "price_to_book": 1.88,
+        "price_to_book": 1.96,
         "deuda_ebitda": 0.74,
         "cobertura_intereses": 17.2,
-        "momentum_6m": -35.54,
-        "momentum_12m": -4.37,
-        "precio_vs_ma200": -16.55,
-        "ma200": 146.2561
+        "momentum_6m": -26.69,
+        "momentum_12m": 23.58,
+        "precio_vs_ma200": -13.09,
+        "ma200": 146.5098
       }
     },
     {
       "ticker": "JD",
       "nombre": "JD.com, Inc.",
       "sector": "Consumer Cyclical",
-      "precio": 28.46,
+      "precio": 28.93,
       "scores": {
-        "composite": 63.6,
+        "composite": 66.8,
         "confianza": "baja",
         "quality": {
           "score": 46,
@@ -2276,13 +2273,13 @@
           "pts_raw": "60/60"
         },
         "momentum": {
-          "score": 4,
+          "score": 25,
           "detalle": {
-            "vs_ma200": 6,
-            "momentum_6m": 0,
-            "momentum_12m": 0
+            "vs_ma200": 18,
+            "momentum_6m": 3,
+            "momentum_12m": 7
           },
-          "pts_raw": "6/100"
+          "pts_raw": "28/100"
         }
       },
       "señal": {
@@ -2291,15 +2288,15 @@
         "razones": [
           "Valoración atractiva",
           "EV/EBITDA bajo (1.7x)",
-          "FCF Yield atractivo (107.5%)",
+          "FCF Yield atractivo (105.8%)",
           "Momentum neutro o débil"
         ],
         "alertas": [
           "F-Score débil (2/9) — posible deterioro",
           "Score o F-Score en zona de deterioro severo"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "JD",
@@ -2307,7 +2304,7 @@
         "sector": "Consumer Cyclical",
         "pais": "China",
         "moneda": "USD",
-        "precio": 28.46,
+        "precio": 28.93,
         "roic": null,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -2329,28 +2326,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 24703760793.9,
-        "ev_ebitda": 1.68,
-        "ev_fcf": 0.51,
-        "fcf_yield": 107.54,
-        "per": 15.22,
+        "altman_z": 25111729766.7,
+        "ev_ebitda": 1.73,
+        "ev_fcf": 0.53,
+        "fcf_yield": 105.79,
+        "per": 15.31,
         "peg": null,
-        "price_to_book": 1.19,
+        "price_to_book": 1.2,
         "deuda_ebitda": -1.38,
         "cobertura_intereses": null,
-        "momentum_6m": -20.9,
-        "momentum_12m": -28.7,
-        "precio_vs_ma200": -7.59,
-        "ma200": 30.7983
+        "momentum_6m": -11.8,
+        "momentum_12m": -14.58,
+        "precio_vs_ma200": -2.47,
+        "ma200": 29.6612
       }
     },
     {
       "ticker": "0LG5.L",
       "nombre": "Toyota Motor Corporation",
       "sector": "",
-      "precio": 206.94,
+      "precio": 210.4926,
       "scores": {
-        "composite": 28.5,
+        "composite": 29.2,
         "confianza": "baja",
         "quality": {
           "score": 0,
@@ -2370,7 +2367,7 @@
           "pts_raw": "0/0"
         },
         "momentum": {
-          "score": 40,
+          "score": 45,
           "detalle": {},
           "pts_raw": "0/0"
         }
@@ -2386,8 +2383,8 @@
           "Precio muy por debajo de MM200 — tendencia bajista",
           "Score o F-Score en zona de deterioro severo"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "0LG5.L",
@@ -2395,7 +2392,7 @@
         "sector": "",
         "pais": "Japan",
         "moneda": "USD",
-        "precio": 206.94,
+        "precio": 210.4926,
         "roic": null,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -2423,7 +2420,7 @@
         "fcf_yield": null,
         "per": null,
         "peg": null,
-        "price_to_book": 10.97,
+        "price_to_book": 17.87,
         "deuda_ebitda": null,
         "cobertura_intereses": null,
         "momentum_6m": null,
@@ -2436,9 +2433,9 @@
       "ticker": "3918.HK",
       "nombre": "NagaCorp Ltd.",
       "sector": "Consumer Cyclical",
-      "precio": 4.03,
+      "precio": 4.35,
       "scores": {
-        "composite": 40.6,
+        "composite": 42.2,
         "confianza": "baja",
         "quality": {
           "score": 46,
@@ -2452,10 +2449,10 @@
           "score": 28,
           "detalle": {
             "ev_ebitda": 0,
-            "fcf_yield": 4,
+            "fcf_yield": 3,
             "per": 25
           },
-          "pts_raw": "29/100"
+          "pts_raw": "28/100"
         },
         "safety": {
           "score": 100,
@@ -2465,27 +2462,28 @@
           "pts_raw": "60/60"
         },
         "momentum": {
-          "score": 16,
+          "score": 27,
           "detalle": {
-            "vs_ma200": 0,
+            "vs_ma200": 2,
             "momentum_6m": 0,
-            "momentum_12m": 21
+            "momentum_12m": 29
           },
-          "pts_raw": "21/100"
+          "pts_raw": "31/100"
         }
       },
       "señal": {
         "señal": "ALERTA_SALIDA",
         "capas": 0,
-        "razones": [],
+        "razones": [
+          "Momentum neutro o débil"
+        ],
         "alertas": [
           "Valoración cara — múltiplos elevados",
           "F-Score débil (2/9) — posible deterioro",
-          "Precio muy por debajo de MM200 — tendencia bajista",
           "Score o F-Score en zona de deterioro severo"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "3918.HK",
@@ -2493,7 +2491,7 @@
         "sector": "Consumer Cyclical",
         "pais": "Cambodia",
         "moneda": "HKD",
-        "precio": 4.03,
+        "precio": 4.35,
         "roic": null,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -2515,28 +2513,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 10694790758.94,
-        "ev_ebitda": 44.83,
-        "ev_fcf": 93.49,
-        "fcf_yield": 1.07,
-        "per": 7.33,
+        "altman_z": 11544004608.54,
+        "ev_ebitda": 48.39,
+        "ev_fcf": 100.91,
+        "fcf_yield": 0.99,
+        "per": 7.91,
         "peg": null,
-        "price_to_book": 0.95,
+        "price_to_book": 1.02,
         "deuda_ebitda": 0.0,
         "cobertura_intereses": null,
-        "momentum_6m": -30.52,
-        "momentum_12m": 13.67,
-        "precio_vs_ma200": -15.4,
-        "ma200": 4.7636
+        "momentum_6m": -32.03,
+        "momentum_12m": 29.17,
+        "precio_vs_ma200": -8.86,
+        "ma200": 4.7731
       }
     },
     {
       "ticker": "ASTS",
       "nombre": "AST SpaceMobile, Inc.",
       "sector": "Technology",
-      "precio": 92.62,
+      "precio": 94.9,
       "scores": {
-        "composite": 35.2,
+        "composite": 35.8,
         "confianza": "alta",
         "quality": {
           "score": 43,
@@ -2565,13 +2563,13 @@
           "pts_raw": "60/100"
         },
         "momentum": {
-          "score": 80,
+          "score": 84,
           "detalle": {
             "vs_ma200": 40,
-            "momentum_6m": 30,
+            "momentum_6m": 24,
             "momentum_12m": 30
           },
-          "pts_raw": "100/100"
+          "pts_raw": "94/100"
         }
       },
       "señal": {
@@ -2579,13 +2577,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 4/9)",
-          "Momentum positivo (+40.0% 6M, precio sobre MM200)"
+          "Momentum positivo (+9.3% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "ASTS",
@@ -2593,7 +2591,7 @@
         "sector": "Technology",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 92.62,
+        "precio": 94.9,
         "roic": -19.06,
         "gross_profit_to_assets": 0.71,
         "gross_margin": 50.34,
@@ -2615,28 +2613,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 21230029209.66,
-        "ev_ebitda": -149.14,
-        "ev_fcf": -29.59,
-        "fcf_yield": -3.37,
+        "altman_z": 21752642764.86,
+        "ev_ebitda": -152.82,
+        "ev_fcf": -30.32,
+        "fcf_yield": -3.29,
         "per": null,
         "peg": null,
-        "price_to_book": 14.36,
+        "price_to_book": 14.71,
         "deuda_ebitda": 0.41,
         "cobertura_intereses": -11.67,
-        "momentum_6m": 39.99,
-        "momentum_12m": 313.3,
-        "precio_vs_ma200": 32.17,
-        "ma200": 70.0779
+        "momentum_6m": 9.34,
+        "momentum_12m": 293.12,
+        "precio_vs_ma200": 33.17,
+        "ma200": 71.2606
       }
     },
     {
       "ticker": "KSB.DE",
       "nombre": "KSB SE & Co. KGaA",
       "sector": "Industrials",
-      "precio": 1010.0,
+      "precio": 1050.0,
       "scores": {
-        "composite": 91.0,
+        "composite": 93.3,
         "confianza": "alta",
         "quality": {
           "score": 90,
@@ -2650,13 +2648,13 @@
           "pts_raw": "90/100"
         },
         "valuation": {
-          "score": 99,
+          "score": 98,
           "detalle": {
             "ev_ebitda": 40,
             "fcf_yield": 35,
-            "per": 24
+            "per": 23
           },
-          "pts_raw": "99/100"
+          "pts_raw": "98/100"
         },
         "safety": {
           "score": 100,
@@ -2667,13 +2665,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 69,
+          "score": 87,
           "detalle": {
-            "vs_ma200": 33,
-            "momentum_6m": 24,
+            "vs_ma200": 40,
+            "momentum_6m": 27,
             "momentum_12m": 30
           },
-          "pts_raw": "87/100"
+          "pts_raw": "97/100"
         }
       },
       "señal": {
@@ -2681,14 +2679,14 @@
         "capas": 2,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (4.6x)",
-          "FCF Yield atractivo (7.5%)",
+          "EV/EBITDA bajo (4.8x)",
+          "FCF Yield atractivo (7.3%)",
           "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum positivo (+9.8% 6M, precio sobre MM200)"
+          "Momentum positivo (+12.9% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "KSB.DE",
@@ -2696,7 +2694,7 @@
         "sector": "Industrials",
         "pais": "Germany",
         "moneda": "EUR",
-        "precio": 1010.0,
+        "precio": 1050.0,
         "roic": 25.44,
         "gross_profit_to_assets": 62.67,
         "gross_margin": 60.62,
@@ -2718,28 +2716,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 1061304193.72,
-        "ev_ebitda": 4.58,
-        "ev_fcf": 10.91,
-        "fcf_yield": 7.55,
-        "per": 15.06,
+        "altman_z": 1103335988.92,
+        "ev_ebitda": 4.8,
+        "ev_fcf": 11.44,
+        "fcf_yield": 7.27,
+        "per": 15.67,
         "peg": null,
-        "price_to_book": 1.52,
+        "price_to_book": 1.58,
         "deuda_ebitda": -0.98,
         "cobertura_intereses": 12.28,
-        "momentum_6m": 9.78,
-        "momentum_12m": 44.74,
-        "precio_vs_ma200": 2.68,
-        "ma200": 983.6
+        "momentum_6m": 12.9,
+        "momentum_12m": 40.7,
+        "precio_vs_ma200": 6.29,
+        "ma200": 987.89
       }
     },
     {
       "ticker": "SN",
       "nombre": "SharkNinja, Inc.",
       "sector": "Consumer Cyclical",
-      "precio": 104.38,
+      "precio": 115.07,
       "scores": {
-        "composite": 66.8,
+        "composite": 71.2,
         "confianza": "alta",
         "quality": {
           "score": 87,
@@ -2753,13 +2751,13 @@
           "pts_raw": "87/100"
         },
         "valuation": {
-          "score": 47,
+          "score": 37,
           "detalle": {
-            "ev_ebitda": 24,
-            "fcf_yield": 12,
-            "per": 11
+            "ev_ebitda": 19,
+            "fcf_yield": 10,
+            "per": 8
           },
-          "pts_raw": "47/100"
+          "pts_raw": "37/100"
         },
         "safety": {
           "score": 100,
@@ -2770,26 +2768,27 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 37,
+          "score": 90,
           "detalle": {
-            "vs_ma200": 14,
-            "momentum_6m": 9,
-            "momentum_12m": 24
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
           },
-          "pts_raw": "47/100"
+          "pts_raw": "100/100"
         }
       },
       "señal": {
         "señal": "NEUTRO",
-        "capas": 0,
+        "capas": 1,
         "razones": [
-          "Valoración justa (no en descuento claro)",
           "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum neutro o débil"
+          "Momentum positivo (+28.9% 6M, precio sobre MM200)"
         ],
-        "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "alertas": [
+          "Valoración cara — múltiplos elevados"
+        ],
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "SN",
@@ -2797,7 +2796,7 @@
         "sector": "Consumer Cyclical",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 104.38,
+        "precio": 115.07,
         "roic": 26.77,
         "gross_profit_to_assets": 58.63,
         "gross_margin": 49.01,
@@ -2819,28 +2818,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 8845757647.42,
-        "ev_ebitda": 13.92,
-        "ev_fcf": 31.34,
-        "fcf_yield": 3.22,
-        "per": 21.13,
+        "altman_z": 9751689833.02,
+        "ev_ebitda": 15.33,
+        "ev_fcf": 34.53,
+        "fcf_yield": 2.92,
+        "per": 23.29,
         "peg": null,
-        "price_to_book": 5.51,
+        "price_to_book": 6.07,
         "deuda_ebitda": 0.12,
         "cobertura_intereses": 19.52,
-        "momentum_6m": 3.21,
-        "momentum_12m": 18.04,
-        "precio_vs_ma200": -4.24,
-        "ma200": 108.9991
+        "momentum_6m": 28.86,
+        "momentum_12m": 46.12,
+        "precio_vs_ma200": 5.07,
+        "ma200": 109.5128
       }
     },
     {
       "ticker": "GEST.MC",
       "nombre": "Gestamp Automoción, S.A.",
       "sector": "Consumer Cyclical",
-      "precio": 3.0,
+      "precio": 3.14,
       "scores": {
-        "composite": 78.6,
+        "composite": 80.6,
         "confianza": "alta",
         "quality": {
           "score": 78,
@@ -2871,28 +2870,28 @@
           "pts_raw": "67/100"
         },
         "momentum": {
-          "score": 38,
+          "score": 51,
           "detalle": {
-            "vs_ma200": 15,
-            "momentum_6m": 6,
-            "momentum_12m": 27
+            "vs_ma200": 26,
+            "momentum_6m": 3,
+            "momentum_12m": 29
           },
-          "pts_raw": "48/100"
+          "pts_raw": "58/100"
         }
       },
       "señal": {
-        "señal": "NEUTRO",
-        "capas": 1,
+        "señal": "COMPRA",
+        "capas": 2,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (3.3x)",
-          "FCF Yield atractivo (12.2%)",
+          "EV/EBITDA bajo (3.4x)",
+          "FCF Yield atractivo (11.6%)",
           "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum neutro o débil"
+          "Momentum positivo (+1.3% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "GEST.MC",
@@ -2900,7 +2899,7 @@
         "sector": "Consumer Cyclical",
         "pais": "Spain",
         "moneda": "EUR",
-        "precio": 3.0,
+        "precio": 3.14,
         "roic": 9.72,
         "gross_profit_to_assets": 43.64,
         "gross_margin": 38.61,
@@ -2922,26 +2921,26 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 1024209870.48,
-        "ev_ebitda": 3.33,
-        "ev_fcf": 18.1,
-        "fcf_yield": 12.18,
-        "per": 11.11,
+        "altman_z": 1072006427.28,
+        "ev_ebitda": 3.4,
+        "ev_fcf": 18.48,
+        "fcf_yield": 11.64,
+        "per": 11.63,
         "peg": null,
-        "price_to_book": 0.77,
+        "price_to_book": 0.81,
         "deuda_ebitda": 1.82,
         "cobertura_intereses": 2.47,
-        "momentum_6m": -8.34,
-        "momentum_12m": 24.37,
-        "precio_vs_ma200": -3.97,
-        "ma200": 3.124
+        "momentum_6m": 1.32,
+        "momentum_12m": 29.86,
+        "precio_vs_ma200": 0.39,
+        "ma200": 3.1277
       }
     },
     {
       "ticker": "FISV",
       "nombre": "Fiserv, Inc.",
       "sector": "Desconocido",
-      "precio": 56.16,
+      "precio": 56.09,
       "scores": {
         "composite": 63.8,
         "confianza": "alta",
@@ -2989,14 +2988,14 @@
         "razones": [
           "Valoración atractiva",
           "EV/EBITDA bajo (6.5x)",
-          "FCF Yield atractivo (14.2%)",
+          "FCF Yield atractivo (14.3%)",
           "Fundamentales neutrales (F-Score 4/9)"
         ],
         "alertas": [
           "Precio muy por debajo de MM200 — tendencia bajista"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "FISV",
@@ -3004,7 +3003,7 @@
         "sector": "Desconocido",
         "pais": "Desconocido",
         "moneda": "USD",
-        "precio": 56.16,
+        "precio": 56.09,
         "roic": 8.46,
         "gross_profit_to_assets": 15.7,
         "gross_margin": 59.36,
@@ -3026,28 +3025,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 18123458151.39,
-        "ev_ebitda": 6.54,
-        "ev_fcf": 13.61,
-        "fcf_yield": 14.23,
-        "per": 8.86,
+        "altman_z": 17997401703.39,
+        "ev_ebitda": 6.51,
+        "ev_fcf": 13.57,
+        "fcf_yield": 14.33,
+        "per": 8.85,
         "peg": null,
         "price_to_book": 1.16,
         "deuda_ebitda": 3.16,
         "cobertura_intereses": 3.79,
-        "momentum_6m": -55.46,
-        "momentum_12m": -74.7,
-        "precio_vs_ma200": -43.93,
-        "ma200": 100.1678
+        "momentum_6m": -55.66,
+        "momentum_12m": -71.32,
+        "precio_vs_ma200": -42.44,
+        "ma200": 97.4536
       }
     },
     {
       "ticker": "1211.HK",
       "nombre": "BYD Company Limited",
       "sector": "Consumer Cyclical",
-      "precio": 103.9,
+      "precio": 105.1,
       "scores": {
-        "composite": 49.9,
+        "composite": 50.4,
         "confianza": "alta",
         "quality": {
           "score": 49,
@@ -3078,11 +3077,11 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 28,
+          "score": 31,
           "detalle": {
-            "vs_ma200": 19,
-            "momentum_6m": 12,
-            "momentum_12m": 4
+            "vs_ma200": 23,
+            "momentum_6m": 7,
+            "momentum_12m": 5
           },
           "pts_raw": "35/100"
         }
@@ -3096,8 +3095,8 @@
           "Momentum neutro o débil"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "1211.HK",
@@ -3105,7 +3104,7 @@
         "sector": "Consumer Cyclical",
         "pais": "China",
         "moneda": "HKD",
-        "precio": 103.9,
+        "precio": 105.1,
         "roic": 11.53,
         "gross_profit_to_assets": 16.14,
         "gross_margin": 17.74,
@@ -3127,28 +3126,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 616738573517.92,
-        "ev_ebitda": 9.77,
-        "ev_fcf": -10.97,
-        "fcf_yield": -9.5,
-        "per": 25.53,
+        "altman_z": 623861642036.32,
+        "ev_ebitda": 9.88,
+        "ev_fcf": -11.09,
+        "fcf_yield": -9.39,
+        "per": 25.57,
         "peg": null,
-        "price_to_book": 3.64,
+        "price_to_book": 3.67,
         "deuda_ebitda": 0.4,
         "cobertura_intereses": 16.58,
-        "momentum_6m": -2.44,
-        "momentum_12m": -20.9,
-        "precio_vs_ma200": -2.21,
-        "ma200": 106.2515
+        "momentum_6m": -7.73,
+        "momentum_12m": -18.84,
+        "precio_vs_ma200": -0.73,
+        "ma200": 105.8705
       }
     },
     {
       "ticker": "ASST",
       "nombre": "Strive Asset Management, LLC",
       "sector": "Financial Services",
-      "precio": 9.75,
+      "precio": 10.63,
       "scores": {
-        "composite": 25.5,
+        "composite": 27.1,
         "confianza": "alta",
         "quality": {
           "score": 36,
@@ -3176,13 +3175,13 @@
           "pts_raw": "60/60"
         },
         "momentum": {
-          "score": 7,
+          "score": 18,
           "detalle": {
             "vs_ma200": 0,
             "momentum_6m": 0,
-            "momentum_12m": 9
+            "momentum_12m": 20
           },
-          "pts_raw": "9/100"
+          "pts_raw": "20/100"
         }
       },
       "señal": {
@@ -3195,8 +3194,8 @@
           "Precio muy por debajo de MM200 — tendencia bajista",
           "Score o F-Score en zona de deterioro severo"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "ASST",
@@ -3204,7 +3203,7 @@
         "sector": "Financial Services",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 9.75,
+        "precio": 10.63,
         "roic": -2.68,
         "gross_profit_to_assets": -1.39,
         "gross_margin": -283.62,
@@ -3226,28 +3225,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 404578866.31,
-        "ev_ebitda": -2.42,
-        "ev_fcf": -28.23,
-        "fcf_yield": -3.21,
+        "altman_z": 441415755.91,
+        "ev_ebitda": -2.67,
+        "ev_fcf": -31.07,
+        "fcf_yield": -2.94,
         "per": null,
         "peg": null,
-        "price_to_book": 0.75,
+        "price_to_book": 0.82,
         "deuda_ebitda": 0.25,
         "cobertura_intereses": null,
-        "momentum_6m": -81.67,
-        "momentum_12m": -11.36,
-        "precio_vs_ma200": -78.88,
-        "ma200": 46.1617
+        "momentum_6m": -70.64,
+        "momentum_12m": 10.5,
+        "precio_vs_ma200": -75.75,
+        "ma200": 43.8383
       }
     },
     {
       "ticker": "JET2.L",
       "nombre": "Jet2 plc",
       "sector": "Consumer Cyclical",
-      "precio": 1136.0,
+      "precio": 1212.0,
       "scores": {
-        "composite": 78.3,
+        "composite": 79.0,
         "confianza": "alta",
         "quality": {
           "score": 80,
@@ -3278,13 +3277,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 9,
+          "score": 13,
           "detalle": {
             "vs_ma200": 0,
-            "momentum_6m": 0,
+            "momentum_6m": 3,
             "momentum_12m": 12
           },
-          "pts_raw": "12/100"
+          "pts_raw": "15/100"
         }
       },
       "señal": {
@@ -3292,15 +3291,15 @@
         "capas": 1,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (3.2x)",
-          "FCF Yield atractivo (31.8%)",
+          "EV/EBITDA bajo (3.5x)",
+          "FCF Yield atractivo (29.8%)",
           "Fundamentales neutrales (F-Score 6/9)"
         ],
         "alertas": [
           "Precio muy por debajo de MM200 — tendencia bajista"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "JET2.L",
@@ -3308,7 +3307,7 @@
         "sector": "Consumer Cyclical",
         "pais": "United Kingdom",
         "moneda": "GBp",
-        "precio": 1136.0,
+        "precio": 1212.0,
         "roic": 32.89,
         "gross_profit_to_assets": 15.21,
         "gross_margin": 12.53,
@@ -3330,28 +3329,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 1243325877.33,
-        "ev_ebitda": 3.24,
-        "ev_fcf": 3.07,
-        "fcf_yield": 31.81,
-        "per": 4.85,
+        "altman_z": 1326506190.93,
+        "ev_ebitda": 3.46,
+        "ev_fcf": 3.28,
+        "fcf_yield": 29.81,
+        "per": 5.18,
         "peg": null,
-        "price_to_book": 110.1,
+        "price_to_book": 117.46,
         "deuda_ebitda": -0.08,
         "cobertura_intereses": 11.23,
-        "momentum_6m": -20.5,
-        "momentum_12m": -4.04,
-        "precio_vs_ma200": -19.25,
-        "ma200": 1406.8237
+        "momentum_6m": -11.85,
+        "momentum_12m": -4.03,
+        "precio_vs_ma200": -13.1,
+        "ma200": 1394.6629
       }
     },
     {
       "ticker": "300750.SZ",
       "nombre": "Contemporary Amperex Technology Co., Limited",
       "sector": "Industrials",
-      "precio": 386.46,
+      "precio": 416.0,
       "scores": {
-        "composite": 69.1,
+        "composite": 68.7,
         "confianza": "alta",
         "quality": {
           "score": 81,
@@ -3365,13 +3364,13 @@
           "pts_raw": "81/100"
         },
         "valuation": {
-          "score": 48,
+          "score": 39,
           "detalle": {
-            "ev_ebitda": 18,
-            "fcf_yield": 22,
-            "per": 8
+            "ev_ebitda": 14,
+            "fcf_yield": 19,
+            "per": 6
           },
-          "pts_raw": "48/100"
+          "pts_raw": "39/100"
         },
         "safety": {
           "score": 100,
@@ -3382,26 +3381,27 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 66,
+          "score": 84,
           "detalle": {
             "vs_ma200": 40,
-            "momentum_6m": 13,
+            "momentum_6m": 24,
             "momentum_12m": 30
           },
-          "pts_raw": "83/100"
+          "pts_raw": "94/100"
         }
       },
       "señal": {
         "señal": "VIGILAR",
         "capas": 2,
         "razones": [
-          "Valoración justa (no en descuento claro)",
           "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+4.4% 6M, precio sobre MM200)"
+          "Momentum positivo (+9.4% 6M, precio sobre MM200)"
         ],
-        "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "alertas": [
+          "Valoración cara — múltiplos elevados"
+        ],
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "300750.SZ",
@@ -3409,7 +3409,7 @@
         "sector": "Industrials",
         "pais": "China",
         "moneda": "CNY",
-        "precio": 386.46,
+        "precio": 416.0,
         "roic": 59.14,
         "gross_profit_to_assets": 11.42,
         "gross_margin": 26.27,
@@ -3431,28 +3431,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 1058251682612.49,
-        "ev_ebitda": 15.37,
-        "ev_fcf": 17.06,
-        "fcf_yield": 5.15,
-        "per": 23.96,
+        "altman_z": 1152702873601.29,
+        "ev_ebitda": 16.94,
+        "ev_fcf": 18.79,
+        "fcf_yield": 4.73,
+        "per": 25.77,
         "peg": null,
-        "price_to_book": 5.2,
+        "price_to_book": 5.59,
         "deuda_ebitda": -2.12,
         "cobertura_intereses": 33.75,
-        "momentum_6m": 4.43,
-        "momentum_12m": 54.55,
-        "precio_vs_ma200": 13.5,
-        "ma200": 340.4951
+        "momentum_6m": 9.36,
+        "momentum_12m": 64.51,
+        "precio_vs_ma200": 21.12,
+        "ma200": 343.4642
       }
     },
     {
       "ticker": "GMAB",
       "nombre": "Genmab A/S",
       "sector": "Healthcare",
-      "precio": 27.5,
+      "precio": 28.25,
       "scores": {
-        "composite": 61.8,
+        "composite": 62.4,
         "confianza": "alta",
         "quality": {
           "score": 64,
@@ -3466,13 +3466,13 @@
           "pts_raw": "64/100"
         },
         "valuation": {
-          "score": 66,
+          "score": 63,
           "detalle": {
-            "ev_ebitda": 16,
-            "fcf_yield": 32,
-            "per": 18
+            "ev_ebitda": 15,
+            "fcf_yield": 31,
+            "per": 17
           },
-          "pts_raw": "66/100"
+          "pts_raw": "63/100"
         },
         "safety": {
           "score": 72,
@@ -3483,13 +3483,13 @@
           "pts_raw": "72/100"
         },
         "momentum": {
-          "score": 39,
+          "score": 50,
           "detalle": {
-            "vs_ma200": 19,
-            "momentum_6m": 0,
+            "vs_ma200": 24,
+            "momentum_6m": 3,
             "momentum_12m": 30
           },
-          "pts_raw": "49/100"
+          "pts_raw": "57/100"
         }
       },
       "señal": {
@@ -3497,15 +3497,15 @@
         "capas": 1,
         "razones": [
           "Valoración atractiva",
-          "FCF Yield atractivo (6.7%)",
+          "FCF Yield atractivo (6.5%)",
           "Momentum neutro o débil"
         ],
         "alertas": [
           "F-Score débil (3/9) — posible deterioro",
           "Score o F-Score en zona de deterioro severo"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "GMAB",
@@ -3513,7 +3513,7 @@
         "sector": "Healthcare",
         "pais": "Denmark",
         "moneda": "USD",
-        "precio": 27.5,
+        "precio": 28.25,
         "roic": 10.46,
         "gross_profit_to_assets": 27.05,
         "gross_margin": 93.6,
@@ -3535,28 +3535,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 10187190682.79,
-        "ev_ebitda": 16.04,
-        "ev_fcf": 18.29,
-        "fcf_yield": 6.66,
-        "per": 17.86,
+        "altman_z": 10465023591.59,
+        "ev_ebitda": 16.4,
+        "ev_fcf": 18.7,
+        "fcf_yield": 6.48,
+        "per": 18.34,
         "peg": null,
-        "price_to_book": 0.29,
+        "price_to_book": 2.98,
         "deuda_ebitda": 2.88,
         "cobertura_intereses": 20.74,
-        "momentum_6m": -14.38,
-        "momentum_12m": 46.12,
-        "precio_vs_ma200": -2.24,
-        "ma200": 28.1289
+        "momentum_6m": -11.3,
+        "momentum_12m": 50.03,
+        "precio_vs_ma200": -0.18,
+        "ma200": 28.2997
       }
     },
     {
       "ticker": "TRI.PA",
       "nombre": "Trigano S.A.",
       "sector": "Consumer Cyclical",
-      "precio": 141.5,
+      "precio": 152.4,
       "scores": {
-        "composite": 79.6,
+        "composite": 84.2,
         "confianza": "alta",
         "quality": {
           "score": 73,
@@ -3587,13 +3587,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 36,
+          "score": 67,
           "detalle": {
-            "vs_ma200": 5,
-            "momentum_6m": 11,
+            "vs_ma200": 23,
+            "momentum_6m": 22,
             "momentum_12m": 30
           },
-          "pts_raw": "46/100"
+          "pts_raw": "75/100"
         }
       },
       "señal": {
@@ -3601,14 +3601,14 @@
         "capas": 1,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (6.7x)",
-          "FCF Yield atractivo (19.1%)",
+          "EV/EBITDA bajo (7.2x)",
+          "FCF Yield atractivo (17.7%)",
           "Fundamentales neutrales (F-Score 4/9)",
           "Momentum neutro o débil"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "TRI.PA",
@@ -3616,7 +3616,7 @@
         "sector": "Consumer Cyclical",
         "pais": "France",
         "moneda": "EUR",
-        "precio": 141.5,
+        "precio": 152.4,
         "roic": 14.4,
         "gross_profit_to_assets": 35.96,
         "gross_margin": 32.18,
@@ -3638,19 +3638,19 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 1637729896.42,
-        "ev_ebitda": 6.65,
-        "ev_fcf": 4.71,
-        "fcf_yield": 19.08,
-        "per": 11.4,
+        "altman_z": 1763887106.02,
+        "ev_ebitda": 7.22,
+        "ev_fcf": 5.11,
+        "fcf_yield": 17.71,
+        "per": 12.28,
         "peg": null,
-        "price_to_book": 1.31,
+        "price_to_book": 1.41,
         "deuda_ebitda": -0.76,
         "cobertura_intereses": 52.11,
-        "momentum_6m": -3.07,
-        "momentum_12m": 48.03,
-        "precio_vs_ma200": -7.71,
-        "ma200": 153.3214
+        "momentum_6m": 7.07,
+        "momentum_12m": 60.23,
+        "precio_vs_ma200": -0.71,
+        "ma200": 153.4896
       }
     },
     {
@@ -3659,7 +3659,7 @@
       "sector": "Healthcare",
       "precio": 5.9,
       "scores": {
-        "composite": 82.6,
+        "composite": 83.0,
         "confianza": "alta",
         "quality": {
           "score": 85,
@@ -3690,13 +3690,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 24,
+          "score": 27,
           "detalle": {
-            "vs_ma200": 6,
+            "vs_ma200": 5,
             "momentum_6m": 0,
             "momentum_12m": 25
           },
-          "pts_raw": "31/100"
+          "pts_raw": "30/100"
         }
       },
       "señal": {
@@ -3710,8 +3710,8 @@
           "Momentum neutro o débil"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "HLBBF",
@@ -3752,17 +3752,17 @@
         "cobertura_intereses": 9.73,
         "momentum_6m": -18.17,
         "momentum_12m": 21.67,
-        "precio_vs_ma200": -7.52,
-        "ma200": 6.3798
+        "precio_vs_ma200": -7.66,
+        "ma200": 6.3897
       }
     },
     {
       "ticker": "GRF.MC",
       "nombre": "Grifols, S.A.",
       "sector": "Healthcare",
-      "precio": 9.204,
+      "precio": 8.934,
       "scores": {
-        "composite": 64.8,
+        "composite": 65.2,
         "confianza": "alta",
         "quality": {
           "score": 68,
@@ -3776,13 +3776,13 @@
           "pts_raw": "68/100"
         },
         "valuation": {
-          "score": 96,
+          "score": 97,
           "detalle": {
             "ev_ebitda": 40,
             "fcf_yield": 35,
-            "per": 21
+            "per": 22
           },
-          "pts_raw": "96/100"
+          "pts_raw": "97/100"
         },
         "safety": {
           "score": 13,
@@ -3797,9 +3797,9 @@
           "detalle": {
             "vs_ma200": 0,
             "momentum_6m": 0,
-            "momentum_12m": 23
+            "momentum_12m": 20
           },
-          "pts_raw": "23/100"
+          "pts_raw": "20/100"
         }
       },
       "señal": {
@@ -3807,16 +3807,16 @@
         "capas": 2,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (9.1x)",
-          "FCF Yield atractivo (8.5%)",
+          "EV/EBITDA bajo (8.9x)",
+          "FCF Yield atractivo (8.7%)",
           "Fundamentales fuertes (F-Score 8/9)"
         ],
         "alertas": [
           "Precio muy por debajo de MM200 — tendencia bajista",
           "Deuda/EBITDA elevada (5.4x)"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "GRF.MC",
@@ -3824,7 +3824,7 @@
         "sector": "Healthcare",
         "pais": "Spain",
         "moneda": "EUR",
-        "precio": 9.204,
+        "precio": 8.934,
         "roic": 5.52,
         "gross_profit_to_assets": 13.06,
         "gross_margin": 38.75,
@@ -3846,19 +3846,19 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 3758409216.71,
-        "ev_ebitda": 9.06,
-        "ev_fcf": 28.96,
-        "fcf_yield": 8.47,
-        "per": 16.73,
+        "altman_z": 3648155751.11,
+        "ev_ebitda": 8.95,
+        "ev_fcf": 28.61,
+        "fcf_yield": 8.73,
+        "per": 16.24,
         "peg": null,
-        "price_to_book": 1.19,
+        "price_to_book": 1.15,
         "deuda_ebitda": 5.37,
         "cobertura_intereses": 1.74,
-        "momentum_6m": -23.97,
-        "momentum_12m": 16.08,
-        "precio_vs_ma200": -17.5,
-        "ma200": 11.1559
+        "momentum_6m": -24.38,
+        "momentum_12m": 10.63,
+        "precio_vs_ma200": -19.78,
+        "ma200": 11.1374
       }
     },
     {
@@ -3919,8 +3919,8 @@
           "Precio muy por debajo de MM200 — tendencia bajista",
           "Deuda/EBITDA elevada (9.6x)"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "WZZZY",
@@ -3954,24 +3954,24 @@
         "ev_ebitda": 11.55,
         "ev_fcf": 17.28,
         "fcf_yield": 33.84,
-        "per": 5.77,
+        "per": 5.66,
         "peg": null,
         "price_to_book": 0.38,
         "deuda_ebitda": 9.58,
         "cobertura_intereses": 1.08,
         "momentum_6m": -20.84,
-        "momentum_12m": -42.97,
-        "precio_vs_ma200": -26.15,
-        "ma200": 4.0621
+        "momentum_12m": -31.51,
+        "precio_vs_ma200": -25.94,
+        "ma200": 4.0506
       }
     },
     {
       "ticker": "CUK",
       "nombre": "Carnival Corporation & plc",
       "sector": "Consumer Cyclical",
-      "precio": 25.58,
+      "precio": 27.9,
       "scores": {
-        "composite": 75.8,
+        "composite": 80.1,
         "confianza": "alta",
         "quality": {
           "score": 77,
@@ -3985,13 +3985,13 @@
           "pts_raw": "77/100"
         },
         "valuation": {
-          "score": 100,
+          "score": 98,
           "detalle": {
             "ev_ebitda": 40,
-            "fcf_yield": 35,
+            "fcf_yield": 33,
             "per": 25
           },
-          "pts_raw": "100/100"
+          "pts_raw": "98/100"
         },
         "safety": {
           "score": 38,
@@ -4002,28 +4002,28 @@
           "pts_raw": "38/100"
         },
         "momentum": {
-          "score": 41,
+          "score": 75,
           "detalle": {
-            "vs_ma200": 11,
-            "momentum_6m": 11,
+            "vs_ma200": 32,
+            "momentum_6m": 22,
             "momentum_12m": 30
           },
-          "pts_raw": "52/100"
+          "pts_raw": "84/100"
         }
       },
       "señal": {
         "señal": "COMPRA",
-        "capas": 2,
+        "capas": 3,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (8.5x)",
-          "FCF Yield atractivo (7.3%)",
+          "EV/EBITDA bajo (8.9x)",
+          "FCF Yield atractivo (6.7%)",
           "Fundamentales fuertes (F-Score 9/9)",
-          "Momentum neutro o débil"
+          "Momentum positivo (+7.8% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "CUK",
@@ -4031,7 +4031,7 @@
         "sector": "Consumer Cyclical",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 25.58,
+        "precio": 27.9,
         "roic": 8.49,
         "gross_profit_to_assets": 15.25,
         "gross_margin": 29.62,
@@ -4053,28 +4053,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 21269965210.3,
-        "ev_ebitda": 8.48,
-        "ev_fcf": 23.6,
-        "fcf_yield": 7.35,
-        "per": 11.27,
+        "altman_z": 23199060787.9,
+        "ev_ebitda": 8.92,
+        "ev_fcf": 24.83,
+        "fcf_yield": 6.74,
+        "per": 12.29,
         "peg": null,
-        "price_to_book": 2.72,
+        "price_to_book": 2.97,
         "deuda_ebitda": 3.59,
         "cobertura_intereses": 3.05,
-        "momentum_6m": -3.2,
-        "momentum_12m": 42.69,
-        "precio_vs_ma200": -5.6,
-        "ma200": 27.0978
+        "momentum_6m": 7.85,
+        "momentum_12m": 58.36,
+        "precio_vs_ma200": 2.46,
+        "ma200": 27.2307
       }
     },
     {
       "ticker": "UNPRF",
       "nombre": "Uniper SE",
       "sector": "Utilities",
-      "precio": 41.56,
+      "precio": 45.3,
       "scores": {
-        "composite": 56.5,
+        "composite": 58.4,
         "confianza": "alta",
         "quality": {
           "score": 56,
@@ -4088,13 +4088,13 @@
           "pts_raw": "56/100"
         },
         "valuation": {
-          "score": 56,
+          "score": 49,
           "detalle": {
-            "ev_ebitda": 31,
+            "ev_ebitda": 24,
             "fcf_yield": 0,
             "per": 25
           },
-          "pts_raw": "56/100"
+          "pts_raw": "49/100"
         },
         "safety": {
           "score": 91,
@@ -4105,13 +4105,13 @@
           "pts_raw": "91/100"
         },
         "momentum": {
-          "score": 36,
+          "score": 65,
           "detalle": {
-            "vs_ma200": 30,
-            "momentum_6m": 4,
-            "momentum_12m": 11
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 3
           },
-          "pts_raw": "45/100"
+          "pts_raw": "73/100"
         }
       },
       "señal": {
@@ -4120,11 +4120,11 @@
         "razones": [
           "Valoración justa (no en descuento claro)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+1.4% 6M, precio sobre MM200)"
+          "Momentum positivo (+16.1% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "UNPRF",
@@ -4132,7 +4132,7 @@
         "sector": "Utilities",
         "pais": "Germany",
         "moneda": "USD",
-        "precio": 41.56,
+        "precio": 45.3,
         "roic": 17.92,
         "gross_profit_to_assets": 9.39,
         "gross_margin": 4.87,
@@ -4154,28 +4154,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 10385229007.34,
-        "ev_ebitda": 12.23,
-        "ev_fcf": -7.43,
-        "fcf_yield": -9.17,
-        "per": 10.71,
+        "altman_z": 11319798991.34,
+        "ev_ebitda": 13.85,
+        "ev_fcf": -8.41,
+        "fcf_yield": -8.42,
+        "per": 11.62,
         "peg": null,
-        "price_to_book": 1.26,
+        "price_to_book": 1.37,
         "deuda_ebitda": -5.72,
         "cobertura_intereses": 6.31,
-        "momentum_6m": 1.37,
-        "momentum_12m": -6.27,
-        "precio_vs_ma200": 1.73,
-        "ma200": 40.8513
+        "momentum_6m": 16.15,
+        "momentum_12m": 2.17,
+        "precio_vs_ma200": 10.84,
+        "ma200": 40.8705
       }
     },
     {
       "ticker": "DMX",
       "nombre": "DoubleLine Multi-Sector Income ETF",
       "sector": "Desconocido",
-      "precio": 49.935,
+      "precio": 50.169,
       "scores": {
-        "composite": 27.6,
+        "composite": 28.9,
         "confianza": "baja",
         "quality": {
           "score": 0,
@@ -4195,13 +4195,13 @@
           "pts_raw": "0/0"
         },
         "momentum": {
-          "score": 34,
+          "score": 43,
           "detalle": {
-            "vs_ma200": 29,
-            "momentum_6m": 5,
-            "momentum_12m": 9
+            "vs_ma200": 30,
+            "momentum_6m": 7,
+            "momentum_12m": 11
           },
-          "pts_raw": "43/100"
+          "pts_raw": "48/100"
         }
       },
       "señal": {
@@ -4209,14 +4209,14 @@
         "capas": 1,
         "razones": [
           "Valoración justa (no en descuento claro)",
-          "Momentum positivo (+1.7% 6M, precio sobre MM200)"
+          "Momentum positivo (+2.5% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "F-Score débil (0/9) — posible deterioro",
           "Score o F-Score en zona de deterioro severo"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "DMX",
@@ -4224,7 +4224,7 @@
         "sector": "Desconocido",
         "pais": "Desconocido",
         "moneda": "USD",
-        "precio": 49.935,
+        "precio": 50.169,
         "roic": null,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -4255,19 +4255,19 @@
         "price_to_book": null,
         "deuda_ebitda": null,
         "cobertura_intereses": null,
-        "momentum_6m": 1.72,
-        "momentum_12m": 6.5,
-        "precio_vs_ma200": 1.5,
-        "ma200": 49.195
+        "momentum_6m": 2.52,
+        "momentum_12m": 7.63,
+        "precio_vs_ma200": 1.85,
+        "ma200": 49.2556
       }
     },
     {
       "ticker": "NVAX",
       "nombre": "Novavax, Inc.",
       "sector": "Healthcare",
-      "precio": 7.7,
+      "precio": 8.12,
       "scores": {
-        "composite": 56.2,
+        "composite": 59.2,
         "confianza": "alta",
         "quality": {
           "score": 46,
@@ -4298,13 +4298,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 34,
+          "score": 54,
           "detalle": {
-            "vs_ma200": 14,
-            "momentum_6m": 0,
-            "momentum_12m": 29
+            "vs_ma200": 26,
+            "momentum_6m": 9,
+            "momentum_12m": 25
           },
-          "pts_raw": "43/100"
+          "pts_raw": "60/100"
         }
       },
       "señal": {
@@ -4312,13 +4312,13 @@
         "capas": 1,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (2.1x)",
+          "EV/EBITDA bajo (2.2x)",
           "Fundamentales neutrales (F-Score 5/9)",
           "Momentum neutro o débil"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "NVAX",
@@ -4326,7 +4326,7 @@
         "sector": "Healthcare",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 7.7,
+        "precio": 8.12,
         "roic": -307.02,
         "gross_profit_to_assets": 89.28,
         "gross_margin": 93.5,
@@ -4348,28 +4348,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 752764106.15,
-        "ev_ebitda": 2.14,
-        "ev_fcf": -5.03,
-        "fcf_yield": -20.01,
-        "per": 2.98,
+        "altman_z": 793823920.55,
+        "ev_ebitda": 2.25,
+        "ev_fcf": -5.3,
+        "fcf_yield": -18.97,
+        "per": 3.15,
         "peg": null,
-        "price_to_book": -9.8,
+        "price_to_book": -10.33,
         "deuda_ebitda": 0.01,
         "cobertura_intereses": 20.61,
-        "momentum_6m": -19.37,
-        "momentum_12m": 28.76,
-        "precio_vs_ma200": -4.16,
-        "ma200": 8.0345
+        "momentum_6m": -5.47,
+        "momentum_12m": 20.3,
+        "precio_vs_ma200": 0.5,
+        "ma200": 8.0797
       }
     },
     {
       "ticker": "TLW.L",
       "nombre": "Tullow Oil plc",
       "sector": "Energy",
-      "precio": 12.86,
+      "precio": 12.6,
       "scores": {
-        "composite": 83.2,
+        "composite": 84.2,
         "confianza": "alta",
         "quality": {
           "score": 84,
@@ -4399,13 +4399,13 @@
           "pts_raw": "49/100"
         },
         "momentum": {
-          "score": 65,
+          "score": 71,
           "detalle": {
             "vs_ma200": 40,
             "momentum_6m": 30,
-            "momentum_12m": 12
+            "momentum_12m": 9
           },
-          "pts_raw": "82/100"
+          "pts_raw": "79/100"
         }
       },
       "señal": {
@@ -4414,13 +4414,13 @@
         "razones": [
           "Valoración atractiva",
           "EV/EBITDA bajo (2.7x)",
-          "FCF Yield atractivo (281.5%)",
+          "FCF Yield atractivo (287.3%)",
           "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+16.9% 6M, precio sobre MM200)"
+          "Momentum positivo (+18.9% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "TLW.L",
@@ -4428,7 +4428,7 @@
         "sector": "Energy",
         "pais": "United Kingdom",
         "moneda": "GBp",
-        "precio": 12.86,
+        "precio": 12.6,
         "roic": 27.8,
         "gross_profit_to_assets": 18.61,
         "gross_margin": 49.12,
@@ -4450,28 +4450,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 113812780.84,
+        "altman_z": 111511747.24,
         "ev_ebitda": 2.68,
-        "ev_fcf": 4.4,
-        "fcf_yield": 281.51,
+        "ev_fcf": 4.39,
+        "fcf_yield": 287.32,
         "per": null,
         "peg": null,
-        "price_to_book": -75.69,
+        "price_to_book": -74.16,
         "deuda_ebitda": 2.46,
         "cobertura_intereses": 1.94,
-        "momentum_6m": 16.91,
-        "momentum_12m": -5.44,
-        "precio_vs_ma200": 24.28,
-        "ma200": 10.348
+        "momentum_6m": 18.87,
+        "momentum_12m": -10.38,
+        "precio_vs_ma200": 22.88,
+        "ma200": 10.254
       }
     },
     {
       "ticker": "OKLO",
       "nombre": "Oklo Inc.",
       "sector": "Utilities",
-      "precio": 48.13,
+      "precio": 50.25,
       "scores": {
-        "composite": 23.2,
+        "composite": 23.7,
         "confianza": "media",
         "quality": {
           "score": 47,
@@ -4498,7 +4498,7 @@
           "pts_raw": "5/60"
         },
         "momentum": {
-          "score": 24,
+          "score": 27,
           "detalle": {
             "vs_ma200": 0,
             "momentum_6m": 0,
@@ -4518,8 +4518,8 @@
           "Score o F-Score en zona de deterioro severo",
           "Deuda/EBITDA elevada (5.7x)"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "OKLO",
@@ -4527,7 +4527,7 @@
         "sector": "Utilities",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 48.13,
+        "precio": 50.25,
         "roic": -15.97,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -4549,28 +4549,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 5012319437.24,
-        "ev_ebitda": -54.53,
-        "ev_fcf": -65.58,
-        "fcf_yield": -1.38,
+        "altman_z": 5233098547.64,
+        "ev_ebitda": -57.18,
+        "ev_fcf": -68.77,
+        "fcf_yield": -1.32,
         "per": null,
         "peg": null,
-        "price_to_book": 5.23,
+        "price_to_book": 5.46,
         "deuda_ebitda": 5.67,
         "cobertura_intereses": null,
-        "momentum_6m": -62.63,
-        "momentum_12m": 112.03,
-        "precio_vs_ma200": -43.88,
-        "ma200": 85.7586
+        "momentum_6m": -63.62,
+        "momentum_12m": 108.68,
+        "precio_vs_ma200": -41.22,
+        "ma200": 85.4836
       }
     },
     {
       "ticker": "VKTX",
       "nombre": "Viking Therapeutics, Inc.",
       "sector": "Healthcare",
-      "precio": 34.8,
+      "precio": 34.26,
       "scores": {
-        "composite": 36.8,
+        "composite": 35.8,
         "confianza": "media",
         "quality": {
           "score": 37,
@@ -4597,28 +4597,28 @@
           "pts_raw": "60/60"
         },
         "momentum": {
-          "score": 80,
+          "score": 73,
           "detalle": {
             "vs_ma200": 40,
-            "momentum_6m": 30,
+            "momentum_6m": 12,
             "momentum_12m": 30
           },
-          "pts_raw": "100/100"
+          "pts_raw": "82/100"
         }
       },
       "señal": {
         "señal": "ALERTA_SALIDA",
-        "capas": 1,
+        "capas": 0,
         "razones": [
-          "Momentum positivo (+24.8% 6M, precio sobre MM200)"
+          "Momentum neutro o débil"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados",
           "F-Score débil (1/9) — posible deterioro",
           "Score o F-Score en zona de deterioro severo"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "VKTX",
@@ -4626,7 +4626,7 @@
         "sector": "Healthcare",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 34.8,
+        "precio": 34.26,
         "roic": -65.64,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -4648,28 +4648,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 2412773680.8,
-        "ev_ebitda": -9.81,
-        "ev_fcf": -13.84,
-        "fcf_yield": -6.93,
+        "altman_z": 2382315722.4,
+        "ev_ebitda": -9.68,
+        "ev_fcf": -13.65,
+        "fcf_yield": -7.02,
         "per": null,
         "peg": null,
-        "price_to_book": 6.25,
+        "price_to_book": 6.15,
         "deuda_ebitda": 0.42,
         "cobertura_intereses": null,
-        "momentum_6m": 24.82,
-        "momentum_12m": 35.51,
-        "precio_vs_ma200": 8.01,
-        "ma200": 32.2207
+        "momentum_6m": -2.06,
+        "momentum_12m": 48.31,
+        "precio_vs_ma200": 5.67,
+        "ma200": 32.4206
       }
     },
     {
       "ticker": "KIN.BR",
       "nombre": "Kinepolis Group NV",
       "sector": "Communication Services",
-      "precio": 26.6,
+      "precio": 28.35,
       "scores": {
-        "composite": 60.5,
+        "composite": 61.2,
         "confianza": "alta",
         "quality": {
           "score": 60,
@@ -4683,13 +4683,13 @@
           "pts_raw": "60/100"
         },
         "valuation": {
-          "score": 92,
+          "score": 89,
           "detalle": {
             "ev_ebitda": 40,
             "fcf_yield": 35,
-            "per": 17
+            "per": 14
           },
-          "pts_raw": "92/100"
+          "pts_raw": "89/100"
         },
         "safety": {
           "score": 32,
@@ -4700,13 +4700,13 @@
           "pts_raw": "32/100"
         },
         "momentum": {
-          "score": 7,
+          "score": 19,
           "detalle": {
-            "vs_ma200": 0,
-            "momentum_6m": 0,
-            "momentum_12m": 9
+            "vs_ma200": 6,
+            "momentum_6m": 6,
+            "momentum_12m": 10
           },
-          "pts_raw": "9/100"
+          "pts_raw": "22/100"
         }
       },
       "señal": {
@@ -4714,15 +4714,14 @@
         "capas": 1,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (8.3x)",
-          "FCF Yield atractivo (13.3%)",
-          "Fundamentales neutrales (F-Score 5/9)"
+          "EV/EBITDA bajo (8.6x)",
+          "FCF Yield atractivo (12.5%)",
+          "Fundamentales neutrales (F-Score 5/9)",
+          "Momentum neutro o débil"
         ],
-        "alertas": [
-          "Precio muy por debajo de MM200 — tendencia bajista"
-        ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "alertas": [],
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "KIN.BR",
@@ -4730,7 +4729,7 @@
         "sector": "Communication Services",
         "pais": "Belgium",
         "moneda": "EUR",
-        "precio": 26.6,
+        "precio": 28.35,
         "roic": 7.42,
         "gross_profit_to_assets": 11.65,
         "gross_margin": 23.21,
@@ -4752,28 +4751,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 426907930.45,
-        "ev_ebitda": 8.31,
-        "ev_fcf": 13.79,
-        "fcf_yield": 13.32,
-        "per": 18.73,
+        "altman_z": 454993959.25,
+        "ev_ebitda": 8.6,
+        "ev_fcf": 14.28,
+        "fcf_yield": 12.5,
+        "per": 19.96,
         "peg": null,
-        "price_to_book": 3.05,
+        "price_to_book": 3.25,
         "deuda_ebitda": 3.78,
         "cobertura_intereses": 2.83,
-        "momentum_6m": -14.88,
-        "momentum_12m": -11.43,
-        "precio_vs_ma200": -13.55,
-        "ma200": 30.7707
+        "momentum_6m": -8.1,
+        "momentum_12m": -8.88,
+        "precio_vs_ma200": -7.36,
+        "ma200": 30.603
       }
     },
     {
       "ticker": "CLNX.MC",
       "nombre": "Cellnex Telecom, S.A.",
       "sector": "Real Estate",
-      "precio": 28.75,
+      "precio": 30.05,
       "scores": {
-        "composite": 32.2,
+        "composite": 33.2,
         "confianza": "media",
         "quality": {
           "score": 34,
@@ -4786,12 +4785,12 @@
           "pts_raw": "29/85"
         },
         "valuation": {
-          "score": 36,
+          "score": 33,
           "detalle": {
-            "ev_ebitda": 17,
-            "fcf_yield": 10
+            "ev_ebitda": 16,
+            "fcf_yield": 9
           },
-          "pts_raw": "27/75"
+          "pts_raw": "25/75"
         },
         "safety": {
           "score": 0,
@@ -4802,29 +4801,29 @@
           "pts_raw": "0/100"
         },
         "momentum": {
-          "score": 40,
+          "score": 54,
           "detalle": {
-            "vs_ma200": 27,
-            "momentum_6m": 13,
+            "vs_ma200": 40,
+            "momentum_6m": 9,
             "momentum_12m": 11
           },
-          "pts_raw": "51/100"
+          "pts_raw": "60/100"
         }
       },
       "señal": {
         "señal": "ALERTA_SALIDA",
-        "capas": 0,
+        "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 4/9)",
-          "Momentum neutro o débil"
+          "Momentum positivo (+3.2% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados",
           "Score o F-Score en zona de deterioro severo",
           "Deuda/EBITDA elevada (8.1x)"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "CLNX.MC",
@@ -4832,7 +4831,7 @@
         "sector": "Real Estate",
         "pais": "Spain",
         "moneda": "EUR",
-        "precio": 28.75,
+        "precio": 30.05,
         "roic": 0.77,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -4854,28 +4853,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 11607570432.04,
-        "ev_ebitda": 15.77,
-        "ev_fcf": 75.58,
-        "fcf_yield": 2.72,
+        "altman_z": 12128071680.04,
+        "ev_ebitda": 16.12,
+        "ev_fcf": 77.23,
+        "fcf_yield": 2.6,
         "per": null,
         "peg": null,
-        "price_to_book": 1.6,
+        "price_to_book": 1.67,
         "deuda_ebitda": 8.1,
         "cobertura_intereses": 0.41,
-        "momentum_6m": -1.36,
-        "momentum_12m": -7.71,
-        "precio_vs_ma200": 0.76,
-        "ma200": 28.5333
+        "momentum_6m": 3.21,
+        "momentum_12m": -6.84,
+        "precio_vs_ma200": 5.52,
+        "ma200": 28.4777
       }
     },
     {
       "ticker": "HGRAF",
       "nombre": "HydroGraph Clean Power Inc.",
       "sector": "Basic Materials",
-      "precio": 4.49,
+      "precio": 5.1359,
       "scores": {
-        "composite": 34.4,
+        "composite": 35.9,
         "confianza": "alta",
         "quality": {
           "score": 41,
@@ -4904,7 +4903,7 @@
           "pts_raw": "60/100"
         },
         "momentum": {
-          "score": 80,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
             "momentum_6m": 30,
@@ -4918,13 +4917,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+173.3% 6M, precio sobre MM200)"
+          "Momentum positivo (+202.1% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "Valoración cara — múltiplos elevados"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "HGRAF",
@@ -4932,7 +4931,7 @@
         "sector": "Basic Materials",
         "pais": "Canada",
         "moneda": "USD",
-        "precio": 4.49,
+        "precio": 5.1359,
         "roic": -356.25,
         "gross_profit_to_assets": -0.04,
         "gross_margin": -13.18,
@@ -4954,28 +4953,28 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 932448072.94,
-        "ev_ebitda": -196.8,
-        "ev_fcf": -313.83,
-        "fcf_yield": -0.32,
+        "altman_z": 1066583573.74,
+        "ev_ebitda": -225.27,
+        "ev_fcf": -359.23,
+        "fcf_yield": -0.28,
         "per": null,
         "peg": null,
-        "price_to_book": 61.51,
+        "price_to_book": 70.35,
         "deuda_ebitda": 1.1,
         "cobertura_intereses": -699.05,
-        "momentum_6m": 173.28,
-        "momentum_12m": 2510.47,
-        "precio_vs_ma200": 98.29,
-        "ma200": 2.2644
+        "momentum_6m": 202.11,
+        "momentum_12m": 2977.23,
+        "precio_vs_ma200": 118.13,
+        "ma200": 2.3545
       }
     },
     {
       "ticker": "CRMD",
       "nombre": "CorMedix Inc.",
       "sector": "Healthcare",
-      "precio": 7.05,
+      "precio": 7.24,
       "scores": {
-        "composite": 80.2,
+        "composite": 78.4,
         "confianza": "alta",
         "quality": {
           "score": 82,
@@ -5006,13 +5005,13 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 16,
+          "score": 4,
           "detalle": {
             "vs_ma200": 0,
             "momentum_6m": 0,
-            "momentum_12m": 20
+            "momentum_12m": 5
           },
-          "pts_raw": "20/100"
+          "pts_raw": "5/100"
         }
       },
       "señal": {
@@ -5020,15 +5019,15 @@
         "capas": 1,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (3.2x)",
-          "FCF Yield atractivo (31.0%)",
+          "EV/EBITDA bajo (3.3x)",
+          "FCF Yield atractivo (30.2%)",
           "Fundamentales neutrales (F-Score 5/9)"
         ],
         "alertas": [
           "Precio muy por debajo de MM200 — tendencia bajista"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "CRMD",
@@ -5036,7 +5035,7 @@
         "sector": "Healthcare",
         "pais": "United States",
         "moneda": "USD",
-        "precio": 7.05,
+        "precio": 7.24,
         "roic": 29.49,
         "gross_profit_to_assets": 33.38,
         "gross_margin": 88.46,
@@ -5058,28 +5057,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 334383168.97,
-        "ev_ebitda": 3.21,
-        "ev_fcf": 3.25,
-        "fcf_yield": 31.0,
-        "per": 3.46,
+        "altman_z": 343394880.97,
+        "ev_ebitda": 3.3,
+        "ev_fcf": 3.34,
+        "fcf_yield": 30.19,
+        "per": 3.55,
         "peg": null,
-        "price_to_book": 1.38,
+        "price_to_book": 1.42,
         "deuda_ebitda": 0.02,
         "cobertura_intereses": 54.92,
-        "momentum_6m": -36.2,
-        "momentum_12m": 11.9,
-        "precio_vs_ma200": -32.03,
-        "ma200": 10.3723
+        "momentum_6m": -34.18,
+        "momentum_12m": 3.43,
+        "precio_vs_ma200": -28.92,
+        "ma200": 10.1856
       }
     },
     {
       "ticker": "NXT.L",
       "nombre": "NEXT plc",
       "sector": "Consumer Cyclical",
-      "precio": 12950.0,
+      "precio": 13420.0,
       "scores": {
-        "composite": 65.2,
+        "composite": 67.5,
         "confianza": "baja",
         "quality": {
           "score": 46,
@@ -5090,13 +5089,13 @@
           "pts_raw": "21/45"
         },
         "valuation": {
-          "score": 85,
+          "score": 81,
           "detalle": {
-            "ev_ebitda": 34,
-            "fcf_yield": 32,
-            "per": 19
+            "ev_ebitda": 33,
+            "fcf_yield": 30,
+            "per": 18
           },
-          "pts_raw": "85/100"
+          "pts_raw": "81/100"
         },
         "safety": {
           "score": 100,
@@ -5106,13 +5105,13 @@
           "pts_raw": "60/60"
         },
         "momentum": {
-          "score": 47,
+          "score": 72,
           "detalle": {
-            "vs_ma200": 25,
-            "momentum_6m": 12,
-            "momentum_12m": 22
+            "vs_ma200": 36,
+            "momentum_6m": 22,
+            "momentum_12m": 23
           },
-          "pts_raw": "59/100"
+          "pts_raw": "81/100"
         }
       },
       "señal": {
@@ -5120,14 +5119,14 @@
         "capas": 2,
         "razones": [
           "Valoración atractiva",
-          "FCF Yield atractivo (6.6%)",
-          "Momentum positivo (+4.1% 6M, precio sobre MM200)"
+          "FCF Yield atractivo (6.3%)",
+          "Momentum positivo (+7.7% 6M, precio sobre MM200)"
         ],
         "alertas": [
           "F-Score débil (2/9) — posible deterioro"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "NXT.L",
@@ -5135,7 +5134,7 @@
         "sector": "Consumer Cyclical",
         "pais": "United Kingdom",
         "moneda": "GBp",
-        "precio": 12950.0,
+        "precio": 13420.0,
         "roic": null,
         "gross_profit_to_assets": null,
         "gross_margin": null,
@@ -5157,116 +5156,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 8908231681.25,
-        "ev_ebitda": 11.37,
-        "ev_fcf": 16.91,
-        "fcf_yield": 6.58,
-        "per": 17.36,
+        "altman_z": 9231541249.25,
+        "ev_ebitda": 11.74,
+        "ev_fcf": 17.47,
+        "fcf_yield": 6.35,
+        "per": 18.01,
         "peg": null,
-        "price_to_book": 909.03,
+        "price_to_book": 942.02,
         "deuda_ebitda": 1.15,
         "cobertura_intereses": null,
-        "momentum_6m": 4.09,
-        "momentum_12m": 15.37,
-        "precio_vs_ma200": 0.24,
-        "ma200": 12919.4454
-      }
-    },
-    {
-      "ticker": "APR.MC",
-      "nombre": "APR.MC",
-      "sector": "Desconocido",
-      "precio": null,
-      "scores": {
-        "composite": 28.5,
-        "confianza": "baja",
-        "quality": {
-          "score": 0,
-          "detalle": {
-            "fscore": 0
-          },
-          "pts_raw": "0/30"
-        },
-        "valuation": {
-          "score": 50,
-          "detalle": {},
-          "pts_raw": "0/0"
-        },
-        "safety": {
-          "score": 50,
-          "detalle": {},
-          "pts_raw": "0/0"
-        },
-        "momentum": {
-          "score": 40,
-          "detalle": {},
-          "pts_raw": "0/0"
-        }
-      },
-      "señal": {
-        "señal": "ALERTA_SALIDA",
-        "capas": 0,
-        "razones": [
-          "Valoración justa (no en descuento claro)"
-        ],
-        "alertas": [
-          "F-Score débil (0/9) — posible deterioro",
-          "Precio muy por debajo de MM200 — tendencia bajista",
-          "Score o F-Score en zona de deterioro severo"
-        ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
-      },
-      "metrics": {
-        "ticker": "APR.MC",
-        "nombre": "APR.MC",
-        "sector": "Desconocido",
-        "pais": "Desconocido",
-        "moneda": "USD",
-        "precio": null,
-        "roic": null,
-        "gross_profit_to_assets": null,
-        "gross_margin": null,
-        "ebit_margin": null,
-        "net_margin": null,
-        "roe": null,
-        "roa": null,
-        "fcf_conversion": null,
-        "fscore": 0,
-        "fscore_señal": "débil",
-        "fscore_detalle": {
-          "A1_roa_positivo": 0,
-          "A2_cfo_positivo": 0,
-          "A3_roa_mejora": 0,
-          "A4_accruals_bajo": 0,
-          "B1_deuda_disminuye": 0,
-          "B2_liquidez_mejora": 0,
-          "B3_sin_dilución": 0,
-          "C1_margen_bruto_mejora": 0,
-          "C2_rotacion_activos": 0
-        },
-        "altman_z": null,
-        "ev_ebitda": null,
-        "ev_fcf": null,
-        "fcf_yield": null,
-        "per": null,
-        "peg": null,
-        "price_to_book": null,
-        "deuda_ebitda": null,
-        "cobertura_intereses": null,
-        "momentum_6m": null,
-        "momentum_12m": null,
-        "precio_vs_ma200": null,
-        "ma200": null
+        "momentum_6m": 7.7,
+        "momentum_12m": 17.57,
+        "precio_vs_ma200": 3.74,
+        "ma200": 12936.7568
       }
     },
     {
       "ticker": "82E.F",
       "nombre": "Itafos Inc.",
       "sector": "Basic Materials",
-      "precio": 2.2,
+      "precio": 2.22,
       "scores": {
-        "composite": 72.3,
+        "composite": 73.8,
         "confianza": "alta",
         "quality": {
           "score": 62,
@@ -5297,7 +5208,7 @@
           "pts_raw": "100/100"
         },
         "momentum": {
-          "score": 80,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
             "momentum_6m": 30,
@@ -5307,17 +5218,17 @@
         }
       },
       "señal": {
-        "señal": "VIGILAR",
+        "señal": "COMPRA",
         "capas": 2,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (2.9x)",
+          "EV/EBITDA bajo (3.0x)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+47.5% 6M, precio sobre MM200)"
+          "Momentum positivo (+49.8% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "82E.F",
@@ -5325,7 +5236,7 @@
         "sector": "Basic Materials",
         "pais": "United States",
         "moneda": "EUR",
-        "precio": 2.2,
+        "precio": 2.22,
         "roic": 24.76,
         "gross_profit_to_assets": 17.21,
         "gross_margin": 25.85,
@@ -5347,28 +5258,28 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 0
         },
-        "altman_z": 256367751.33,
-        "ev_ebitda": 2.94,
-        "ev_fcf": 46.73,
-        "fcf_yield": 2.33,
-        "per": 4.31,
+        "altman_z": 258698362.53,
+        "ev_ebitda": 2.96,
+        "ev_fcf": 47.12,
+        "fcf_yield": 2.31,
+        "per": 4.44,
         "peg": null,
-        "price_to_book": 1.13,
+        "price_to_book": 1.14,
         "deuda_ebitda": 0.24,
         "cobertura_intereses": 41.29,
-        "momentum_6m": 47.5,
-        "momentum_12m": 87.95,
-        "precio_vs_ma200": 25.7,
-        "ma200": 1.7502
+        "momentum_6m": 49.77,
+        "momentum_12m": 89.55,
+        "precio_vs_ma200": 25.69,
+        "ma200": 1.7663
       }
     },
     {
       "ticker": "ALTN.L",
       "nombre": "AltynGold plc",
       "sector": "Basic Materials",
-      "precio": 1230.0,
+      "precio": 1270.0,
       "scores": {
-        "composite": 77.3,
+        "composite": 78.8,
         "confianza": "alta",
         "quality": {
           "score": 77,
@@ -5399,7 +5310,7 @@
           "pts_raw": "90/100"
         },
         "momentum": {
-          "score": 80,
+          "score": 90,
           "detalle": {
             "vs_ma200": 40,
             "momentum_6m": 30,
@@ -5413,13 +5324,13 @@
         "capas": 3,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (5.0x)",
+          "EV/EBITDA bajo (5.2x)",
           "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+29.5% 6M, precio sobre MM200)"
+          "Momentum positivo (+36.0% 6M, precio sobre MM200)"
         ],
         "alertas": [],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "ALTN.L",
@@ -5427,7 +5338,7 @@
         "sector": "Basic Materials",
         "pais": "United Kingdom",
         "moneda": "GBp",
-        "precio": 1230.0,
+        "precio": 1270.0,
         "roic": 21.79,
         "gross_profit_to_assets": 31.33,
         "gross_margin": 50.84,
@@ -5449,26 +5360,26 @@
           "C1_margen_bruto_mejora": 1,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 201717063.92,
-        "ev_ebitda": 5.01,
-        "ev_fcf": 51.35,
-        "fcf_yield": 2.24,
-        "per": 9.92,
+        "altman_z": 208276955.12,
+        "ev_ebitda": 5.15,
+        "ev_fcf": 52.8,
+        "fcf_yield": 2.17,
+        "per": 10.33,
         "peg": null,
-        "price_to_book": 407.63,
+        "price_to_book": 425.63,
         "deuda_ebitda": 0.65,
         "cobertura_intereses": 6.04,
-        "momentum_6m": 29.47,
-        "momentum_12m": 289.86,
-        "precio_vs_ma200": 21.29,
-        "ma200": 1014.135
+        "momentum_6m": 35.97,
+        "momentum_12m": 284.85,
+        "precio_vs_ma200": 23.31,
+        "ma200": 1029.9125
       }
     },
     {
       "ticker": "EH",
       "nombre": "EHang Holdings Limited",
       "sector": "Industrials",
-      "precio": 10.36,
+      "precio": 10.72,
       "scores": {
         "composite": 55.4,
         "confianza": "alta",
@@ -5513,15 +5424,15 @@
         "capas": 1,
         "razones": [
           "Valoración atractiva",
-          "EV/EBITDA bajo (-1.5x)",
-          "FCF Yield atractivo (15.8%)",
+          "EV/EBITDA bajo (-1.6x)",
+          "FCF Yield atractivo (15.3%)",
           "Fundamentales neutrales (F-Score 5/9)"
         ],
         "alertas": [
           "Precio muy por debajo de MM200 — tendencia bajista"
         ],
-        "macro_regimen": "RIESGO",
-        "macro_umbral": 75
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
       },
       "metrics": {
         "ticker": "EH",
@@ -5529,7 +5440,7 @@
         "sector": "Industrials",
         "pais": "China",
         "moneda": "USD",
-        "precio": 10.36,
+        "precio": 10.72,
         "roic": -30.32,
         "gross_profit_to_assets": 17.67,
         "gross_margin": 61.37,
@@ -5551,19 +5462,19 @@
           "C1_margen_bruto_mejora": 0,
           "C2_rotacion_activos": 1
         },
-        "altman_z": 447457841.94,
-        "ev_ebitda": -1.46,
-        "ev_fcf": 3.13,
-        "fcf_yield": 15.81,
+        "altman_z": 463006616.34,
+        "ev_ebitda": -1.56,
+        "ev_fcf": 3.34,
+        "fcf_yield": 15.28,
         "per": null,
         "peg": null,
-        "price_to_book": 4.79,
+        "price_to_book": 4.95,
         "deuda_ebitda": 1.49,
         "cobertura_intereses": -65.75,
-        "momentum_6m": -46.17,
-        "momentum_12m": -47.62,
-        "precio_vs_ma200": -32.1,
-        "ma200": 15.2578
+        "momentum_6m": -42.24,
+        "momentum_12m": -31.33,
+        "precio_vs_ma200": -29.12,
+        "ma200": 15.1235
       }
     }
   ]
