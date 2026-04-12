@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-04-11T22:30:23.085434",
+  "fecha": "2026-04-12T12:54:18.795443",
   "empresas": [
     {
       "ticker": "VID.MC",
@@ -1018,6 +1018,111 @@
         "momentum_12m": 60.36,
         "precio_vs_ma200": -0.89,
         "ma200": 4.4969
+      }
+    },
+    {
+      "ticker": "GRF.MC",
+      "nombre": "Grifols, S.A.",
+      "sector": "Healthcare",
+      "precio": 8.934,
+      "scores": {
+        "composite": 65.2,
+        "confianza": "alta",
+        "quality": {
+          "score": 68,
+          "detalle": {
+            "roic": 8,
+            "gross_profit_assets": 4,
+            "fscore": 26,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "68/100"
+        },
+        "valuation": {
+          "score": 97,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 22
+          },
+          "pts_raw": "97/100"
+        },
+        "safety": {
+          "score": 13,
+          "detalle": {
+            "deuda_ebitda": 6,
+            "cobertura_intereses": 7
+          },
+          "pts_raw": "13/100"
+        },
+        "momentum": {
+          "score": 18,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 20
+          },
+          "pts_raw": "20/100"
+        }
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Valoración atractiva",
+          "EV/EBITDA bajo (8.9x)",
+          "FCF Yield atractivo (8.7%)",
+          "Fundamentales fuertes (F-Score 8/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Deuda/EBITDA elevada (5.4x)"
+        ],
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
+      },
+      "metrics": {
+        "ticker": "GRF.MC",
+        "nombre": "Grifols, S.A.",
+        "sector": "Healthcare",
+        "pais": "Spain",
+        "moneda": "EUR",
+        "precio": 8.934,
+        "roic": 5.52,
+        "gross_profit_to_assets": 13.06,
+        "gross_margin": 38.75,
+        "ebit_margin": 14.51,
+        "net_margin": 2.18,
+        "roe": 2.67,
+        "roa": 0.73,
+        "fcf_conversion": 338.26,
+        "fscore": 8,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 3648155751.11,
+        "ev_ebitda": 8.95,
+        "ev_fcf": 28.61,
+        "fcf_yield": 8.73,
+        "per": 16.24,
+        "peg": null,
+        "price_to_book": 1.15,
+        "deuda_ebitda": 5.37,
+        "cobertura_intereses": 1.74,
+        "momentum_6m": -24.38,
+        "momentum_12m": 10.63,
+        "precio_vs_ma200": -19.78,
+        "ma200": 11.1374
       }
     },
     {
@@ -2420,7 +2525,7 @@
         "fcf_yield": null,
         "per": null,
         "peg": null,
-        "price_to_book": 17.87,
+        "price_to_book": 17.94,
         "deuda_ebitda": null,
         "cobertura_intereses": null,
         "momentum_6m": null,
@@ -3132,7 +3237,7 @@
         "fcf_yield": -9.39,
         "per": 25.57,
         "peg": null,
-        "price_to_book": 3.67,
+        "price_to_book": 3.66,
         "deuda_ebitda": 0.4,
         "cobertura_intereses": 16.58,
         "momentum_6m": -7.73,
@@ -3754,111 +3859,6 @@
         "momentum_12m": 21.67,
         "precio_vs_ma200": -7.66,
         "ma200": 6.3897
-      }
-    },
-    {
-      "ticker": "GRF.MC",
-      "nombre": "Grifols, S.A.",
-      "sector": "Healthcare",
-      "precio": 8.934,
-      "scores": {
-        "composite": 65.2,
-        "confianza": "alta",
-        "quality": {
-          "score": 68,
-          "detalle": {
-            "roic": 8,
-            "gross_profit_assets": 4,
-            "fscore": 26,
-            "altman_z": 15,
-            "fcf_conversion": 15
-          },
-          "pts_raw": "68/100"
-        },
-        "valuation": {
-          "score": 97,
-          "detalle": {
-            "ev_ebitda": 40,
-            "fcf_yield": 35,
-            "per": 22
-          },
-          "pts_raw": "97/100"
-        },
-        "safety": {
-          "score": 13,
-          "detalle": {
-            "deuda_ebitda": 6,
-            "cobertura_intereses": 7
-          },
-          "pts_raw": "13/100"
-        },
-        "momentum": {
-          "score": 18,
-          "detalle": {
-            "vs_ma200": 0,
-            "momentum_6m": 0,
-            "momentum_12m": 20
-          },
-          "pts_raw": "20/100"
-        }
-      },
-      "señal": {
-        "señal": "VIGILAR",
-        "capas": 2,
-        "razones": [
-          "Valoración atractiva",
-          "EV/EBITDA bajo (8.9x)",
-          "FCF Yield atractivo (8.7%)",
-          "Fundamentales fuertes (F-Score 8/9)"
-        ],
-        "alertas": [
-          "Precio muy por debajo de MM200 — tendencia bajista",
-          "Deuda/EBITDA elevada (5.4x)"
-        ],
-        "macro_regimen": "PRECAUCION",
-        "macro_umbral": 72
-      },
-      "metrics": {
-        "ticker": "GRF.MC",
-        "nombre": "Grifols, S.A.",
-        "sector": "Healthcare",
-        "pais": "Spain",
-        "moneda": "EUR",
-        "precio": 8.934,
-        "roic": 5.52,
-        "gross_profit_to_assets": 13.06,
-        "gross_margin": 38.75,
-        "ebit_margin": 14.51,
-        "net_margin": 2.18,
-        "roe": 2.67,
-        "roa": 0.73,
-        "fcf_conversion": 338.26,
-        "fscore": 8,
-        "fscore_señal": "fuerte",
-        "fscore_detalle": {
-          "A1_roa_positivo": 1,
-          "A2_cfo_positivo": 1,
-          "A3_roa_mejora": 1,
-          "A4_accruals_bajo": 1,
-          "B1_deuda_disminuye": 1,
-          "B2_liquidez_mejora": 1,
-          "B3_sin_dilución": 0,
-          "C1_margen_bruto_mejora": 1,
-          "C2_rotacion_activos": 1
-        },
-        "altman_z": 3648155751.11,
-        "ev_ebitda": 8.95,
-        "ev_fcf": 28.61,
-        "fcf_yield": 8.73,
-        "per": 16.24,
-        "peg": null,
-        "price_to_book": 1.15,
-        "deuda_ebitda": 5.37,
-        "cobertura_intereses": 1.74,
-        "momentum_6m": -24.38,
-        "momentum_12m": 10.63,
-        "precio_vs_ma200": -19.78,
-        "ma200": 11.1374
       }
     },
     {
@@ -5366,7 +5366,7 @@
         "fcf_yield": 2.17,
         "per": 10.33,
         "peg": null,
-        "price_to_book": 425.63,
+        "price_to_book": 427.62,
         "deuda_ebitda": 0.65,
         "cobertura_intereses": 6.04,
         "momentum_6m": 35.97,
