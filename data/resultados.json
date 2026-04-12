@@ -1,11 +1,12 @@
 {
-  "fecha": "2026-04-12T13:52:23.851617",
+  "fecha": "2026-04-12T14:37:47.392744",
   "empresas": [
     {
       "ticker": "VID.MC",
       "nombre": "Vidrala, S.A.",
       "sector": "Consumer Cyclical",
       "precio": 79.1,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 81.5,
         "confianza": "alta",
@@ -51,13 +52,15 @@
         "señal": "COMPRA",
         "capas": 2,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (6.7x)",
           "FCF Yield atractivo (6.9%)",
-          "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum neutro o débil"
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum neutro o debil"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -109,6 +112,7 @@
       "nombre": "Industria de Diseño Textil, S.A.",
       "sector": "Consumer Cyclical",
       "precio": 54.0,
+      "tipologia": "QUALITY_GROWTH",
       "scores": {
         "composite": 69.6,
         "confianza": "alta",
@@ -151,15 +155,16 @@
         }
       },
       "señal": {
-        "señal": "NEUTRO",
-        "capas": 1,
+        "señal": "VIGILAR",
+        "capas": 3,
         "razones": [
-          "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum positivo (+17.0% 6M, precio sobre MM200)"
+          "Valoracion ajustada (quality growth — 31/100)",
+          "Fundamentales solidos (F-Score 6/9)",
+          "Momentum positivo (+17.0% 6M)"
         ],
-        "alertas": [
-          "Valoración cara — múltiplos elevados"
-        ],
+        "alertas": [],
+        "tipologia": "QUALITY_GROWTH",
+        "reglas": "Sin take-profit, stop amplio, solo salir por deterioro real",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -211,6 +216,7 @@
       "nombre": "ACS, Actividades de Construcción y Servicios, S.A.",
       "sector": "Industrials",
       "precio": 120.0,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 73.0,
         "confianza": "alta",
@@ -256,11 +262,14 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración justa (no en descuento claro)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+68.7% 6M, precio sobre MM200)"
+          "Momentum positivo (+68.7% 6M)"
         ],
-        "alertas": [],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -312,6 +321,7 @@
       "nombre": "Repsol, S.A.",
       "sector": "Energy",
       "precio": 21.6,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 82.5,
         "confianza": "alta",
@@ -357,13 +367,15 @@
         "señal": "COMPRA",
         "capas": 3,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (8.5x)",
           "FCF Yield atractivo (6.8%)",
-          "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+53.8% 6M, precio sobre MM200)"
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum positivo (+53.8% 6M)"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -415,6 +427,7 @@
       "nombre": "Ferrovial SE",
       "sector": "Industrials",
       "precio": 60.84,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 51.5,
         "confianza": "alta",
@@ -461,12 +474,14 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum positivo (+19.2% 6M, precio sobre MM200)"
+          "Momentum positivo (+19.2% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados",
+          "Valoracion cara — multiples elevados",
           "Deuda/EBITDA elevada (4.5x)"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -518,6 +533,7 @@
       "nombre": "Construcciones y Auxiliar de Ferrocarriles, S.A.",
       "sector": "Industrials",
       "precio": 61.1,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 78.8,
         "confianza": "alta",
@@ -563,12 +579,14 @@
         "señal": "COMPRA",
         "capas": 3,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (7.8x)",
-          "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+15.1% 6M, precio sobre MM200)"
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum positivo (+15.1% 6M)"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -620,6 +638,7 @@
       "nombre": "Enagás, S.A.",
       "sector": "Utilities",
       "precio": 17.25,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 77.0,
         "confianza": "alta",
@@ -664,14 +683,16 @@
         "señal": "COMPRA",
         "capas": 3,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "FCF Yield atractivo (8.0%)",
-          "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+30.7% 6M, precio sobre MM200)"
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum positivo (+30.7% 6M)"
         ],
         "alertas": [
           "Deuda/EBITDA elevada (4.5x)"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -723,6 +744,7 @@
       "nombre": "Banco Santander, S.A.",
       "sector": "Financial Services",
       "precio": 10.516,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 49.2,
         "confianza": "baja",
@@ -762,13 +784,15 @@
         "señal": "ALERTA_SALIDA",
         "capas": 1,
         "razones": [
-          "Momentum positivo (+25.0% 6M, precio sobre MM200)"
+          "Momentum positivo (+25.0% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados",
-          "F-Score débil (3/9) — posible deterioro",
-          "Score o F-Score en zona de deterioro severo"
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (3/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -820,6 +844,7 @@
       "nombre": "ASML Holding N.V.",
       "sector": "Technology",
       "precio": 1270.0,
+      "tipologia": "QUALITY_GROWTH",
       "scores": {
         "composite": 62.6,
         "confianza": "alta",
@@ -865,12 +890,14 @@
         "señal": "VIGILAR",
         "capas": 2,
         "razones": [
-          "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+56.5% 6M, precio sobre MM200)"
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum positivo (+56.5% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados"
+          "Valoracion cara — multiples elevados"
         ],
+        "tipologia": "QUALITY_GROWTH",
+        "reglas": "Sin take-profit, stop amplio, solo salir por deterioro real",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -922,6 +949,7 @@
       "nombre": "International Consolidated Airlines Group S.A.",
       "sector": "Industrials",
       "precio": 4.457,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 86.1,
         "confianza": "alta",
@@ -967,13 +995,15 @@
         "señal": "COMPRA",
         "capas": 2,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (4.3x)",
           "FCF Yield atractivo (15.6%)",
-          "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum neutro o débil"
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum neutro o debil"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -1025,6 +1055,7 @@
       "nombre": "Grifols, S.A.",
       "sector": "Healthcare",
       "precio": 8.934,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 65.2,
         "confianza": "alta",
@@ -1070,15 +1101,17 @@
         "señal": "VIGILAR",
         "capas": 2,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (8.9x)",
           "FCF Yield atractivo (8.7%)",
-          "Fundamentales fuertes (F-Score 8/9)"
+          "Fundamentales solidos (F-Score 8/9)"
         ],
         "alertas": [
           "Precio muy por debajo de MM200 — tendencia bajista",
           "Deuda/EBITDA elevada (5.4x)"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -1130,6 +1163,7 @@
       "nombre": "Microsoft Corporation",
       "sector": "Technology",
       "precio": 370.87,
+      "tipologia": "QUALITY_GROWTH",
       "scores": {
         "composite": 56.2,
         "confianza": "alta",
@@ -1172,15 +1206,17 @@
         }
       },
       "señal": {
-        "señal": "NEUTRO",
-        "capas": 0,
+        "señal": "VIGILAR",
+        "capas": 2,
         "razones": [
-          "Fundamentales neutrales (F-Score 6/9)"
+          "Valoracion ajustada (quality growth — 34/100)",
+          "Fundamentales solidos (F-Score 6/9)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados",
           "Precio muy por debajo de MM200 — tendencia bajista"
         ],
+        "tipologia": "QUALITY_GROWTH",
+        "reglas": "Sin take-profit, stop amplio, solo salir por deterioro real",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -1232,6 +1268,7 @@
       "nombre": "Apple Inc.",
       "sector": "Technology",
       "precio": 260.48,
+      "tipologia": "QUALITY_GROWTH",
       "scores": {
         "composite": 63.0,
         "confianza": "alta",
@@ -1276,12 +1313,14 @@
         "señal": "VIGILAR",
         "capas": 2,
         "razones": [
-          "Fundamentales fuertes (F-Score 8/9)",
-          "Momentum positivo (+2.7% 6M, precio sobre MM200)"
+          "Fundamentales solidos (F-Score 8/9)",
+          "Momentum positivo (+2.7% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados"
+          "Valoracion cara — multiples elevados"
         ],
+        "tipologia": "QUALITY_GROWTH",
+        "reglas": "Sin take-profit, stop amplio, solo salir por deterioro real",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -1333,6 +1372,7 @@
       "nombre": "Johnson & Johnson",
       "sector": "Healthcare",
       "precio": 238.46,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 65.5,
         "confianza": "alta",
@@ -1379,11 +1419,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 4/9)",
-          "Momentum positivo (+26.3% 6M, precio sobre MM200)"
+          "Momentum positivo (+26.3% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados"
+          "Valoracion cara — multiples elevados"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -1435,6 +1477,7 @@
       "nombre": "The Procter & Gamble Company",
       "sector": "Consumer Defensive",
       "precio": 145.16,
+      "tipologia": "QUALITY_GROWTH",
       "scores": {
         "composite": 65.9,
         "confianza": "alta",
@@ -1477,14 +1520,16 @@
         }
       },
       "señal": {
-        "señal": "NEUTRO",
-        "capas": 0,
+        "señal": "VIGILAR",
+        "capas": 3,
         "razones": [
-          "Valoración justa (no en descuento claro)",
-          "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum neutro o débil"
+          "Valoracion atractiva",
+          "Fundamentales solidos (F-Score 6/9)",
+          "Corrección moderada — oportunidad quality growth"
         ],
         "alertas": [],
+        "tipologia": "QUALITY_GROWTH",
+        "reglas": "Sin take-profit, stop amplio, solo salir por deterioro real",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -1536,6 +1581,7 @@
       "nombre": "Visa Inc.",
       "sector": "Financial Services",
       "precio": 304.36,
+      "tipologia": "QUALITY_GROWTH",
       "scores": {
         "composite": 51.5,
         "confianza": "alta",
@@ -1578,15 +1624,17 @@
         }
       },
       "señal": {
-        "señal": "NEUTRO",
-        "capas": 0,
+        "señal": "VIGILAR",
+        "capas": 2,
         "razones": [
-          "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum neutro o débil"
+          "Fundamentales solidos (F-Score 5/9)",
+          "Corrección moderada — oportunidad quality growth"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados"
+          "Valoracion cara — multiples elevados"
         ],
+        "tipologia": "QUALITY_GROWTH",
+        "reglas": "Sin take-profit, stop amplio, solo salir por deterioro real",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -1638,6 +1686,7 @@
       "nombre": "Rigetti Computing, Inc.",
       "sector": "Technology",
       "precio": 14.68,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 26.1,
         "confianza": "alta",
@@ -1681,11 +1730,13 @@
         "capas": 0,
         "razones": [],
         "alertas": [
-          "Valoración cara — múltiplos elevados",
-          "F-Score débil (3/9) — posible deterioro",
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (3/9) — posible deterioro",
           "Precio muy por debajo de MM200 — tendencia bajista",
-          "Score o F-Score en zona de deterioro severo"
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -1737,6 +1788,7 @@
       "nombre": "Berkshire Hathaway Inc.",
       "sector": "Financial Services",
       "precio": 479.9,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 58.6,
         "confianza": "alta",
@@ -1781,13 +1833,15 @@
         "señal": "ALERTA_SALIDA",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
-          "Momentum neutro o débil"
+          "Valoracion atractiva",
+          "Momentum neutro o debil"
         ],
         "alertas": [
-          "F-Score débil (2/9) — posible deterioro",
-          "Score o F-Score en zona de deterioro severo"
+          "F-Score debil (2/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -1839,6 +1893,7 @@
       "nombre": "Pfizer Inc.",
       "sector": "Healthcare",
       "precio": 26.92,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 71.6,
         "confianza": "alta",
@@ -1884,13 +1939,15 @@
         "señal": "VIGILAR",
         "capas": 2,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (8.4x)",
           "FCF Yield atractivo (5.9%)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+10.3% 6M, precio sobre MM200)"
+          "Momentum positivo (+10.3% 6M)"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -1942,6 +1999,7 @@
       "nombre": "UnitedHealth Group Incorporated",
       "sector": "Healthcare",
       "precio": 304.33,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 55.7,
         "confianza": "alta",
@@ -1987,11 +2045,14 @@
         "señal": "NEUTRO",
         "capas": 0,
         "razones": [
-          "Valoración justa (no en descuento claro)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum neutro o débil"
+          "Momentum neutro o debil"
         ],
-        "alertas": [],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -2043,6 +2104,7 @@
       "nombre": "Monster Beverage Corporation",
       "sector": "Consumer Defensive",
       "precio": 75.72,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 61.0,
         "confianza": "alta",
@@ -2088,11 +2150,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+9.7% 6M, precio sobre MM200)"
+          "Momentum positivo (+9.7% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados"
+          "Valoracion cara — multiples elevados"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -2144,6 +2208,7 @@
       "nombre": "Alphabet Inc.",
       "sector": "Communication Services",
       "precio": 317.24,
+      "tipologia": "QUALITY_GROWTH",
       "scores": {
         "composite": 60.1,
         "confianza": "alta",
@@ -2186,15 +2251,17 @@
         }
       },
       "señal": {
-        "señal": "NEUTRO",
-        "capas": 1,
+        "señal": "VIGILAR",
+        "capas": 2,
         "razones": [
-          "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum positivo (+31.5% 6M, precio sobre MM200)"
+          "Fundamentales solidos (F-Score 6/9)",
+          "Momentum positivo (+31.5% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados"
+          "Valoracion cara — multiples elevados"
         ],
+        "tipologia": "QUALITY_GROWTH",
+        "reglas": "Sin take-profit, stop amplio, solo salir por deterioro real",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -2246,6 +2313,7 @@
       "nombre": "Alibaba Group Holding Limited",
       "sector": "Consumer Cyclical",
       "precio": 127.33,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 70.0,
         "confianza": "alta",
@@ -2291,14 +2359,15 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (2.9x)",
           "FCF Yield atractivo (25.5%)",
-          "Fundamentales neutrales (F-Score 6/9)"
+          "Fundamentales neutrales (F-Score 6/9)",
+          "Momentum neutro o debil"
         ],
-        "alertas": [
-          "Precio muy por debajo de MM200 — tendencia bajista"
-        ],
+        "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -2350,6 +2419,7 @@
       "nombre": "JD.com, Inc.",
       "sector": "Consumer Cyclical",
       "precio": 28.93,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 66.8,
         "confianza": "baja",
@@ -2391,15 +2461,17 @@
         "señal": "ALERTA_SALIDA",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (1.7x)",
           "FCF Yield atractivo (105.8%)",
-          "Momentum neutro o débil"
+          "Momentum neutro o debil"
         ],
         "alertas": [
-          "F-Score débil (2/9) — posible deterioro",
-          "Score o F-Score en zona de deterioro severo"
+          "F-Score debil (2/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -2451,6 +2523,7 @@
       "nombre": "Toyota Motor Corporation",
       "sector": "",
       "precio": 210.4926,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 29.2,
         "confianza": "baja",
@@ -2480,14 +2553,15 @@
       "señal": {
         "señal": "ALERTA_SALIDA",
         "capas": 0,
-        "razones": [
-          "Valoración justa (no en descuento claro)"
-        ],
+        "razones": [],
         "alertas": [
-          "F-Score débil (0/9) — posible deterioro",
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (0/9) — posible deterioro",
           "Precio muy por debajo de MM200 — tendencia bajista",
-          "Score o F-Score en zona de deterioro severo"
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -2539,6 +2613,7 @@
       "nombre": "NagaCorp Ltd.",
       "sector": "Consumer Cyclical",
       "precio": 4.35,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 42.2,
         "confianza": "baja",
@@ -2580,13 +2655,15 @@
         "señal": "ALERTA_SALIDA",
         "capas": 0,
         "razones": [
-          "Momentum neutro o débil"
+          "Momentum neutro o debil"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados",
-          "F-Score débil (2/9) — posible deterioro",
-          "Score o F-Score en zona de deterioro severo"
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (2/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -2638,6 +2715,7 @@
       "nombre": "AST SpaceMobile, Inc.",
       "sector": "Technology",
       "precio": 94.9,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 35.8,
         "confianza": "alta",
@@ -2682,11 +2760,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 4/9)",
-          "Momentum positivo (+9.3% 6M, precio sobre MM200)"
+          "Momentum positivo (+9.3% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados"
+          "Valoracion cara — multiples elevados"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -2738,6 +2818,7 @@
       "nombre": "KSB SE & Co. KGaA",
       "sector": "Industrials",
       "precio": 1050.0,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 93.3,
         "confianza": "alta",
@@ -2783,13 +2864,15 @@
         "señal": "COMPRA",
         "capas": 2,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (4.8x)",
           "FCF Yield atractivo (7.3%)",
           "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum positivo (+12.9% 6M, precio sobre MM200)"
+          "Momentum positivo (+12.9% 6M)"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -2841,6 +2924,7 @@
       "nombre": "SharkNinja, Inc.",
       "sector": "Consumer Cyclical",
       "precio": 115.07,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 71.2,
         "confianza": "alta",
@@ -2887,11 +2971,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum positivo (+28.9% 6M, precio sobre MM200)"
+          "Momentum positivo (+28.9% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados"
+          "Valoracion cara — multiples elevados"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -2943,6 +3029,7 @@
       "nombre": "Gestamp Automoción, S.A.",
       "sector": "Consumer Cyclical",
       "precio": 3.14,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 80.6,
         "confianza": "alta",
@@ -2988,13 +3075,15 @@
         "señal": "COMPRA",
         "capas": 2,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (3.4x)",
           "FCF Yield atractivo (11.6%)",
           "Fundamentales neutrales (F-Score 6/9)",
-          "Momentum positivo (+1.3% 6M, precio sobre MM200)"
+          "Momentum positivo (+1.3% 6M)"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -3046,6 +3135,7 @@
       "nombre": "Fiserv, Inc.",
       "sector": "Desconocido",
       "precio": 56.09,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 63.8,
         "confianza": "alta",
@@ -3091,7 +3181,7 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (6.5x)",
           "FCF Yield atractivo (14.3%)",
           "Fundamentales neutrales (F-Score 4/9)"
@@ -3099,6 +3189,8 @@
         "alertas": [
           "Precio muy por debajo de MM200 — tendencia bajista"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -3150,6 +3242,7 @@
       "nombre": "BYD Company Limited",
       "sector": "Consumer Cyclical",
       "precio": 105.1,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 50.4,
         "confianza": "alta",
@@ -3195,11 +3288,14 @@
         "señal": "NEUTRO",
         "capas": 0,
         "razones": [
-          "Valoración justa (no en descuento claro)",
           "Fundamentales neutrales (F-Score 4/9)",
-          "Momentum neutro o débil"
+          "Momentum neutro o debil"
         ],
-        "alertas": [],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -3251,6 +3347,7 @@
       "nombre": "Strive Asset Management, LLC",
       "sector": "Financial Services",
       "precio": 10.63,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 27.1,
         "confianza": "alta",
@@ -3294,11 +3391,13 @@
         "capas": 0,
         "razones": [],
         "alertas": [
-          "Valoración cara — múltiplos elevados",
-          "F-Score débil (2/9) — posible deterioro",
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (2/9) — posible deterioro",
           "Precio muy por debajo de MM200 — tendencia bajista",
-          "Score o F-Score en zona de deterioro severo"
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -3350,6 +3449,7 @@
       "nombre": "Jet2 plc",
       "sector": "Consumer Cyclical",
       "precio": 1212.0,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 79.0,
         "confianza": "alta",
@@ -3395,14 +3495,15 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (3.5x)",
           "FCF Yield atractivo (29.8%)",
-          "Fundamentales neutrales (F-Score 6/9)"
+          "Fundamentales neutrales (F-Score 6/9)",
+          "Momentum neutro o debil"
         ],
-        "alertas": [
-          "Precio muy por debajo de MM200 — tendencia bajista"
-        ],
+        "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -3454,6 +3555,7 @@
       "nombre": "Contemporary Amperex Technology Co., Limited",
       "sector": "Industrials",
       "precio": 416.0,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 68.7,
         "confianza": "alta",
@@ -3499,12 +3601,14 @@
         "señal": "VIGILAR",
         "capas": 2,
         "razones": [
-          "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+9.4% 6M, precio sobre MM200)"
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum positivo (+9.4% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados"
+          "Valoracion cara — multiples elevados"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -3556,6 +3660,7 @@
       "nombre": "Genmab A/S",
       "sector": "Healthcare",
       "precio": 28.25,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 62.4,
         "confianza": "alta",
@@ -3601,14 +3706,16 @@
         "señal": "ALERTA_SALIDA",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "FCF Yield atractivo (6.5%)",
-          "Momentum neutro o débil"
+          "Momentum neutro o debil"
         ],
         "alertas": [
-          "F-Score débil (3/9) — posible deterioro",
-          "Score o F-Score en zona de deterioro severo"
+          "F-Score debil (3/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -3660,6 +3767,7 @@
       "nombre": "Trigano S.A.",
       "sector": "Consumer Cyclical",
       "precio": 152.4,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 84.2,
         "confianza": "alta",
@@ -3705,13 +3813,15 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (7.2x)",
           "FCF Yield atractivo (17.7%)",
           "Fundamentales neutrales (F-Score 4/9)",
-          "Momentum neutro o débil"
+          "Momentum neutro o debil"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -3763,6 +3873,7 @@
       "nombre": "H. Lundbeck A/S",
       "sector": "Healthcare",
       "precio": 5.9,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 83.0,
         "confianza": "alta",
@@ -3808,13 +3919,15 @@
         "señal": "COMPRA",
         "capas": 2,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (1.9x)",
           "FCF Yield atractivo (80.3%)",
-          "Fundamentales fuertes (F-Score 8/9)",
-          "Momentum neutro o débil"
+          "Fundamentales solidos (F-Score 8/9)",
+          "Momentum neutro o debil"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -3866,6 +3979,7 @@
       "nombre": "Wizz Air Holdings Plc",
       "sector": "Industrials",
       "precio": 3.0,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 51.8,
         "confianza": "alta",
@@ -3911,7 +4025,7 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "FCF Yield atractivo (33.8%)",
           "Fundamentales neutrales (F-Score 4/9)"
         ],
@@ -3919,6 +4033,8 @@
           "Precio muy por debajo de MM200 — tendencia bajista",
           "Deuda/EBITDA elevada (9.6x)"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -3970,6 +4086,7 @@
       "nombre": "Carnival Corporation & plc",
       "sector": "Consumer Cyclical",
       "precio": 27.9,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 80.1,
         "confianza": "alta",
@@ -4015,13 +4132,15 @@
         "señal": "COMPRA",
         "capas": 3,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (8.9x)",
           "FCF Yield atractivo (6.7%)",
-          "Fundamentales fuertes (F-Score 9/9)",
-          "Momentum positivo (+7.8% 6M, precio sobre MM200)"
+          "Fundamentales solidos (F-Score 9/9)",
+          "Momentum positivo (+7.8% 6M)"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -4073,6 +4192,7 @@
       "nombre": "Uniper SE",
       "sector": "Utilities",
       "precio": 45.3,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 58.4,
         "confianza": "alta",
@@ -4118,11 +4238,14 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración justa (no en descuento claro)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+16.1% 6M, precio sobre MM200)"
+          "Momentum positivo (+16.1% 6M)"
         ],
-        "alertas": [],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -4174,6 +4297,7 @@
       "nombre": "DoubleLine Multi-Sector Income ETF",
       "sector": "Desconocido",
       "precio": 50.169,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 28.9,
         "confianza": "baja",
@@ -4208,13 +4332,15 @@
         "señal": "ALERTA_SALIDA",
         "capas": 1,
         "razones": [
-          "Valoración justa (no en descuento claro)",
-          "Momentum positivo (+2.5% 6M, precio sobre MM200)"
+          "Momentum positivo (+2.5% 6M)"
         ],
         "alertas": [
-          "F-Score débil (0/9) — posible deterioro",
-          "Score o F-Score en zona de deterioro severo"
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (0/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -4266,6 +4392,7 @@
       "nombre": "Novavax, Inc.",
       "sector": "Healthcare",
       "precio": 8.12,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 59.2,
         "confianza": "alta",
@@ -4311,12 +4438,14 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (2.2x)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum neutro o débil"
+          "Momentum neutro o debil"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -4368,6 +4497,7 @@
       "nombre": "Tullow Oil plc",
       "sector": "Energy",
       "precio": 12.6,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 84.2,
         "confianza": "alta",
@@ -4412,13 +4542,15 @@
         "señal": "COMPRA",
         "capas": 3,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (2.7x)",
           "FCF Yield atractivo (287.3%)",
-          "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+18.9% 6M, precio sobre MM200)"
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum positivo (+18.9% 6M)"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -4470,6 +4602,7 @@
       "nombre": "Oklo Inc.",
       "sector": "Utilities",
       "precio": 50.25,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 23.7,
         "confianza": "media",
@@ -4512,12 +4645,14 @@
         "capas": 0,
         "razones": [],
         "alertas": [
-          "Valoración cara — múltiplos elevados",
-          "F-Score débil (3/9) — posible deterioro",
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (3/9) — posible deterioro",
           "Precio muy por debajo de MM200 — tendencia bajista",
-          "Score o F-Score en zona de deterioro severo",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL",
           "Deuda/EBITDA elevada (5.7x)"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -4569,6 +4704,7 @@
       "nombre": "Viking Therapeutics, Inc.",
       "sector": "Healthcare",
       "precio": 34.26,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 35.8,
         "confianza": "media",
@@ -4610,13 +4746,15 @@
         "señal": "ALERTA_SALIDA",
         "capas": 0,
         "razones": [
-          "Momentum neutro o débil"
+          "Momentum neutro o debil"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados",
-          "F-Score débil (1/9) — posible deterioro",
-          "Score o F-Score en zona de deterioro severo"
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (1/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -4668,6 +4806,7 @@
       "nombre": "Kinepolis Group NV",
       "sector": "Communication Services",
       "precio": 28.35,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 61.2,
         "confianza": "alta",
@@ -4713,13 +4852,15 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (8.6x)",
           "FCF Yield atractivo (12.5%)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum neutro o débil"
+          "Momentum neutro o debil"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -4771,6 +4912,7 @@
       "nombre": "Cellnex Telecom, S.A.",
       "sector": "Real Estate",
       "precio": 30.05,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 33.2,
         "confianza": "media",
@@ -4815,13 +4957,15 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 4/9)",
-          "Momentum positivo (+3.2% 6M, precio sobre MM200)"
+          "Momentum positivo (+3.2% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados",
-          "Score o F-Score en zona de deterioro severo",
+          "Valoracion cara — multiples elevados",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL",
           "Deuda/EBITDA elevada (8.1x)"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -4873,6 +5017,7 @@
       "nombre": "HydroGraph Clean Power Inc.",
       "sector": "Basic Materials",
       "precio": 5.1359,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 35.9,
         "confianza": "alta",
@@ -4917,11 +5062,13 @@
         "capas": 1,
         "razones": [
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+202.1% 6M, precio sobre MM200)"
+          "Momentum positivo (+202.1% 6M)"
         ],
         "alertas": [
-          "Valoración cara — múltiplos elevados"
+          "Valoracion cara — multiples elevados"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -4973,6 +5120,7 @@
       "nombre": "CorMedix Inc.",
       "sector": "Healthcare",
       "precio": 7.24,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 78.4,
         "confianza": "alta",
@@ -5018,7 +5166,7 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (3.3x)",
           "FCF Yield atractivo (30.2%)",
           "Fundamentales neutrales (F-Score 5/9)"
@@ -5026,6 +5174,8 @@
         "alertas": [
           "Precio muy por debajo de MM200 — tendencia bajista"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -5077,6 +5227,7 @@
       "nombre": "NEXT plc",
       "sector": "Consumer Cyclical",
       "precio": 13420.0,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 67.5,
         "confianza": "baja",
@@ -5118,13 +5269,15 @@
         "señal": "VIGILAR",
         "capas": 2,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "FCF Yield atractivo (6.3%)",
-          "Momentum positivo (+7.7% 6M, precio sobre MM200)"
+          "Momentum positivo (+7.7% 6M)"
         ],
         "alertas": [
-          "F-Score débil (2/9) — posible deterioro"
+          "F-Score debil (2/9) — posible deterioro"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -5176,6 +5329,7 @@
       "nombre": "Itafos Inc.",
       "sector": "Basic Materials",
       "precio": 2.22,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 73.8,
         "confianza": "alta",
@@ -5221,12 +5375,14 @@
         "señal": "COMPRA",
         "capas": 2,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (3.0x)",
           "Fundamentales neutrales (F-Score 5/9)",
-          "Momentum positivo (+49.8% 6M, precio sobre MM200)"
+          "Momentum positivo (+49.8% 6M)"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -5278,6 +5434,7 @@
       "nombre": "AltynGold plc",
       "sector": "Basic Materials",
       "precio": 1270.0,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 78.8,
         "confianza": "alta",
@@ -5323,12 +5480,14 @@
         "señal": "COMPRA",
         "capas": 3,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (5.2x)",
-          "Fundamentales fuertes (F-Score 7/9)",
-          "Momentum positivo (+36.0% 6M, precio sobre MM200)"
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum positivo (+36.0% 6M)"
         ],
         "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
@@ -5380,6 +5539,7 @@
       "nombre": "EHang Holdings Limited",
       "sector": "Industrials",
       "precio": 10.72,
+      "tipologia": "VALUE_CYCLICAL",
       "scores": {
         "composite": 55.4,
         "confianza": "alta",
@@ -5423,7 +5583,7 @@
         "señal": "NEUTRO",
         "capas": 1,
         "razones": [
-          "Valoración atractiva",
+          "Valoracion atractiva",
           "EV/EBITDA bajo (-1.6x)",
           "FCF Yield atractivo (15.3%)",
           "Fundamentales neutrales (F-Score 5/9)"
@@ -5431,6 +5591,8 @@
         "alertas": [
           "Precio muy por debajo de MM200 — tendencia bajista"
         ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
         "macro_regimen": "PRECAUCION",
         "macro_umbral": 72
       },
