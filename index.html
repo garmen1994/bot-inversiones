@@ -549,6 +549,125 @@ footer {
   border-top: 1px solid var(--border);
   margin-top: 32px;
 }
+
+/* PANEL ALERTAS COLAPSABLE */
+.alertas-panel {
+  margin-bottom: 20px;
+}
+
+.alertas-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--bg2);
+  border: 1px solid rgba(255,77,109,0.2);
+  border-left: 3px solid var(--alerta);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  user-select: none;
+}
+.alertas-header:hover { background: var(--bg3); }
+.alertas-panel.open .alertas-header {
+  border-radius: 6px 6px 0 0;
+}
+
+.alertas-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.alertas-titulo {
+  font-size: 11px;
+  color: var(--alerta);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.alertas-count-badge {
+  background: rgba(255,77,109,0.15);
+  border: 1px solid rgba(255,77,109,0.3);
+  color: var(--alerta);
+  font-size: 10px;
+  padding: 1px 7px;
+  border-radius: 10px;
+}
+.alertas-toggle-icon {
+  font-size: 11px;
+  color: var(--muted);
+  transition: transform 0.2s;
+}
+.alertas-panel.open .alertas-toggle-icon { transform: rotate(180deg); }
+
+.alertas-body {
+  display: none;
+  background: var(--bg2);
+  border: 1px solid rgba(255,77,109,0.2);
+  border-top: none;
+  border-left: 3px solid var(--alerta);
+  border-radius: 0 0 6px 6px;
+  padding: 10px 14px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.alertas-panel.open .alertas-body { display: block; }
+
+/* Fila agrupada por empresa */
+.alerta-empresa-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+  animation: slideIn 0.2s ease forwards;
+}
+.alerta-empresa-row:last-child { border-bottom: none; }
+
+.alerta-empresa-ticker {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--alerta);
+  min-width: 72px;
+  padding-top: 1px;
+}
+.alerta-empresa-ticker.warn { color: var(--vigilar); }
+
+.alerta-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.alerta-chip {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: rgba(255,77,109,0.08);
+  border: 1px solid rgba(255,77,109,0.2);
+  color: #c0a0a8;
+}
+.alerta-chip.warn {
+  background: rgba(245,197,66,0.08);
+  border-color: rgba(245,197,66,0.2);
+  color: #c0b060;
+}
+
+/* Macro alertas en panel separado pequeño */
+.macro-alertas-mini {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.macro-chip {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: rgba(255,77,109,0.1);
+  border: 1px solid rgba(255,77,109,0.25);
+  color: var(--alerta);
+}
+
 </style>
 </head>
 <body>
@@ -565,7 +684,10 @@ footer {
     </div>
   </header>
 
-  <div id="alertas-banner"></div>
+  <!-- Panel de alertas colapsable -->
+  <div id="alertas-panel" class="alertas-panel">
+    <!-- El header y body se renderizan desde JS -->
+  </div>
 
   <div class="stats-row">
     <div class="stat-card">
@@ -703,20 +825,63 @@ function renderStats() {
 }
 
 function renderAlertas() {
-  const banner = document.getElementById('alertas-banner');
-  banner.innerHTML = '';
-  allData.forEach(r => {
-    if (!r.alertas || r.alertas.length === 0) return;
-    r.alertas.forEach(txt => {
-      const div = document.createElement('div');
-      div.className = 'alerta-item';
-      div.innerHTML = `
+  const panel = document.getElementById('alertas-panel');
+  if (!panel) return;
+
+  // Separar ALERTA_SALIDA (críticas) del resto (advertencias)
+  const criticas  = allData.filter(r => r.señal === 'ALERTA_SALIDA' && r.alertas?.length);
+  const warnings  = allData.filter(r => r.señal !== 'ALERTA_SALIDA' && r.alertas?.length);
+  const macroAlerts = window._rankingData?.macro?.alertas || [];
+
+  const totalEmpresas = criticas.length + warnings.length;
+
+  if (totalEmpresas === 0 && macroAlerts.length === 0) {
+    panel.innerHTML = '';
+    return;
+  }
+
+  const isOpen = panel.classList.contains('open');
+
+  panel.innerHTML = `
+    <div class="alertas-header" onclick="toggleAlertas()">
+      <div class="alertas-header-left">
         <div class="alerta-dot"></div>
-        <span class="alerta-ticker">${r.ticker}</span>
-        <span class="alerta-texto">${txt}</span>`;
-      banner.appendChild(div);
-    });
-  });
+        <span class="alertas-titulo">Alertas activas</span>
+        ${criticas.length ? `<span class="alertas-count-badge">${criticas.length} salida</span>` : ''}
+        ${warnings.length ? `<span class="alertas-count-badge" style="background:rgba(245,197,66,.1);border-color:rgba(245,197,66,.3);color:var(--vigilar)">${warnings.length} advertencia${warnings.length>1?'s':''}</span>` : ''}
+        ${macroAlerts.length ? `<span class="alertas-count-badge" style="background:rgba(108,99,255,.1);border-color:rgba(108,99,255,.3);color:var(--accent)">${macroAlerts.length} macro</span>` : ''}
+      </div>
+      <span class="alertas-toggle-icon">▼</span>
+    </div>
+    <div class="alertas-body">
+      ${macroAlerts.length ? `
+        <div class="macro-alertas-mini" style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--border)">
+          <span style="font-size:10px;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;padding-top:2px">MACRO</span>
+          ${macroAlerts.map(a => `<span class="macro-chip">${a}</span>`).join('')}
+        </div>` : ''}
+      ${criticas.map(r => `
+        <div class="alerta-empresa-row">
+          <span class="alerta-empresa-ticker">${r.ticker}</span>
+          <div class="alerta-chips">
+            ${r.alertas.map(a => `<span class="alerta-chip">${a}</span>`).join('')}
+          </div>
+        </div>`).join('')}
+      ${warnings.length ? `
+        <div style="font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin:10px 0 6px;padding-top:6px;border-top:${criticas.length?'1px solid var(--border)':'none'}">Advertencias</div>
+        ${warnings.map(r => `
+          <div class="alerta-empresa-row">
+            <span class="alerta-empresa-ticker warn">${r.ticker}</span>
+            <div class="alerta-chips">
+              ${r.alertas.map(a => `<span class="alerta-chip warn">${a}</span>`).join('')}
+            </div>
+          </div>`).join('')}` : ''}
+    </div>`;
+
+  if (isOpen) panel.classList.add('open');
+}
+
+function toggleAlertas() {
+  document.getElementById('alertas-panel').classList.toggle('open');
 }
 
 function renderRanking() {
@@ -825,15 +990,7 @@ function renderMacroBanner() {
     </a>
   `;
 
-  // Alertas macro si las hay
-  if (macro.alertas && macro.alertas.length > 0) {
-    macro.alertas.forEach(a => {
-      const div = document.createElement('div');
-      div.className = 'alerta-item';
-      div.innerHTML = `<div class="alerta-dot"></div><span class="alerta-ticker" style="color:var(--alerta)">MACRO</span><span class="alerta-texto">${a}</span>`;
-      document.getElementById('alertas-banner').appendChild(div);
-    });
-  }
+  // Las alertas macro se renderizan dentro de renderAlertas()
 
   filtros.parentNode.insertBefore(banner, filtros);
 }
