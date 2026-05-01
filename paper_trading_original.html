@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0a0f">
+<title>Paper Trading · Bot Inversiones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{
+  --bg:#0a0a0f;--bg2:#111118;--bg3:#18181f;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --text:#e8e8f0;--muted:#6b6b80;
+  --green:#00e896;--yellow:#f5c542;--red:#ff4d6d;--accent:#6c63ff;
+  --mono:'DM Mono',monospace;--display:'Syne',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13px;min-height:100vh;}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:0.5;}
+.shell{max-width:960px;margin:0 auto;padding:0 16px 60px;position:relative;z-index:1;}
+
+/* NAV */
+nav{padding:20px 0;margin-bottom:24px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);}
+.back{background:none;border:1px solid var(--border2);color:var(--muted);font-family:var(--mono);font-size:11px;padding:5px 12px;border-radius:4px;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s;display:inline-flex;align-items:center;gap:6px;}
+.back:hover{border-color:var(--accent);color:var(--accent);}
+.nbc{color:var(--muted);font-size:11px;}
+.nbc span{color:var(--text);}
+
+/* HEADER */
+.page-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:12px;}
+.header-left h1{font-family:var(--display);font-size:clamp(24px,5vw,36px);font-weight:800;letter-spacing:-.03em;line-height:1;}
+.header-left .sub{color:var(--muted);font-size:11px;margin-top:6px;letter-spacing:.06em;}
+.live-badge{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--green);border:1px solid rgba(0,232,150,.25);background:rgba(0,232,150,.08);padding:4px 10px;border-radius:20px;}
+.live-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* KPI STRIP */
+.kpi-strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-bottom:24px;}
+.kpi{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:14px 12px;}
+.kpi-lbl{font-size:10px;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;margin-bottom:6px;}
+.kpi-val{font-family:var(--display);font-size:20px;font-weight:700;line-height:1;}
+.kpi-sub{font-size:10px;color:var(--muted);margin-top:3px;}
+
+/* EQUITY CHART */
+.chart-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:24px;}
+.cc-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px;}
+.cc-title{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;}
+.cc-legend{display:flex;gap:14px;}
+.leg{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--muted);}
+.leg-dot{width:8px;height:3px;border-radius:2px;}
+.chart-wrap{position:relative;height:260px;}
+
+/* SECCIÓN */
+.sec-title{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
+
+/* POSICIONES ABIERTAS */
+.pos-grid{display:flex;flex-direction:column;gap:6px;margin-bottom:28px;}
+.pos-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:grid;grid-template-columns:100px 1fr auto auto auto auto;gap:12px;align-items:center;transition:border-color .15s;}
+.pos-card:hover{border-color:var(--border2);}
+.pos-ticker{font-weight:500;font-size:14px;}
+.pos-info{display:flex;flex-direction:column;gap:2px;}
+.pos-meta{font-size:11px;color:var(--muted);}
+.pos-tipologia{font-size:10px;padding:2px 7px;border-radius:3px;border:1px solid var(--border2);color:var(--muted);letter-spacing:.05em;}
+.pos-entry{font-size:12px;color:var(--muted);text-align:right;}
+.pos-ret{font-size:16px;font-weight:600;font-family:var(--display);text-align:right;}
+.pos-capital{font-size:11px;color:var(--muted);text-align:right;}
+.pos-pnl{font-size:13px;font-weight:500;text-align:right;}
+.pos-bar-wrap{grid-column:1/-1;height:3px;background:var(--border);border-radius:2px;overflow:hidden;margin-top:4px;}
+.pos-bar{height:100%;border-radius:2px;transition:width .4s;}
+
+/* OPERACIONES */
+.ops-filters{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;}
+.of-btn{background:none;border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:11px;padding:4px 12px;border-radius:20px;cursor:pointer;transition:all .15s;}
+.of-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+.ops-table-wrap{overflow-x:auto;margin-bottom:28px;}
+.ops-table{width:100%;border-collapse:collapse;font-size:12px;min-width:600px;}
+.ops-table th{font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;}
+.ops-table td{padding:8px 10px;border-bottom:1px solid var(--border);color:var(--muted);}
+.ops-table tr:last-child td{border-bottom:none;}
+.ops-table tr:hover td{background:var(--bg3);}
+.t-buy{color:var(--green);}
+.t-sell{color:var(--red);}
+.t-pos{color:var(--green);}
+.t-neg{color:var(--red);}
+.t-tk{color:var(--text);font-weight:500;}
+.motivo-pill{font-size:10px;padding:2px 7px;border-radius:3px;background:var(--bg3);color:var(--muted);border:1px solid var(--border);}
+
+/* MÉTRICAS DETALLE */
+.met-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:28px;}
+.met-col{background:var(--bg2);border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+.met-col-title{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:10px 14px 8px;border-bottom:1px solid var(--border);}
+.met-row{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:1px solid var(--border);}
+.met-row:last-child{border-bottom:none;}
+.met-row:hover{background:var(--bg3);}
+.mk{color:var(--muted);font-size:11px;}
+.mv{font-weight:500;font-size:12px;}
+
+/* ESTADO VACÍO */
+.empty{text-align:center;padding:48px 0;color:var(--muted);font-size:12px;letter-spacing:.06em;line-height:2;}
+.empty small{font-size:11px;opacity:.6;display:block;}
+
+footer{text-align:center;padding:24px 0 0;color:var(--muted);font-size:10px;letter-spacing:.08em;border-top:1px solid var(--border);margin-top:16px;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.anim{animation:fadeIn .3s ease forwards;}
+
+@media(max-width:620px){
+  .kpi-strip{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .pos-card{grid-template-columns:80px 1fr auto auto;}
+  .pos-entry,.pos-capital{display:none;}
+  .met-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <nav>
+    <a href="index.html" class="back">&#8592; Ranking</a>
+    <span class="nbc">Bot Inversiones · <span>Paper Trading</span></span>
+  </nav>
+
+  <div id="main">
+    <div style="text-align:center;padding:60px;color:var(--muted);font-size:12px;letter-spacing:.1em">CARGANDO...</div>
+  </div>
+
+</div>
+<footer>Bot Inversiones · paper trading simulado · sin dinero real</footer>
+
+<script>
+let data=null, chartInst=null, filtroOps='todas';
+
+async function init(){
+  data = await loadJ('data/paper_trading.json');
+  if(!data || !data.semanas || data.semanas.length === 0){
+    document.getElementById('main').innerHTML=`
+      <div class="empty anim">
+        Paper trading sin datos aún.<br>
+        <small>Ejecuta el análisis diario para empezar a registrar señales.</small><br><br>
+        <code style="font-size:11px;color:var(--accent)">python run_analysis.py</code><br><br>
+        <a href="index.html" style="color:var(--accent);font-size:12px">Volver al ranking</a>
+      </div>`;
+    return;
+  }
+  render();
+}
+
+async function loadJ(p){
+  try{const r=await fetch(p+'?t='+Date.now());if(!r.ok)throw 0;return await r.json();}
+  catch{return null;}
+}
+
+function render(){
+  const m   = data.metricas || {};
+  const pos = data.posiciones_abiertas || {};
+  const sem = data.semanas || [];
+  const ultima = sem[sem.length-1] || {};
+  const fecha  = data.ultima_actualizacion || '—';
+
+  document.getElementById('main').innerHTML=`
+
+    <div class="page-header anim">
+      <div class="header-left">
+        <h1>Paper Trading</h1>
+        <div class="sub">Capital simulado · inicio: ${fmt$(data.capital_inicial||10000)} · ${sem.length} semanas activo</div>
+      </div>
+      <div class="live-badge"><div class="live-dot"></div>Actualizado ${fmtFecha(fecha)}</div>
+    </div>
+
+    <!-- KPI STRIP -->
+    <div class="kpi-strip anim" style="animation-delay:.04s">
+      ${kpi('Capital total',   fmt$(data.valor_total),    m.ret_total!=null?sgn(m.ret_total)+'%':'—', retColor(m.ret_total))}
+      ${kpi('Retorno total',   m.ret_total!=null?sgn(m.ret_total)+'%':'—', 'vs capital inicial', retColor(m.ret_total))}
+      ${kpi('CAGR',            m.cagr!=null?sgn(m.cagr)+'%':'—', 'anualizado', retColor(m.cagr))}
+      ${kpi('vs SP500',        m.alpha_vs_sp500!=null?sgn(m.alpha_vs_sp500)+'%':'—', m.sp500_ret!=null?'SP500: '+sgn(m.sp500_ret)+'%':'—', retColor(m.alpha_vs_sp500))}
+      ${kpi('Win Rate',        m.win_rate!=null?m.win_rate+'%':'—', (m.n_ops_cerradas||0)+' ops cerradas', m.win_rate>50?'var(--green)':m.win_rate!=null?'var(--red)':'var(--muted)')}
+      ${kpi('Max Drawdown',    m.max_drawdown!=null?m.max_drawdown.toFixed(1)+'%':'—', 'peor racha', 'var(--red)')}
+    </div>
+
+    <!-- EQUITY CHART -->
+    <div class="chart-card anim" style="animation-delay:.07s">
+      <div class="cc-header">
+        <div class="cc-title">Evolución del capital simulado</div>
+        <div class="cc-legend">
+          <div class="leg"><div class="leg-dot" style="background:#6c63ff"></div>Bot</div>
+          <div class="leg"><div class="leg-dot" style="background:#94a3b8;border-top:1px dashed #94a3b8"></div>SP500</div>
+        </div>
+      </div>
+      <div class="chart-wrap"><canvas id="equity-chart"></canvas></div>
+    </div>
+
+    <!-- POSICIONES ABIERTAS -->
+    <div class="sec-title anim" style="animation-delay:.1s">
+      <span>Posiciones abiertas</span>
+      <span style="color:var(--muted)">${Object.keys(pos).length} / 5</span>
+    </div>
+    <div class="pos-grid anim" style="animation-delay:.12s" id="pos-grid">
+      ${renderPosiciones(pos)}
+    </div>
+
+    <!-- OPERACIONES -->
+    <div class="sec-title anim" style="animation-delay:.15s"><span>Historial de operaciones</span></div>
+    <div class="ops-filters anim" style="animation-delay:.16s">
+      <button class="of-btn active" onclick="setFiltro('todas',this)">Todas</button>
+      <button class="of-btn"        onclick="setFiltro('COMPRA',this)">Compras</button>
+      <button class="of-btn"        onclick="setFiltro('VENTA',this)">Ventas</button>
+    </div>
+    <div class="ops-table-wrap anim" style="animation-delay:.17s" id="ops-wrap">
+      ${renderOps('todas')}
+    </div>
+
+    <!-- MÉTRICAS DETALLE -->
+    <div class="sec-title anim" style="animation-delay:.2s"><span>Métricas detalladas</span></div>
+    <div class="met-grid anim" style="animation-delay:.22s">
+      ${metCol('Rendimiento', [
+        {k:'Retorno total',    v:m.ret_total!=null?sgn(m.ret_total)+'%':'—',    c:retColor(m.ret_total)},
+        {k:'CAGR',            v:m.cagr!=null?sgn(m.cagr)+'%':'—',              c:retColor(m.cagr)},
+        {k:'Volatilidad',     v:m.volatilidad!=null?m.volatilidad.toFixed(1)+'%':'—', c:'var(--text)'},
+        {k:'Sharpe ratio',    v:m.sharpe!=null?m.sharpe.toFixed(2):'—',         c:m.sharpe>1?'var(--green)':m.sharpe>0?'var(--text)':'var(--red)'},
+        {k:'Max Drawdown',    v:m.max_drawdown!=null?m.max_drawdown.toFixed(1)+'%':'—', c:'var(--red)'},
+        {k:'P&L total (€)',   v:m.pnl_total_eur!=null?sgn(m.pnl_total_eur)+'€':'—', c:retColor(m.pnl_total_eur)},
+      ])}
+      ${metCol('Operaciones', [
+        {k:'Ops cerradas',    v:m.n_ops_cerradas??0,                             c:'var(--text)'},
+        {k:'Win rate',        v:m.win_rate!=null?m.win_rate+'%':'—',             c:m.win_rate>50?'var(--green)':m.win_rate!=null?'var(--red)':'var(--muted)'},
+        {k:'Profit factor',   v:m.profit_factor!=null?m.profit_factor.toFixed(2):'—', c:m.profit_factor>1?'var(--green)':'var(--red)'},
+        {k:'Avg win',         v:m.avg_win!=null?sgn(m.avg_win)+'%':'—',          c:'var(--green)'},
+        {k:'Avg loss',        v:m.avg_loss!=null?m.avg_loss.toFixed(1)+'%':'—',  c:'var(--red)'},
+        {k:'vs SP500 alpha',  v:m.alpha_vs_sp500!=null?sgn(m.alpha_vs_sp500)+'%':'—', c:retColor(m.alpha_vs_sp500)},
+      ])}
+    </div>
+  `;
+
+  setTimeout(renderEquityChart, 60);
+}
+
+// ── POSICIONES ────────────────────────────────────────────────────────────────
+function renderPosiciones(pos){
+  const entries = Object.entries(pos);
+  if(!entries.length){
+    return '<div class="empty" style="padding:24px 0">Sin posiciones abiertas actualmente.</div>';
+  }
+  return entries.sort((a,b)=>b[1].retorno_actual-a[1].retorno_actual).map(([ticker,p])=>{
+    const ret   = p.retorno_actual || 0;
+    const pnl   = p.capital_invertido ? p.capital_invertido * ret / 100 : 0;
+    const color = ret >= 0 ? 'var(--green)' : 'var(--red)';
+    const barW  = Math.min(Math.abs(ret) * 3, 100);
+    const tipo  = p.tipologia || 'VALUE_CYCLICAL';
+    const tipoColor = tipo === 'QUALITY_GROWTH' ? 'var(--accent)' : 'var(--muted)';
+    const maxR  = p.max_retorno || 0;
+    const minR  = p.min_retorno || 0;
+    return `
+      <div class="pos-card">
+        <div>
+          <div class="pos-ticker">${ticker}</div>
+          <div class="pos-tipologia" style="color:${tipoColor};border-color:${tipoColor}33">${tipo.replace('_',' ')}</div>
+        </div>
+        <div class="pos-info">
+          <div class="pos-meta">${p.semanas||0} sem · desde ${p.fecha_entrada||'—'}</div>
+          <div class="pos-meta">Max: <span style="color:var(--green)">${maxR>0?'+':''}${maxR.toFixed(1)}%</span> · Min: <span style="color:var(--red)">${minR.toFixed(1)}%</span></div>
+        </div>
+        <div class="pos-entry">
+          <div style="font-size:11px;color:var(--muted)">entrada</div>
+          <div style="font-size:12px">${p.precio_compra?.toFixed(2)||'—'}</div>
+        </div>
+        <div class="pos-capital">
+          <div style="font-size:11px;color:var(--muted)">capital</div>
+          <div style="font-size:12px">${fmt$(p.capital_invertido)}</div>
+        </div>
+        <div class="pos-ret" style="color:${color}">${ret>=0?'+':''}${ret.toFixed(2)}%</div>
+        <div class="pos-pnl" style="color:${color}">${pnl>=0?'+':''}${pnl.toFixed(0)}€</div>
+        <div class="pos-bar-wrap">
+          <div class="pos-bar" style="width:${barW}%;background:${color}"></div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+// ── OPERACIONES ───────────────────────────────────────────────────────────────
+function getAllOps(){
+  const semanas = data.semanas || [];
+  const ops = [];
+  for(const s of semanas){
+    for(const o of (s.operaciones||[])){
+      ops.push({...o, _semana_fecha: s.fecha});
+    }
+  }
+  return ops.slice().reverse();
+}
+
+function renderOps(filtro){
+  const ops = getAllOps().filter(o=>{
+    if(filtro==='todas') return true;
+    return o.tipo === filtro;
+  });
+
+  if(!ops.length){
+    return '<div style="color:var(--muted);font-size:12px;padding:16px 0">Sin operaciones registradas.</div>';
+  }
+
+  return `<table class="ops-table">
+    <thead><tr>
+      <th>Fecha</th><th>Tipo</th><th>Ticker</th>
+      <th style="text-align:right">Precio</th>
+      <th style="text-align:right">Capital</th>
+      <th style="text-align:right">Retorno</th>
+      <th style="text-align:right">P&L €</th>
+      <th>Tipología</th><th>Motivo / Score</th>
+    </tr></thead>
+    <tbody>
+      ${ops.slice(0,60).map(o=>{
+        const esBuy = o.tipo === 'COMPRA';
+        const ret   = o.retorno;
+        const pnl   = o.pnl_eur;
+        return `<tr>
+          <td>${o.fecha||'—'}</td>
+          <td class="${esBuy?'t-buy':'t-sell'}">${o.tipo}</td>
+          <td class="t-tk">${o.ticker}</td>
+          <td style="text-align:right">${esBuy?(o.precio?.toFixed(2)||'—'):(o.precio_venta?.toFixed(2)||'—')}</td>
+          <td style="text-align:right">${fmt$(o.capital_invertido)}</td>
+          <td style="text-align:right" class="${ret!=null?(ret>=0?'t-pos':'t-neg'):''}">
+            ${ret!=null?sgn(ret)+'%':'—'}
+          </td>
+          <td style="text-align:right" class="${pnl!=null?(pnl>=0?'t-pos':'t-neg'):''}">
+            ${pnl!=null?(pnl>=0?'+':'')+pnl.toFixed(0)+'€':'—'}
+          </td>
+          <td style="font-size:10px;color:var(--muted)">${(o.tipologia||'').replace('_',' ')}</td>
+          <td><span class="motivo-pill">${o.motivo||('score: '+(o.score||'—'))}</span></td>
+        </tr>`;
+      }).join('')}
+    </tbody>
+  </table>
+  <div style="font-size:11px;color:var(--muted);margin-top:8px">Mostrando últimas 60 operaciones</div>`;
+}
+
+function setFiltro(f, btn){
+  filtroOps = f;
+  document.querySelectorAll('.of-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('ops-wrap').innerHTML = renderOps(f);
+}
+
+// ── EQUITY CHART ──────────────────────────────────────────────────────────────
+function renderEquityChart(){
+  const canvas = document.getElementById('equity-chart');
+  if(!canvas) return;
+  if(chartInst){chartInst.destroy();chartInst=null;}
+
+  const semanas = data.semanas || [];
+  const capital = data.capital_inicial || 10000;
+
+  // Decimado
+  const step = Math.max(1, Math.floor(semanas.length/80));
+  const labels = semanas.filter((_,i)=>i%step===0).map(s=>fmtFecha(s.fecha));
+
+  const botVals = semanas.filter((_,i)=>i%step===0).map(s=>s.valor_total||capital);
+
+  // SP500 normalizado
+  const sp0 = semanas.find(s=>s.sp500_precio)?.sp500_precio;
+  const sp500Vals = semanas.filter((_,i)=>i%step===0).map(s=>{
+    if(!s.sp500_precio || !sp0) return null;
+    return round2(capital * s.sp500_precio / sp0);
+  });
+
+  // Línea de capital inicial
+  const initLine = Array(labels.length).fill(capital);
+
+  chartInst = new Chart(canvas,{
+    type:'line',
+    data:{labels, datasets:[
+      {label:'Bot', data:botVals, borderColor:'#6c63ff', backgroundColor:'rgba(108,99,255,.08)',
+       borderWidth:2.5, pointRadius:0, tension:.3, fill:true},
+      {label:'SP500', data:sp500Vals, borderColor:'#94a3b8', backgroundColor:'transparent',
+       borderWidth:1.5, pointRadius:0, tension:.3, borderDash:[4,3]},
+      {label:'Inicio', data:initLine, borderColor:'rgba(255,255,255,.1)', backgroundColor:'transparent',
+       borderWidth:1, pointRadius:0, borderDash:[2,4]},
+    ]},
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      interaction:{mode:'index', intersect:false},
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'#18181f', borderColor:'rgba(255,255,255,.1)', borderWidth:1,
+          titleColor:'#6b6b80', bodyColor:'#e8e8f0', padding:10,
+          titleFont:{family:"'DM Mono',monospace",size:11},
+          bodyFont:{family:"'DM Mono',monospace",size:12},
+          callbacks:{label:ctx=>{
+            if(ctx.dataset.label==='Inicio') return null;
+            return ' '+ctx.dataset.label+': '+fmt$(ctx.parsed.y);
+          }}
+        },
+      },
+      scales:{
+        x:{grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#6b6b80',font:{family:"'DM Mono'",size:10},maxTicksLimit:10}, border:{color:'rgba(255,255,255,.07)'}},
+        y:{grid:{color:'rgba(255,255,255,.04)'}, ticks:{color:'#6b6b80',font:{family:"'DM Mono'",size:10},callback:v=>fmt$(v)}, border:{color:'rgba(255,255,255,.07)'}},
+      },
+    },
+  });
+}
+
+// ── HELPERS UI ────────────────────────────────────────────────────────────────
+function kpi(lbl, val, sub, color){
+  return `<div class="kpi">
+    <div class="kpi-lbl">${lbl}</div>
+    <div class="kpi-val" style="color:${color||'var(--text)'}">${val}</div>
+    <div class="kpi-sub">${sub||''}</div>
+  </div>`;
+}
+
+function metCol(title, rows){
+  return `<div class="met-col">
+    <div class="met-col-title">${title}</div>
+    ${rows.map(r=>`<div class="met-row">
+      <span class="mk">${r.k}</span>
+      <span class="mv" style="color:${r.c||'var(--text)'}">${r.v??'—'}</span>
+    </div>`).join('')}
+  </div>`;
+}
+
+function retColor(v){ return v==null?'var(--muted)':v>0?'var(--green)':v<0?'var(--red)':'var(--text)'; }
+function fmt$(v){ if(v==null) return '—'; return v.toLocaleString('es-ES',{minimumFractionDigits:0,maximumFractionDigits:0})+'€'; }
+function sgn(v){ if(v==null) return '—'; return (v>0?'+':'')+v.toFixed(1); }
+function round2(v){ return Math.round(v*100)/100; }
+function fmtFecha(iso){
+  if(!iso) return '—';
+  const d = new Date(iso+'T12:00:00');
+  return d.toLocaleDateString('es-ES',{day:'2-digit',month:'short',year:'2-digit'});
+}
+
+init();
+</script>
+</body>
+</html>
