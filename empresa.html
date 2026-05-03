@@ -101,6 +101,72 @@ footer{text-align:center;padding:24px 0 0;color:var(--muted);font-size:10px;lett
   .hright{text-align:left;}
   .hsenal{justify-content:flex-start;}
 }
+
+/* ── DCF ──────────────────────────────────────────────────────────────────── */
+.dcf-wrap{margin-bottom:28px;}
+.dcf-resumen{
+  background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0;padding:12px 16px;font-size:12px;color:#a0a0c0;
+  margin-bottom:16px;line-height:1.6;
+}
+.dcf-resumen.positivo{border-left-color:#00e896;color:#80d0a0;}
+.dcf-resumen.negativo{border-left-color:#ff4d6d;color:#c08090;}
+
+.dcf-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.dcf-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+.dcf-card-title{font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);padding:10px 14px 8px;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;}
+.dcf-card-sub{font-size:10px;color:var(--muted);}
+
+/* Escenarios */
+.esc-row{display:flex;justify-content:space-between;align-items:center;
+  padding:10px 14px;border-bottom:1px solid var(--border);}
+.esc-row:last-child{border-bottom:none;}
+.esc-label{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:6px;}
+.esc-dot{width:7px;height:7px;border-radius:50%;}
+.esc-precio{font-size:16px;font-weight:700;font-family:var(--display);}
+.esc-g{font-size:10px;color:var(--muted);text-align:right;}
+.esc-margen{font-size:11px;font-weight:500;}
+
+/* Gauge margen de seguridad */
+.gauge-wrap{padding:16px 14px 14px;}
+.gauge-label{font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;}
+.gauge-track{height:8px;background:var(--border);border-radius:4px;position:relative;overflow:visible;margin-bottom:6px;}
+.gauge-fill{height:100%;border-radius:4px;transition:width .6s ease;}
+.gauge-marker{position:absolute;top:-3px;width:2px;height:14px;background:rgba(255,255,255,.3);border-radius:1px;}
+.gauge-vals{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);}
+.gauge-main{font-family:var(--display);font-size:32px;font-weight:800;text-align:center;
+  padding:10px 0 4px;line-height:1;}
+.gauge-main-sub{text-align:center;font-size:11px;color:var(--muted);margin-bottom:8px;}
+
+/* Reverse DCF */
+.rdcf-row{display:flex;justify-content:space-between;align-items:center;
+  padding:9px 14px;border-bottom:1px solid var(--border);}
+.rdcf-row:last-child{border-bottom:none;}
+.rdcf-bar-row{padding:8px 14px;border-bottom:1px solid var(--border);}
+.rdcf-bar-label{font-size:10px;color:var(--muted);margin-bottom:5px;display:flex;justify-content:space-between;}
+.rdcf-track{height:6px;background:var(--border);border-radius:3px;position:relative;}
+.rdcf-bar-a{height:100%;border-radius:3px;}
+.rdcf-marker{position:absolute;top:-2px;width:2px;height:10px;border-radius:1px;}
+.rdcf-interp{padding:10px 14px;font-size:11px;color:var(--muted);font-style:italic;line-height:1.5;}
+
+/* Métodos comparativa */
+.metodos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;padding:12px 14px;}
+.metodo-item{text-align:center;}
+.metodo-nombre{font-size:10px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px;}
+.metodo-precio{font-size:18px;font-weight:700;font-family:var(--display);}
+.metodo-diff{font-size:11px;margin-top:2px;}
+
+/* Analistas */
+.analistas-strip{display:flex;align-items:center;gap:16px;padding:10px 14px;
+  border-top:1px solid var(--border);flex-wrap:wrap;}
+.an-item{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.an-lbl{font-size:10px;color:var(--muted);}
+.an-val{font-size:14px;font-weight:600;}
+
+@media(max-width:580px){.dcf-grid{grid-template-columns:1fr;}}
+
 </style>
 </head>
 <body>
@@ -232,6 +298,13 @@ function render(){
       <div class="mgrid">${metHTML(m)}</div>
     </div>
 
+    <div class="anim" style="animation-delay:.18s">
+      <div class="stitle"><span>Valoracion intrínseca · DCF</span></div>
+      <div class="dcf-wrap" id="dcf-section">
+        ${dcfHTML(empresa.dcf)}
+      </div>
+    </div>
+
     <div class="anim" style="animation-delay:.2s">
       <div class="stitle"><span>F-Score Piotroski</span></div>
       ${fsHTML(m)}
@@ -301,6 +374,175 @@ function metHTML(m){
       <div class="mgtitle">${g.t}</div>
       ${g.rows.map(r=>`<div class="mrow"><span class="mk">${r.k}</span><span class="mv ${r.c}">${r.v}</span></div>`).join('')}
     </div>`).join('');
+}
+
+function dcfHTML(dcf){
+  if(!dcf || !dcf.escenarios_dcf){
+    return `<div style="color:var(--muted);font-size:12px;padding:20px;text-align:center;background:var(--bg2);border:1px solid var(--border);border-radius:10px;">
+      Sin datos DCF disponibles — datos financieros insuficientes para esta empresa.
+    </div>`;
+  }
+
+  const precio = dcf.precio_actual;
+  const margen = dcf.margen_seguridad;
+  const margenColor = margen==null?'var(--muted)':margen>=20?'var(--green)':margen>=0?'var(--yellow)':'var(--red)';
+  const resumenClass = margen==null?'':margen>=5?'positivo':margen<=-5?'negativo':'';
+
+  // ── GAUGE de margen de seguridad ──────────────────────────────────────────
+  function gaugeHTML(){
+    if(margen==null) return '';
+    const clamped = Math.min(Math.max(margen, -60), 60);
+    const pct     = ((clamped + 60) / 120) * 100;
+    const fillColor = margen>=20?'#00e896':margen>=0?'#f5c542':'#ff4d6d';
+    return `<div class="gauge-main" style="color:${margenColor}">${margen>0?'+':''}${margen.toFixed(1)}%</div>
+      <div class="gauge-main-sub">Margen de seguridad vs precio actual</div>
+      <div class="gauge-wrap" style="padding:4px 14px 14px">
+        <div class="gauge-track">
+          <div class="gauge-fill" style="width:${pct}%;background:${fillColor}"></div>
+          <div class="gauge-marker" style="left:50%"></div>
+        </div>
+        <div class="gauge-vals"><span>-60%</span><span style="color:var(--muted)">0</span><span>+60%</span></div>
+      </div>`;
+  }
+
+  // ── ESCENARIOS ────────────────────────────────────────────────────────────
+  const esc = dcf.escenarios_dcf || {};
+  const escColors = {pesimista:'#ff6b35', base:'#6c63ff', optimista:'#00e896'};
+  function escRow(nombre, e){
+    if(!e||e.precio_objetivo==null) return '';
+    const diff = precio ? (e.precio_objetivo - precio) / precio * 100 : null;
+    const dc   = diff==null?'var(--muted)':diff>=0?'var(--green)':'var(--red)';
+    return `<div class="esc-row">
+      <div class="esc-label">
+        <div class="esc-dot" style="background:${escColors[nombre]}"></div>
+        ${nombre.charAt(0).toUpperCase()+nombre.slice(1)}
+      </div>
+      <div>
+        <div class="esc-precio" style="color:${escColors[nombre]}">${fmtP(e.precio_objetivo)}</div>
+        ${diff!=null?`<div class="esc-margen" style="color:${dc}">${diff>=0?'+':''}${diff.toFixed(1)}% vs actual</div>`:''}
+      </div>
+      <div class="esc-g" style="text-align:right">
+        g₁: ${e.g_fase1}%<br>g₂: ${e.g_fase2}%
+      </div>
+    </div>`;
+  }
+
+  // ── REVERSE DCF ───────────────────────────────────────────────────────────
+  function reverseHTML(){
+    const r = dcf.reverse_dcf;
+    if(!r) return '<div style="color:var(--muted);font-size:12px;padding:12px 14px">Sin datos para Reverse DCF.</div>';
+    const maxG = Math.max(Math.abs(r.g_implicito), Math.abs(r.g_fundamental), 15) * 1.2;
+    const wImpl = Math.min((Math.abs(r.g_implicito) / maxG)*100, 100);
+    const wFund = Math.min((Math.abs(r.g_fundamental) / maxG)*100, 100);
+    const cImpl = r.g_implicito > r.g_fundamental ? '#f5c542' : '#00e896';
+    return `
+      <div class="rdcf-row"><span style="color:var(--muted);font-size:11px">G implícito en precio</span>
+        <span style="font-size:15px;font-weight:600;color:${cImpl}">${r.g_implicito>0?'+':''}${r.g_implicito}%</span></div>
+      <div class="rdcf-row"><span style="color:var(--muted);font-size:11px">G fundamental (ROIC)</span>
+        <span style="font-size:15px;font-weight:600;color:var(--accent)">${r.g_fundamental>0?'+':''}${r.g_fundamental}%</span></div>
+      <div class="rdcf-bar-row">
+        <div class="rdcf-bar-label"><span>Mercado</span><span style="color:${cImpl}">${r.g_implicito}%</span></div>
+        <div class="rdcf-track" style="margin-bottom:6px">
+          <div class="rdcf-bar-a" style="width:${wImpl}%;background:${cImpl}"></div>
+        </div>
+        <div class="rdcf-bar-label"><span>Fundamentales</span><span style="color:var(--accent)">${r.g_fundamental}%</span></div>
+        <div class="rdcf-track">
+          <div class="rdcf-bar-a" style="width:${wFund}%;background:var(--accent)"></div>
+        </div>
+      </div>
+      <div class="rdcf-interp">${r.interpretacion}</div>`;
+  }
+
+  // ── MÉTODOS ───────────────────────────────────────────────────────────────
+  function metodosHTML(){
+    const items = dcf.precios_por_metodo || [];
+    if(!items.length) return '';
+    return `<div class="metodos-grid">
+      ${items.map(([nombre, p])=>{
+        const diff = precio ? (p - precio)/precio*100 : null;
+        const dc   = diff==null?'var(--muted)':diff>=0?'var(--green)':'var(--red)';
+        return `<div class="metodo-item">
+          <div class="metodo-nombre">${nombre}</div>
+          <div class="metodo-precio" style="color:${dc}">${fmtP(p)}</div>
+          ${diff!=null?`<div class="metodo-diff" style="color:${dc}">${diff>=0?'+':''}${diff.toFixed(1)}%</div>`:''}
+        </div>`;
+      }).join('')}
+    </div>`;
+  }
+
+  // ── ANALISTAS ─────────────────────────────────────────────────────────────
+  function analistasHTML(){
+    if(!dcf.target_analistas || !dcf.n_analistas) return '';
+    const diff = precio ? (dcf.target_analistas - precio)/precio*100 : null;
+    const dc   = diff>=0?'var(--green)':'var(--red)';
+    return `<div class="analistas-strip">
+      <div class="an-item">
+        <div class="an-lbl">Target analistas</div>
+        <div class="an-val" style="color:${dc}">${fmtP(dcf.target_analistas)}</div>
+      </div>
+      <div class="an-item">
+        <div class="an-lbl">Upside/downside</div>
+        <div class="an-val" style="color:${dc}">${diff!=null?(diff>=0?'+':'')+diff.toFixed(1)+'%':'—'}</div>
+      </div>
+      <div class="an-item">
+        <div class="an-lbl">Analistas</div>
+        <div class="an-val">${dcf.n_analistas}</div>
+      </div>
+      <div class="an-item">
+        <div class="an-lbl">WACC usado</div>
+        <div class="an-val">${dcf.wacc}%</div>
+      </div>
+      <div class="an-item">
+        <div class="an-lbl">G base</div>
+        <div class="an-val">${dcf.g_base}%</div>
+      </div>
+    </div>`;
+  }
+
+  function fmtP(v){
+    if(v==null) return '—';
+    const mon = dcf.moneda==='EUR'?'€':'$';
+    return v.toLocaleString('es-ES',{minimumFractionDigits:2,maximumFractionDigits:2})+mon;
+  }
+
+  return `
+    <div class="dcf-resumen ${resumenClass}">${dcf.resumen||'—'}</div>
+
+    <div class="dcf-grid">
+      <!-- Escenarios DCF -->
+      <div class="dcf-card">
+        <div class="dcf-card-title">
+          <span>Escenarios DCF · 2 fases</span>
+          <span class="dcf-card-sub">WACC ${dcf.wacc}% · g ${dcf.g_base}%</span>
+        </div>
+        ${escRow('pesimista', esc.pesimista)}
+        ${escRow('base',      esc.base)}
+        ${escRow('optimista', esc.optimista)}
+      </div>
+
+      <!-- Gauge + Precio consenso -->
+      <div class="dcf-card">
+        <div class="dcf-card-title">
+          <span>Precio consenso</span>
+          <span class="dcf-card-sub" style="color:${dcf.confianza==='alta'?'var(--green)':dcf.confianza==='media'?'var(--yellow)':'var(--red)'}">
+            confianza ${dcf.confianza}
+          </span>
+        </div>
+        ${gaugeHTML()}
+        ${metodosHTML()}
+        ${analistasHTML()}
+      </div>
+    </div>
+
+    <!-- Reverse DCF -->
+    <div class="dcf-card" style="margin-bottom:0">
+      <div class="dcf-card-title">
+        <span>Reverse DCF — crecimiento implícito en precio</span>
+        <span class="dcf-card-sub">Método Damodaran</span>
+      </div>
+      ${reverseHTML()}
+    </div>
+  `;
 }
 
 function fsHTML(m){
