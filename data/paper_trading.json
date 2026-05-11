@@ -1,7 +1,7 @@
 {
   "capital_inicial": 10000,
   "capital_actual": 819.2,
-  "valor_total": 9976.89,
+  "valor_total": 10096.72,
   "semanas": [
     {
       "fecha": "2026-04-27",
@@ -10315,19 +10315,1113 @@
           ]
         }
       }
+    },
+    {
+      "fecha": "2026-05-11",
+      "sp500_precio": 7422.14,
+      "equal_weight": {
+        "valor_total": 10096.72,
+        "capital_cash": 819.2,
+        "valor_posiciones": 9277.52,
+        "retorno_total": 0.97,
+        "n_posiciones": 20,
+        "operaciones": []
+      },
+      "scoring_weighted": {
+        "valor_total": 9988.09,
+        "capital_cash": 54.1,
+        "valor_posiciones": 9933.99,
+        "retorno_total": -0.12,
+        "n_posiciones": 20,
+        "operaciones": [
+          {
+            "tipo": "VENTA",
+            "ticker": "KSB.DE",
+            "fecha": "2026-05-11",
+            "precio_compra": 1000.0,
+            "precio_venta": 840.0,
+            "n_acciones": 1,
+            "retorno": -16.0,
+            "pnl_eur": -160.0,
+            "capital_invertido": 1000.0,
+            "valor_cierre": 840.0,
+            "semanas": 4,
+            "motivo": "stop_loss_-16.0%",
+            "tipologia": "VALUE_CYCLICAL",
+            "score_entrada": 92.0,
+            "cartera": "SW"
+          },
+          {
+            "tipo": "COMPRA",
+            "ticker": "GEST.MC",
+            "fecha": "2026-05-11",
+            "precio": 3.44,
+            "n_acciones": 298,
+            "capital_invertido": 1025.12,
+            "score": 87.3,
+            "peso_score": 100.0,
+            "tipologia": "VALUE_CYCLICAL",
+            "cartera": "SW"
+          }
+        ]
+      },
+      "valor_total": 10096.72,
+      "capital_cash": 819.2,
+      "valor_posiciones": 9277.52,
+      "retorno_total": 0.97,
+      "n_posiciones": 20,
+      "operaciones": [],
+      "señales": {
+        "BMY": {
+          "señal": "COMPRA",
+          "precio": 55.725,
+          "score": 93.1,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "IAG.MC": {
+          "señal": "COMPRA",
+          "precio": 4.73,
+          "score": 91.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "HLBBF": {
+          "señal": "COMPRA",
+          "precio": 7.16,
+          "score": 91.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "ALTN.L": {
+          "señal": "COMPRA",
+          "precio": 1240.0,
+          "score": 90.9,
+          "tipologia": "SPECULATIVE",
+          "alertas": []
+        },
+        "GILD": {
+          "señal": "COMPRA",
+          "precio": 133.37,
+          "score": 89.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "GEST.MC": {
+          "señal": "COMPRA",
+          "precio": 3.44,
+          "score": 87.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "TRI.PA": {
+          "señal": "COMPRA",
+          "precio": 157.6,
+          "score": 86.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "USB": {
+          "señal": "COMPRA",
+          "precio": 54.575,
+          "score": 85.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "TROW": {
+          "señal": "COMPRA",
+          "precio": 105.25,
+          "score": 85.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "F-Score debil (3/9) — posible deterioro"
+          ]
+        },
+        "REP.MC": {
+          "señal": "COMPRA",
+          "precio": 22.33,
+          "score": 84.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "SHEL": {
+          "señal": "COMPRA",
+          "precio": 85.33,
+          "score": 84.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "TGT": {
+          "señal": "COMPRA",
+          "precio": 118.009,
+          "score": 82.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "KSB.DE": {
+          "señal": "NEUTRO",
+          "precio": 840.0,
+          "score": 82.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "VID.MC": {
+          "señal": "COMPRA",
+          "precio": 76.8,
+          "score": 81.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "BP": {
+          "señal": "COMPRA",
+          "precio": 44.17,
+          "score": 81.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "CUK": {
+          "señal": "COMPRA",
+          "precio": 27.47,
+          "score": 80.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "NVO": {
+          "señal": "COMPRA",
+          "precio": 46.902,
+          "score": 80.2,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": []
+        },
+        "VLO": {
+          "señal": "COMPRA",
+          "precio": 247.67,
+          "score": 80.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "NXT.L": {
+          "señal": "COMPRA",
+          "precio": 12865.0,
+          "score": 79.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "ZTS": {
+          "señal": "COMPRA",
+          "precio": 77.6211,
+          "score": 78.6,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Precio muy por debajo de MM200 — tendencia bajista"
+          ]
+        },
+        "VZ": {
+          "señal": "COMPRA",
+          "precio": 47.3,
+          "score": 78.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "CAF.MC": {
+          "señal": "COMPRA",
+          "precio": 64.4,
+          "score": 77.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "COP": {
+          "señal": "COMPRA",
+          "precio": 114.95,
+          "score": 77.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "CMCSA": {
+          "señal": "COMPRA",
+          "precio": 25.005,
+          "score": 76.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "JD": {
+          "señal": "COMPRA",
+          "precio": 30.785,
+          "score": 74.8,
+          "tipologia": "SPECULATIVE",
+          "alertas": [
+            "F-Score debil (4/9) — posible deterioro"
+          ]
+        },
+        "JET2.L": {
+          "señal": "NEUTRO",
+          "precio": 1137.0,
+          "score": 74.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "ET": {
+          "señal": "COMPRA",
+          "precio": 19.4374,
+          "score": 73.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Deuda/EBITDA elevada (4.4x)"
+          ]
+        },
+        "T": {
+          "señal": "NEUTRO",
+          "precio": 24.855,
+          "score": 72.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "PFE": {
+          "señal": "COMPRA",
+          "precio": 25.795,
+          "score": 72.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "BABA": {
+          "señal": "NEUTRO",
+          "precio": 137.77,
+          "score": 71.5,
+          "tipologia": "SPECULATIVE",
+          "alertas": []
+        },
+        "HAL": {
+          "señal": "COMPRA",
+          "precio": 40.27,
+          "score": 71.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "PEP": {
+          "señal": "NEUTRO",
+          "precio": 149.7,
+          "score": 70.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "CL": {
+          "señal": "NEUTRO",
+          "precio": 86.34,
+          "score": 70.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "TLW.L": {
+          "señal": "COMPRA",
+          "precio": 15.14,
+          "score": 70.1,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "ACS.MC": {
+          "señal": "NEUTRO",
+          "precio": 136.0,
+          "score": 70.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "SLB": {
+          "señal": "NEUTRO",
+          "precio": 54.3815,
+          "score": 70.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "KMB": {
+          "señal": "NEUTRO",
+          "precio": 95.51,
+          "score": 69.7,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "DIS": {
+          "señal": "VIGILAR",
+          "precio": 104.715,
+          "score": 69.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "82E.F": {
+          "señal": "NEUTRO",
+          "precio": 1.66,
+          "score": 69.3,
+          "tipologia": "SPECULATIVE",
+          "alertas": []
+        },
+        "QCOM": {
+          "señal": "NEUTRO",
+          "precio": 241.4899,
+          "score": 69.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "SCHW": {
+          "señal": "NEUTRO",
+          "precio": 87.845,
+          "score": 69.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "XOM": {
+          "señal": "NEUTRO",
+          "precio": 148.19,
+          "score": 68.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "AMGN": {
+          "señal": "VIGILAR",
+          "precio": 328.31,
+          "score": 68.5,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": []
+        },
+        "EPD": {
+          "señal": "VIGILAR",
+          "precio": 37.6918,
+          "score": 67.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "PG": {
+          "señal": "VIGILAR",
+          "precio": 142.53,
+          "score": 67.8,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": []
+        },
+        "OKE": {
+          "señal": "VIGILAR",
+          "precio": 87.015,
+          "score": 67.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Deuda/EBITDA elevada (4.4x)"
+          ]
+        },
+        "ITX.MC": {
+          "señal": "VIGILAR",
+          "precio": 49.92,
+          "score": 67.1,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": []
+        },
+        "PBA": {
+          "señal": "VIGILAR",
+          "precio": 46.4701,
+          "score": 66.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "AAPL": {
+          "señal": "VIGILAR",
+          "precio": 292.995,
+          "score": 66.3,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "JNJ": {
+          "señal": "NEUTRO",
+          "precio": 220.79,
+          "score": 66.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "VICI": {
+          "señal": "NEUTRO",
+          "precio": 28.685,
+          "score": 65.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Deuda/EBITDA elevada (4.3x)"
+          ]
+        },
+        "CVX": {
+          "señal": "NEUTRO",
+          "precio": 184.4,
+          "score": 65.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "PSX": {
+          "señal": "NEUTRO",
+          "precio": 175.44,
+          "score": 65.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "UL": {
+          "señal": "NEUTRO",
+          "precio": 57.25,
+          "score": 65.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "MNST": {
+          "señal": "VIGILAR",
+          "precio": 85.11,
+          "score": 65.0,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "GIS": {
+          "señal": "NEUTRO",
+          "precio": 33.675,
+          "score": 64.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Precio muy por debajo de MM200 — tendencia bajista",
+            "Deuda/EBITDA elevada (4.5x)"
+          ]
+        },
+        "AXP": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 312.22,
+          "score": 64.7,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "F-Score debil (3/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+          ]
+        },
+        "FISV": {
+          "señal": "NEUTRO",
+          "precio": 54.74,
+          "score": 64.2,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Precio muy por debajo de MM200 — tendencia bajista"
+          ]
+        },
+        "ADP": {
+          "señal": "VIGILAR",
+          "precio": 211.82,
+          "score": 64.2,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Precio muy por debajo de MM200 — tendencia bajista"
+          ]
+        },
+        "GMAB": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 26.12,
+          "score": 64.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "F-Score debil (3/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+          ]
+        },
+        "CSCO": {
+          "señal": "VIGILAR",
+          "precio": 98.065,
+          "score": 63.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "GRF.MC": {
+          "señal": "NEUTRO",
+          "precio": 8.83,
+          "score": 63.0,
+          "tipologia": "SPECULATIVE",
+          "alertas": [
+            "Precio muy por debajo de MM200 — tendencia bajista",
+            "Deuda/EBITDA elevada (5.2x)"
+          ]
+        },
+        "LOW": {
+          "señal": "NEUTRO",
+          "precio": 226.32,
+          "score": 62.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "TMUS": {
+          "señal": "VIGILAR",
+          "precio": 191.69,
+          "score": 61.4,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": []
+        },
+        "BRK-B": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 478.3301,
+          "score": 61.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "F-Score debil (2/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+          ]
+        },
+        "ASML.AS": {
+          "señal": "VIGILAR",
+          "precio": 1305.6,
+          "score": 60.6,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "BAC": {
+          "señal": "NEUTRO",
+          "precio": 50.395,
+          "score": 60.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": []
+        },
+        "KIN.BR": {
+          "señal": "NEUTRO",
+          "precio": 29.95,
+          "score": 60.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Deuda/EBITDA elevada (4.6x)"
+          ]
+        },
+        "MA": {
+          "señal": "VIGILAR",
+          "precio": 500.035,
+          "score": 60.4,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": []
+        },
+        "ENG.MC": {
+          "señal": "NEUTRO",
+          "precio": 16.59,
+          "score": 60.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (4.6x)"
+          ]
+        },
+        "GOOGL": {
+          "señal": "VIGILAR",
+          "precio": 394.4799,
+          "score": 60.2,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "COST": {
+          "señal": "VIGILAR",
+          "precio": 989.93,
+          "score": 59.8,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "AVGO": {
+          "señal": "VIGILAR",
+          "precio": 430.31,
+          "score": 59.2,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "V": {
+          "señal": "VIGILAR",
+          "precio": 323.86,
+          "score": 59.0,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": []
+        },
+        "ABBV": {
+          "señal": "VIGILAR",
+          "precio": 202.75,
+          "score": 58.8,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": []
+        },
+        "WMT": {
+          "señal": "VIGILAR",
+          "precio": 126.775,
+          "score": 58.7,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "IBM": {
+          "señal": "NEUTRO",
+          "precio": 224.67,
+          "score": 57.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Precio muy por debajo de MM200 — tendencia bajista"
+          ]
+        },
+        "SPG": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 201.04,
+          "score": 57.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (3/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL",
+            "Deuda/EBITDA elevada (6.0x)"
+          ]
+        },
+        "TXN": {
+          "señal": "VIGILAR",
+          "precio": 293.91,
+          "score": 56.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "KMI": {
+          "señal": "NEUTRO",
+          "precio": 32.07,
+          "score": 56.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (4.3x)"
+          ]
+        },
+        "NNN": {
+          "señal": "NEUTRO",
+          "precio": 44.33,
+          "score": 56.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (5.7x)"
+          ]
+        },
+        "KO": {
+          "señal": "VIGILAR",
+          "precio": 77.91,
+          "score": 56.3,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "EH": {
+          "señal": "NEUTRO",
+          "precio": 10.2693,
+          "score": 55.4,
+          "tipologia": "SPECULATIVE",
+          "alertas": [
+            "Precio muy por debajo de MM200 — tendencia bajista"
+          ]
+        },
+        "HD": {
+          "señal": "NEUTRO",
+          "precio": 312.9682,
+          "score": 55.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "MSFT": {
+          "señal": "NEUTRO",
+          "precio": 410.4175,
+          "score": 54.4,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "UNH": {
+          "señal": "VIGILAR",
+          "precio": 379.935,
+          "score": 54.4,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "MDT": {
+          "señal": "NEUTRO",
+          "precio": 74.54,
+          "score": 54.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Precio muy por debajo de MM200 — tendencia bajista"
+          ]
+        },
+        "TRP": {
+          "señal": "VIGILAR",
+          "precio": 65.855,
+          "score": 54.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (6.2x)"
+          ]
+        },
+        "O": {
+          "señal": "NEUTRO",
+          "precio": 62.31,
+          "score": 53.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (5.5x)"
+          ]
+        },
+        "SAN.MC": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 10.416,
+          "score": 52.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (3/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+          ]
+        },
+        "NKE": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 42.905,
+          "score": 51.9,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "F-Score debil (3/9) — posible deterioro",
+            "Precio muy por debajo de MM200 — tendencia bajista",
+            "Score o F-Score en zona de deterioro — QUALITY_GROWTH"
+          ]
+        },
+        "ENB": {
+          "señal": "NEUTRO",
+          "precio": 54.825,
+          "score": 51.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (6.1x)"
+          ]
+        },
+        "FER.MC": {
+          "señal": "NEUTRO",
+          "precio": 59.76,
+          "score": 51.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (4.5x)"
+          ]
+        },
+        "BLK": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 1080.45,
+          "score": 50.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (2/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+          ]
+        },
+        "SBUX": {
+          "señal": "NEUTRO",
+          "precio": 106.3788,
+          "score": 49.5,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (4.3x)"
+          ]
+        },
+        "AEP": {
+          "señal": "NEUTRO",
+          "precio": 131.19,
+          "score": 48.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (5.4x)"
+          ]
+        },
+        "MDLZ": {
+          "señal": "NEUTRO",
+          "precio": 61.07,
+          "score": 48.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "MCD": {
+          "señal": "NEUTRO",
+          "precio": 273.67,
+          "score": 48.5,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": []
+        },
+        "WMB": {
+          "señal": "NEUTRO",
+          "precio": 73.59,
+          "score": 48.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (4.3x)"
+          ]
+        },
+        "ED": {
+          "señal": "NEUTRO",
+          "precio": 106.28,
+          "score": 48.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (4.5x)"
+          ]
+        },
+        "PLD": {
+          "señal": "NEUTRO",
+          "precio": 144.765,
+          "score": 48.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (5.3x)"
+          ]
+        },
+        "DLR": {
+          "señal": "NEUTRO",
+          "precio": 197.1,
+          "score": 47.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (5.6x)"
+          ]
+        },
+        "AMT": {
+          "señal": "NEUTRO",
+          "precio": 178.065,
+          "score": 45.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (6.2x)"
+          ]
+        },
+        "DUK": {
+          "señal": "NEUTRO",
+          "precio": 124.965,
+          "score": 45.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (5.5x)"
+          ]
+        },
+        "NVAX": {
+          "señal": "NEUTRO",
+          "precio": 9.53,
+          "score": 43.4,
+          "tipologia": "SPECULATIVE",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "INTC": {
+          "señal": "NEUTRO",
+          "precio": 127.12,
+          "score": 43.1,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "JPM": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 299.25,
+          "score": 42.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (2/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+          ]
+        },
+        "NEE": {
+          "señal": "NEUTRO",
+          "precio": 95.38,
+          "score": 39.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (6.5x)"
+          ]
+        },
+        "XEL": {
+          "señal": "NEUTRO",
+          "precio": 80.41,
+          "score": 39.1,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (5.7x)"
+          ]
+        },
+        "ISRG": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 424.445,
+          "score": 38.4,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (3/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — QUALITY_GROWTH"
+          ]
+        },
+        "ASTS": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 83.125,
+          "score": 38.2,
+          "tipologia": "SPECULATIVE",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (4/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — SPECULATIVE"
+          ]
+        },
+        "SO": {
+          "señal": "NEUTRO",
+          "precio": 92.88,
+          "score": 37.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (5.2x)"
+          ]
+        },
+        "WFC": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 73.42,
+          "score": 35.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (2/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+          ]
+        },
+        "CLNX.MC": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 28.3,
+          "score": 34.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL",
+            "Deuda/EBITDA elevada (8.0x)"
+          ]
+        },
+        "VKTX": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 31.83,
+          "score": 34.5,
+          "tipologia": "SPECULATIVE",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (1/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — SPECULATIVE"
+          ]
+        },
+        "ORCL": {
+          "señal": "NEUTRO",
+          "precio": 192.46,
+          "score": 33.5,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ]
+        },
+        "WEC": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 112.43,
+          "score": 33.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL",
+            "Deuda/EBITDA elevada (5.7x)"
+          ]
+        },
+        "RGTI": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 20.3313,
+          "score": 30.0,
+          "tipologia": "SPECULATIVE",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (3/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — SPECULATIVE"
+          ]
+        },
+        "OKLO": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 77.535,
+          "score": 26.2,
+          "tipologia": "SPECULATIVE",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (3/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — SPECULATIVE",
+            "Deuda/EBITDA elevada (5.7x)"
+          ]
+        }
+      }
     }
   ],
   "posiciones_abiertas": {
     "ALTN.L": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 1125.0,
-      "precio_actual": 1210.0,
+      "precio_actual": 1240.0,
       "capital_invertido": 500,
-      "valor_actual": 537.78,
-      "retorno_actual": 7.56,
-      "max_retorno": 7.56,
+      "valor_actual": 551.11,
+      "retorno_actual": 10.22,
+      "max_retorno": 10.22,
       "min_retorno": -2.22,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 94.0,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10335,13 +11429,13 @@
     "BMY": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 58.22,
-      "precio_actual": 56.2631,
+      "precio_actual": 55.725,
       "capital_invertido": 500,
-      "valor_actual": 483.19,
-      "retorno_actual": -3.36,
+      "valor_actual": 478.57,
+      "retorno_actual": -4.29,
       "max_retorno": 0.0,
-      "min_retorno": -3.36,
-      "semanas": 4,
+      "min_retorno": -4.29,
+      "semanas": 5,
       "score_entrada": 91.9,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10355,7 +11449,7 @@
       "retorno_actual": 3.77,
       "max_retorno": 3.77,
       "min_retorno": -3.62,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 90.8,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10363,13 +11457,13 @@
     "TRI.PA": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 156.3,
-      "precio_actual": 157.9,
+      "precio_actual": 157.6,
       "capital_invertido": 500,
-      "valor_actual": 505.12,
-      "retorno_actual": 1.02,
+      "valor_actual": 504.16,
+      "retorno_actual": 0.83,
       "max_retorno": 1.02,
       "min_retorno": -6.78,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 86.5,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10377,13 +11471,13 @@
     "GILD": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 131.65,
-      "precio_actual": 131.37,
+      "precio_actual": 133.37,
       "capital_invertido": 500,
-      "valor_actual": 498.94,
-      "retorno_actual": -0.21,
+      "valor_actual": 506.53,
+      "retorno_actual": 1.31,
       "max_retorno": 2.76,
       "min_retorno": -0.21,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 85.7,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10391,13 +11485,13 @@
     "USB": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 56.3,
-      "precio_actual": 55.31,
+      "precio_actual": 54.575,
       "capital_invertido": 500,
-      "valor_actual": 491.21,
-      "retorno_actual": -1.76,
+      "valor_actual": 484.68,
+      "retorno_actual": -3.06,
       "max_retorno": 0.42,
-      "min_retorno": -1.82,
-      "semanas": 4,
+      "min_retorno": -3.06,
+      "semanas": 5,
       "score_entrada": 85.4,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10405,13 +11499,13 @@
     "IAG.MC": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 4.313,
-      "precio_actual": 4.513,
+      "precio_actual": 4.73,
       "capital_invertido": 500,
-      "valor_actual": 523.19,
-      "retorno_actual": 4.64,
-      "max_retorno": 4.82,
+      "valor_actual": 548.34,
+      "retorno_actual": 9.67,
+      "max_retorno": 9.67,
       "min_retorno": -3.08,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 85.2,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10419,13 +11513,13 @@
     "SHEL": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 88.98,
-      "precio_actual": 84.28,
+      "precio_actual": 85.33,
       "capital_invertido": 500,
-      "valor_actual": 473.59,
-      "retorno_actual": -5.28,
+      "valor_actual": 479.49,
+      "retorno_actual": -4.1,
       "max_retorno": 1.01,
       "min_retorno": -5.28,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 84.6,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10433,13 +11527,13 @@
     "REP.MC": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 22.78,
-      "precio_actual": 21.79,
+      "precio_actual": 22.33,
       "capital_invertido": 500,
-      "valor_actual": 478.27,
-      "retorno_actual": -4.35,
+      "valor_actual": 490.12,
+      "retorno_actual": -1.98,
       "max_retorno": 0.09,
       "min_retorno": -4.35,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 84.5,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10447,13 +11541,13 @@
     "TROW": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 103.42,
-      "precio_actual": 103.59,
+      "precio_actual": 105.25,
       "capital_invertido": 500,
-      "valor_actual": 500.82,
-      "retorno_actual": 0.16,
+      "valor_actual": 508.85,
+      "retorno_actual": 1.77,
       "max_retorno": 3.07,
       "min_retorno": -0.43,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 83.4,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": [
@@ -10463,13 +11557,13 @@
     "TGT": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 128.89,
-      "precio_actual": 125.88,
+      "precio_actual": 118.009,
       "capital_invertido": 500,
-      "valor_actual": 488.32,
-      "retorno_actual": -2.34,
+      "valor_actual": 457.79,
+      "retorno_actual": -8.44,
       "max_retorno": 0.6,
-      "min_retorno": -2.34,
-      "semanas": 4,
+      "min_retorno": -8.44,
+      "semanas": 5,
       "score_entrada": 83.3,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10477,13 +11571,13 @@
     "NXT.L": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 13005.0,
-      "precio_actual": 13210.0,
+      "precio_actual": 12865.0,
       "capital_invertido": 500,
-      "valor_actual": 507.88,
-      "retorno_actual": 1.58,
+      "valor_actual": 494.62,
+      "retorno_actual": -1.08,
       "max_retorno": 1.58,
       "min_retorno": -2.38,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 82.6,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10491,13 +11585,13 @@
     "VLO": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 246.87,
-      "precio_actual": 234.53,
+      "precio_actual": 247.67,
       "capital_invertido": 500,
-      "valor_actual": 475.01,
-      "retorno_actual": -5.0,
+      "valor_actual": 501.62,
+      "retorno_actual": 0.32,
       "max_retorno": 1.91,
       "min_retorno": -5.0,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 82.3,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10505,13 +11599,13 @@
     "VID.MC": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 76.9,
-      "precio_actual": 77.6,
+      "precio_actual": 76.8,
       "capital_invertido": 500,
-      "valor_actual": 504.55,
-      "retorno_actual": 0.91,
+      "valor_actual": 499.35,
+      "retorno_actual": -0.13,
       "max_retorno": 2.47,
       "min_retorno": -0.26,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 81.8,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10519,13 +11613,13 @@
     "CMCSA": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 27.19,
-      "precio_actual": 26.12,
+      "precio_actual": 25.005,
       "capital_invertido": 500,
-      "valor_actual": 480.32,
-      "retorno_actual": -3.94,
+      "valor_actual": 459.82,
+      "retorno_actual": -8.04,
       "max_retorno": 0.0,
-      "min_retorno": -3.94,
-      "semanas": 4,
+      "min_retorno": -8.04,
+      "semanas": 5,
       "score_entrada": 81.0,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10533,13 +11627,13 @@
     "CAF.MC": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 64.0,
-      "precio_actual": 62.9,
+      "precio_actual": 64.4,
       "capital_invertido": 500,
-      "valor_actual": 491.41,
-      "retorno_actual": -1.72,
+      "valor_actual": 503.13,
+      "retorno_actual": 0.63,
       "max_retorno": 0.94,
       "min_retorno": -1.72,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 80.2,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10547,13 +11641,13 @@
     "QCOM": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 177.01,
-      "precio_actual": 202.55,
+      "precio_actual": 241.4899,
       "capital_invertido": 400.0,
-      "valor_actual": 457.71,
-      "retorno_actual": 14.43,
-      "max_retorno": 14.43,
+      "valor_actual": 545.71,
+      "retorno_actual": 36.43,
+      "max_retorno": 36.43,
       "min_retorno": -4.2,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 79.5,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10561,13 +11655,13 @@
     "BP": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 46.41,
-      "precio_actual": 43.86,
+      "precio_actual": 44.17,
       "capital_invertido": 320.0,
-      "valor_actual": 302.42,
-      "retorno_actual": -5.49,
+      "valor_actual": 304.56,
+      "retorno_actual": -4.83,
       "max_retorno": 0.98,
       "min_retorno": -5.49,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 79.5,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10575,13 +11669,13 @@
     "COP": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 123.19,
-      "precio_actual": 114.5,
+      "precio_actual": 114.95,
       "capital_invertido": 256.0,
-      "valor_actual": 237.94,
-      "retorno_actual": -7.05,
+      "valor_actual": 238.88,
+      "retorno_actual": -6.69,
       "max_retorno": 1.24,
       "min_retorno": -7.05,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 79.0,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
@@ -10589,23 +11683,23 @@
     "VZ": {
       "fecha_entrada": "2026-05-03",
       "precio_compra": 48.11,
-      "precio_actual": 47.26,
+      "precio_actual": 47.3,
       "capital_invertido": 204.8,
-      "valor_actual": 201.18,
-      "retorno_actual": -1.77,
+      "valor_actual": 201.35,
+      "retorno_actual": -1.68,
       "max_retorno": 0.0,
       "min_retorno": -1.84,
-      "semanas": 4,
+      "semanas": 5,
       "score_entrada": 78.9,
       "tipologia": "VALUE_CYCLICAL",
       "alertas": []
     }
   },
   "metricas": {
-    "ret_total": -0.23,
-    "cagr": -1.33,
-    "volatilidad": 10.41,
-    "sharpe": -0.38,
+    "ret_total": 0.97,
+    "cagr": 5.13,
+    "volatilidad": 10.2,
+    "sharpe": 0.3,
     "max_drawdown": -3.53,
     "n_ops_cerradas": 1,
     "win_rate": 0.0,
@@ -10613,23 +11707,23 @@
     "avg_win": 0.0,
     "avg_loss": -0.17,
     "pnl_total_eur": -0.84,
-    "sp500_ret": 2.8,
-    "alpha_vs_sp500": -3.03,
-    "semanas_activo": 9
+    "sp500_ret": 3.44,
+    "alpha_vs_sp500": -2.47,
+    "semanas_activo": 10
   },
-  "ultima_actualizacion": "2026-05-08",
+  "ultima_actualizacion": "2026-05-11",
   "equal_weight": {
     "posiciones_abiertas": {
       "ALTN.L": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 1125.0,
-        "precio_actual": 1210.0,
+        "precio_actual": 1240.0,
         "capital_invertido": 500,
-        "valor_actual": 537.78,
-        "retorno_actual": 7.56,
-        "max_retorno": 7.56,
+        "valor_actual": 551.11,
+        "retorno_actual": 10.22,
+        "max_retorno": 10.22,
         "min_retorno": -2.22,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 94.0,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10637,13 +11731,13 @@
       "BMY": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 58.22,
-        "precio_actual": 56.2631,
+        "precio_actual": 55.725,
         "capital_invertido": 500,
-        "valor_actual": 483.19,
-        "retorno_actual": -3.36,
+        "valor_actual": 478.57,
+        "retorno_actual": -4.29,
         "max_retorno": 0.0,
-        "min_retorno": -3.36,
-        "semanas": 4,
+        "min_retorno": -4.29,
+        "semanas": 5,
         "score_entrada": 91.9,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10657,7 +11751,7 @@
         "retorno_actual": 3.77,
         "max_retorno": 3.77,
         "min_retorno": -3.62,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 90.8,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10665,13 +11759,13 @@
       "TRI.PA": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 156.3,
-        "precio_actual": 157.9,
+        "precio_actual": 157.6,
         "capital_invertido": 500,
-        "valor_actual": 505.12,
-        "retorno_actual": 1.02,
+        "valor_actual": 504.16,
+        "retorno_actual": 0.83,
         "max_retorno": 1.02,
         "min_retorno": -6.78,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 86.5,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10679,13 +11773,13 @@
       "GILD": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 131.65,
-        "precio_actual": 131.37,
+        "precio_actual": 133.37,
         "capital_invertido": 500,
-        "valor_actual": 498.94,
-        "retorno_actual": -0.21,
+        "valor_actual": 506.53,
+        "retorno_actual": 1.31,
         "max_retorno": 2.76,
         "min_retorno": -0.21,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 85.7,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10693,13 +11787,13 @@
       "USB": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 56.3,
-        "precio_actual": 55.31,
+        "precio_actual": 54.575,
         "capital_invertido": 500,
-        "valor_actual": 491.21,
-        "retorno_actual": -1.76,
+        "valor_actual": 484.68,
+        "retorno_actual": -3.06,
         "max_retorno": 0.42,
-        "min_retorno": -1.82,
-        "semanas": 4,
+        "min_retorno": -3.06,
+        "semanas": 5,
         "score_entrada": 85.4,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10707,13 +11801,13 @@
       "IAG.MC": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 4.313,
-        "precio_actual": 4.513,
+        "precio_actual": 4.73,
         "capital_invertido": 500,
-        "valor_actual": 523.19,
-        "retorno_actual": 4.64,
-        "max_retorno": 4.82,
+        "valor_actual": 548.34,
+        "retorno_actual": 9.67,
+        "max_retorno": 9.67,
         "min_retorno": -3.08,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 85.2,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10721,13 +11815,13 @@
       "SHEL": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 88.98,
-        "precio_actual": 84.28,
+        "precio_actual": 85.33,
         "capital_invertido": 500,
-        "valor_actual": 473.59,
-        "retorno_actual": -5.28,
+        "valor_actual": 479.49,
+        "retorno_actual": -4.1,
         "max_retorno": 1.01,
         "min_retorno": -5.28,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 84.6,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10735,13 +11829,13 @@
       "REP.MC": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 22.78,
-        "precio_actual": 21.79,
+        "precio_actual": 22.33,
         "capital_invertido": 500,
-        "valor_actual": 478.27,
-        "retorno_actual": -4.35,
+        "valor_actual": 490.12,
+        "retorno_actual": -1.98,
         "max_retorno": 0.09,
         "min_retorno": -4.35,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 84.5,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10749,13 +11843,13 @@
       "TROW": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 103.42,
-        "precio_actual": 103.59,
+        "precio_actual": 105.25,
         "capital_invertido": 500,
-        "valor_actual": 500.82,
-        "retorno_actual": 0.16,
+        "valor_actual": 508.85,
+        "retorno_actual": 1.77,
         "max_retorno": 3.07,
         "min_retorno": -0.43,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 83.4,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [
@@ -10765,13 +11859,13 @@
       "TGT": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 128.89,
-        "precio_actual": 125.88,
+        "precio_actual": 118.009,
         "capital_invertido": 500,
-        "valor_actual": 488.32,
-        "retorno_actual": -2.34,
+        "valor_actual": 457.79,
+        "retorno_actual": -8.44,
         "max_retorno": 0.6,
-        "min_retorno": -2.34,
-        "semanas": 4,
+        "min_retorno": -8.44,
+        "semanas": 5,
         "score_entrada": 83.3,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10779,13 +11873,13 @@
       "NXT.L": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 13005.0,
-        "precio_actual": 13210.0,
+        "precio_actual": 12865.0,
         "capital_invertido": 500,
-        "valor_actual": 507.88,
-        "retorno_actual": 1.58,
+        "valor_actual": 494.62,
+        "retorno_actual": -1.08,
         "max_retorno": 1.58,
         "min_retorno": -2.38,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 82.6,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10793,13 +11887,13 @@
       "VLO": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 246.87,
-        "precio_actual": 234.53,
+        "precio_actual": 247.67,
         "capital_invertido": 500,
-        "valor_actual": 475.01,
-        "retorno_actual": -5.0,
+        "valor_actual": 501.62,
+        "retorno_actual": 0.32,
         "max_retorno": 1.91,
         "min_retorno": -5.0,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 82.3,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10807,13 +11901,13 @@
       "VID.MC": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 76.9,
-        "precio_actual": 77.6,
+        "precio_actual": 76.8,
         "capital_invertido": 500,
-        "valor_actual": 504.55,
-        "retorno_actual": 0.91,
+        "valor_actual": 499.35,
+        "retorno_actual": -0.13,
         "max_retorno": 2.47,
         "min_retorno": -0.26,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 81.8,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10821,13 +11915,13 @@
       "CMCSA": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 27.19,
-        "precio_actual": 26.12,
+        "precio_actual": 25.005,
         "capital_invertido": 500,
-        "valor_actual": 480.32,
-        "retorno_actual": -3.94,
+        "valor_actual": 459.82,
+        "retorno_actual": -8.04,
         "max_retorno": 0.0,
-        "min_retorno": -3.94,
-        "semanas": 4,
+        "min_retorno": -8.04,
+        "semanas": 5,
         "score_entrada": 81.0,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10835,13 +11929,13 @@
       "CAF.MC": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 64.0,
-        "precio_actual": 62.9,
+        "precio_actual": 64.4,
         "capital_invertido": 500,
-        "valor_actual": 491.41,
-        "retorno_actual": -1.72,
+        "valor_actual": 503.13,
+        "retorno_actual": 0.63,
         "max_retorno": 0.94,
         "min_retorno": -1.72,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 80.2,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10849,13 +11943,13 @@
       "QCOM": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 177.01,
-        "precio_actual": 202.55,
+        "precio_actual": 241.4899,
         "capital_invertido": 400.0,
-        "valor_actual": 457.71,
-        "retorno_actual": 14.43,
-        "max_retorno": 14.43,
+        "valor_actual": 545.71,
+        "retorno_actual": 36.43,
+        "max_retorno": 36.43,
         "min_retorno": -4.2,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 79.5,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10863,13 +11957,13 @@
       "BP": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 46.41,
-        "precio_actual": 43.86,
+        "precio_actual": 44.17,
         "capital_invertido": 320.0,
-        "valor_actual": 302.42,
-        "retorno_actual": -5.49,
+        "valor_actual": 304.56,
+        "retorno_actual": -4.83,
         "max_retorno": 0.98,
         "min_retorno": -5.49,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 79.5,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10877,13 +11971,13 @@
       "COP": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 123.19,
-        "precio_actual": 114.5,
+        "precio_actual": 114.95,
         "capital_invertido": 256.0,
-        "valor_actual": 237.94,
-        "retorno_actual": -7.05,
+        "valor_actual": 238.88,
+        "retorno_actual": -6.69,
         "max_retorno": 1.24,
         "min_retorno": -7.05,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 79.0,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
@@ -10891,22 +11985,22 @@
       "VZ": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 48.11,
-        "precio_actual": 47.26,
+        "precio_actual": 47.3,
         "capital_invertido": 204.8,
-        "valor_actual": 201.18,
-        "retorno_actual": -1.77,
+        "valor_actual": 201.35,
+        "retorno_actual": -1.68,
         "max_retorno": 0.0,
         "min_retorno": -1.84,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 78.9,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": []
       }
     },
     "capital_actual": 819.2,
-    "valor_posiciones": 9157.69,
-    "valor_total": 9976.89,
-    "ret_total": -0.23,
+    "valor_posiciones": 9277.52,
+    "valor_total": 10096.72,
+    "ret_total": 0.97,
     "ops_semana": []
   },
   "scoring_weighted": {
@@ -10914,13 +12008,13 @@
       "ALTN.L": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 1125.0,
-        "precio_actual": 1210.0,
+        "precio_actual": 1240.0,
         "capital_invertido": 1125.0,
-        "valor_actual": 1210.0,
-        "retorno_actual": 7.56,
-        "max_retorno": 7.56,
+        "valor_actual": 1240.0,
+        "retorno_actual": 10.22,
+        "max_retorno": 10.22,
         "min_retorno": -2.22,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 94.0,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -10931,13 +12025,13 @@
       "BMY": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 58.22,
-        "precio_actual": 56.2631,
+        "precio_actual": 55.725,
         "capital_invertido": 465.76,
-        "valor_actual": 450.1,
-        "retorno_actual": -3.36,
+        "valor_actual": 445.8,
+        "retorno_actual": -4.29,
         "max_retorno": 0.0,
-        "min_retorno": -3.36,
-        "semanas": 4,
+        "min_retorno": -4.29,
+        "semanas": 5,
         "score_entrada": 91.9,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -10954,7 +12048,7 @@
         "retorno_actual": 3.77,
         "max_retorno": 3.77,
         "min_retorno": -3.62,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 90.8,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -10965,13 +12059,13 @@
       "TRI.PA": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 156.3,
-        "precio_actual": 157.9,
+        "precio_actual": 157.6,
         "capital_invertido": 468.9,
-        "valor_actual": 473.7,
-        "retorno_actual": 1.02,
+        "valor_actual": 472.8,
+        "retorno_actual": 0.83,
         "max_retorno": 1.02,
         "min_retorno": -6.78,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 86.5,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -10982,13 +12076,13 @@
       "GILD": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 131.65,
-        "precio_actual": 131.37,
+        "precio_actual": 133.37,
         "capital_invertido": 394.95,
-        "valor_actual": 394.11,
-        "retorno_actual": -0.21,
+        "valor_actual": 400.11,
+        "retorno_actual": 1.31,
         "max_retorno": 2.76,
         "min_retorno": -0.21,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 85.7,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -10999,13 +12093,13 @@
       "USB": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 56.3,
-        "precio_actual": 55.31,
+        "precio_actual": 54.575,
         "capital_invertido": 450.4,
-        "valor_actual": 442.48,
-        "retorno_actual": -1.76,
+        "valor_actual": 436.6,
+        "retorno_actual": -3.06,
         "max_retorno": 0.42,
-        "min_retorno": -1.82,
-        "semanas": 4,
+        "min_retorno": -3.06,
+        "semanas": 5,
         "score_entrada": 85.4,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11016,13 +12110,13 @@
       "IAG.MC": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 4.313,
-        "precio_actual": 4.513,
+        "precio_actual": 4.73,
         "capital_invertido": 478.74,
-        "valor_actual": 500.94,
-        "retorno_actual": 4.64,
-        "max_retorno": 4.82,
+        "valor_actual": 525.03,
+        "retorno_actual": 9.67,
+        "max_retorno": 9.67,
         "min_retorno": -3.08,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 85.2,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11033,13 +12127,13 @@
       "SHEL": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 88.98,
-        "precio_actual": 84.28,
+        "precio_actual": 85.33,
         "capital_invertido": 444.9,
-        "valor_actual": 421.4,
-        "retorno_actual": -5.28,
+        "valor_actual": 426.65,
+        "retorno_actual": -4.1,
         "max_retorno": 1.01,
         "min_retorno": -5.28,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 84.6,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11050,13 +12144,13 @@
       "REP.MC": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 22.78,
-        "precio_actual": 21.79,
+        "precio_actual": 22.33,
         "capital_invertido": 455.6,
-        "valor_actual": 435.8,
-        "retorno_actual": -4.35,
+        "valor_actual": 446.6,
+        "retorno_actual": -1.98,
         "max_retorno": 0.09,
         "min_retorno": -4.35,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 84.5,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11067,13 +12161,13 @@
       "TROW": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 103.42,
-        "precio_actual": 103.59,
+        "precio_actual": 105.25,
         "capital_invertido": 413.68,
-        "valor_actual": 414.36,
-        "retorno_actual": 0.16,
+        "valor_actual": 421.0,
+        "retorno_actual": 1.77,
         "max_retorno": 3.07,
         "min_retorno": -0.43,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 83.4,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [
@@ -11086,13 +12180,13 @@
       "TGT": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 128.89,
-        "precio_actual": 125.88,
+        "precio_actual": 118.009,
         "capital_invertido": 386.67,
-        "valor_actual": 377.64,
-        "retorno_actual": -2.34,
+        "valor_actual": 354.03,
+        "retorno_actual": -8.44,
         "max_retorno": 0.6,
-        "min_retorno": -2.34,
-        "semanas": 4,
+        "min_retorno": -8.44,
+        "semanas": 5,
         "score_entrada": 83.3,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11103,13 +12197,13 @@
       "VLO": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 246.87,
-        "precio_actual": 234.53,
+        "precio_actual": 247.67,
         "capital_invertido": 246.87,
-        "valor_actual": 234.53,
-        "retorno_actual": -5.0,
+        "valor_actual": 247.67,
+        "retorno_actual": 0.32,
         "max_retorno": 1.91,
         "min_retorno": -5.0,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 82.3,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11120,13 +12214,13 @@
       "VID.MC": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 76.9,
-        "precio_actual": 77.6,
+        "precio_actual": 76.8,
         "capital_invertido": 461.4,
-        "valor_actual": 465.6,
-        "retorno_actual": 0.91,
+        "valor_actual": 460.8,
+        "retorno_actual": -0.13,
         "max_retorno": 2.47,
         "min_retorno": -0.26,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 81.8,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11137,13 +12231,13 @@
       "CMCSA": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 27.19,
-        "precio_actual": 26.12,
+        "precio_actual": 25.005,
         "capital_invertido": 435.04,
-        "valor_actual": 417.92,
-        "retorno_actual": -3.94,
+        "valor_actual": 400.08,
+        "retorno_actual": -8.04,
         "max_retorno": 0.0,
-        "min_retorno": -3.94,
-        "semanas": 4,
+        "min_retorno": -8.04,
+        "semanas": 5,
         "score_entrada": 81.0,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11154,13 +12248,13 @@
       "CAF.MC": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 64.0,
-        "precio_actual": 62.9,
+        "precio_actual": 64.4,
         "capital_invertido": 448.0,
-        "valor_actual": 440.3,
-        "retorno_actual": -1.72,
+        "valor_actual": 450.8,
+        "retorno_actual": 0.63,
         "max_retorno": 0.94,
         "min_retorno": -1.72,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 80.2,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11171,13 +12265,13 @@
       "QCOM": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 177.01,
-        "precio_actual": 202.55,
+        "precio_actual": 241.4899,
         "capital_invertido": 354.02,
-        "valor_actual": 405.1,
-        "retorno_actual": 14.43,
-        "max_retorno": 14.43,
+        "valor_actual": 482.98,
+        "retorno_actual": 36.43,
+        "max_retorno": 36.43,
         "min_retorno": -4.2,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 79.5,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11188,13 +12282,13 @@
       "BP": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 46.41,
-        "precio_actual": 43.86,
+        "precio_actual": 44.17,
         "capital_invertido": 417.69,
-        "valor_actual": 394.74,
-        "retorno_actual": -5.49,
+        "valor_actual": 397.53,
+        "retorno_actual": -4.83,
         "max_retorno": 0.98,
         "min_retorno": -5.49,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 79.5,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11205,13 +12299,13 @@
       "COP": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 123.19,
-        "precio_actual": 114.5,
+        "precio_actual": 114.95,
         "capital_invertido": 369.57,
-        "valor_actual": 343.5,
-        "retorno_actual": -7.05,
+        "valor_actual": 344.85,
+        "retorno_actual": -6.69,
         "max_retorno": 1.24,
         "min_retorno": -7.05,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 79.0,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11222,13 +12316,13 @@
       "VZ": {
         "fecha_entrada": "2026-05-03",
         "precio_compra": 48.11,
-        "precio_actual": 47.26,
+        "precio_actual": 47.3,
         "capital_invertido": 432.99,
-        "valor_actual": 425.34,
-        "retorno_actual": -1.77,
+        "valor_actual": 425.7,
+        "retorno_actual": -1.68,
         "max_retorno": 0.0,
         "min_retorno": -1.84,
-        "semanas": 4,
+        "semanas": 5,
         "score_entrada": 78.9,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
@@ -11236,44 +12330,74 @@
         "precio_accion": 48.11,
         "peso_score": 4.7
       },
-      "KSB.DE": {
-        "fecha_entrada": "2026-05-04",
-        "precio_compra": 1000.0,
-        "precio_actual": 870.0,
-        "capital_invertido": 1000.0,
-        "valor_actual": 870.0,
-        "retorno_actual": -13.0,
+      "GEST.MC": {
+        "fecha_entrada": "2026-05-11",
+        "precio_compra": 3.44,
+        "precio_actual": 3.44,
+        "capital_invertido": 1025.12,
+        "valor_actual": 1025.12,
+        "retorno_actual": 0.0,
         "max_retorno": 0.0,
-        "min_retorno": -13.0,
-        "semanas": 3,
-        "score_entrada": 92.0,
+        "min_retorno": 0.0,
+        "semanas": 0,
+        "score_entrada": 87.3,
         "tipologia": "VALUE_CYCLICAL",
         "alertas": [],
-        "n_acciones": 1,
-        "precio_accion": 1000.0,
+        "n_acciones": 298,
+        "precio_accion": 3.44,
         "peso_score": 100.0
       }
     },
-    "capital_actual": 239.22,
-    "valor_posiciones": 9647.4,
-    "valor_total": 9886.62,
-    "ret_total": -1.13,
-    "ops_semana": []
+    "capital_actual": 54.1,
+    "valor_posiciones": 9933.99,
+    "valor_total": 9988.09,
+    "ret_total": -0.12,
+    "ops_semana": [
+      {
+        "tipo": "VENTA",
+        "ticker": "KSB.DE",
+        "fecha": "2026-05-11",
+        "precio_compra": 1000.0,
+        "precio_venta": 840.0,
+        "n_acciones": 1,
+        "retorno": -16.0,
+        "pnl_eur": -160.0,
+        "capital_invertido": 1000.0,
+        "valor_cierre": 840.0,
+        "semanas": 4,
+        "motivo": "stop_loss_-16.0%",
+        "tipologia": "VALUE_CYCLICAL",
+        "score_entrada": 92.0,
+        "cartera": "SW"
+      },
+      {
+        "tipo": "COMPRA",
+        "ticker": "GEST.MC",
+        "fecha": "2026-05-11",
+        "precio": 3.44,
+        "n_acciones": 298,
+        "capital_invertido": 1025.12,
+        "score": 87.3,
+        "peso_score": 100.0,
+        "tipologia": "VALUE_CYCLICAL",
+        "cartera": "SW"
+      }
+    ]
   },
   "metricas_sw": {
-    "ret_total": -1.13,
-    "cagr": -6.38,
-    "volatilidad": 10.77,
-    "sharpe": -0.91,
+    "ret_total": -0.12,
+    "cagr": -0.62,
+    "volatilidad": 10.48,
+    "sharpe": -0.3,
     "max_drawdown": -4.4,
-    "n_ops_cerradas": 1,
+    "n_ops_cerradas": 2,
     "win_rate": 0.0,
     "profit_factor": 0.0,
     "avg_win": 0.0,
-    "avg_loss": -0.17,
-    "pnl_total_eur": -0.84,
-    "sp500_ret": 2.8,
-    "alpha_vs_sp500": -3.93,
-    "semanas_activo": 9
+    "avg_loss": -8.09,
+    "pnl_total_eur": -160.84,
+    "sp500_ret": 3.44,
+    "alpha_vs_sp500": -3.56,
+    "semanas_activo": 10
   }
 }
