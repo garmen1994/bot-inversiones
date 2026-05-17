@@ -35,7 +35,7 @@ nav{padding:20px 0;margin-bottom:24px;display:flex;align-items:center;gap:12px;b
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
 /* COMPARATIVA */
-.comp-header{display:grid;grid-template-columns:1fr 1fr 1fr;margin-bottom:24px;background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+.comp-header{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;margin-bottom:24px;background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden;}
 .comp-col{padding:16px 18px;border-right:1px solid var(--border);}
 .comp-col:last-child{border-right:none;}
 .comp-col-title{font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
@@ -102,7 +102,7 @@ nav{padding:20px 0;margin-bottom:24px;display:flex;align-items:center;gap:12px;b
 .badge-sw{font-size:10px;padding:2px 7px;border-radius:3px;background:rgba(0,232,150,.08);border:1px solid rgba(0,232,150,.2);color:var(--sw);}
 
 /* MÉTRICAS */
-.met-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:28px;}
+.met-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:28px;}
 .met-col{background:var(--bg2);border:1px solid var(--border);border-radius:10px;overflow:hidden;}
 .met-col-title{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:10px 14px 8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;}
 .met-row{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:1px solid var(--border);}
@@ -118,6 +118,7 @@ footer{text-align:center;padding:24px 0 0;color:var(--muted);font-size:10px;lett
 
 @media(max-width:660px){
   .comp-header{grid-template-columns:1fr;}
+  .comp-header{grid-template-columns:1fr 1fr;}
   .comp-col{border-right:none;border-bottom:1px solid var(--border);}
   .comp-col:last-child{border-bottom:none;}
   .pos-card{grid-template-columns:90px 1fr auto auto;}
@@ -162,19 +163,26 @@ async function loadJ(p){
 
 function getEW(){ return data.equal_weight||{}; }
 function getSW(){ return data.scoring_weighted||{}; }
+function getLS(){ return data.long_short||{}; }
 function getMEW(){ return data.metricas||{}; }
 function getMSW(){ return data.metricas_sw||{}; }
+function getMLS(){ return data.metricas_ls||{}; }
 
 function render(){
   const sem    = data.semanas||[];
   const capital= data.capital_inicial||10000;
   const fecha  = data.ultima_actualizacion||'—';
-  const mew=getMEW(), msw=getMSW(), ew=getEW(), sw=getSW();
-  const ewPos = Object.keys(ew.posiciones_abiertas||{}).length;
-  const swPos = Object.keys(sw.posiciones_abiertas||{}).length;
-  const retEW = mew.ret_total??null, retSW=msw.ret_total??null;
-  const ewWins = retEW!=null&&retSW!=null&&retEW>retSW;
-  const swWins = retEW!=null&&retSW!=null&&retSW>retEW;
+  const mew=getMEW(), msw=getMSW(), mls=getMLS(), ew=getEW(), sw=getSW(), ls=getLS();
+  const ewPos  = Object.keys(ew.posiciones_abiertas||{}).length;
+  const swPos  = Object.keys(sw.posiciones_abiertas||{}).length;
+  const lsLong  = Object.keys(ls.posiciones_long||{}).length;
+  const lsShort = Object.keys(ls.posiciones_short||{}).length;
+  const retEW = mew.ret_total??null, retSW=msw.ret_total??null, retLS=mls.ret_total??null;
+  const allRets = [retEW,retSW,retLS].filter(r=>r!=null);
+  const maxRet  = allRets.length ? Math.max(...allRets) : null;
+  const ewWins  = retEW!=null && retEW===maxRet;
+  const swWins  = retSW!=null && retSW===maxRet;
+  const lsWins  = retLS!=null && retLS===maxRet;
 
   document.getElementById('main').innerHTML=`
     <div class="page-header anim">
@@ -214,6 +222,19 @@ function render(){
       </div>
       <div class="comp-col">
         <div class="comp-col-title">
+          <div class="comp-dot" style="background:var(--ls)"></div>Long/Short Neutral
+          ${lsWins?'<span class="winner-badge">↑ líder</span>':''}
+        </div>
+        ${cRow('Capital total',    fmt$(ls.valor_total??20000),                   retColor(retLS))}
+        ${cRow('Retorno',          retLS!=null?sgn(retLS)+'%':'—',           retColor(retLS))}
+        ${cRow('CAGR',             mls.cagr!=null?sgn(mls.cagr)+'%':'—',    retColor(mls.cagr))}
+        ${cRow('Beta cartera',     mls.beta!=null?mls.beta.toFixed(2):'—',    Math.abs(mls.beta??1)<0.3?'var(--green)':'var(--yellow)')}
+        ${cRow('Max Drawdown',     mls.max_drawdown!=null?mls.max_drawdown.toFixed(1)+'%':'—','var(--red)')}
+        ${cRow('Borrow cost',      mls.borrow_total!=null?mls.borrow_total.toFixed(0)+'€':'—','var(--ls)')}
+        ${cRow('Longs / Shorts',   lsLong+' / '+lsShort,                       'var(--text)')}
+      </div>
+      <div class="comp-col">
+        <div class="comp-col-title">
           <div class="comp-dot" style="background:var(--sp)"></div>SP500 (referencia)
         </div>
         ${cRow('Retorno SP500',      mew.sp500_ret!=null?sgn(mew.sp500_ret)+'%':'—',          retColor(mew.sp500_ret))}
@@ -231,6 +252,8 @@ function render(){
         <div class="cc-legend">
           <div class="leg"><div class="leg-line" style="background:var(--ew)"></div>Equal Weight</div>
           <div class="leg"><div class="leg-line" style="background:var(--sw)"></div>Score Weighted</div>
+          <div class="leg"><div class="leg-line" style="background:var(--ls)"></div>Long/Short</div>
+          <div class="leg"><div class="leg-line" style="background:var(--ls);border-top:1px dashed var(--ls)"></div>Long/Short</div>
           <div class="leg"><div class="leg-line" style="background:var(--sp);opacity:.7"></div>SP500 (norm.)</div>
         </div>
       </div>
@@ -247,6 +270,10 @@ function render(){
         <div class="tab-dot" style="background:var(--sw)"></div>
         Score Weighted <span style="color:var(--muted);margin-left:4px">(${swPos})</span>
       </button>
+      <button class="tab-btn" id="tab-ls" onclick="setTab('ls',this)">
+        <div class="tab-dot" style="background:var(--ls)"></div>
+        Long/Short <span style="color:var(--muted);margin-left:4px">(${lsLong}L/${lsShort}S)</span>
+      </button>
     </div>
     <div class="pos-grid anim" style="animation-delay:.11s" id="pos-grid">
       ${renderPos(ew.posiciones_abiertas||{}, false)}
@@ -261,6 +288,7 @@ function render(){
       <button class="of-btn active" onclick="setFiltroC('todas',this)">Ambas</button>
       <button class="of-btn" onclick="setFiltroC('EW',this)">Solo EW</button>
       <button class="of-btn" onclick="setFiltroC('SW',this)">Solo SW</button>
+      <button class="of-btn" onclick="setFiltroC('LS',this)">Solo L/S</button>
     </div>
     <div class="ops-table-wrap anim" style="animation-delay:.15s" id="ops-wrap">
       ${renderOps()}
@@ -270,7 +298,8 @@ function render(){
     <div class="met-grid anim" style="animation-delay:.2s">
       ${metCol('Equal Weight','var(--ew)',mew)}
       ${metCol('Score Weighted','var(--sw)',msw)}
-      ${metColOps(mew,msw)}
+      ${metColLS(mls)}
+      ${metColOps(mew,msw,mls)}
     </div>
   `;
   setTimeout(renderChart, 60);
@@ -289,13 +318,74 @@ function setTab(tab,btn){
   tabPos=tab;
   document.querySelectorAll('.tab-btn').forEach(b=>b.className='tab-btn');
   btn.className='tab-btn act-'+tab;
-  const pos = tab==='ew'
-    ? (getEW().posiciones_abiertas||{})
-    : (getSW().posiciones_abiertas||{});
-  document.getElementById('pos-grid').innerHTML=renderPos(pos, tab==='sw');
+  const grid = document.getElementById('pos-grid');
+  if(tab==='ls'){
+    grid.innerHTML = renderPosLS(getLS());
+  } else {
+    const pos = tab==='ew'
+      ? (getEW().posiciones_abiertas||{})
+      : (getSW().posiciones_abiertas||{});
+    grid.innerHTML = renderPos(pos, tab==='sw');
+  }
 }
 
 // ── POSICIONES ────────────────────────────────────────────────────────────────
+function renderPosLS(ls){
+  const posL = Object.entries(ls.posiciones_long||{});
+  const posS = Object.entries(ls.posiciones_short||{});
+  const borrow = ls.borrow_cost_acum||0;
+  const vL = ls.valor_long||0, vS = ls.valor_short||0;
+
+  function rowLong([tk,p]){
+    const ret=p.retorno_actual||0, color=ret>=0?'var(--long)':'var(--short)';
+    return `<div class="ls-pos-row">
+      <div>
+        <div class="ls-ticker">${tk}</div>
+        <div class="ls-meta">${p.semanas||0}sem · score:${p.score_entrada?.toFixed(0)||'—'}</div>
+      </div>
+      <div style="text-align:right">
+        <div class="ls-ret" style="color:${color}">${ret>=0?'+':''}${ret.toFixed(2)}%</div>
+        <div class="ls-meta">${fmt$(p.capital_invertido)}</div>
+      </div>
+    </div>`;
+  }
+
+  function rowShort([tk,p]){
+    const ret=p.retorno_bruto||0, retN=p.retorno_neto||0;
+    const color=ret>=0?'var(--long)':'var(--short)';
+    return `<div class="ls-pos-row">
+      <div>
+        <div class="ls-ticker">${tk}</div>
+        <div class="ls-meta">${p.semanas||0}sem · borrow:${p.borrow_acum?.toFixed(1)||0}€</div>
+      </div>
+      <div style="text-align:right">
+        <div class="ls-ret" style="color:${color}">${ret>=0?'+':''}${ret.toFixed(2)}%</div>
+        <div class="ls-meta" style="color:var(--muted)">neto:${retN>=0?'+':''}${retN.toFixed(1)}%</div>
+      </div>
+    </div>`;
+  }
+
+  const emptyL = '<div style="color:var(--muted);font-size:12px;padding:12px">Sin posiciones long.</div>';
+  const emptyS = '<div style="color:var(--muted);font-size:12px;padding:12px">Sin posiciones short.</div>';
+
+  return `
+    <div class="ls-split">
+      <div>
+        <div class="ls-side-title ls-long-title">▲ LONG (${posL.length}) · ${fmt$(vL)}</div>
+        <div class="ls-pos-card">${posL.length ? posL.sort((a,b)=>(b[1].retorno_actual||0)-(a[1].retorno_actual||0)).map(rowLong).join('') : emptyL}</div>
+      </div>
+      <div>
+        <div class="ls-side-title ls-short-title">▼ SHORT (${posS.length}) · ${fmt$(vS)} nominal</div>
+        <div class="ls-pos-card">${posS.length ? posS.sort((a,b)=>(b[1].retorno_bruto||0)-(a[1].retorno_bruto||0)).map(rowShort).join('') : emptyS}</div>
+      </div>
+    </div>
+    <div class="borrow-strip">
+      <div class="borrow-item"><div class="borrow-lbl">Borrow acumulado</div><div class="borrow-val">${borrow.toFixed(2)}€</div></div>
+      <div class="borrow-item"><div class="borrow-lbl">Exp. neta</div><div class="borrow-val">${fmt$(vL-vS)}</div></div>
+      <div class="borrow-item"><div class="borrow-lbl">Capital total</div><div class="borrow-val">${fmt$(ls.valor_total)}</div></div>
+    </div>`;
+}
+
 function renderPos(pos, isSW){
   const ent = Object.entries(pos);
   if(!ent.length) return '<div class="empty" style="padding:24px 0">Sin posiciones abiertas.</div>';
@@ -331,8 +421,9 @@ function getAllOps(){
   for(const s of data.semanas||[]){
     const ewOps=s.equal_weight?.operaciones||[];
     const swOps=s.scoring_weighted?.operaciones||[];
-    const root =(!ewOps.length&&!swOps.length)?(s.operaciones||[]):[];
-    for(const o of [...ewOps,...swOps,...root]) ops.push({...o,_fd:s.fecha});
+    const lsOps=s.long_short?.operaciones||[];
+    const root =(!ewOps.length&&!swOps.length&&!lsOps.length)?(s.operaciones||[]):[];
+    for(const o of [...ewOps,...swOps,...lsOps,...root]) ops.push({...o,_fd:s.fecha});
   }
   return ops.reverse();
 }
@@ -356,7 +447,7 @@ function renderOps(){
     return `<tr>
       <td>${o.fecha||'—'}</td>
       <td><span class="${carta==='EW'?'badge-ew':'badge-sw'}">${carta}</span></td>
-      <td class="${buy?'t-buy':'t-sell'}">${o.tipo}</td>
+      <td class="${_tipoColor(o)}">${_tipoLabel(o)}</td>
       <td class="t-tk">${o.ticker}</td>
       <td style="text-align:right">${buy?(o.precio?.toFixed(2)||'—'):(o.precio_venta?.toFixed(2)||'—')}</td>
       <td style="text-align:right">${fmt$(o.capital_invertido)}</td>
@@ -401,7 +492,9 @@ function renderChart(){
 
   const ewVals=fil.map(s=>s.equal_weight?.valor_total??s.valor_total??capital);
   const swVals=fil.map(s=>s.scoring_weighted?.valor_total??null);
+  const lsVals=fil.map(s=>s.long_short?.valor_total??null);
   const hasSW=swVals.some(v=>v!==null);
+  const hasLS=lsVals.some(v=>v!==null);
 
   const sp0=sem.find(s=>s.sp500_precio)?.sp500_precio;
   const spVals=fil.map(s=>sp0&&s.sp500_precio?Math.round(capital*s.sp500_precio/sp0*100)/100:null);
@@ -412,6 +505,7 @@ function renderChart(){
     {label:'Inicio', data:Array(labels.length).fill(capital), borderColor:'rgba(255,255,255,.08)', backgroundColor:'transparent', borderWidth:1, pointRadius:0, borderDash:[2,4]},
   ];
   if(hasSW) ds.splice(1,0,{label:'Score Weighted', data:swVals, borderColor:'#00e896', backgroundColor:'rgba(0,232,150,.05)', borderWidth:2.5, pointRadius:0, tension:.3, fill:false});
+  if(hasLS) ds.splice(hasSW?2:1,0,{label:'Long/Short', data:lsVals, borderColor:'#f5c542', backgroundColor:'rgba(245,197,66,.04)', borderWidth:2, pointRadius:0, tension:.3, borderDash:[4,3], fill:false});
 
   chartInst=new Chart(canvas,{
     type:'line', data:{labels,datasets:ds},
@@ -450,25 +544,63 @@ function metCol(titulo,color,m){
   </div>`;
 }
 
-function metColOps(mew,msw){
+function metColOps(mew,msw,mls){
+  mls=mls||{};
   return `<div class="met-col">
-    <div class="met-col-title">Operaciones cerradas</div>
-    ${mr('Ops cerradas EW',  mew.n_ops_cerradas??0,'var(--text)')}
-    ${mr('Ops cerradas SW',  msw.n_ops_cerradas??0,'var(--text)')}
+    <div class="met-col-title">Comparativa operaciones</div>
     ${mr('Win rate EW',      mew.win_rate!=null?mew.win_rate+'%':'—', mew.win_rate>50?'var(--green)':'var(--red)')}
     ${mr('Win rate SW',      msw.win_rate!=null?msw.win_rate+'%':'—', msw.win_rate>50?'var(--green)':'var(--red)')}
+    ${mr('Win rate L/S long',mls.win_rate_long!=null?mls.win_rate_long+'%':'—', (mls.win_rate_long??0)>50?'var(--green)':'var(--red)')}
+    ${mr('Win rate L/S short',mls.win_rate_short!=null?mls.win_rate_short+'%':'—',(mls.win_rate_short??0)>50?'var(--green)':'var(--red)')}
     ${mr('Profit factor EW', mew.profit_factor!=null?mew.profit_factor.toFixed(2):'—', mew.profit_factor>1?'var(--green)':'var(--red)')}
     ${mr('Profit factor SW', msw.profit_factor!=null?msw.profit_factor.toFixed(2):'—', msw.profit_factor>1?'var(--green)':'var(--red)')}
     ${mr('Avg win EW',       mew.avg_win!=null?sgn(mew.avg_win)+'%':'—','var(--green)')}
     ${mr('Avg win SW',       msw.avg_win!=null?sgn(msw.avg_win)+'%':'—','var(--green)')}
-    ${mr('Avg loss EW',      mew.avg_loss!=null?mew.avg_loss.toFixed(1)+'%':'—','var(--red)')}
-    ${mr('Avg loss SW',      msw.avg_loss!=null?msw.avg_loss.toFixed(1)+'%':'—','var(--red)')}
+    ${mr('Avg win L long',   mls.avg_win_long!=null?sgn(mls.avg_win_long)+'%':'—','var(--green)')}
+    ${mr('Avg win L short',  mls.avg_win_short!=null?sgn(mls.avg_win_short)+'%':'—','var(--green)')}
   </div>`;
 }
 
 function mr(k,v,c){return `<div class="met-row"><span class="mk">${k}</span><span class="mv" style="color:${c||'var(--text)'}">${v??'—'}</span></div>`;}
 
 // ── UTILS ─────────────────────────────────────────────────────────────────────
+function _tipoLabel(o){
+  const m = {
+    'COMPRA':'COMPRA','VENTA':'VENTA',
+    'COMPRA_LONG':'LONG ▲','VENTA_LONG':'CERRAR L',
+    'APERTURA_SHORT':'SHORT ▼','CIERRE_SHORT':'CERRAR S',
+  };
+  return m[o.tipo]||o.tipo;
+}
+function _tipoColor(o){
+  if(o.tipo==='COMPRA'||o.tipo==='COMPRA_LONG') return 't-buy';
+  if(o.tipo==='APERTURA_SHORT') return 't-sell';
+  if(o.tipo==='VENTA_LONG'||o.tipo==='VENTA') return 't-sell';
+  if(o.tipo==='CIERRE_SHORT') return 't-buy';  // cerrar short = positivo si ganamos
+  return '';
+}
+
+function metColLS(m){
+  if(!m||!Object.keys(m).length) return `<div class="met-col">
+    <div class="met-col-title"><div class="comp-dot" style="background:var(--ls)"></div>Long/Short</div>
+    <div class="met-row"><span class="mk">Sin datos aún</span></div>
+  </div>`;
+  const betaColor = m.beta!=null?(Math.abs(m.beta)<0.3?'var(--green)':Math.abs(m.beta)<0.6?'var(--yellow)':'var(--red)'):'var(--muted)';
+  return \`<div class="met-col">
+    <div class="met-col-title"><div class="comp-dot" style="background:var(--ls)"></div>Long/Short</div>
+    \${mr('Retorno total',    m.ret_total!=null?sgn(m.ret_total)+'%':'—',              retColor(m.ret_total))}
+    \${mr('CAGR',             m.cagr!=null?sgn(m.cagr)+'%':'—',                        retColor(m.cagr))}
+    \${mr('Sharpe',           m.sharpe!=null?m.sharpe.toFixed(2):'—',                  m.sharpe>1?'var(--green)':m.sharpe>0?'var(--text)':'var(--red)')}
+    \${mr('Beta cartera',     m.beta!=null?m.beta.toFixed(2):'—',                      betaColor)}
+    \${mr('Max Drawdown',     m.max_drawdown!=null?m.max_drawdown.toFixed(1)+'%':'—',  'var(--red)')}
+    \${mr('Borrow total',     m.borrow_total!=null?m.borrow_total.toFixed(0)+'€':'—',  'var(--ls)')}
+    \${mr('Ops long',         m.n_ops_long??0,                                          'var(--text)')}
+    \${mr('Ops short',        m.n_ops_short??0,                                         'var(--text)')}
+    \${mr('Win rate long',    m.win_rate_long!=null?m.win_rate_long+'%':'—',            m.win_rate_long>50?'var(--green)':'var(--red)')}
+    \${mr('Win rate short',   m.win_rate_short!=null?m.win_rate_short+'%':'—',          m.win_rate_short>50?'var(--green)':'var(--red)')}
+  </div>\`;
+}
+
 function retColor(v){return v==null?'var(--muted)':v>0?'var(--green)':v<0?'var(--red)':'var(--text)';}
 function fmt$(v){if(v==null)return '—';return v.toLocaleString('es-ES',{minimumFractionDigits:0,maximumFractionDigits:0})+'€';}
 function sgn(v){if(v==null)return '—';return(v>0?'+':'')+v.toFixed(1);}
