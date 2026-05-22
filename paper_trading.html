@@ -586,7 +586,7 @@ function metColLS(m){
     <div class="met-row"><span class="mk">Sin datos aún</span></div>
   </div>`;
   const betaColor = m.beta!=null?(Math.abs(m.beta)<0.3?'var(--green)':Math.abs(m.beta)<0.6?'var(--yellow)':'var(--red)'):'var(--muted)';
-  return \`<div class="met-col">
+  return `<div class="met-col">
     <div class="met-col-title"><div class="comp-dot" style="background:var(--ls)"></div>Long/Short</div>
     \${mr('Retorno total',    m.ret_total!=null?sgn(m.ret_total)+'%':'—',              retColor(m.ret_total))}
     \${mr('CAGR',             m.cagr!=null?sgn(m.cagr)+'%':'—',                        retColor(m.cagr))}
@@ -598,7 +598,7 @@ function metColLS(m){
     \${mr('Ops short',        m.n_ops_short??0,                                         'var(--text)')}
     \${mr('Win rate long',    m.win_rate_long!=null?m.win_rate_long+'%':'—',            m.win_rate_long>50?'var(--green)':'var(--red)')}
     \${mr('Win rate short',   m.win_rate_short!=null?m.win_rate_short+'%':'—',          m.win_rate_short>50?'var(--green)':'var(--red)')}
-  </div>\`;
+  </div>`;
 }
 
 function retColor(v){return v==null?'var(--muted)':v>0?'var(--green)':v<0?'var(--red)':'var(--text)';}
