@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-05-23T13:47:49.911980",
+  "fecha": "2026-05-24T18:39:32.575421",
   "empresas": [
     {
       "ticker": "VID.MC",
@@ -7245,7 +7245,7 @@
         "fcf_yield": 6.34,
         "per": 18.18,
         "peg": 1.4,
-        "price_to_book": -12.16,
+        "price_to_book": -13.01,
         "deuda_ebitda": 3.47,
         "cobertura_intereses": 6.73,
         "momentum_6m": -4.99,
@@ -10790,7 +10790,7 @@
         "momentum_6m": 3.55,
         "momentum_12m": 20.86,
         "precio_vs_ma200": 5.06,
-        "ma200": 77.1765
+        "ma200": 77.1766
       },
       "dcf": {
         "ticker": "XEL",
@@ -13007,7 +13007,7 @@
         "fcf_yield": 3.46,
         "per": 14.68,
         "peg": 1.62,
-        "price_to_book": 2.88,
+        "price_to_book": 2.9,
         "deuda_ebitda": 3.45,
         "cobertura_intereses": 5.19,
         "momentum_6m": 28.12,
@@ -19792,7 +19792,7 @@
         "fcf_yield": -45.82,
         "per": null,
         "peg": null,
-        "price_to_book": 4.45,
+        "price_to_book": 4.46,
         "deuda_ebitda": -0.78,
         "cobertura_intereses": -45.11,
         "momentum_6m": -30.88,
@@ -20229,7 +20229,7 @@
         "fcf_yield": 11.66,
         "per": 22.44,
         "peg": 0.98,
-        "price_to_book": 1.32,
+        "price_to_book": 1.31,
         "deuda_ebitda": -4.29,
         "cobertura_intereses": 10.03,
         "momentum_6m": 11.34,
@@ -20303,6 +20303,2718 @@
         "n_analistas": 36,
         "confianza": "alta",
         "resumen": "Infravalorada un 301% respecto al valor intrínseco estimado."
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "nombre": "Amazon.com, Inc.",
+      "sector": "Consumer Cyclical",
+      "precio": 266.32,
+      "tipologia": "QUALITY_GROWTH",
+      "scores": {
+        "composite": 55.0,
+        "confianza": "alta",
+        "quality": {
+          "score": 67,
+          "detalle": {
+            "roic": 21,
+            "gross_profit_assets": 14,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 1
+          },
+          "pts_raw": "67/100"
+        },
+        "valuation": {
+          "score": 9,
+          "detalle": {
+            "ev_ebitda": 8,
+            "fcf_yield": 1,
+            "per": 2
+          },
+          "pts_raw": "11/100",
+          "score_original": 11,
+          "dcf_ajuste": -2,
+          "dcf_razon": "DCF: prima -24% sobre intrínseco → val -2pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 100,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        },
+        "dcf_ajuste": -2,
+        "dcf_razon": "DCF: prima -24% sobre intrínseco → val -2pts"
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Fundamentales solidos (F-Score 5/9)",
+          "Momentum positivo (+22.6% 6M)",
+          "DCF: prima -24% sobre intrínseco → val -2pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "QUALITY_GROWTH",
+        "reglas": "Sin take-profit, stop amplio, solo salir por deterioro real",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "AMZN",
+        "nombre": "Amazon.com, Inc.",
+        "sector": "Consumer Cyclical",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 266.32,
+        "roic": 16.48,
+        "gross_profit_to_assets": 44.07,
+        "gross_margin": 50.29,
+        "ebit_margin": 13.89,
+        "net_margin": 10.83,
+        "roe": 18.89,
+        "roa": 9.49,
+        "fcf_conversion": 9.91,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 1718900175668.92,
+        "ev_ebitda": 18.81,
+        "ev_fcf": 380.9,
+        "fcf_yield": 0.27,
+        "per": 31.63,
+        "peg": 1.83,
+        "price_to_book": 6.48,
+        "deuda_ebitda": 0.42,
+        "cobertura_intereses": 43.79,
+        "momentum_6m": 22.65,
+        "momentum_12m": 31.13,
+        "precio_vs_ma200": 15.51,
+        "ma200": 230.5546
+      },
+      "dcf": {
+        "ticker": "AMZN",
+        "precio_actual": 266.32,
+        "wacc": 10.4,
+        "g_base": 25.0,
+        "sector": "Consumer Cyclical",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 28.43,
+            "ev_calculado": 398244970312.09,
+            "g_fase1": 21.0,
+            "g_fase2": 19.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 41.49,
+            "ev_calculado": 538727139034.76,
+            "g_fase1": 25.0,
+            "g_fase2": 22.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 28.75,
+            "ev_calculado": 401713511195.66,
+            "g_fase1": 25.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 239.48,
+            "multiple_salida": 9,
+            "ebitda_proyectado": 479793514088.25
+          },
+          "per": {
+            "precio_objetivo": 219.31,
+            "per_salida": 14,
+            "eps_proyectado": 25.7
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 203.23,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            41.49
+          ],
+          [
+            "EV/EBITDA",
+            239.48
+          ],
+          [
+            "PER",
+            219.31
+          ],
+          [
+            "Analistas",
+            312.63
+          ]
+        ],
+        "margen_seguridad": -23.7,
+        "target_analistas": 312.63,
+        "n_analistas": 62,
+        "confianza": "alta",
+        "resumen": "Prima del 24% — cotiza significativamente por encima del valor intrínseco."
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "nombre": "NVIDIA Corporation",
+      "sector": "Technology",
+      "precio": 215.33,
+      "tipologia": "QUALITY_GROWTH",
+      "scores": {
+        "composite": 59.5,
+        "confianza": "alta",
+        "quality": {
+          "score": 80,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 15,
+            "fscore": 10,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "80/100"
+        },
+        "valuation": {
+          "score": 7,
+          "detalle": {
+            "ev_ebitda": 0,
+            "fcf_yield": 6,
+            "per": 2
+          },
+          "pts_raw": "8/100",
+          "score_original": 8,
+          "dcf_ajuste": -1,
+          "dcf_razon": "DCF: prima -14% sobre intrínseco → val -1pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 100,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        },
+        "dcf_ajuste": -1,
+        "dcf_razon": "DCF: prima -14% sobre intrínseco → val -1pts"
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 1,
+        "razones": [
+          "Momentum positivo (+19.2% 6M)",
+          "DCF: prima -14% sobre intrínseco → val -1pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (3/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro — QUALITY_GROWTH"
+        ],
+        "tipologia": "QUALITY_GROWTH",
+        "reglas": "Sin take-profit, stop amplio, solo salir por deterioro real",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "NVDA",
+        "nombre": "NVIDIA Corporation",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 215.33,
+        "roic": 70.98,
+        "gross_profit_to_assets": 74.21,
+        "gross_margin": 71.07,
+        "ebit_margin": 65.62,
+        "net_margin": 55.6,
+        "roe": 76.33,
+        "roa": 58.06,
+        "fcf_conversion": 80.52,
+        "fscore": 3,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 3129304783262.44,
+        "ev_ebitda": 31.51,
+        "ev_fcf": 53.95,
+        "fcf_yield": 1.85,
+        "per": 33.03,
+        "peg": 0.66,
+        "price_to_book": 33.27,
+        "deuda_ebitda": 0.0,
+        "cobertura_intereses": 547.14,
+        "momentum_6m": 19.22,
+        "momentum_12m": 62.15,
+        "precio_vs_ma200": 15.14,
+        "ma200": 187.0196
+      },
+      "dcf": {
+        "ticker": "NVDA",
+        "precio_actual": 215.33,
+        "wacc": 13.7,
+        "g_base": 25.0,
+        "sector": "Technology",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 62.79,
+            "ev_calculado": 1480434542025.59,
+            "g_fase1": 21.0,
+            "g_fase2": 19.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 81.77,
+            "ev_calculado": 1940186090950.64,
+            "g_fase1": 25.0,
+            "g_fase2": 22.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 61.41,
+            "ev_calculado": 1446981014316.95,
+            "g_fase1": 25.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 152.99,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 500777657886.39
+          },
+          "per": {
+            "precio_objetivo": 209.13,
+            "per_salida": 20,
+            "eps_proyectado": 19.9
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 184.53,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            81.77
+          ],
+          [
+            "EV/EBITDA",
+            152.99
+          ],
+          [
+            "PER",
+            209.13
+          ],
+          [
+            "Analistas",
+            294.22
+          ]
+        ],
+        "margen_seguridad": -14.3,
+        "target_analistas": 294.22,
+        "n_analistas": 58,
+        "confianza": "alta",
+        "resumen": "Prima del 14% sobre valor intrínseco — valoración ajustada."
+      }
+    },
+    {
+      "ticker": "META",
+      "nombre": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "precio": 610.26,
+      "tipologia": "QUALITY_GROWTH",
+      "scores": {
+        "composite": 64.7,
+        "confianza": "alta",
+        "quality": {
+          "score": 82,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 15,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 14
+          },
+          "pts_raw": "82/100"
+        },
+        "valuation": {
+          "score": 51,
+          "detalle": {
+            "ev_ebitda": 21,
+            "fcf_yield": 11,
+            "per": 9
+          },
+          "pts_raw": "41/100",
+          "score_original": 41,
+          "dcf_ajuste": 10,
+          "dcf_razon": "DCF: infravalorada +34% → val +10pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 27,
+          "detalle": {
+            "vs_ma200": 3,
+            "momentum_6m": 11,
+            "momentum_12m": 13
+          },
+          "pts_raw": "27/100"
+        },
+        "dcf_ajuste": 10,
+        "dcf_razon": "DCF: infravalorada +34% → val +10pts"
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Valoracion atractiva",
+          "Fundamentales neutrales (F-Score 4/9)",
+          "Corrección moderada — oportunidad quality growth",
+          "DCF: infravalorada +34% → val +10pts"
+        ],
+        "alertas": [],
+        "tipologia": "QUALITY_GROWTH",
+        "reglas": "Sin take-profit, stop amplio, solo salir por deterioro real",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "META",
+        "nombre": "Meta Platforms, Inc.",
+        "sector": "Communication Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 610.26,
+        "roic": 25.94,
+        "gross_profit_to_assets": 45.02,
+        "gross_margin": 82.0,
+        "ebit_margin": 43.34,
+        "net_margin": 30.08,
+        "roe": 27.83,
+        "roa": 16.52,
+        "fcf_conversion": 76.27,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 929458972264.42,
+        "ev_ebitda": 14.61,
+        "ev_fcf": 34.64,
+        "fcf_yield": 2.98,
+        "per": 22.18,
+        "peg": 0.88,
+        "price_to_book": 6.36,
+        "deuda_ebitda": 0.44,
+        "cobertura_intereses": 74.76,
+        "momentum_6m": 3.76,
+        "momentum_12m": -3.83,
+        "precio_vs_ma200": -8.73,
+        "ma200": 668.6479
+      },
+      "dcf": {
+        "ticker": "META",
+        "precio_actual": 610.26,
+        "wacc": 9.7,
+        "g_base": 25.0,
+        "sector": "Communication Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 522.59,
+            "ev_calculado": 1153215304713.62,
+            "g_fase1": 21.0,
+            "g_fase2": 19.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 714.56,
+            "ev_calculado": 1574798930806.82,
+            "g_fase1": 25.0,
+            "g_fase2": 22.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 529.82,
+            "ev_calculado": 1169100607204.87,
+            "g_fase1": 25.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 928.0,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 324745297741.27
+          },
+          "per": {
+            "precio_objetivo": 791.92,
+            "per_salida": 15,
+            "eps_proyectado": 83.98
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 22.8,
+          "g_fundamental": 25.0,
+          "diferencia": -2.2,
+          "interpretacion": "El mercado descuenta crecimiento en línea con fundamentales"
+        },
+        "precio_consenso": 815.27,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            714.56
+          ],
+          [
+            "EV/EBITDA",
+            928.0
+          ],
+          [
+            "PER",
+            791.92
+          ],
+          [
+            "Analistas",
+            826.6
+          ]
+        ],
+        "margen_seguridad": 33.6,
+        "target_analistas": 826.6,
+        "n_analistas": 58,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 34% respecto al valor intrínseco estimado. El mercado descuenta crecimiento en línea con fundamentales (g implícito: 22.8%)."
+      }
+    },
+    {
+      "ticker": "CRM",
+      "nombre": "Salesforce, Inc.",
+      "sector": "Technology",
+      "precio": 180.07,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 67.2,
+        "confianza": "alta",
+        "quality": {
+          "score": 74,
+          "detalle": {
+            "roic": 15,
+            "gross_profit_assets": 9,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "74/100"
+        },
+        "valuation": {
+          "score": 79,
+          "detalle": {
+            "ev_ebitda": 29,
+            "fcf_yield": 35,
+            "per": 8
+          },
+          "pts_raw": "72/100",
+          "score_original": 72,
+          "dcf_ajuste": 7,
+          "dcf_razon": "DCF: infravalorada +55% → val +7pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60
+          },
+          "pts_raw": "60/60"
+        },
+        "momentum": {
+          "score": 0,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 0
+          },
+          "pts_raw": "0/100"
+        },
+        "dcf_ajuste": 7,
+        "dcf_razon": "DCF: infravalorada +55% → val +7pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoracion atractiva",
+          "FCF Yield atractivo (9.8%)",
+          "Fundamentales neutrales (F-Score 6/9)",
+          "DCF: infravalorada +55% → val +7pts"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "CRM",
+        "nombre": "Salesforce, Inc.",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 180.07,
+        "roic": 10.21,
+        "gross_profit_to_assets": 28.72,
+        "gross_margin": 77.68,
+        "ebit_margin": 21.47,
+        "net_margin": 17.96,
+        "roe": 12.61,
+        "roa": 6.64,
+        "fcf_conversion": 193.13,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 88384163021.61,
+        "ev_ebitda": 12.52,
+        "ev_fcf": 10.91,
+        "fcf_yield": 9.78,
+        "per": 23.09,
+        "peg": 0.98,
+        "price_to_book": 2.83,
+        "deuda_ebitda": 0.78,
+        "cobertura_intereses": null,
+        "momentum_6m": -19.77,
+        "momentum_12m": -35.99,
+        "precio_vs_ma200": -18.76,
+        "ma200": 221.6533
+      },
+      "dcf": {
+        "ticker": "CRM",
+        "precio_actual": 180.07,
+        "wacc": 10.4,
+        "g_base": 11.4,
+        "sector": "Technology",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 330.54,
+            "ev_calculado": 278548534055.03,
+            "g_fase1": 7.4,
+            "g_fase2": 5.4,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 447.88,
+            "ev_calculado": 374539854482.92,
+            "g_fase1": 11.4,
+            "g_fase2": 8.4,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 608.77,
+            "ev_calculado": 506154081091.06,
+            "g_fase1": 15.4,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 243.45,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 23929363002.78
+          },
+          "per": {
+            "precio_objetivo": 163.33,
+            "per_salida": 20,
+            "eps_proyectado": 13.4
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": -4.1,
+          "g_fundamental": 11.4,
+          "diferencia": -15.5,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 279.23,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            447.88
+          ],
+          [
+            "EV/EBITDA",
+            243.45
+          ],
+          [
+            "PER",
+            163.33
+          ],
+          [
+            "Analistas",
+            262.27
+          ]
+        ],
+        "margen_seguridad": 55.1,
+        "target_analistas": 262.27,
+        "n_analistas": 53,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 55% respecto al valor intrínseco estimado. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: -4.1%)."
+      }
+    },
+    {
+      "ticker": "ADBE",
+      "nombre": "Adobe Inc.",
+      "sector": "Technology",
+      "precio": 244.76,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 81.0,
+        "confianza": "alta",
+        "quality": {
+          "score": 90,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 15,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "90/100"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 37,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "97/100",
+          "score_original": 97,
+          "dcf_ajuste": 5,
+          "dcf_razon": "DCF: infravalorada +76% → val +5pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 0,
+          "detalle": {
+            "vs_ma200": 0,
+            "momentum_6m": 0,
+            "momentum_12m": 0
+          },
+          "pts_raw": "0/100"
+        },
+        "dcf_ajuste": 5,
+        "dcf_razon": "DCF: infravalorada +76% → val +5pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoracion atractiva",
+          "FCF Yield atractivo (10.0%)",
+          "Fundamentales neutrales (F-Score 6/9)",
+          "DCF: infravalorada +76% → val +5pts"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "ADBE",
+        "nombre": "Adobe Inc.",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 244.76,
+        "roic": 55.36,
+        "gross_profit_to_assets": 71.94,
+        "gross_margin": 89.27,
+        "ebit_margin": 37.85,
+        "net_margin": 30.0,
+        "roe": 61.34,
+        "roa": 24.17,
+        "fcf_conversion": 138.18,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 59359194320.76,
+        "ev_ebitda": 10.52,
+        "ev_fcf": 10.17,
+        "fcf_yield": 9.96,
+        "per": 14.26,
+        "peg": 0.69,
+        "price_to_book": 8.69,
+        "deuda_ebitda": 0.13,
+        "cobertura_intereses": 34.21,
+        "momentum_6m": -21.65,
+        "momentum_12m": -40.93,
+        "precio_vs_ma200": -19.96,
+        "ma200": 305.7893
+      },
+      "dcf": {
+        "ticker": "ADBE",
+        "precio_actual": 244.76,
+        "wacc": 11.3,
+        "g_base": 14.8,
+        "sector": "Technology",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 458.81,
+            "ev_calculado": 185221243915.6,
+            "g_fase1": 10.8,
+            "g_fase2": 8.8,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 612.35,
+            "ev_calculado": 247281679481.7,
+            "g_fase1": 14.8,
+            "g_fase2": 11.8,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 737.65,
+            "ev_calculado": 297928067110.6,
+            "g_fase1": 18.8,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 380.11,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 18686029369.39
+          },
+          "per": {
+            "precio_objetivo": 401.08,
+            "per_salida": 20,
+            "eps_proyectado": 34.18
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 0.3,
+          "g_fundamental": 14.8,
+          "diferencia": -14.5,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 430.2,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            612.35
+          ],
+          [
+            "EV/EBITDA",
+            380.11
+          ],
+          [
+            "PER",
+            401.08
+          ],
+          [
+            "Analistas",
+            327.28
+          ]
+        ],
+        "margen_seguridad": 75.8,
+        "target_analistas": 327.28,
+        "n_analistas": 34,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 76% respecto al valor intrínseco estimado. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: 0.3%)."
+      }
+    },
+    {
+      "ticker": "AMD",
+      "nombre": "Advanced Micro Devices, Inc.",
+      "sector": "Technology",
+      "precio": 467.51,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 52.9,
+        "confianza": "alta",
+        "quality": {
+          "score": 68,
+          "detalle": {
+            "roic": 8,
+            "gross_profit_assets": 7,
+            "fscore": 23,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "68/100"
+        },
+        "valuation": {
+          "score": 2,
+          "detalle": {
+            "ev_ebitda": 0,
+            "fcf_yield": 3,
+            "per": 2
+          },
+          "pts_raw": "5/100",
+          "score_original": 5,
+          "dcf_ajuste": -3,
+          "dcf_razon": "DCF: prima -55% sobre intrínseco → val -3pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 100,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        },
+        "dcf_ajuste": -3,
+        "dcf_razon": "DCF: prima -55% sobre intrínseco → val -3pts"
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum positivo (+126.9% 6M)",
+          "DCF: prima -55% sobre intrínseco → val -3pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "AMD",
+        "nombre": "Advanced Micro Devices, Inc.",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 467.51,
+        "roic": 5.5,
+        "gross_profit_to_assets": 22.3,
+        "gross_margin": 49.52,
+        "ebit_margin": 12.33,
+        "net_margin": 12.51,
+        "roe": 6.88,
+        "roa": 5.64,
+        "fcf_conversion": 155.36,
+        "fscore": 7,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 457393255220.23,
+        "ev_ebitda": 102.37,
+        "ev_fcf": 112.94,
+        "fcf_yield": 0.88,
+        "per": 156.36,
+        "peg": 1.12,
+        "price_to_book": 11.82,
+        "deuda_ebitda": -0.23,
+        "cobertura_intereses": 32.6,
+        "momentum_6m": 126.92,
+        "momentum_12m": 322.28,
+        "precio_vs_ma200": 102.49,
+        "ma200": 230.8763
+      },
+      "dcf": {
+        "ticker": "AMD",
+        "precio_actual": 467.51,
+        "wacc": 14.2,
+        "g_base": 25.0,
+        "sector": "Technology",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 139.8,
+            "ev_calculado": 219487587197.87,
+            "g_fase1": 21.0,
+            "g_fase2": 19.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 181.06,
+            "ev_calculado": 286765453984.63,
+            "g_fase1": 25.0,
+            "g_fase2": 22.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 136.65,
+            "ev_calculado": 214349007867.37,
+            "g_fase1": 25.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 102.03,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 22472949106.18
+          },
+          "per": {
+            "precio_objetivo": 93.97,
+            "per_salida": 20,
+            "eps_proyectado": 9.12
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 212.31,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            181.06
+          ],
+          [
+            "EV/EBITDA",
+            102.03
+          ],
+          [
+            "PER",
+            93.97
+          ],
+          [
+            "Analistas",
+            472.17
+          ]
+        ],
+        "margen_seguridad": -54.6,
+        "target_analistas": 472.17,
+        "n_analistas": 48,
+        "confianza": "alta",
+        "resumen": "Prima del 55% — cotiza significativamente por encima del valor intrínseco."
+      }
+    },
+    {
+      "ticker": "MU",
+      "nombre": "Micron Technology, Inc.",
+      "sector": "Technology",
+      "precio": 751.0,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 50.1,
+        "confianza": "alta",
+        "quality": {
+          "score": 61,
+          "detalle": {
+            "roic": 18,
+            "gross_profit_assets": 5,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 3
+          },
+          "pts_raw": "61/100"
+        },
+        "valuation": {
+          "score": 2,
+          "detalle": {
+            "ev_ebitda": 3,
+            "fcf_yield": 0,
+            "per": 2
+          },
+          "pts_raw": "5/100",
+          "score_original": 5,
+          "dcf_ajuste": -3,
+          "dcf_razon": "DCF: prima -58% sobre intrínseco → val -3pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 100,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        },
+        "dcf_ajuste": -3,
+        "dcf_razon": "DCF: prima -58% sobre intrínseco → val -3pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Fundamentales neutrales (F-Score 6/9)",
+          "Momentum positivo (+273.2% 6M)",
+          "DCF: prima -58% sobre intrínseco → val -3pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "MU",
+        "nombre": "Micron Technology, Inc.",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 751.0,
+        "roic": 13.38,
+        "gross_profit_to_assets": 17.96,
+        "gross_margin": 39.79,
+        "ebit_margin": 27.1,
+        "net_margin": 22.84,
+        "roe": 15.76,
+        "roa": 10.31,
+        "fcf_conversion": 19.53,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 508156929640.33,
+        "ev_ebitda": 23.17,
+        "ev_fcf": 511.13,
+        "fcf_yield": 0.2,
+        "per": 35.46,
+        "peg": 0.26,
+        "price_to_book": 11.69,
+        "deuda_ebitda": 0.15,
+        "cobertura_intereses": 21.24,
+        "momentum_6m": 273.25,
+        "momentum_12m": 693.84,
+        "precio_vs_ma200": 132.93,
+        "ma200": 322.4095
+      },
+      "dcf": {
+        "ticker": "MU",
+        "precio_actual": 751.0,
+        "wacc": 12.8,
+        "g_base": 5.4,
+        "sector": "Technology",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 26.82,
+            "ev_calculado": 26453666249.38,
+            "g_fase1": 1.4,
+            "g_fase2": -0.6,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 33.82,
+            "ev_calculado": 34354490143.18,
+            "g_fase1": 5.4,
+            "g_fase2": 2.4,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 43.95,
+            "ev_calculado": 45770312483.33,
+            "g_fase1": 9.4,
+            "g_fase2": 6.4,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 323.5,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 47226546137.48
+          },
+          "per": {
+            "precio_objetivo": 301.61,
+            "per_salida": 20,
+            "eps_proyectado": 27.49
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 318.04,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            33.82
+          ],
+          [
+            "EV/EBITDA",
+            323.5
+          ],
+          [
+            "PER",
+            301.61
+          ],
+          [
+            "Analistas",
+            613.23
+          ]
+        ],
+        "margen_seguridad": -57.7,
+        "target_analistas": 613.23,
+        "n_analistas": 40,
+        "confianza": "alta",
+        "resumen": "Prima del 58% — cotiza significativamente por encima del valor intrínseco."
+      }
+    },
+    {
+      "ticker": "AMAT",
+      "nombre": "Applied Materials, Inc.",
+      "sector": "Technology",
+      "precio": 432.16,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 60.0,
+        "confianza": "alta",
+        "quality": {
+          "score": 83,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 12,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "83/100"
+        },
+        "valuation": {
+          "score": 5,
+          "detalle": {
+            "ev_ebitda": 0,
+            "fcf_yield": 6,
+            "per": 2
+          },
+          "pts_raw": "8/100",
+          "score_original": 8,
+          "dcf_ajuste": -3,
+          "dcf_razon": "DCF: prima -33% sobre intrínseco → val -3pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 100,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        },
+        "dcf_ajuste": -3,
+        "dcf_razon": "DCF: prima -33% sobre intrínseco → val -3pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Fundamentales neutrales (F-Score 5/9)",
+          "Momentum positivo (+96.7% 6M)",
+          "DCF: prima -33% sobre intrínseco → val -3pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "AMAT",
+        "nombre": "Applied Materials, Inc.",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 432.16,
+        "roic": 37.27,
+        "gross_profit_to_assets": 38.04,
+        "gross_margin": 48.67,
+        "ebit_margin": 33.63,
+        "net_margin": 24.67,
+        "roe": 34.28,
+        "roa": 19.28,
+        "fcf_conversion": 81.42,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 205870497796.2,
+        "ev_ebitda": 36.97,
+        "ev_fcf": 60.18,
+        "fcf_yield": 1.66,
+        "per": 40.65,
+        "peg": 1.47,
+        "price_to_book": 14.35,
+        "deuda_ebitda": -0.02,
+        "cobertura_intereses": 35.46,
+        "momentum_6m": 96.72,
+        "momentum_12m": 171.2,
+        "precio_vs_ma200": 50.83,
+        "ma200": 286.523
+      },
+      "dcf": {
+        "ticker": "AMAT",
+        "precio_actual": 432.16,
+        "wacc": 12.0,
+        "g_base": 19.1,
+        "sector": "Technology",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 97.41,
+            "ev_calculado": 76367727489.12,
+            "g_fase1": 15.1,
+            "g_fase2": 13.1,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 128.99,
+            "ev_calculado": 101438864151.81,
+            "g_fase1": 19.1,
+            "g_fase2": 16.1,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 134.62,
+            "ev_calculado": 105912109963.74,
+            "g_fase1": 23.1,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 222.81,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 22161442597.29
+          },
+          "per": {
+            "precio_objetivo": 289.37,
+            "per_salida": 20,
+            "eps_proyectado": 25.45
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 287.7,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            128.99
+          ],
+          [
+            "EV/EBITDA",
+            222.81
+          ],
+          [
+            "PER",
+            289.37
+          ],
+          [
+            "Analistas",
+            509.63
+          ]
+        ],
+        "margen_seguridad": -33.4,
+        "target_analistas": 509.63,
+        "n_analistas": 35,
+        "confianza": "alta",
+        "resumen": "Prima del 33% — cotiza significativamente por encima del valor intrínseco."
+      }
+    },
+    {
+      "ticker": "KLAC",
+      "nombre": "KLA Corporation",
+      "sector": "Technology",
+      "precio": 1888.38,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 63.6,
+        "confianza": "alta",
+        "quality": {
+          "score": 93,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 15,
+            "fscore": 23,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "93/100"
+        },
+        "valuation": {
+          "score": 4,
+          "detalle": {
+            "ev_ebitda": 0,
+            "fcf_yield": 5,
+            "per": 2
+          },
+          "pts_raw": "7/100",
+          "score_original": 7,
+          "dcf_ajuste": -3,
+          "dcf_razon": "DCF: prima -50% sobre intrínseco → val -3pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 100,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        },
+        "dcf_ajuste": -3,
+        "dcf_razon": "DCF: prima -50% sobre intrínseco → val -3pts"
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum positivo (+71.7% 6M)",
+          "DCF: prima -50% sobre intrínseco → val -3pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "KLAC",
+        "nombre": "KLA Corporation",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 1888.38,
+        "roic": 44.91,
+        "gross_profit_to_assets": 46.08,
+        "gross_margin": 60.91,
+        "ebit_margin": 40.69,
+        "net_margin": 33.41,
+        "roe": 86.56,
+        "roa": 25.28,
+        "fcf_conversion": 92.12,
+        "fscore": 7,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 148004634626.46,
+        "ev_ebitda": 42.85,
+        "ev_fcf": 67.0,
+        "fcf_yield": 1.52,
+        "per": 53.48,
+        "peg": 1.98,
+        "price_to_book": 42.33,
+        "deuda_ebitda": 0.69,
+        "cobertura_intereses": 16.37,
+        "momentum_6m": 71.73,
+        "momentum_12m": 147.63,
+        "precio_vs_ma200": 42.52,
+        "ma200": 1325.0145
+      },
+      "dcf": {
+        "ticker": "KLAC",
+        "precio_actual": 1888.38,
+        "wacc": 11.5,
+        "g_base": 13.5,
+        "sector": "Technology",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 383.92,
+            "ev_calculado": 51338589615.3,
+            "g_fase1": 9.5,
+            "g_fase2": 7.5,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 513.67,
+            "ev_calculado": 68287397027.96,
+            "g_fase1": 13.5,
+            "g_fase2": 10.5,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 645.44,
+            "ev_calculado": 85499790097.86,
+            "g_fase1": 17.5,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 673.08,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 10909295315.58
+          },
+          "per": {
+            "precio_objetivo": 772.74,
+            "per_salida": 20,
+            "eps_proyectado": 66.59
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 953.66,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            513.67
+          ],
+          [
+            "EV/EBITDA",
+            673.08
+          ],
+          [
+            "PER",
+            772.74
+          ],
+          [
+            "Analistas",
+            1855.14
+          ]
+        ],
+        "margen_seguridad": -49.5,
+        "target_analistas": 1855.14,
+        "n_analistas": 29,
+        "confianza": "alta",
+        "resumen": "Prima del 50% — cotiza significativamente por encima del valor intrínseco."
+      }
+    },
+    {
+      "ticker": "LRCX",
+      "nombre": "Lam Research Corporation",
+      "sector": "Technology",
+      "precio": 305.35,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 63.2,
+        "confianza": "alta",
+        "quality": {
+          "score": 92,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 14,
+            "fscore": 23,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "92/100"
+        },
+        "valuation": {
+          "score": 4,
+          "detalle": {
+            "ev_ebitda": 0,
+            "fcf_yield": 5,
+            "per": 2
+          },
+          "pts_raw": "7/100",
+          "score_original": 7,
+          "dcf_ajuste": -3,
+          "dcf_razon": "DCF: prima -34% sobre intrínseco → val -3pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 100,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        },
+        "dcf_ajuste": -3,
+        "dcf_razon": "DCF: prima -34% sobre intrínseco → val -3pts"
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Fundamentales solidos (F-Score 7/9)",
+          "Momentum positivo (+119.4% 6M)",
+          "DCF: prima -34% sobre intrínseco → val -3pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "LRCX",
+        "nombre": "Lam Research Corporation",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 305.35,
+        "roic": 60.94,
+        "gross_profit_to_assets": 42.07,
+        "gross_margin": 48.71,
+        "ebit_margin": 33.29,
+        "net_margin": 29.06,
+        "roe": 54.33,
+        "roa": 25.1,
+        "fcf_conversion": 101.04,
+        "fscore": 7,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 229117113143.36,
+        "ev_ebitda": 48.42,
+        "ev_fcf": 70.18,
+        "fcf_yield": 1.42,
+        "per": 57.83,
+        "peg": 1.78,
+        "price_to_book": 36.08,
+        "deuda_ebitda": -0.24,
+        "cobertura_intereses": 34.43,
+        "momentum_6m": 119.37,
+        "momentum_12m": 272.56,
+        "precio_vs_ma200": 62.2,
+        "ma200": 188.2608
+      },
+      "dcf": {
+        "ticker": "LRCX",
+        "precio_actual": 305.35,
+        "wacc": 12.5,
+        "g_base": 25.0,
+        "sector": "Technology",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 126.74,
+            "ev_calculado": 157477251236.52,
+            "g_fase1": 21.0,
+            "g_fase2": 19.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 167.43,
+            "ev_calculado": 208363712679.95,
+            "g_fase1": 25.0,
+            "g_fase2": 22.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 124.36,
+            "ev_calculado": 154505012116.43,
+            "g_fase1": 25.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 149.86,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 24003467575.38
+          },
+          "per": {
+            "precio_objetivo": 179.18,
+            "per_salida": 20,
+            "eps_proyectado": 16.11
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 202.15,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            167.43
+          ],
+          [
+            "EV/EBITDA",
+            149.86
+          ],
+          [
+            "PER",
+            179.18
+          ],
+          [
+            "Analistas",
+            312.12
+          ]
+        ],
+        "margen_seguridad": -33.8,
+        "target_analistas": 312.12,
+        "n_analistas": 32,
+        "confianza": "alta",
+        "resumen": "Prima del 34% — cotiza significativamente por encima del valor intrínseco."
+      }
+    },
+    {
+      "ticker": "SNPS",
+      "nombre": "Synopsys, Inc.",
+      "sector": "Technology",
+      "precio": 524.74,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 35.2,
+        "confianza": "alta",
+        "quality": {
+          "score": 48,
+          "detalle": {
+            "roic": 5,
+            "gross_profit_assets": 3,
+            "fscore": 10,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "48/100"
+        },
+        "valuation": {
+          "score": 6,
+          "detalle": {
+            "ev_ebitda": 0,
+            "fcf_yield": 5,
+            "per": 2
+          },
+          "pts_raw": "7/100",
+          "score_original": 7,
+          "dcf_ajuste": -1,
+          "dcf_razon": "DCF: prima -11% sobre intrínseco → val -1pts"
+        },
+        "safety": {
+          "score": 25,
+          "detalle": {
+            "deuda_ebitda": 2,
+            "cobertura_intereses": 23
+          },
+          "pts_raw": "25/100"
+        },
+        "momentum": {
+          "score": 76,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 6
+          },
+          "pts_raw": "76/100"
+        },
+        "dcf_ajuste": -1,
+        "dcf_razon": "DCF: prima -11% sobre intrínseco → val -1pts"
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 1,
+        "razones": [
+          "Momentum positivo (+36.1% 6M)",
+          "DCF: prima -11% sobre intrínseco → val -1pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (3/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL",
+          "Deuda/EBITDA elevada (7.1x)"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "SNPS",
+        "nombre": "Synopsys, Inc.",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 524.74,
+        "roic": 3.66,
+        "gross_profit_to_assets": 11.26,
+        "gross_margin": 76.98,
+        "ebit_margin": 26.08,
+        "net_margin": 18.89,
+        "roe": 4.7,
+        "roa": 2.76,
+        "fcf_conversion": 101.27,
+        "fscore": 3,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 60312153293.43,
+        "ev_ebitda": 69.3,
+        "ev_fcf": 82.96,
+        "fcf_yield": 1.34,
+        "per": 80.61,
+        "peg": 3.46,
+        "price_to_book": 3.29,
+        "deuda_ebitda": 7.06,
+        "cobertura_intereses": 4.12,
+        "momentum_6m": 36.08,
+        "momentum_12m": 4.22,
+        "precio_vs_ma200": 11.32,
+        "ma200": 471.359
+      },
+      "dcf": {
+        "ticker": "SNPS",
+        "precio_actual": 524.74,
+        "wacc": 10.7,
+        "g_base": 25.0,
+        "sector": "Technology",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 658.13,
+            "ev_calculado": 134737244722.93,
+            "g_fase1": 21.0,
+            "g_fase2": 19.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 901.07,
+            "ev_calculado": 181275597062.22,
+            "g_fase1": 25.0,
+            "g_fase2": 22.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 652.11,
+            "ev_calculado": 133584563064.39,
+            "g_fase1": 25.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 183.88,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 4808148268.4
+          },
+          "per": {
+            "precio_objetivo": 238.64,
+            "per_salida": 20,
+            "eps_proyectado": 19.87
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 17.9,
+          "g_fundamental": 25.0,
+          "diferencia": -7.1,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 465.82,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            901.07
+          ],
+          [
+            "EV/EBITDA",
+            183.88
+          ],
+          [
+            "PER",
+            238.64
+          ],
+          [
+            "Analistas",
+            539.69
+          ]
+        ],
+        "margen_seguridad": -11.2,
+        "target_analistas": 539.69,
+        "n_analistas": 26,
+        "confianza": "alta",
+        "resumen": "Prima del 11% sobre valor intrínseco — valoración ajustada. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: 17.9%)."
+      }
+    },
+    {
+      "ticker": "CDNS",
+      "nombre": "Cadence Design Systems, Inc.",
+      "sector": "Technology",
+      "precio": 373.59,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 61.3,
+        "confianza": "alta",
+        "quality": {
+          "score": 90,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 15,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "90/100"
+        },
+        "valuation": {
+          "score": 4,
+          "detalle": {
+            "ev_ebitda": 0,
+            "fcf_yield": 5,
+            "per": 2
+          },
+          "pts_raw": "7/100",
+          "score_original": 7,
+          "dcf_ajuste": -3,
+          "dcf_razon": "DCF: prima -45% sobre intrínseco → val -3pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 93,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 23
+          },
+          "pts_raw": "93/100"
+        },
+        "dcf_ajuste": -3,
+        "dcf_razon": "DCF: prima -45% sobre intrínseco → val -3pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Fundamentales neutrales (F-Score 6/9)",
+          "Momentum positivo (+23.6% 6M)",
+          "DCF: prima -45% sobre intrínseco → val -3pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "CDNS",
+        "nombre": "Cadence Design Systems, Inc.",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 373.59,
+        "roic": 25.44,
+        "gross_profit_to_assets": 45.06,
+        "gross_margin": 86.36,
+        "ebit_margin": 30.94,
+        "net_margin": 20.94,
+        "roe": 20.26,
+        "roa": 10.92,
+        "fcf_conversion": 143.11,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 61825258293.59,
+        "ev_ebitda": 50.97,
+        "ev_fcf": 64.69,
+        "fcf_yield": 1.54,
+        "per": 86.88,
+        "peg": 3.55,
+        "price_to_book": 15.7,
+        "deuda_ebitda": -0.19,
+        "cobertura_intereses": 14.06,
+        "momentum_6m": 23.65,
+        "momentum_12m": 17.99,
+        "precio_vs_ma200": 15.8,
+        "ma200": 322.6094
+      },
+      "dcf": {
+        "ticker": "CDNS",
+        "precio_actual": 373.59,
+        "wacc": 10.4,
+        "g_base": 17.4,
+        "sector": "Technology",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 137.18,
+            "ev_calculado": 39372315572.53,
+            "g_fase1": 13.4,
+            "g_fase2": 11.4,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 187.23,
+            "ev_calculado": 53177104568.33,
+            "g_fase1": 17.4,
+            "g_fase2": 14.4,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 208.0,
+            "ev_calculado": 58907203301.65,
+            "g_fase1": 21.4,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 138.47,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 4582243702.7
+          },
+          "per": {
+            "precio_objetivo": 117.15,
+            "per_salida": 20,
+            "eps_proyectado": 9.6
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 26.9,
+          "g_fundamental": 17.4,
+          "diferencia": 9.4,
+          "interpretacion": "El mercado descuenta crecimiento muy optimista"
+        },
+        "precio_consenso": 205.6,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            187.23
+          ],
+          [
+            "EV/EBITDA",
+            138.47
+          ],
+          [
+            "PER",
+            117.15
+          ],
+          [
+            "Analistas",
+            379.55
+          ]
+        ],
+        "margen_seguridad": -45.0,
+        "target_analistas": 379.55,
+        "n_analistas": 26,
+        "confianza": "alta",
+        "resumen": "Prima del 45% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 26.9%)."
+      }
+    },
+    {
+      "ticker": "LLY",
+      "nombre": "Eli Lilly and Company",
+      "sector": "Healthcare",
+      "precio": 1065.0,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 54.9,
+        "confianza": "alta",
+        "quality": {
+          "score": 79,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 15,
+            "fscore": 20,
+            "altman_z": 15,
+            "fcf_conversion": 4
+          },
+          "pts_raw": "79/100"
+        },
+        "valuation": {
+          "score": 5,
+          "detalle": {
+            "ev_ebitda": 1,
+            "fcf_yield": 2,
+            "per": 2
+          },
+          "pts_raw": "5/100",
+          "score_original": 5,
+          "dcf_ajuste": 0,
+          "dcf_razon": ""
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60
+          },
+          "pts_raw": "60/60"
+        },
+        "momentum": {
+          "score": 77,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 7,
+            "momentum_12m": 30
+          },
+          "pts_raw": "77/100"
+        },
+        "dcf_ajuste": 0,
+        "dcf_razon": ""
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Fundamentales neutrales (F-Score 6/9)",
+          "Momentum positivo (+2.4% 6M)"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "LLY",
+        "nombre": "Eli Lilly and Company",
+        "sector": "Healthcare",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 1065.0,
+        "roic": 37.98,
+        "gross_profit_to_assets": 48.12,
+        "gross_margin": 83.04,
+        "ebit_margin": 45.56,
+        "net_margin": 31.67,
+        "roe": 77.78,
+        "roa": 18.35,
+        "fcf_conversion": 28.9,
+        "fscore": 6,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 569822753589.17,
+        "ev_ebitda": 27.2,
+        "ev_fcf": 165.15,
+        "fcf_yield": 0.63,
+        "per": 37.87,
+        "peg": 1.43,
+        "price_to_book": 30.5,
+        "deuda_ebitda": 0.97,
+        "cobertura_intereses": null,
+        "momentum_6m": 2.43,
+        "momentum_12m": 49.96,
+        "precio_vs_ma200": 15.1,
+        "ma200": 925.2752
+      },
+      "dcf": {
+        "ticker": "LLY",
+        "precio_actual": 1065.0,
+        "wacc": 7.4,
+        "g_base": 25.0,
+        "sector": "Healthcare",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 625.82,
+            "ev_calculado": 596160974643.96,
+            "g_fase1": 21.0,
+            "g_fase2": 19.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 915.07,
+            "ev_calculado": 854096515455.72,
+            "g_fase1": 25.0,
+            "g_fase2": 22.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 668.15,
+            "ev_calculado": 633901551861.51,
+            "g_fase1": 25.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 1011.76,
+            "multiple_salida": 12,
+            "ebitda_proyectado": 110827345588.24
+          },
+          "per": {
+            "precio_objetivo": 1078.82,
+            "per_salida": 18,
+            "eps_proyectado": 85.82
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 27.0,
+          "g_fundamental": 25.0,
+          "diferencia": 2.0,
+          "interpretacion": "El mercado descuenta crecimiento moderadamente optimista"
+        },
+        "precio_consenso": 1054.17,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            915.07
+          ],
+          [
+            "EV/EBITDA",
+            1011.76
+          ],
+          [
+            "PER",
+            1078.82
+          ],
+          [
+            "Analistas",
+            1211.03
+          ]
+        ],
+        "margen_seguridad": -1.0,
+        "target_analistas": 1211.03,
+        "n_analistas": 29,
+        "confianza": "alta",
+        "resumen": "Cotiza cerca de su valor intrínseco estimado. El mercado descuenta crecimiento moderadamente optimista (g implícito: 27.0%)."
+      }
+    },
+    {
+      "ticker": "MRK",
+      "nombre": "Merck & Co., Inc.",
+      "sector": "Healthcare",
+      "precio": 122.41,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 70.7,
+        "confianza": "alta",
+        "quality": {
+          "score": 73,
+          "detalle": {
+            "roic": 25,
+            "gross_profit_assets": 11,
+            "fscore": 10,
+            "altman_z": 15,
+            "fcf_conversion": 12
+          },
+          "pts_raw": "73/100"
+        },
+        "valuation": {
+          "score": 47,
+          "detalle": {
+            "ev_ebitda": 34,
+            "fcf_yield": 15,
+            "per": 2
+          },
+          "pts_raw": "51/100",
+          "score_original": 51,
+          "dcf_ajuste": -4,
+          "dcf_razon": "DCF: prima -21% sobre intrínseco → val -4pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 100,
+          "detalle": {
+            "vs_ma200": 40,
+            "momentum_6m": 30,
+            "momentum_12m": 30
+          },
+          "pts_raw": "100/100"
+        },
+        "dcf_ajuste": -4,
+        "dcf_razon": "DCF: prima -21% sobre intrínseco → val -4pts"
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 1,
+        "razones": [
+          "Momentum positivo (+31.0% 6M)",
+          "DCF: prima -21% sobre intrínseco → val -4pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (3/9) — posible deterioro",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "MRK",
+        "nombre": "Merck & Co., Inc.",
+        "sector": "Healthcare",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 122.41,
+        "roic": 20.27,
+        "gross_profit_to_assets": 35.53,
+        "gross_margin": 74.8,
+        "ebit_margin": 34.49,
+        "net_margin": 28.08,
+        "roe": 34.7,
+        "roa": 13.34,
+        "fcf_conversion": 67.71,
+        "fscore": 3,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 181398739355.5,
+        "ev_ebitda": 11.42,
+        "ev_fcf": 27.27,
+        "fcf_yield": 4.09,
+        "per": 34.48,
+        "peg": 5.69,
+        "price_to_book": 6.59,
+        "deuda_ebitda": 1.18,
+        "cobertura_intereses": 16.52,
+        "momentum_6m": 30.96,
+        "momentum_12m": 62.97,
+        "precio_vs_ma200": 20.81,
+        "ma200": 101.3238
+      },
+      "dcf": {
+        "ticker": "MRK",
+        "precio_actual": 122.41,
+        "wacc": 9.0,
+        "g_base": 6.3,
+        "sector": "Healthcare",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 57.45,
+            "ev_calculado": 185306925613.52,
+            "g_fase1": 2.3,
+            "g_fase2": 0.3,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 84.75,
+            "ev_calculado": 252744097744.58,
+            "g_fase1": 6.3,
+            "g_fase2": 3.3,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 124.68,
+            "ev_calculado": 351344744335.59,
+            "g_fase1": 10.3,
+            "g_fase2": 7.3,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 118.2,
+            "multiple_salida": 12,
+            "ebitda_proyectado": 41049750835.13
+          },
+          "per": {
+            "precio_objetivo": 56.3,
+            "per_salida": 18,
+            "eps_proyectado": 4.81
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 10.5,
+          "g_fundamental": 6.3,
+          "diferencia": 4.2,
+          "interpretacion": "El mercado descuenta crecimiento muy optimista"
+        },
+        "precio_consenso": 97.25,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            84.75
+          ],
+          [
+            "EV/EBITDA",
+            118.2
+          ],
+          [
+            "PER",
+            56.3
+          ],
+          [
+            "Analistas",
+            129.74
+          ]
+        ],
+        "margen_seguridad": -20.6,
+        "target_analistas": 129.74,
+        "n_analistas": 27,
+        "confianza": "alta",
+        "resumen": "Prima del 21% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 10.5%)."
+      }
+    },
+    {
+      "ticker": "BDX",
+      "nombre": "Becton, Dickinson and Company",
+      "sector": "Healthcare",
+      "precio": 147.63,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 64.5,
+        "confianza": "alta",
+        "quality": {
+          "score": 67,
+          "detalle": {
+            "roic": 6,
+            "gross_profit_assets": 5,
+            "fscore": 26,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "67/100"
+        },
+        "valuation": {
+          "score": 78,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 32,
+            "per": 6
+          },
+          "pts_raw": "78/100",
+          "score_original": 78,
+          "dcf_ajuste": 0,
+          "dcf_razon": ""
+        },
+        "safety": {
+          "score": 52,
+          "detalle": {
+            "deuda_ebitda": 29,
+            "cobertura_intereses": 23
+          },
+          "pts_raw": "52/100"
+        },
+        "momentum": {
+          "score": 35,
+          "detalle": {
+            "vs_ma200": 15,
+            "momentum_6m": 0,
+            "momentum_12m": 20
+          },
+          "pts_raw": "35/100"
+        },
+        "dcf_ajuste": 0,
+        "dcf_razon": ""
+      },
+      "señal": {
+        "señal": "VIGILAR",
+        "capas": 2,
+        "razones": [
+          "Valoracion atractiva",
+          "EV/EBITDA bajo (9.6x)",
+          "FCF Yield atractivo (6.6%)",
+          "Fundamentales solidos (F-Score 8/9)",
+          "Momentum neutro o debil"
+        ],
+        "alertas": [],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "NEUTRAL",
+        "macro_umbral": 70
+      },
+      "metrics": {
+        "ticker": "BDX",
+        "nombre": "Becton, Dickinson and Company",
+        "sector": "Healthcare",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": 147.63,
+        "roic": 4.48,
+        "gross_profit_to_assets": 17.94,
+        "gross_margin": 45.44,
+        "ebit_margin": 11.42,
+        "net_margin": 7.68,
+        "roe": 6.61,
+        "roa": 3.03,
+        "fcf_conversion": 159.18,
+        "fscore": 8,
+        "fscore_señal": "fuerte",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 1,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 24406818816.98,
+        "ev_ebitda": 9.62,
+        "ev_fcf": 22.17,
+        "fcf_yield": 6.57,
+        "per": 25.76,
+        "peg": 1.11,
+        "price_to_book": 1.69,
+        "deuda_ebitda": 3.01,
+        "cobertura_intereses": 4.07,
+        "momentum_6m": 0.23,
+        "momentum_12m": 11.54,
+        "precio_vs_ma200": -3.79,
+        "ma200": 153.4495
+      },
+      "dcf": {
+        "ticker": "BDX",
+        "precio_actual": 147.63,
+        "wacc": 9.0,
+        "g_base": 3.7,
+        "sector": "Healthcare",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 129.98,
+            "ev_calculado": 52277629503.21,
+            "g_fase1": 0.0,
+            "g_fase2": -1.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 187.79,
+            "ev_calculado": 68207145666.71,
+            "g_fase1": 3.7,
+            "g_fase2": 1.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 280.55,
+            "ev_calculado": 93766228171.99,
+            "g_fase1": 7.7,
+            "g_fase2": 4.7,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 163.17,
+            "multiple_salida": 12,
+            "ebitda_proyectado": 7136615317.05
+          },
+          "per": {
+            "precio_objetivo": 80.54,
+            "per_salida": 18,
+            "eps_proyectado": 6.88
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": -0.4,
+          "g_fundamental": 3.7,
+          "diferencia": -4.1,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 153.7,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            187.79
+          ],
+          [
+            "EV/EBITDA",
+            163.17
+          ],
+          [
+            "PER",
+            80.54
+          ],
+          [
+            "Analistas",
+            183.29
+          ]
+        ],
+        "margen_seguridad": 4.1,
+        "target_analistas": 183.29,
+        "n_analistas": 14,
+        "confianza": "alta",
+        "resumen": "Cotiza cerca de su valor intrínseco estimado. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: -0.4%)."
       }
     }
   ]
