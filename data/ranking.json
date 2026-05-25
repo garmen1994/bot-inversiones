@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-05-24T18:39:32.673575",
+  "fecha": "2026-05-25T19:11:45.634712",
   "ranking": [
     {
       "pos": 1,
@@ -95,28 +95,28 @@
       "ticker": "IAG.MC",
       "nombre": "International Consolidated Airlines Group S.A.",
       "sector": "Industrials",
-      "precio": 4.594,
-      "composite": 88.8,
+      "precio": 4.766,
+      "composite": 91.5,
       "quality": 84,
       "valuation": 100,
       "safety": 91,
-      "momentum": 74,
+      "momentum": 92,
       "senal": "COMPRA",
       "capas": 3,
       "alertas": [],
       "confianza": "alta",
       "dcf": {
         "ticker": "IAG.MC",
-        "precio_actual": 4.59,
+        "precio_actual": 4.77,
         "wacc": 10.0,
         "g_base": 25.0,
         "sector": "Industrials",
         "escenarios_dcf": null,
         "multiplos": {
           "ev_ebitda": {
-            "precio_objetivo": 23.83,
+            "precio_objetivo": 23.14,
             "multiple_salida": 9,
-            "ebitda_proyectado": 19679176136.36
+            "ebitda_proyectado": 19129989825.58
           },
           "per": {
             "precio_objetivo": 19.11,
@@ -125,11 +125,11 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 16.21,
+        "precio_consenso": 15.98,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
-            23.83
+            23.14
           ],
           [
             "PER",
@@ -140,11 +140,11 @@
             5.68
           ]
         ],
-        "margen_seguridad": 252.9,
+        "margen_seguridad": 235.3,
         "target_analistas": 5.68,
         "n_analistas": 10,
         "confianza": "media",
-        "resumen": "Infravalorada un 253% respecto al valor intrínseco estimado."
+        "resumen": "Infravalorada un 235% respecto al valor intrínseco estimado."
       },
       "tipologia": "VALUE_CYCLICAL"
     },
@@ -319,6 +319,174 @@
     },
     {
       "pos": 5,
+      "ticker": "TRI.PA",
+      "nombre": "Trigano S.A.",
+      "sector": "Consumer Cyclical",
+      "precio": 157.3,
+      "composite": 86.5,
+      "quality": 73,
+      "valuation": 100,
+      "safety": 100,
+      "momentum": 82,
+      "senal": "COMPRA",
+      "capas": 2,
+      "alertas": [],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "TRI.PA",
+        "precio_actual": 157.3,
+        "wacc": 9.0,
+        "g_base": 8.2,
+        "sector": "Consumer Cyclical",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 380.95,
+            "ev_calculado": 6981777093.81,
+            "g_fase1": 4.2,
+            "g_fase2": 2.2,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 513.82,
+            "ev_calculado": 9544834697.27,
+            "g_fase1": 8.2,
+            "g_fase2": 5.2,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 706.71,
+            "ev_calculado": 13265724743.93,
+            "g_fase1": 12.2,
+            "g_fase2": 9.2,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 176.61,
+            "multiple_salida": 9,
+            "ebitda_proyectado": 541671535.39
+          },
+          "per": {
+            "precio_objetivo": 167.21,
+            "per_salida": 14,
+            "eps_proyectado": 18.38
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 263.16,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            513.82
+          ],
+          [
+            "EV/EBITDA",
+            176.61
+          ],
+          [
+            "PER",
+            167.21
+          ],
+          [
+            "Analistas",
+            195.0
+          ]
+        ],
+        "margen_seguridad": 67.3,
+        "target_analistas": 195.0,
+        "n_analistas": 8,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 67% respecto al valor intrínseco estimado."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 6,
+      "ticker": "CB",
+      "nombre": "Chubb Limited",
+      "sector": "Financial Services",
+      "precio": 327.89,
+      "composite": 86.0,
+      "quality": 70,
+      "valuation": 100,
+      "safety": 100,
+      "momentum": 87,
+      "senal": "COMPRA",
+      "capas": 2,
+      "alertas": [],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "CB",
+        "precio_actual": 327.89,
+        "wacc": 7.3,
+        "g_base": 25.0,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 2037.13,
+            "ev_calculado": 807761943377.81,
+            "g_fase1": 21.0,
+            "g_fase2": 19.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 2958.14,
+            "ev_calculado": 1164983713464.01,
+            "g_fase1": 25.0,
+            "g_fase2": 22.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 2195.69,
+            "ev_calculado": 869262264432.4,
+            "g_fase1": 25.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 818.42,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 46955524974.52
+          },
+          "per": {
+            "precio_objetivo": 726.94,
+            "per_salida": 12,
+            "eps_proyectado": 86.24
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 1212.19,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            2958.14
+          ],
+          [
+            "EV/EBITDA",
+            818.42
+          ],
+          [
+            "PER",
+            726.94
+          ],
+          [
+            "Analistas",
+            345.26
+          ]
+        ],
+        "margen_seguridad": 269.7,
+        "target_analistas": 345.26,
+        "n_analistas": 23,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 270% respecto al valor intrínseco estimado."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 7,
       "ticker": "ALTN.L",
       "nombre": "AltynGold plc",
       "sector": "Basic Materials",
@@ -398,7 +566,91 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 6,
+      "pos": 8,
+      "ticker": "GEST.MC",
+      "nombre": "Gestamp Automoción, S.A.",
+      "sector": "Consumer Cyclical",
+      "precio": 3.255,
+      "composite": 85.7,
+      "quality": 78,
+      "valuation": 100,
+      "safety": 67,
+      "momentum": 85,
+      "senal": "COMPRA",
+      "capas": 2,
+      "alertas": [],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "GEST.MC",
+        "precio_actual": 3.25,
+        "wacc": 8.9,
+        "g_base": 0.0,
+        "sector": "Consumer Cyclical",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 14.83,
+            "ev_calculado": 7216530506.27,
+            "g_fase1": 0.0,
+            "g_fase2": -1.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 16.28,
+            "ev_calculado": 8039467351.79,
+            "g_fase1": 0.0,
+            "g_fase2": 1.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 19.45,
+            "ev_calculado": 9844170214.64,
+            "g_fase1": 4.0,
+            "g_fase2": 1.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 6.03,
+            "multiple_salida": 9,
+            "ebitda_proyectado": 447467445.8
+          },
+          "per": {
+            "precio_objetivo": 2.84,
+            "per_salida": 14,
+            "eps_proyectado": 0.31
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 7.17,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            16.28
+          ],
+          [
+            "EV/EBITDA",
+            6.03
+          ],
+          [
+            "PER",
+            2.84
+          ],
+          [
+            "Analistas",
+            3.51
+          ]
+        ],
+        "margen_seguridad": 120.3,
+        "target_analistas": 3.51,
+        "n_analistas": 13,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 120% respecto al valor intrínseco estimado."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 9,
       "ticker": "USB",
       "nombre": "U.S. Bancorp",
       "sector": "Financial Services",
@@ -447,91 +699,87 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 7,
-      "ticker": "TRI.PA",
-      "nombre": "Trigano S.A.",
-      "sector": "Consumer Cyclical",
-      "precio": 153.6,
+      "pos": 10,
+      "ticker": "REP.MC",
+      "nombre": "Repsol, S.A.",
+      "sector": "Energy",
+      "precio": 21.75,
       "composite": 85.3,
-      "quality": 73,
-      "valuation": 100,
-      "safety": 100,
-      "momentum": 74,
-      "senal": "NEUTRO",
-      "capas": 1,
+      "quality": 69,
+      "valuation": 98,
+      "safety": 84,
+      "momentum": 100,
+      "senal": "COMPRA",
+      "capas": 3,
       "alertas": [],
       "confianza": "alta",
       "dcf": {
-        "ticker": "TRI.PA",
-        "precio_actual": 153.6,
-        "wacc": 9.0,
-        "g_base": 8.2,
-        "sector": "Consumer Cyclical",
+        "ticker": "REP.MC",
+        "precio_actual": 21.75,
+        "wacc": 10.0,
+        "g_base": 6.1,
+        "sector": "Energy",
         "escenarios_dcf": {
           "pesimista": {
-            "precio_objetivo": 380.95,
-            "ev_calculado": 6981777093.81,
-            "g_fase1": 4.2,
-            "g_fase2": 2.2,
+            "precio_objetivo": 0.0,
+            "ev_calculado": 2426628548.59,
+            "g_fase1": 2.1,
+            "g_fase2": 0.1,
             "terminal_g": 1.5
           },
           "base": {
-            "precio_objetivo": 513.82,
-            "ev_calculado": 9544834697.27,
-            "g_fase1": 8.2,
-            "g_fase2": 5.2,
+            "precio_objetivo": 0.0,
+            "ev_calculado": 3240247576.28,
+            "g_fase1": 6.1,
+            "g_fase2": 3.1,
             "terminal_g": 2.5
           },
           "optimista": {
-            "precio_objetivo": 706.71,
-            "ev_calculado": 13265724743.93,
-            "g_fase1": 12.2,
-            "g_fase2": 9.2,
+            "precio_objetivo": 0.0,
+            "ev_calculado": 4414466913.03,
+            "g_fase1": 10.1,
+            "g_fase2": 7.1,
             "terminal_g": 3.0
           }
         },
         "multiplos": {
           "ev_ebitda": {
-            "precio_objetivo": 181.12,
-            "multiple_salida": 9,
-            "ebitda_proyectado": 556544019.74
+            "precio_objetivo": 23.98,
+            "multiple_salida": 7,
+            "ebitda_proyectado": 6907122501.62
           },
           "per": {
-            "precio_objetivo": 167.21,
-            "per_salida": 14,
-            "eps_proyectado": 18.38
+            "precio_objetivo": 17.84,
+            "per_salida": 10,
+            "eps_proyectado": 2.87
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 264.29,
+        "precio_consenso": 22.12,
         "precios_por_metodo": [
           [
-            "DCF",
-            513.82
-          ],
-          [
             "EV/EBITDA",
-            181.12
+            23.98
           ],
           [
             "PER",
-            167.21
+            17.84
           ],
           [
             "Analistas",
-            195.0
+            24.55
           ]
         ],
-        "margen_seguridad": 72.1,
-        "target_analistas": 195.0,
-        "n_analistas": 8,
+        "margen_seguridad": 1.7,
+        "target_analistas": 24.55,
+        "n_analistas": 23,
         "confianza": "alta",
-        "resumen": "Infravalorada un 72% respecto al valor intrínseco estimado."
+        "resumen": "Cotiza cerca de su valor intrínseco estimado."
       },
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 8,
+      "pos": 11,
       "ticker": "TROW",
       "nombre": "T. Rowe Price Group, Inc.",
       "sector": "Financial Services",
@@ -622,171 +870,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 9,
-      "ticker": "REP.MC",
-      "nombre": "Repsol, S.A.",
-      "sector": "Energy",
-      "precio": 22.26,
-      "composite": 85.0,
-      "quality": 69,
-      "valuation": 97,
-      "safety": 84,
-      "momentum": 100,
-      "senal": "COMPRA",
-      "capas": 3,
-      "alertas": [],
-      "confianza": "alta",
-      "dcf": {
-        "ticker": "REP.MC",
-        "precio_actual": 22.26,
-        "wacc": 10.0,
-        "g_base": 6.1,
-        "sector": "Energy",
-        "escenarios_dcf": {
-          "pesimista": {
-            "precio_objetivo": 0.0,
-            "ev_calculado": 2426628548.59,
-            "g_fase1": 2.1,
-            "g_fase2": 0.1,
-            "terminal_g": 1.5
-          },
-          "base": {
-            "precio_objetivo": 0.0,
-            "ev_calculado": 3240247576.28,
-            "g_fase1": 6.1,
-            "g_fase2": 3.1,
-            "terminal_g": 2.5
-          },
-          "optimista": {
-            "precio_objetivo": 0.0,
-            "ev_calculado": 4414466913.03,
-            "g_fase1": 10.1,
-            "g_fase2": 7.1,
-            "terminal_g": 3.0
-          }
-        },
-        "multiplos": {
-          "ev_ebitda": {
-            "precio_objetivo": 23.53,
-            "multiple_salida": 7,
-            "ebitda_proyectado": 6793382460.43
-          },
-          "per": {
-            "precio_objetivo": 17.84,
-            "per_salida": 10,
-            "eps_proyectado": 2.87
-          }
-        },
-        "reverse_dcf": null,
-        "precio_consenso": 21.97,
-        "precios_por_metodo": [
-          [
-            "EV/EBITDA",
-            23.53
-          ],
-          [
-            "PER",
-            17.84
-          ],
-          [
-            "Analistas",
-            24.55
-          ]
-        ],
-        "margen_seguridad": -1.3,
-        "target_analistas": 24.55,
-        "n_analistas": 23,
-        "confianza": "alta",
-        "resumen": "Cotiza cerca de su valor intrínseco estimado."
-      },
-      "tipologia": "VALUE_CYCLICAL"
-    },
-    {
-      "pos": 10,
-      "ticker": "GEST.MC",
-      "nombre": "Gestamp Automoción, S.A.",
-      "sector": "Consumer Cyclical",
-      "precio": 3.205,
-      "composite": 84.6,
-      "quality": 78,
-      "valuation": 100,
-      "safety": 67,
-      "momentum": 78,
-      "senal": "COMPRA",
-      "capas": 2,
-      "alertas": [],
-      "confianza": "alta",
-      "dcf": {
-        "ticker": "GEST.MC",
-        "precio_actual": 3.21,
-        "wacc": 8.9,
-        "g_base": 0.0,
-        "sector": "Consumer Cyclical",
-        "escenarios_dcf": {
-          "pesimista": {
-            "precio_objetivo": 14.83,
-            "ev_calculado": 7216530506.27,
-            "g_fase1": 0.0,
-            "g_fase2": -1.0,
-            "terminal_g": 1.5
-          },
-          "base": {
-            "precio_objetivo": 16.28,
-            "ev_calculado": 8039467351.79,
-            "g_fase1": 0.0,
-            "g_fase2": 1.0,
-            "terminal_g": 2.5
-          },
-          "optimista": {
-            "precio_objetivo": 19.45,
-            "ev_calculado": 9844170214.64,
-            "g_fase1": 4.0,
-            "g_fase2": 1.0,
-            "terminal_g": 3.0
-          }
-        },
-        "multiplos": {
-          "ev_ebitda": {
-            "precio_objetivo": 6.07,
-            "multiple_salida": 9,
-            "ebitda_proyectado": 451392598.83
-          },
-          "per": {
-            "precio_objetivo": 2.84,
-            "per_salida": 14,
-            "eps_proyectado": 0.31
-          }
-        },
-        "reverse_dcf": null,
-        "precio_consenso": 7.18,
-        "precios_por_metodo": [
-          [
-            "DCF",
-            16.28
-          ],
-          [
-            "EV/EBITDA",
-            6.07
-          ],
-          [
-            "PER",
-            2.84
-          ],
-          [
-            "Analistas",
-            3.51
-          ]
-        ],
-        "margen_seguridad": 124.0,
-        "target_analistas": 3.51,
-        "n_analistas": 13,
-        "confianza": "alta",
-        "resumen": "Infravalorada un 124% respecto al valor intrínseco estimado."
-      },
-      "tipologia": "VALUE_CYCLICAL"
-    },
-    {
-      "pos": 11,
+      "pos": 12,
       "ticker": "SHEL",
       "nombre": "Shell plc",
       "sector": "Energy",
@@ -875,23 +959,112 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 12,
+      "pos": 13,
+      "ticker": "CI",
+      "nombre": "The Cigna Group",
+      "sector": "Healthcare",
+      "precio": 286.24,
+      "composite": 83.9,
+      "quality": 77,
+      "valuation": 100,
+      "safety": 85,
+      "momentum": 64,
+      "senal": "COMPRA",
+      "capas": 2,
+      "alertas": [],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "CI",
+        "precio_actual": 286.24,
+        "wacc": 6.9,
+        "g_base": 11.9,
+        "sector": "Healthcare",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 597.16,
+            "ev_calculado": 181015815597.13,
+            "g_fase1": 7.9,
+            "g_fase2": 5.9,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 907.23,
+            "ev_calculado": 263040980048.94,
+            "g_fase1": 11.9,
+            "g_fase2": 8.9,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 1316.24,
+            "ev_calculado": 371236487741.58,
+            "g_fase1": 15.9,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 695.95,
+            "multiple_salida": 12,
+            "ebitda_proyectado": 23376956861.37
+          },
+          "per": {
+            "precio_objetivo": 2567.86,
+            "per_salida": 18,
+            "eps_proyectado": 199.52
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": -4.0,
+          "g_fundamental": 11.9,
+          "diferencia": -15.9,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 1128.2,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            907.23
+          ],
+          [
+            "EV/EBITDA",
+            695.95
+          ],
+          [
+            "PER",
+            2567.86
+          ],
+          [
+            "Analistas",
+            341.75
+          ]
+        ],
+        "margen_seguridad": 294.1,
+        "target_analistas": 341.75,
+        "n_analistas": 24,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 294% respecto al valor intrínseco estimado. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: -4.0%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 14,
       "ticker": "VID.MC",
       "nombre": "Vidrala, S.A.",
       "sector": "Consumer Cyclical",
-      "precio": 76.1,
-      "composite": 82.2,
+      "precio": 76.9,
+      "composite": 82.8,
       "quality": 87,
       "valuation": 100,
       "safety": 100,
-      "momentum": 16,
+      "momentum": 20,
       "senal": "COMPRA",
       "capas": 2,
       "alertas": [],
       "confianza": "alta",
       "dcf": {
         "ticker": "VID.MC",
-        "precio_actual": 76.1,
+        "precio_actual": 76.9,
         "wacc": 8.4,
         "g_base": 6.8,
         "sector": "Consumer Cyclical",
@@ -920,9 +1093,9 @@
         },
         "multiplos": {
           "ev_ebitda": {
-            "precio_objetivo": 103.72,
+            "precio_objetivo": 102.56,
             "multiple_salida": 9,
-            "ebitda_proyectado": 615976585.87
+            "ebitda_proyectado": 609312233.32
           },
           "per": {
             "precio_objetivo": 77.54,
@@ -931,12 +1104,12 @@
           }
         },
         "reverse_dcf": {
-          "g_implicito": 6.1,
+          "g_implicito": 6.3,
           "g_fundamental": 6.8,
-          "diferencia": -0.7,
+          "diferencia": -0.6,
           "interpretacion": "El mercado descuenta crecimiento en línea con fundamentales"
         },
-        "precio_consenso": 91.06,
+        "precio_consenso": 90.78,
         "precios_por_metodo": [
           [
             "DCF",
@@ -944,7 +1117,7 @@
           ],
           [
             "EV/EBITDA",
-            103.72
+            102.56
           ],
           [
             "PER",
@@ -955,16 +1128,16 @@
             102.51
           ]
         ],
-        "margen_seguridad": 19.7,
+        "margen_seguridad": 18.0,
         "target_analistas": 102.51,
         "n_analistas": 12,
         "confianza": "alta",
-        "resumen": "Ligero descuento del 20% — precio razonable. El mercado descuenta crecimiento en línea con fundamentales (g implícito: 6.1%)."
+        "resumen": "Ligero descuento del 18% — precio razonable. El mercado descuenta crecimiento en línea con fundamentales (g implícito: 6.3%)."
       },
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 13,
+      "pos": 15,
       "ticker": "BP",
       "nombre": "BP p.l.c.",
       "sector": "Energy",
@@ -1053,7 +1226,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 14,
+      "pos": 16,
       "ticker": "ADBE",
       "nombre": "Adobe Inc.",
       "sector": "Technology",
@@ -1144,7 +1317,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 15,
+      "pos": 17,
       "ticker": "TGT",
       "nombre": "Target Corporation",
       "sector": "Consumer Defensive",
@@ -1205,7 +1378,7 @@
           "diferencia": 9.7,
           "interpretacion": "El mercado descuenta crecimiento muy optimista"
         },
-        "precio_consenso": 95.63,
+        "precio_consenso": 95.7,
         "precios_por_metodo": [
           [
             "DCF",
@@ -1221,11 +1394,11 @@
           ],
           [
             "Analistas",
-            131.18
+            131.45
           ]
         ],
-        "margen_seguridad": -23.9,
-        "target_analistas": 131.18,
+        "margen_seguridad": -23.8,
+        "target_analistas": 131.45,
         "n_analistas": 33,
         "confianza": "alta",
         "resumen": "Prima del 24% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 9.7%)."
@@ -1233,7 +1406,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 16,
+      "pos": 18,
       "ticker": "VLO",
       "nombre": "Valero Energy Corporation",
       "sector": "Energy",
@@ -1322,7 +1495,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 17,
+      "pos": 19,
       "ticker": "CUK",
       "nombre": "Carnival PLC",
       "sector": "Consumer Cyclical",
@@ -1403,32 +1576,32 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 18,
+      "pos": 20,
       "ticker": "CAF.MC",
       "nombre": "Construcciones y Auxiliar de Ferrocarriles, S.A.",
       "sector": "Industrials",
-      "precio": 60.7,
-      "composite": 80.0,
+      "precio": 61.4,
+      "composite": 80.1,
       "quality": 72,
       "valuation": 77,
       "safety": 95,
-      "momentum": 98,
+      "momentum": 99,
       "senal": "COMPRA",
       "capas": 3,
       "alertas": [],
       "confianza": "alta",
       "dcf": {
         "ticker": "CAF.MC",
-        "precio_actual": 60.7,
+        "precio_actual": 61.4,
         "wacc": 8.4,
         "g_base": 4.9,
         "sector": "Industrials",
         "escenarios_dcf": null,
         "multiplos": {
           "ev_ebitda": {
-            "precio_objetivo": 63.6,
+            "precio_objetivo": 62.88,
             "multiple_salida": 9,
-            "ebitda_proyectado": 390111490.37
+            "ebitda_proyectado": 386053113.36
           },
           "per": {
             "precio_objetivo": 50.7,
@@ -1437,11 +1610,11 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 59.47,
+        "precio_consenso": 59.23,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
-            63.6
+            62.88
           ],
           [
             "PER",
@@ -1452,7 +1625,7 @@
             64.12
           ]
         ],
-        "margen_seguridad": -2.0,
+        "margen_seguridad": -3.5,
         "target_analistas": 64.12,
         "n_analistas": 9,
         "confianza": "media",
@@ -1461,7 +1634,96 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 19,
+      "pos": 21,
+      "ticker": "BIIB",
+      "nombre": "Biogen Inc.",
+      "sector": "Healthcare",
+      "precio": 193.76,
+      "composite": 79.4,
+      "quality": 60,
+      "valuation": 89,
+      "safety": 92,
+      "momentum": 100,
+      "senal": "COMPRA",
+      "capas": 2,
+      "alertas": [],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "BIIB",
+        "precio_actual": 193.76,
+        "wacc": 9.0,
+        "g_base": 10.9,
+        "sector": "Healthcare",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 223.63,
+            "ev_calculado": 35294783546.46,
+            "g_fase1": 6.9,
+            "g_fase2": 4.9,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 312.92,
+            "ev_calculado": 48478201453.53,
+            "g_fase1": 10.9,
+            "g_fase2": 7.9,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 442.45,
+            "ev_calculado": 67601253896.1,
+            "g_fase1": 14.9,
+            "g_fase2": 11.9,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 288.84,
+            "multiple_salida": 12,
+            "ebitda_proyectado": 5657661208.58
+          },
+          "per": {
+            "precio_objetivo": 182.36,
+            "per_salida": 18,
+            "eps_proyectado": 15.59
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 4.8,
+          "g_fundamental": 10.9,
+          "diferencia": -6.1,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 250.85,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            312.92
+          ],
+          [
+            "EV/EBITDA",
+            288.84
+          ],
+          [
+            "PER",
+            182.36
+          ],
+          [
+            "Analistas",
+            219.27
+          ]
+        ],
+        "margen_seguridad": 29.5,
+        "target_analistas": 219.27,
+        "n_analistas": 29,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 30% respecto al valor intrínseco estimado. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: 4.8%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 22,
       "ticker": "NXT.L",
       "nombre": "NEXT plc",
       "sector": "Consumer Cyclical",
@@ -1545,7 +1807,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 20,
+      "pos": 23,
       "ticker": "VZ",
       "nombre": "Verizon Communications Inc.",
       "sector": "Communication Services",
@@ -1634,7 +1896,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 21,
+      "pos": 24,
       "ticker": "ZTS",
       "nombre": "Zoetis Inc.",
       "sector": "Healthcare",
@@ -1725,7 +1987,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 22,
+      "pos": 25,
       "ticker": "NVO",
       "nombre": "Novo Nordisk A/S",
       "sector": "Healthcare",
@@ -1759,7 +2021,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 542.0,
+        "precio_consenso": 542.06,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -1771,11 +2033,11 @@
           ],
           [
             "Analistas",
-            46.68
+            46.84
           ]
         ],
-        "margen_seguridad": 1105.5,
-        "target_analistas": 46.68,
+        "margen_seguridad": 1105.6,
+        "target_analistas": 46.84,
         "n_analistas": 12,
         "confianza": "alta",
         "resumen": "Infravalorada un 1106% respecto al valor intrínseco estimado."
@@ -1783,7 +2045,87 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 23,
+      "pos": 26,
+      "ticker": "KSB.DE",
+      "nombre": "KSB SE & Co. KGaA",
+      "sector": "Industrials",
+      "precio": 898.0,
+      "composite": 76.3,
+      "quality": 82,
+      "valuation": 82,
+      "safety": 100,
+      "momentum": 32,
+      "senal": "COMPRA",
+      "capas": 2,
+      "alertas": [],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "KSB.DE",
+        "precio_actual": 898.0,
+        "wacc": 8.0,
+        "g_base": 15.6,
+        "sector": "Industrials",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 2538.13,
+            "ev_calculado": 1972743969.39,
+            "g_fase1": 11.6,
+            "g_fase2": 9.6,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 3452.45,
+            "ev_calculado": 2783397195.89,
+            "g_fase1": 15.6,
+            "g_fase2": 12.6,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 4105.16,
+            "ev_calculado": 3362099130.3,
+            "g_fase1": 19.6,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 5457.31,
+            "multiple_salida": 9,
+            "ebitda_proyectado": 760332937.18
+          },
+          "per": {
+            "precio_objetivo": 1579.62,
+            "per_salida": 14,
+            "eps_proyectado": 166.05
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 3496.46,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            3452.45
+          ],
+          [
+            "EV/EBITDA",
+            5457.31
+          ],
+          [
+            "PER",
+            1579.62
+          ]
+        ],
+        "margen_seguridad": 289.4,
+        "target_analistas": null,
+        "n_analistas": 1,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 289% respecto al valor intrínseco estimado."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 27,
       "ticker": "CMCSA",
       "nombre": "Comcast Corporation",
       "sector": "Communication Services",
@@ -1868,7 +2210,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 24,
+      "pos": 28,
       "ticker": "COP",
       "nombre": "ConocoPhillips",
       "sector": "Energy",
@@ -1957,87 +2299,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 25,
-      "ticker": "KSB.DE",
-      "nombre": "KSB SE & Co. KGaA",
-      "sector": "Industrials",
-      "precio": 882.0,
-      "composite": 75.4,
-      "quality": 82,
-      "valuation": 82,
-      "safety": 100,
-      "momentum": 26,
-      "senal": "COMPRA",
-      "capas": 2,
-      "alertas": [],
-      "confianza": "alta",
-      "dcf": {
-        "ticker": "KSB.DE",
-        "precio_actual": 882.0,
-        "wacc": 8.0,
-        "g_base": 15.6,
-        "sector": "Industrials",
-        "escenarios_dcf": {
-          "pesimista": {
-            "precio_objetivo": 2538.13,
-            "ev_calculado": 1972743969.39,
-            "g_fase1": 11.6,
-            "g_fase2": 9.6,
-            "terminal_g": 1.5
-          },
-          "base": {
-            "precio_objetivo": 3452.45,
-            "ev_calculado": 2783397195.89,
-            "g_fase1": 15.6,
-            "g_fase2": 12.6,
-            "terminal_g": 2.5
-          },
-          "optimista": {
-            "precio_objetivo": 4105.16,
-            "ev_calculado": 3362099130.3,
-            "g_fase1": 19.6,
-            "g_fase2": 12.0,
-            "terminal_g": 3.0
-          }
-        },
-        "multiplos": {
-          "ev_ebitda": {
-            "precio_objetivo": 5575.91,
-            "multiple_salida": 9,
-            "ebitda_proyectado": 777526395.56
-          },
-          "per": {
-            "precio_objetivo": 1579.62,
-            "per_salida": 14,
-            "eps_proyectado": 166.05
-          }
-        },
-        "reverse_dcf": null,
-        "precio_consenso": 3535.99,
-        "precios_por_metodo": [
-          [
-            "DCF",
-            3452.45
-          ],
-          [
-            "EV/EBITDA",
-            5575.91
-          ],
-          [
-            "PER",
-            1579.62
-          ]
-        ],
-        "margen_seguridad": 300.9,
-        "target_analistas": null,
-        "n_analistas": 1,
-        "confianza": "alta",
-        "resumen": "Infravalorada un 301% respecto al valor intrínseco estimado."
-      },
-      "tipologia": "VALUE_CYCLICAL"
-    },
-    {
-      "pos": 26,
+      "pos": 29,
       "ticker": "JD",
       "nombre": "JD.com, Inc.",
       "sector": "Consumer Cyclical",
@@ -2095,7 +2357,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 122.32,
+        "precio_consenso": 122.34,
         "precios_por_metodo": [
           [
             "DCF",
@@ -2111,11 +2373,11 @@
           ],
           [
             "Analistas",
-            41.21
+            41.27
           ]
         ],
-        "margen_seguridad": 300.8,
-        "target_analistas": 41.21,
+        "margen_seguridad": 300.9,
+        "target_analistas": 41.27,
         "n_analistas": 36,
         "confianza": "alta",
         "resumen": "Infravalorada un 301% respecto al valor intrínseco estimado."
@@ -2123,7 +2385,7 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 27,
+      "pos": 30,
       "ticker": "JET2.L",
       "nombre": "Jet2 plc",
       "sector": "Consumer Cyclical",
@@ -2181,7 +2443,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 28,
+      "pos": 31,
       "ticker": "T",
       "nombre": "AT&T Inc.",
       "sector": "Communication Services",
@@ -2266,7 +2528,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 29,
+      "pos": 32,
       "ticker": "ET",
       "nombre": "Energy Transfer LP",
       "sector": "Energy",
@@ -2353,98 +2615,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 30,
-      "ticker": "ACS.MC",
-      "nombre": "ACS, Actividades de Construcción y Servicios, S.A.",
-      "sector": "Industrials",
-      "precio": 123.6,
-      "composite": 72.4,
-      "quality": 82,
-      "valuation": 48,
-      "safety": 78,
-      "momentum": 100,
-      "senal": "NEUTRO",
-      "capas": 1,
-      "alertas": [
-        "Valoracion cara — multiples elevados"
-      ],
-      "confianza": "alta",
-      "dcf": {
-        "ticker": "ACS.MC",
-        "precio_actual": 123.6,
-        "wacc": 7.9,
-        "g_base": 11.1,
-        "sector": "Industrials",
-        "escenarios_dcf": {
-          "pesimista": {
-            "precio_objetivo": 21.98,
-            "ev_calculado": 8996768479.3,
-            "g_fase1": 7.1,
-            "g_fase2": 5.1,
-            "terminal_g": 1.5
-          },
-          "base": {
-            "precio_objetivo": 35.83,
-            "ev_calculado": 12679257510.41,
-            "g_fase1": 11.1,
-            "g_fase2": 8.1,
-            "terminal_g": 2.5
-          },
-          "optimista": {
-            "precio_objetivo": 55.67,
-            "ev_calculado": 17956582260.79,
-            "g_fase1": 15.1,
-            "g_fase2": 12.0,
-            "terminal_g": 3.0
-          }
-        },
-        "multiplos": {
-          "ev_ebitda": {
-            "precio_objetivo": 80.69,
-            "multiple_salida": 9,
-            "ebitda_proyectado": 3838490846.28
-          },
-          "per": {
-            "precio_objetivo": 61.77,
-            "per_salida": 14,
-            "eps_proyectado": 6.46
-          }
-        },
-        "reverse_dcf": {
-          "g_implicito": 25.2,
-          "g_fundamental": 11.1,
-          "diferencia": 14.0,
-          "interpretacion": "El mercado descuenta crecimiento muy optimista"
-        },
-        "precio_consenso": 73.01,
-        "precios_por_metodo": [
-          [
-            "DCF",
-            35.83
-          ],
-          [
-            "EV/EBITDA",
-            80.69
-          ],
-          [
-            "PER",
-            61.77
-          ],
-          [
-            "Analistas",
-            113.74
-          ]
-        ],
-        "margen_seguridad": -40.9,
-        "target_analistas": 113.74,
-        "n_analistas": 16,
-        "confianza": "alta",
-        "resumen": "Prima del 41% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 25.2%)."
-      },
-      "tipologia": "VALUE_CYCLICAL"
-    },
-    {
-      "pos": 31,
+      "pos": 33,
       "ticker": "TLW.L",
       "nombre": "Tullow Oil plc",
       "sector": "Energy",
@@ -2473,7 +2644,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 7.38,
+        "precio_consenso": 7.33,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -2481,11 +2652,11 @@
           ],
           [
             "Analistas",
-            13.91
+            13.83
           ]
         ],
-        "margen_seguridad": -57.1,
-        "target_analistas": 13.91,
+        "margen_seguridad": -57.4,
+        "target_analistas": 13.83,
         "n_analistas": 8,
         "confianza": "alta",
         "resumen": "Prima del 57% — cotiza significativamente por encima del valor intrínseco."
@@ -2493,7 +2664,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 32,
+      "pos": 34,
       "ticker": "PFE",
       "nombre": "Pfizer Inc.",
       "sector": "Healthcare",
@@ -2582,7 +2753,98 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 33,
+      "pos": 35,
+      "ticker": "ACS.MC",
+      "nombre": "ACS, Actividades de Construcción y Servicios, S.A.",
+      "sector": "Industrials",
+      "precio": 125.6,
+      "composite": 72.0,
+      "quality": 82,
+      "valuation": 47,
+      "safety": 78,
+      "momentum": 100,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Valoracion cara — multiples elevados"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "ACS.MC",
+        "precio_actual": 125.6,
+        "wacc": 7.9,
+        "g_base": 11.1,
+        "sector": "Industrials",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 21.98,
+            "ev_calculado": 8996768479.3,
+            "g_fase1": 7.1,
+            "g_fase2": 5.1,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 35.83,
+            "ev_calculado": 12679257510.41,
+            "g_fase1": 11.1,
+            "g_fase2": 8.1,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 55.67,
+            "ev_calculado": 17956582260.79,
+            "g_fase1": 15.1,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 79.36,
+            "multiple_salida": 9,
+            "ebitda_proyectado": 3780913483.59
+          },
+          "per": {
+            "precio_objetivo": 61.77,
+            "per_salida": 14,
+            "eps_proyectado": 6.46
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 25.4,
+          "g_fundamental": 11.1,
+          "diferencia": 14.2,
+          "interpretacion": "El mercado descuenta crecimiento muy optimista"
+        },
+        "precio_consenso": 72.67,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            35.83
+          ],
+          [
+            "EV/EBITDA",
+            79.36
+          ],
+          [
+            "PER",
+            61.77
+          ],
+          [
+            "Analistas",
+            113.74
+          ]
+        ],
+        "margen_seguridad": -42.1,
+        "target_analistas": 113.74,
+        "n_analistas": 16,
+        "confianza": "alta",
+        "resumen": "Prima del 42% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 25.4%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 36,
       "ticker": "HAL",
       "nombre": "Halliburton Company",
       "sector": "Energy",
@@ -2673,7 +2935,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 34,
+      "pos": 37,
       "ticker": "MRK",
       "nombre": "Merck & Co., Inc.",
       "sector": "Healthcare",
@@ -2766,7 +3028,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 35,
+      "pos": 38,
       "ticker": "PEP",
       "nombre": "PepsiCo, Inc.",
       "sector": "Consumer Defensive",
@@ -2857,7 +3119,96 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 36,
+      "pos": 39,
+      "ticker": "ITX.MC",
+      "nombre": "Industria de Diseño Textil, S.A.",
+      "sector": "Consumer Cyclical",
+      "precio": 51.6,
+      "composite": 69.8,
+      "quality": 90,
+      "valuation": 32,
+      "safety": 100,
+      "momentum": 84,
+      "senal": "VIGILAR",
+      "capas": 3,
+      "alertas": [],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "ITX.MC",
+        "precio_actual": 51.6,
+        "wacc": 8.8,
+        "g_base": 11.0,
+        "sector": "Consumer Cyclical",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 32.76,
+            "ev_calculado": 97021185305.75,
+            "g_fase1": 7.0,
+            "g_fase2": 5.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 44.61,
+            "ev_calculado": 133918966293.74,
+            "g_fase1": 11.0,
+            "g_fase2": 8.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 61.74,
+            "ev_calculado": 187287540197.47,
+            "g_fase1": 15.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 30.62,
+            "multiple_salida": 9,
+            "ebitda_proyectado": 15562415770.84
+          },
+          "per": {
+            "precio_objetivo": 30.98,
+            "per_salida": 14,
+            "eps_proyectado": 3.37
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 13.0,
+          "g_fundamental": 11.0,
+          "diferencia": 2.0,
+          "interpretacion": "El mercado descuenta crecimiento moderadamente optimista"
+        },
+        "precio_consenso": 41.13,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            44.61
+          ],
+          [
+            "EV/EBITDA",
+            30.62
+          ],
+          [
+            "PER",
+            30.98
+          ],
+          [
+            "Analistas",
+            58.31
+          ]
+        ],
+        "margen_seguridad": -20.3,
+        "target_analistas": 58.31,
+        "n_analistas": 24,
+        "confianza": "alta",
+        "resumen": "Prima del 20% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento moderadamente optimista (g implícito: 13.0%)."
+      },
+      "tipologia": "QUALITY_GROWTH"
+    },
+    {
+      "pos": 40,
       "ticker": "KMB",
       "nombre": "Kimberly-Clark Corporation",
       "sector": "Consumer Defensive",
@@ -2946,7 +3297,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 37,
+      "pos": 41,
       "ticker": "QCOM",
       "nombre": "QUALCOMM Incorporated",
       "sector": "Technology",
@@ -3037,96 +3388,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 38,
-      "ticker": "ITX.MC",
-      "nombre": "Industria de Diseño Textil, S.A.",
-      "sector": "Consumer Cyclical",
-      "precio": 50.78,
-      "composite": 68.8,
-      "quality": 90,
-      "valuation": 33,
-      "safety": 100,
-      "momentum": 75,
-      "senal": "VIGILAR",
-      "capas": 3,
-      "alertas": [],
-      "confianza": "alta",
-      "dcf": {
-        "ticker": "ITX.MC",
-        "precio_actual": 50.78,
-        "wacc": 8.8,
-        "g_base": 11.0,
-        "sector": "Consumer Cyclical",
-        "escenarios_dcf": {
-          "pesimista": {
-            "precio_objetivo": 32.76,
-            "ev_calculado": 97021185305.75,
-            "g_fase1": 7.0,
-            "g_fase2": 5.0,
-            "terminal_g": 1.5
-          },
-          "base": {
-            "precio_objetivo": 44.61,
-            "ev_calculado": 133918966293.74,
-            "g_fase1": 11.0,
-            "g_fase2": 8.0,
-            "terminal_g": 2.5
-          },
-          "optimista": {
-            "precio_objetivo": 61.74,
-            "ev_calculado": 187287540197.47,
-            "g_fase1": 15.0,
-            "g_fase2": 12.0,
-            "terminal_g": 3.0
-          }
-        },
-        "multiplos": {
-          "ev_ebitda": {
-            "precio_objetivo": 31.11,
-            "multiple_salida": 9,
-            "ebitda_proyectado": 15820356363.73
-          },
-          "per": {
-            "precio_objetivo": 30.98,
-            "per_salida": 14,
-            "eps_proyectado": 3.37
-          }
-        },
-        "reverse_dcf": {
-          "g_implicito": 12.8,
-          "g_fundamental": 11.0,
-          "diferencia": 1.8,
-          "interpretacion": "El mercado descuenta crecimiento moderadamente optimista"
-        },
-        "precio_consenso": 41.25,
-        "precios_por_metodo": [
-          [
-            "DCF",
-            44.61
-          ],
-          [
-            "EV/EBITDA",
-            31.11
-          ],
-          [
-            "PER",
-            30.98
-          ],
-          [
-            "Analistas",
-            58.31
-          ]
-        ],
-        "margen_seguridad": -18.8,
-        "target_analistas": 58.31,
-        "n_analistas": 24,
-        "confianza": "alta",
-        "resumen": "Prima del 19% sobre valor intrínseco — valoración ajustada. El mercado descuenta crecimiento moderadamente optimista (g implícito: 12.8%)."
-      },
-      "tipologia": "QUALITY_GROWTH"
-    },
-    {
-      "pos": 39,
+      "pos": 42,
       "ticker": "AMGN",
       "nombre": "Amgen Inc.",
       "sector": "Healthcare",
@@ -3215,7 +3477,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 40,
+      "pos": 43,
       "ticker": "CL",
       "nombre": "Colgate-Palmolive Company",
       "sector": "Consumer Defensive",
@@ -3306,7 +3568,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 41,
+      "pos": 44,
       "ticker": "PG",
       "nombre": "The Procter & Gamble Company",
       "sector": "Consumer Defensive",
@@ -3395,11 +3657,11 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 42,
+      "pos": 45,
       "ticker": "82E.F",
       "nombre": "Itafos Inc.",
       "sector": "Basic Materials",
-      "precio": 1.6,
+      "precio": 1.58,
       "composite": 67.7,
       "quality": 62,
       "valuation": 82,
@@ -3411,16 +3673,16 @@
       "confianza": "alta",
       "dcf": {
         "ticker": "82E.F",
-        "precio_actual": 1.6,
+        "precio_actual": 1.58,
         "wacc": 9.4,
         "g_base": 7.0,
         "sector": "Basic Materials",
         "escenarios_dcf": null,
         "multiplos": {
           "ev_ebitda": {
-            "precio_objetivo": 5.24,
+            "precio_objetivo": 5.3,
             "multiple_salida": 8,
-            "ebitda_proyectado": 208726304.61
+            "ebitda_proyectado": 211201320.08
           },
           "per": {
             "precio_objetivo": 3.54,
@@ -3429,27 +3691,27 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 4.39,
+        "precio_consenso": 4.42,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
-            5.24
+            5.3
           ],
           [
             "PER",
             3.54
           ]
         ],
-        "margen_seguridad": 174.4,
+        "margen_seguridad": 179.7,
         "target_analistas": null,
         "n_analistas": 0,
         "confianza": "alta",
-        "resumen": "Infravalorada un 174% respecto al valor intrínseco estimado."
+        "resumen": "Infravalorada un 180% respecto al valor intrínseco estimado."
       },
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 43,
+      "pos": 46,
       "ticker": "DIS",
       "nombre": "The Walt Disney Company",
       "sector": "Communication Services",
@@ -3534,7 +3796,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 44,
+      "pos": 47,
       "ticker": "SCHW",
       "nombre": "The Charles Schwab Corporation",
       "sector": "Financial Services",
@@ -3583,7 +3845,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 45,
+      "pos": 48,
       "ticker": "SLB",
       "nombre": "SLB N.V.",
       "sector": "Energy",
@@ -3674,7 +3936,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 46,
+      "pos": 49,
       "ticker": "CRM",
       "nombre": "Salesforce, Inc.",
       "sector": "Technology",
@@ -3765,7 +4027,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 47,
+      "pos": 50,
       "ticker": "AAPL",
       "nombre": "Apple Inc.",
       "sector": "Technology",
@@ -3856,7 +4118,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 48,
+      "pos": 51,
       "ticker": "XOM",
       "nombre": "Exxon Mobil Corporation",
       "sector": "Energy",
@@ -3947,7 +4209,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 49,
+      "pos": 52,
       "ticker": "LOW",
       "nombre": "Lowe's Companies, Inc.",
       "sector": "Consumer Cyclical",
@@ -4036,7 +4298,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 50,
+      "pos": 53,
       "ticker": "UL",
       "nombre": "Unilever PLC",
       "sector": "Consumer Defensive",
@@ -4097,7 +4359,7 @@
           "diferencia": -3.4,
           "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
         },
-        "precio_consenso": 64.05,
+        "precio_consenso": 64.1,
         "precios_por_metodo": [
           [
             "DCF",
@@ -4113,11 +4375,11 @@
           ],
           [
             "Analistas",
-            67.77
+            68.0
           ]
         ],
-        "margen_seguridad": 11.7,
-        "target_analistas": 67.77,
+        "margen_seguridad": 11.8,
+        "target_analistas": 68.0,
         "n_analistas": 4,
         "confianza": "alta",
         "resumen": "Ligero descuento del 12% — precio razonable. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: 4.5%)."
@@ -4125,7 +4387,96 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 51,
+      "pos": 54,
+      "ticker": "AON",
+      "nombre": "Aon plc",
+      "sector": "Financial Services",
+      "precio": 324.78,
+      "composite": 66.0,
+      "quality": 81,
+      "valuation": 62,
+      "safety": 71,
+      "momentum": 32,
+      "senal": "VIGILAR",
+      "capas": 2,
+      "alertas": [],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "AON",
+        "precio_actual": 324.78,
+        "wacc": 8.1,
+        "g_base": 12.9,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 293.22,
+            "ev_calculado": 76855921052.43,
+            "g_fase1": 8.9,
+            "g_fase2": 6.9,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 438.26,
+            "ev_calculado": 107833102831.47,
+            "g_fase1": 12.9,
+            "g_fase2": 9.9,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 602.34,
+            "ev_calculado": 142876971002.66,
+            "g_fase1": 16.9,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 292.35,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 10657947844.87
+          },
+          "per": {
+            "precio_objetivo": 271.3,
+            "per_salida": 12,
+            "eps_proyectado": 33.44
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 9.5,
+          "g_fundamental": 12.9,
+          "diferencia": -3.4,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 346.69,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            438.26
+          ],
+          [
+            "EV/EBITDA",
+            292.35
+          ],
+          [
+            "PER",
+            271.3
+          ],
+          [
+            "Analistas",
+            384.84
+          ]
+        ],
+        "margen_seguridad": 6.7,
+        "target_analistas": 384.84,
+        "n_analistas": 19,
+        "confianza": "alta",
+        "resumen": "Ligero descuento del 7% — precio razonable. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: 9.5%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 55,
       "ticker": "EPD",
       "nombre": "Enterprise Products Partners L.P.",
       "sector": "Energy",
@@ -4207,7 +4558,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 52,
+      "pos": 56,
       "ticker": "VICI",
       "nombre": "VICI Properties Inc.",
       "sector": "Real Estate",
@@ -4298,7 +4649,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 53,
+      "pos": 57,
       "ticker": "PSX",
       "nombre": "Phillips 66",
       "sector": "Energy",
@@ -4358,7 +4709,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 54,
+      "pos": 58,
       "ticker": "CVX",
       "nombre": "Chevron Corporation",
       "sector": "Energy",
@@ -4449,7 +4800,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 55,
+      "pos": 59,
       "ticker": "FISV",
       "nombre": "Fiserv, Inc.",
       "sector": "Desconocido",
@@ -4490,7 +4841,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 56,
+      "pos": 60,
       "ticker": "PBA",
       "nombre": "Pembina Pipeline Corporation",
       "sector": "Energy",
@@ -4575,7 +4926,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 57,
+      "pos": 61,
       "ticker": "MNST",
       "nombre": "Monster Beverage Corporation",
       "sector": "Consumer Defensive",
@@ -4666,7 +5017,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 58,
+      "pos": 62,
       "ticker": "GIS",
       "nombre": "General Mills, Inc.",
       "sector": "Consumer Defensive",
@@ -4753,7 +5104,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 59,
+      "pos": 63,
       "ticker": "META",
       "nombre": "Meta Platforms, Inc.",
       "sector": "Communication Services",
@@ -4842,7 +5193,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 60,
+      "pos": 64,
       "ticker": "OKE",
       "nombre": "ONEOK, Inc.",
       "sector": "Energy",
@@ -4924,7 +5275,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 61,
+      "pos": 65,
       "ticker": "JNJ",
       "nombre": "Johnson & Johnson",
       "sector": "Healthcare",
@@ -5015,7 +5366,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 62,
+      "pos": 66,
       "ticker": "AXP",
       "nombre": "American Express Company",
       "sector": "Financial Services",
@@ -5067,7 +5418,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 63,
+      "pos": 67,
       "ticker": "BDX",
       "nombre": "Becton, Dickinson and Company",
       "sector": "Healthcare",
@@ -5156,16 +5507,16 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 64,
+      "pos": 68,
       "ticker": "GRF.MC",
       "nombre": "Grifols, S.A.",
       "sector": "Healthcare",
-      "precio": 9.468,
-      "composite": 63.7,
+      "precio": 9.696,
+      "composite": 64.3,
       "quality": 64,
       "valuation": 100,
       "safety": 16,
-      "momentum": 10,
+      "momentum": 14,
       "senal": "NEUTRO",
       "capas": 1,
       "alertas": [
@@ -5174,7 +5525,7 @@
       "confianza": "alta",
       "dcf": {
         "ticker": "GRF.MC",
-        "precio_actual": 9.47,
+        "precio_actual": 9.7,
         "wacc": 9.5,
         "g_base": 0.0,
         "sector": "Healthcare",
@@ -5203,9 +5554,9 @@
         },
         "multiplos": {
           "ev_ebitda": {
-            "precio_objetivo": 21.93,
+            "precio_objetivo": 21.55,
             "multiple_salida": 12,
-            "ebitda_proyectado": 1962479177.95
+            "ebitda_proyectado": 1941078096.4
           },
           "per": {
             "precio_objetivo": 6.97,
@@ -5214,12 +5565,12 @@
           }
         },
         "reverse_dcf": {
-          "g_implicito": 4.2,
+          "g_implicito": 4.3,
           "g_fundamental": 0.0,
-          "diferencia": 4.2,
+          "diferencia": 4.3,
           "interpretacion": "El mercado descuenta crecimiento muy optimista"
         },
-        "precio_consenso": 11.94,
+        "precio_consenso": 11.85,
         "precios_por_metodo": [
           [
             "DCF",
@@ -5227,7 +5578,7 @@
           ],
           [
             "EV/EBITDA",
-            21.93
+            21.55
           ],
           [
             "PER",
@@ -5238,16 +5589,16 @@
             14.65
           ]
         ],
-        "margen_seguridad": 26.1,
+        "margen_seguridad": 22.2,
         "target_analistas": 14.65,
         "n_analistas": 12,
         "confianza": "alta",
-        "resumen": "Infravalorada un 26% respecto al valor intrínseco estimado. El mercado descuenta crecimiento muy optimista (g implícito: 4.2%)."
+        "resumen": "Infravalorada un 22% respecto al valor intrínseco estimado. El mercado descuenta crecimiento muy optimista (g implícito: 4.3%)."
       },
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 65,
+      "pos": 69,
       "ticker": "KLAC",
       "nombre": "KLA Corporation",
       "sector": "Technology",
@@ -5333,7 +5684,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 66,
+      "pos": 70,
       "ticker": "ADP",
       "nombre": "Automatic Data Processing, Inc.",
       "sector": "Technology",
@@ -5394,7 +5745,7 @@
           "diferencia": -2.9,
           "interpretacion": "El mercado descuenta crecimiento en línea con fundamentales"
         },
-        "precio_consenso": 242.5,
+        "precio_consenso": 242.66,
         "precios_por_metodo": [
           [
             "DCF",
@@ -5410,11 +5761,11 @@
           ],
           [
             "Analistas",
-            245.67
+            246.33
           ]
         ],
-        "margen_seguridad": 7.6,
-        "target_analistas": 245.67,
+        "margen_seguridad": 7.7,
+        "target_analistas": 246.33,
         "n_analistas": 15,
         "confianza": "alta",
         "resumen": "Ligero descuento del 8% — precio razonable. El mercado descuenta crecimiento en línea con fundamentales (g implícito: 7.6%)."
@@ -5422,7 +5773,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 67,
+      "pos": 71,
       "ticker": "LRCX",
       "nombre": "Lam Research Corporation",
       "sector": "Technology",
@@ -5508,7 +5859,99 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 68,
+      "pos": 72,
+      "ticker": "REGN",
+      "nombre": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Healthcare",
+      "precio": 638.88,
+      "composite": 63.2,
+      "quality": 68,
+      "valuation": 67,
+      "safety": 100,
+      "momentum": 17,
+      "senal": "ALERTA_SALIDA",
+      "capas": 1,
+      "alertas": [
+        "F-Score debil (3/9) — posible deterioro",
+        "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "REGN",
+        "precio_actual": 638.88,
+        "wacc": 9.0,
+        "g_base": 7.1,
+        "sector": "Healthcare",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 502.19,
+            "ev_calculado": 45689563323.85,
+            "g_fase1": 3.1,
+            "g_fase2": 1.1,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 664.46,
+            "ev_calculado": 62406149103.69,
+            "g_fase1": 7.1,
+            "g_fase2": 4.1,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 901.41,
+            "ev_calculado": 86817195827.62,
+            "g_fase1": 11.1,
+            "g_fase2": 8.1,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 451.41,
+            "multiple_salida": 12,
+            "ebitda_proyectado": 5458808515.31
+          },
+          "per": {
+            "precio_objetivo": 673.84,
+            "per_salida": 18,
+            "eps_proyectado": 57.6
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 6.5,
+          "g_fundamental": 7.1,
+          "diferencia": -0.6,
+          "interpretacion": "El mercado descuenta crecimiento en línea con fundamentales"
+        },
+        "precio_consenso": 655.75,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            664.46
+          ],
+          [
+            "EV/EBITDA",
+            451.41
+          ],
+          [
+            "PER",
+            673.84
+          ],
+          [
+            "Analistas",
+            833.31
+          ]
+        ],
+        "margen_seguridad": 2.6,
+        "target_analistas": 833.31,
+        "n_analistas": 28,
+        "confianza": "alta",
+        "resumen": "Cotiza cerca de su valor intrínseco estimado. El mercado descuenta crecimiento en línea con fundamentales (g implícito: 6.5%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 73,
       "ticker": "GMAB",
       "nombre": "Genmab A/S",
       "sector": "Healthcare",
@@ -5600,7 +6043,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 69,
+      "pos": 74,
       "ticker": "CSCO",
       "nombre": "Cisco Systems, Inc.",
       "sector": "Technology",
@@ -5691,7 +6134,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 70,
+      "pos": 75,
       "ticker": "BRK-B",
       "nombre": "Berkshire Hathaway Inc.",
       "sector": "Financial Services",
@@ -5769,7 +6212,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 71,
+      "pos": 76,
       "ticker": "GOOGL",
       "nombre": "Alphabet Inc.",
       "sector": "Communication Services",
@@ -5860,7 +6303,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 72,
+      "pos": 77,
       "ticker": "TMUS",
       "nombre": "T-Mobile US, Inc.",
       "sector": "Communication Services",
@@ -5949,7 +6392,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 73,
+      "pos": 78,
       "ticker": "CDNS",
       "nombre": "Cadence Design Systems, Inc.",
       "sector": "Technology",
@@ -6040,7 +6483,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 74,
+      "pos": 79,
       "ticker": "MA",
       "nombre": "Mastercard Incorporated",
       "sector": "Financial Services",
@@ -6129,7 +6572,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 75,
+      "pos": 80,
       "ticker": "BAC",
       "nombre": "Bank of America Corporation",
       "sector": "Financial Services",
@@ -6178,7 +6621,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 76,
+      "pos": 81,
       "ticker": "SPG",
       "nombre": "Simon Property Group, Inc.",
       "sector": "Real Estate",
@@ -6272,7 +6715,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 77,
+      "pos": 82,
       "ticker": "ABBV",
       "nombre": "AbbVie Inc.",
       "sector": "Healthcare",
@@ -6361,7 +6804,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 78,
+      "pos": 83,
       "ticker": "AMAT",
       "nombre": "Applied Materials, Inc.",
       "sector": "Technology",
@@ -6447,11 +6890,11 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 79,
+      "pos": 84,
       "ticker": "ASML.AS",
       "nombre": "ASML Holding N.V.",
       "sector": "Technology",
-      "precio": 1409.0,
+      "precio": 1430.6,
       "composite": 59.9,
       "quality": 82,
       "valuation": 6,
@@ -6465,7 +6908,7 @@
       "confianza": "alta",
       "dcf": {
         "ticker": "ASML.AS",
-        "precio_actual": 1409.0,
+        "precio_actual": 1430.6,
         "wacc": 11.1,
         "g_base": 20.9,
         "sector": "Technology",
@@ -6494,9 +6937,9 @@
         },
         "multiplos": {
           "ev_ebitda": {
-            "precio_objetivo": 715.94,
+            "precio_objetivo": 705.02,
             "multiple_salida": 14,
-            "ebitda_proyectado": 32985422796.43
+            "ebitda_proyectado": 32475935807.3
           },
           "per": {
             "precio_objetivo": 790.54,
@@ -6505,12 +6948,12 @@
           }
         },
         "reverse_dcf": {
-          "g_implicito": 27.2,
+          "g_implicito": 27.4,
           "g_fundamental": 20.9,
-          "diferencia": 6.3,
+          "diferencia": 6.5,
           "interpretacion": "El mercado descuenta crecimiento muy optimista"
         },
-        "precio_consenso": 974.06,
+        "precio_consenso": 971.33,
         "precios_por_metodo": [
           [
             "DCF",
@@ -6518,7 +6961,7 @@
           ],
           [
             "EV/EBITDA",
-            715.94
+            705.02
           ],
           [
             "PER",
@@ -6529,16 +6972,107 @@
             1482.76
           ]
         ],
-        "margen_seguridad": -30.9,
+        "margen_seguridad": -32.1,
         "target_analistas": 1482.76,
         "n_analistas": 35,
         "confianza": "alta",
-        "resumen": "Prima del 31% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 27.2%)."
+        "resumen": "Prima del 32% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 27.4%)."
       },
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 80,
+      "pos": 85,
+      "ticker": "KIN.BR",
+      "nombre": "Kinepolis Group NV",
+      "sector": "Communication Services",
+      "precio": 29.7,
+      "composite": 59.9,
+      "quality": 60,
+      "valuation": 77,
+      "safety": 26,
+      "momentum": 42,
+      "senal": "VIGILAR",
+      "capas": 2,
+      "alertas": [
+        "Deuda/EBITDA elevada (4.6x)"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "KIN.BR",
+        "precio_actual": 29.7,
+        "wacc": 7.3,
+        "g_base": 0.0,
+        "sector": "Communication Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 11.06,
+            "ev_calculado": 891019814.14,
+            "g_fase1": 0.0,
+            "g_fase2": -1.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 16.12,
+            "ev_calculado": 1026288280.35,
+            "g_fase1": 0.0,
+            "g_fase2": 1.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 25.86,
+            "ev_calculado": 1286914605.76,
+            "g_fase1": 4.0,
+            "g_fase2": 1.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 17.99,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 128033277.62
+          },
+          "per": {
+            "precio_objetivo": 14.96,
+            "per_salida": 15,
+            "eps_proyectado": 1.42
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 5.7,
+          "g_fundamental": 0.0,
+          "diferencia": 5.7,
+          "interpretacion": "El mercado descuenta crecimiento muy optimista"
+        },
+        "precio_consenso": 23.03,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            16.12
+          ],
+          [
+            "EV/EBITDA",
+            17.99
+          ],
+          [
+            "PER",
+            14.96
+          ],
+          [
+            "Analistas",
+            43.06
+          ]
+        ],
+        "margen_seguridad": -22.5,
+        "target_analistas": 43.06,
+        "n_analistas": 5,
+        "confianza": "alta",
+        "resumen": "Prima del 22% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 5.7%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 86,
       "ticker": "AVGO",
       "nombre": "Broadcom Inc.",
       "sector": "Technology",
@@ -6624,7 +7158,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 81,
+      "pos": 87,
       "ticker": "NVDA",
       "nombre": "NVIDIA Corporation",
       "sector": "Technology",
@@ -6684,7 +7218,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 184.53,
+        "precio_consenso": 184.81,
         "precios_por_metodo": [
           [
             "DCF",
@@ -6700,11 +7234,11 @@
           ],
           [
             "Analistas",
-            294.22
+            295.34
           ]
         ],
-        "margen_seguridad": -14.3,
-        "target_analistas": 294.22,
+        "margen_seguridad": -14.2,
+        "target_analistas": 295.34,
         "n_analistas": 58,
         "confianza": "alta",
         "resumen": "Prima del 14% sobre valor intrínseco — valoración ajustada."
@@ -6712,102 +7246,11 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 82,
-      "ticker": "KIN.BR",
-      "nombre": "Kinepolis Group NV",
-      "sector": "Communication Services",
-      "precio": 29.3,
-      "composite": 59.3,
-      "quality": 60,
-      "valuation": 78,
-      "safety": 26,
-      "momentum": 36,
-      "senal": "VIGILAR",
-      "capas": 2,
-      "alertas": [
-        "Deuda/EBITDA elevada (4.6x)"
-      ],
-      "confianza": "alta",
-      "dcf": {
-        "ticker": "KIN.BR",
-        "precio_actual": 29.3,
-        "wacc": 7.3,
-        "g_base": 0.0,
-        "sector": "Communication Services",
-        "escenarios_dcf": {
-          "pesimista": {
-            "precio_objetivo": 11.06,
-            "ev_calculado": 891019814.14,
-            "g_fase1": 0.0,
-            "g_fase2": -1.0,
-            "terminal_g": 1.5
-          },
-          "base": {
-            "precio_objetivo": 16.12,
-            "ev_calculado": 1026288280.35,
-            "g_fase1": 0.0,
-            "g_fase2": 1.0,
-            "terminal_g": 2.5
-          },
-          "optimista": {
-            "precio_objetivo": 25.86,
-            "ev_calculado": 1286914605.76,
-            "g_fase1": 4.0,
-            "g_fase2": 1.0,
-            "terminal_g": 3.0
-          }
-        },
-        "multiplos": {
-          "ev_ebitda": {
-            "precio_objetivo": 18.25,
-            "multiple_salida": 10,
-            "ebitda_proyectado": 128991431.24
-          },
-          "per": {
-            "precio_objetivo": 14.96,
-            "per_salida": 15,
-            "eps_proyectado": 1.42
-          }
-        },
-        "reverse_dcf": {
-          "g_implicito": 5.6,
-          "g_fundamental": 0.0,
-          "diferencia": 5.6,
-          "interpretacion": "El mercado descuenta crecimiento muy optimista"
-        },
-        "precio_consenso": 23.1,
-        "precios_por_metodo": [
-          [
-            "DCF",
-            16.12
-          ],
-          [
-            "EV/EBITDA",
-            18.25
-          ],
-          [
-            "PER",
-            14.96
-          ],
-          [
-            "Analistas",
-            43.06
-          ]
-        ],
-        "margen_seguridad": -21.2,
-        "target_analistas": 43.06,
-        "n_analistas": 5,
-        "confianza": "alta",
-        "resumen": "Prima del 21% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 5.6%)."
-      },
-      "tipologia": "VALUE_CYCLICAL"
-    },
-    {
-      "pos": 83,
+      "pos": 88,
       "ticker": "ENG.MC",
       "nombre": "Enagás, S.A.",
       "sector": "Utilities",
-      "precio": 17.19,
+      "precio": 17.18,
       "composite": 59.2,
       "quality": 57,
       "valuation": 51,
@@ -6822,7 +7265,7 @@
       "confianza": "alta",
       "dcf": {
         "ticker": "ENG.MC",
-        "precio_actual": 17.19,
+        "precio_actual": 17.18,
         "wacc": 7.0,
         "g_base": 5.7,
         "sector": "Utilities",
@@ -6851,9 +7294,9 @@
         },
         "multiplos": {
           "ev_ebitda": {
-            "precio_objetivo": 10.66,
+            "precio_objetivo": 10.67,
             "multiple_salida": 10,
-            "ebitda_proyectado": 596767904.09
+            "ebitda_proyectado": 597179184.52
           },
           "per": {
             "precio_objetivo": 18.97,
@@ -6866,7 +7309,7 @@
         "precios_por_metodo": [
           [
             "EV/EBITDA",
-            10.66
+            10.67
           ],
           [
             "PER",
@@ -6886,7 +7329,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 84,
+      "pos": 89,
       "ticker": "COST",
       "nombre": "Costco Wholesale Corporation",
       "sector": "Consumer Defensive",
@@ -6977,7 +7420,98 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 85,
+      "pos": 90,
+      "ticker": "VRTX",
+      "nombre": "Vertex Pharmaceuticals Incorporated",
+      "sector": "Healthcare",
+      "precio": 434.52,
+      "composite": 58.9,
+      "quality": 84,
+      "valuation": 30,
+      "safety": 100,
+      "momentum": 32,
+      "senal": "NEUTRO",
+      "capas": 0,
+      "alertas": [
+        "Valoracion cara — multiples elevados"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "VRTX",
+        "precio_actual": 434.52,
+        "wacc": 6.9,
+        "g_base": 24.4,
+        "sector": "Healthcare",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 766.95,
+            "ev_calculado": 189396881052.31,
+            "g_fase1": 20.4,
+            "g_fase2": 18.4,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 1109.96,
+            "ev_calculado": 276453561671.86,
+            "g_fase1": 24.4,
+            "g_fase2": 21.4,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 872.92,
+            "ev_calculado": 216292672168.98,
+            "g_fase1": 25.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 506.32,
+            "multiple_salida": 12,
+            "ebitda_proyectado": 14513462932.39
+          },
+          "per": {
+            "precio_objetivo": 646.71,
+            "per_salida": 18,
+            "eps_proyectado": 50.16
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 11.7,
+          "g_fundamental": 24.4,
+          "diferencia": -12.6,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 702.77,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            1109.96
+          ],
+          [
+            "EV/EBITDA",
+            506.32
+          ],
+          [
+            "PER",
+            646.71
+          ],
+          [
+            "Analistas",
+            548.1
+          ]
+        ],
+        "margen_seguridad": 61.7,
+        "target_analistas": 548.1,
+        "n_analistas": 29,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 62% respecto al valor intrínseco estimado. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: 11.7%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 91,
       "ticker": "V",
       "nombre": "Visa Inc.",
       "sector": "Financial Services",
@@ -7068,7 +7602,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 86,
+      "pos": 92,
       "ticker": "WMT",
       "nombre": "Walmart Inc.",
       "sector": "Consumer Defensive",
@@ -7154,7 +7688,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 87,
+      "pos": 93,
       "ticker": "UNH",
       "nombre": "UnitedHealth Group Incorporated",
       "sector": "Healthcare",
@@ -7245,7 +7779,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 88,
+      "pos": 94,
       "ticker": "NNN",
       "nombre": "NNN REIT, Inc.",
       "sector": "Real Estate",
@@ -7306,7 +7840,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 89,
+      "pos": 95,
       "ticker": "KO",
       "nombre": "The Coca-Cola Company",
       "sector": "Consumer Defensive",
@@ -7397,7 +7931,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 90,
+      "pos": 96,
       "ticker": "TXN",
       "nombre": "Texas Instruments Incorporated",
       "sector": "Technology",
@@ -7483,7 +8017,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 91,
+      "pos": 97,
       "ticker": "HD",
       "nombre": "The Home Depot, Inc.",
       "sector": "Consumer Cyclical",
@@ -7546,7 +8080,7 @@
           "diferencia": 13.5,
           "interpretacion": "El mercado descuenta crecimiento muy optimista"
         },
-        "precio_consenso": 183.55,
+        "precio_consenso": 183.08,
         "precios_por_metodo": [
           [
             "DCF",
@@ -7562,19 +8096,112 @@
           ],
           [
             "Analistas",
-            372.06
+            370.21
           ]
         ],
-        "margen_seguridad": -41.4,
-        "target_analistas": 372.06,
+        "margen_seguridad": -41.5,
+        "target_analistas": 370.21,
         "n_analistas": 33,
         "confianza": "alta",
-        "resumen": "Prima del 41% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 16.7%)."
+        "resumen": "Prima del 42% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 16.7%)."
       },
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 92,
+      "pos": 98,
+      "ticker": "IQV",
+      "nombre": "IQVIA Holdings Inc.",
+      "sector": "Healthcare",
+      "precio": 167.9,
+      "composite": 55.7,
+      "quality": 59,
+      "valuation": 73,
+      "safety": 28,
+      "momentum": 25,
+      "senal": "ALERTA_SALIDA",
+      "capas": 1,
+      "alertas": [
+        "F-Score debil (3/9) — posible deterioro",
+        "Score o F-Score en zona de deterioro — VALUE_CYCLICAL",
+        "Deuda/EBITDA elevada (4.7x)"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "IQV",
+        "precio_actual": 167.9,
+        "wacc": 9.5,
+        "g_base": 8.9,
+        "sector": "Healthcare",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 110.34,
+            "ev_calculado": 32529397492.57,
+            "g_fase1": 4.9,
+            "g_fase2": 2.9,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 179.89,
+            "ev_calculado": 44138207690.78,
+            "g_fase1": 8.9,
+            "g_fase2": 5.9,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 280.91,
+            "ev_calculado": 60997319211.88,
+            "g_fase1": 12.9,
+            "g_fase2": 9.9,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 157.67,
+            "multiple_salida": 12,
+            "ebitda_proyectado": 4634206516.02
+          },
+          "per": {
+            "precio_objetivo": 140.78,
+            "per_salida": 18,
+            "eps_proyectado": 12.33
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 8.3,
+          "g_fundamental": 8.9,
+          "diferencia": -0.6,
+          "interpretacion": "El mercado descuenta crecimiento en línea con fundamentales"
+        },
+        "precio_consenso": 176.73,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            179.89
+          ],
+          [
+            "EV/EBITDA",
+            157.67
+          ],
+          [
+            "PER",
+            140.78
+          ],
+          [
+            "Analistas",
+            228.6
+          ]
+        ],
+        "margen_seguridad": 5.3,
+        "target_analistas": 228.6,
+        "n_analistas": 20,
+        "confianza": "alta",
+        "resumen": "Ligero descuento del 5% — precio razonable. El mercado descuenta crecimiento en línea con fundamentales (g implícito: 8.3%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 99,
       "ticker": "KMI",
       "nombre": "Kinder Morgan, Inc.",
       "sector": "Energy",
@@ -7666,7 +8293,98 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 93,
+      "pos": 100,
+      "ticker": "ICE",
+      "nombre": "Intercontinental Exchange, Inc.",
+      "sector": "Financial Services",
+      "precio": 152.97,
+      "composite": 55.1,
+      "quality": 66,
+      "valuation": 54,
+      "safety": 62,
+      "momentum": 24,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Valoracion cara — multiples elevados"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "ICE",
+        "precio_actual": 152.97,
+        "wacc": 8.9,
+        "g_base": 25.0,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 297.99,
+            "ev_calculado": 188640790196.58,
+            "g_fase1": 21.0,
+            "g_fase2": 19.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 426.67,
+            "ev_calculado": 261406595202.77,
+            "g_fase1": 25.0,
+            "g_fase2": 22.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 307.32,
+            "ev_calculado": 193912639195.66,
+            "g_fase1": 25.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 211.99,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 20366513445.9
+          },
+          "per": {
+            "precio_objetivo": 164.33,
+            "per_salida": 12,
+            "eps_proyectado": 20.97
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 12.7,
+          "g_fundamental": 25.0,
+          "diferencia": -12.3,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 250.63,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            426.67
+          ],
+          [
+            "EV/EBITDA",
+            211.99
+          ],
+          [
+            "PER",
+            164.33
+          ],
+          [
+            "Analistas",
+            199.53
+          ]
+        ],
+        "margen_seguridad": 63.8,
+        "target_analistas": 199.53,
+        "n_analistas": 15,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 64% respecto al valor intrínseco estimado. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: 12.7%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 101,
       "ticker": "MSFT",
       "nombre": "Microsoft Corporation",
       "sector": "Technology",
@@ -7757,7 +8475,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 94,
+      "pos": 102,
       "ticker": "AMZN",
       "nombre": "Amazon.com, Inc.",
       "sector": "Consumer Cyclical",
@@ -7843,7 +8561,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 95,
+      "pos": 103,
       "ticker": "LLY",
       "nombre": "Eli Lilly and Company",
       "sector": "Healthcare",
@@ -7934,7 +8652,98 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 96,
+      "pos": 104,
+      "ticker": "CME",
+      "nombre": "CME Group Inc.",
+      "sector": "Financial Services",
+      "precio": 291.23,
+      "composite": 54.2,
+      "quality": 63,
+      "valuation": 23,
+      "safety": 100,
+      "momentum": 73,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Valoracion cara — multiples elevados"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "CME",
+        "precio_actual": 291.23,
+        "wacc": 9.0,
+        "g_base": 14.0,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 184.44,
+            "ev_calculado": 67867974299.16,
+            "g_fase1": 10.0,
+            "g_fase2": 8.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 255.43,
+            "ev_calculado": 93519363504.84,
+            "g_fase1": 14.0,
+            "g_fase2": 11.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 322.49,
+            "ev_calculado": 117748298043.77,
+            "g_fase1": 18.0,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 168.02,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 9463722819.61
+          },
+          "per": {
+            "precio_objetivo": 176.09,
+            "per_salida": 12,
+            "eps_proyectado": 22.58
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 15.8,
+          "g_fundamental": 14.0,
+          "diferencia": 1.8,
+          "interpretacion": "El mercado descuenta crecimiento moderadamente optimista"
+        },
+        "precio_consenso": 226.5,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            255.43
+          ],
+          [
+            "EV/EBITDA",
+            168.02
+          ],
+          [
+            "PER",
+            176.09
+          ],
+          [
+            "Analistas",
+            306.47
+          ]
+        ],
+        "margen_seguridad": -22.2,
+        "target_analistas": 306.47,
+        "n_analistas": 15,
+        "confianza": "alta",
+        "resumen": "Prima del 22% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento moderadamente optimista (g implícito: 15.8%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 105,
       "ticker": "O",
       "nombre": "Realty Income Corporation",
       "sector": "Real Estate",
@@ -8026,7 +8835,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 97,
+      "pos": 106,
       "ticker": "AMD",
       "nombre": "Advanced Micro Devices, Inc.",
       "sector": "Technology",
@@ -8112,7 +8921,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 98,
+      "pos": 107,
       "ticker": "BLK",
       "nombre": "BlackRock, Inc.",
       "sector": "Financial Services",
@@ -8205,11 +9014,11 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 99,
+      "pos": 108,
       "ticker": "SAN.MC",
       "nombre": "Banco Santander, S.A.",
       "sector": "Financial Services",
-      "precio": 10.428,
+      "precio": 10.852,
       "composite": 52.5,
       "quality": 41,
       "valuation": 46,
@@ -8225,7 +9034,7 @@
       "confianza": "media",
       "dcf": {
         "ticker": "SAN.MC",
-        "precio_actual": 10.43,
+        "precio_actual": 10.85,
         "wacc": 8.9,
         "g_base": 25.0,
         "sector": "Financial Services",
@@ -8249,16 +9058,16 @@
             12.12
           ]
         ],
-        "margen_seguridad": 59.2,
+        "margen_seguridad": 53.0,
         "target_analistas": 12.12,
         "n_analistas": 20,
         "confianza": "media",
-        "resumen": "Infravalorada un 59% respecto al valor intrínseco estimado."
+        "resumen": "Infravalorada un 53% respecto al valor intrínseco estimado."
       },
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 100,
+      "pos": 109,
       "ticker": "IBM",
       "nombre": "International Business Machines Corporation",
       "sector": "Technology",
@@ -8349,7 +9158,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 101,
+      "pos": 110,
       "ticker": "TRP",
       "nombre": "TC Energy Corporation",
       "sector": "Energy",
@@ -8408,7 +9217,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 29.46,
+        "precio_consenso": 29.49,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -8420,11 +9229,11 @@
           ],
           [
             "Analistas",
-            62.63
+            62.71
           ]
         ],
-        "margen_seguridad": -58.5,
-        "target_analistas": 62.63,
+        "margen_seguridad": -58.4,
+        "target_analistas": 62.71,
         "n_analistas": 3,
         "confianza": "alta",
         "resumen": "Prima del 58% — cotiza significativamente por encima del valor intrínseco."
@@ -8432,7 +9241,90 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 102,
+      "pos": 111,
+      "ticker": "FER.MC",
+      "nombre": "Ferrovial N.V.",
+      "sector": "Industrials",
+      "precio": 59.62,
+      "composite": 51.7,
+      "quality": 74,
+      "valuation": 14,
+      "safety": 28,
+      "momentum": 96,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Valoracion cara — multiples elevados",
+        "Deuda/EBITDA elevada (4.5x)"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "FER.MC",
+        "precio_actual": 59.62,
+        "wacc": 8.4,
+        "g_base": 4.9,
+        "sector": "Industrials",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 0.0,
+            "ev_calculado": 3942555063.45,
+            "g_fase1": 0.9,
+            "g_fase2": -1.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 0.0,
+            "ev_calculado": 5410911263.54,
+            "g_fase1": 4.9,
+            "g_fase2": 1.9,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 1.52,
+            "ev_calculado": 7579129356.26,
+            "g_fase1": 8.9,
+            "g_fase2": 5.9,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 9.84,
+            "multiple_salida": 9,
+            "ebitda_proyectado": 1894075461.07
+          },
+          "per": {
+            "precio_objetivo": 14.03,
+            "per_salida": 14,
+            "eps_proyectado": 1.5
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 28.26,
+        "precios_por_metodo": [
+          [
+            "EV/EBITDA",
+            9.84
+          ],
+          [
+            "PER",
+            14.03
+          ],
+          [
+            "Analistas",
+            60.92
+          ]
+        ],
+        "margen_seguridad": -52.6,
+        "target_analistas": 60.92,
+        "n_analistas": 22,
+        "confianza": "alta",
+        "resumen": "Prima del 53% — cotiza significativamente por encima del valor intrínseco."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 112,
       "ticker": "NKE",
       "nombre": "NIKE, Inc.",
       "sector": "Consumer Cyclical",
@@ -8525,90 +9417,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 103,
-      "ticker": "FER.MC",
-      "nombre": "Ferrovial N.V.",
-      "sector": "Industrials",
-      "precio": 58.46,
-      "composite": 51.5,
-      "quality": 74,
-      "valuation": 15,
-      "safety": 28,
-      "momentum": 92,
-      "senal": "NEUTRO",
-      "capas": 1,
-      "alertas": [
-        "Valoracion cara — multiples elevados",
-        "Deuda/EBITDA elevada (4.5x)"
-      ],
-      "confianza": "alta",
-      "dcf": {
-        "ticker": "FER.MC",
-        "precio_actual": 58.46,
-        "wacc": 8.4,
-        "g_base": 4.9,
-        "sector": "Industrials",
-        "escenarios_dcf": {
-          "pesimista": {
-            "precio_objetivo": 0.0,
-            "ev_calculado": 3942555063.45,
-            "g_fase1": 0.9,
-            "g_fase2": -1.0,
-            "terminal_g": 1.5
-          },
-          "base": {
-            "precio_objetivo": 0.0,
-            "ev_calculado": 5410911263.54,
-            "g_fase1": 4.9,
-            "g_fase2": 1.9,
-            "terminal_g": 2.5
-          },
-          "optimista": {
-            "precio_objetivo": 1.52,
-            "ev_calculado": 7579129356.26,
-            "g_fase1": 8.9,
-            "g_fase2": 5.9,
-            "terminal_g": 3.0
-          }
-        },
-        "multiplos": {
-          "ev_ebitda": {
-            "precio_objetivo": 10.12,
-            "multiple_salida": 9,
-            "ebitda_proyectado": 1926574648.7
-          },
-          "per": {
-            "precio_objetivo": 14.03,
-            "per_salida": 14,
-            "eps_proyectado": 1.5
-          }
-        },
-        "reverse_dcf": null,
-        "precio_consenso": 28.36,
-        "precios_por_metodo": [
-          [
-            "EV/EBITDA",
-            10.12
-          ],
-          [
-            "PER",
-            14.03
-          ],
-          [
-            "Analistas",
-            60.92
-          ]
-        ],
-        "margen_seguridad": -51.5,
-        "target_analistas": 60.92,
-        "n_analistas": 22,
-        "confianza": "alta",
-        "resumen": "Prima del 52% — cotiza significativamente por encima del valor intrínseco."
-      },
-      "tipologia": "VALUE_CYCLICAL"
-    },
-    {
-      "pos": 104,
+      "pos": 113,
       "ticker": "ENB",
       "nombre": "Enbridge Inc.",
       "sector": "Energy",
@@ -8645,7 +9454,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 25.08,
+        "precio_consenso": 25.1,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -8657,11 +9466,11 @@
           ],
           [
             "Analistas",
-            52.65
+            52.71
           ]
         ],
         "margen_seguridad": -56.8,
-        "target_analistas": 52.65,
+        "target_analistas": 52.71,
         "n_analistas": 4,
         "confianza": "alta",
         "resumen": "Prima del 57% — cotiza significativamente por encima del valor intrínseco."
@@ -8669,7 +9478,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 105,
+      "pos": 114,
       "ticker": "BABA",
       "nombre": "Alibaba Group Holding Limited",
       "sector": "Consumer Cyclical",
@@ -8706,7 +9515,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 689.26,
+        "precio_consenso": 689.36,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -8718,11 +9527,11 @@
           ],
           [
             "Analistas",
-            191.29
+            191.58
           ]
         ],
-        "margen_seguridad": 430.2,
-        "target_analistas": 191.29,
+        "margen_seguridad": 430.3,
+        "target_analistas": 191.58,
         "n_analistas": 40,
         "confianza": "alta",
         "resumen": "Infravalorada un 430% respecto al valor intrínseco estimado."
@@ -8730,7 +9539,100 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 106,
+      "pos": 115,
+      "ticker": "HUM",
+      "nombre": "Humana Inc.",
+      "sector": "Healthcare",
+      "precio": 307.95,
+      "composite": 50.5,
+      "quality": 47,
+      "valuation": 30,
+      "safety": 62,
+      "momentum": 100,
+      "senal": "ALERTA_SALIDA",
+      "capas": 1,
+      "alertas": [
+        "Valoracion cara — multiples elevados",
+        "F-Score debil (3/9) — posible deterioro",
+        "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "HUM",
+        "precio_actual": 307.95,
+        "wacc": 8.0,
+        "g_base": 8.8,
+        "sector": "Healthcare",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 274.72,
+            "ev_calculado": 25389316956.66,
+            "g_fase1": 4.8,
+            "g_fase2": 2.8,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 359.05,
+            "ev_calculado": 35514203708.62,
+            "g_fase1": 8.8,
+            "g_fase2": 5.8,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 482.53,
+            "ev_calculado": 50338961067.67,
+            "g_fase1": 12.8,
+            "g_fase2": 9.8,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 270.05,
+            "multiple_salida": 12,
+            "ebitda_proyectado": 3346063188.15
+          },
+          "per": {
+            "precio_objetivo": 174.6,
+            "per_salida": 18,
+            "eps_proyectado": 14.28
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 6.3,
+          "g_fundamental": 8.8,
+          "diferencia": -2.5,
+          "interpretacion": "El mercado descuenta crecimiento en línea con fundamentales"
+        },
+        "precio_consenso": 266.56,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            359.05
+          ],
+          [
+            "EV/EBITDA",
+            270.05
+          ],
+          [
+            "PER",
+            174.6
+          ],
+          [
+            "Analistas",
+            262.54
+          ]
+        ],
+        "margen_seguridad": -13.4,
+        "target_analistas": 262.54,
+        "n_analistas": 24,
+        "confianza": "alta",
+        "resumen": "Prima del 13% sobre valor intrínseco — valoración ajustada. El mercado descuenta crecimiento en línea con fundamentales (g implícito: 6.3%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 116,
       "ticker": "MDT",
       "nombre": "Medtronic plc",
       "sector": "Healthcare",
@@ -8821,7 +9723,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 107,
+      "pos": 117,
       "ticker": "MU",
       "nombre": "Micron Technology, Inc.",
       "sector": "Technology",
@@ -8907,7 +9809,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 108,
+      "pos": 118,
       "ticker": "ED",
       "nombre": "Consolidated Edison, Inc.",
       "sector": "Utilities",
@@ -8968,7 +9870,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 109,
+      "pos": 119,
       "ticker": "MDLZ",
       "nombre": "Mondelez International, Inc.",
       "sector": "Consumer Defensive",
@@ -9059,7 +9961,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 110,
+      "pos": 120,
       "ticker": "MCD",
       "nombre": "McDonald's Corporation",
       "sector": "Consumer Cyclical",
@@ -9148,7 +10050,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 111,
+      "pos": 121,
       "ticker": "SBUX",
       "nombre": "Starbucks Corporation",
       "sector": "Consumer Cyclical",
@@ -9209,7 +10111,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 112,
+      "pos": 122,
       "ticker": "AEP",
       "nombre": "American Electric Power Company, Inc.",
       "sector": "Utilities",
@@ -9270,7 +10172,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 113,
+      "pos": 123,
       "ticker": "AMT",
       "nombre": "American Tower Corporation",
       "sector": "Real Estate",
@@ -9362,7 +10264,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 114,
+      "pos": 124,
       "ticker": "PLD",
       "nombre": "Prologis, Inc.",
       "sector": "Real Estate",
@@ -9454,7 +10356,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 115,
+      "pos": 125,
       "ticker": "DUK",
       "nombre": "Duke Energy Corporation",
       "sector": "Utilities",
@@ -9515,7 +10417,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 116,
+      "pos": 126,
       "ticker": "DLR",
       "nombre": "Digital Realty Trust, Inc.",
       "sector": "Real Estate",
@@ -9607,7 +10509,60 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 117,
+      "pos": 127,
+      "ticker": "C",
+      "nombre": "Citigroup Inc.",
+      "sector": "Financial Services",
+      "precio": 125.09,
+      "composite": 47.8,
+      "quality": 30,
+      "valuation": 45,
+      "safety": 50,
+      "momentum": 100,
+      "senal": "ALERTA_SALIDA",
+      "capas": 1,
+      "alertas": [
+        "Valoracion cara — multiples elevados",
+        "F-Score debil (1/9) — posible deterioro",
+        "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+      ],
+      "confianza": "media",
+      "dcf": {
+        "ticker": "C",
+        "precio_actual": 125.09,
+        "wacc": 9.4,
+        "g_base": 25.0,
+        "sector": "Financial Services",
+        "escenarios_dcf": null,
+        "multiplos": {
+          "per": {
+            "precio_objetivo": 189.3,
+            "per_salida": 12,
+            "eps_proyectado": 24.69
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 168.12,
+        "precios_por_metodo": [
+          [
+            "PER",
+            189.3
+          ],
+          [
+            "Analistas",
+            146.93
+          ]
+        ],
+        "margen_seguridad": 34.4,
+        "target_analistas": 146.93,
+        "n_analistas": 21,
+        "confianza": "media",
+        "resumen": "Infravalorada un 34% respecto al valor intrínseco estimado."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 128,
       "ticker": "WMB",
       "nombre": "The Williams Companies, Inc.",
       "sector": "Energy",
@@ -9668,7 +10623,98 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 118,
+      "pos": 129,
+      "ticker": "SYK",
+      "nombre": "Stryker Corporation",
+      "sector": "Healthcare",
+      "precio": 316.48,
+      "composite": 45.8,
+      "quality": 70,
+      "valuation": 20,
+      "safety": 93,
+      "momentum": 10,
+      "senal": "NEUTRO",
+      "capas": 0,
+      "alertas": [
+        "Valoracion cara — multiples elevados"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "SYK",
+        "precio_actual": 316.48,
+        "wacc": 8.4,
+        "g_base": 6.7,
+        "sector": "Healthcare",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 132.95,
+            "ev_calculado": 63238546073.05,
+            "g_fase1": 2.7,
+            "g_fase2": 0.7,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 195.86,
+            "ev_calculado": 87353759262.33,
+            "g_fase1": 6.7,
+            "g_fase2": 3.7,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 288.09,
+            "ev_calculado": 122711799219.33,
+            "g_fase1": 10.7,
+            "g_fase2": 7.7,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 179.26,
+            "multiple_salida": 12,
+            "ebitda_proyectado": 9605757588.45
+          },
+          "per": {
+            "precio_objetivo": 143.62,
+            "per_salida": 18,
+            "eps_proyectado": 11.96
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 12.4,
+          "g_fundamental": 6.7,
+          "diferencia": 5.7,
+          "interpretacion": "El mercado descuenta crecimiento muy optimista"
+        },
+        "precio_consenso": 227.02,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            195.86
+          ],
+          [
+            "EV/EBITDA",
+            179.26
+          ],
+          [
+            "PER",
+            143.62
+          ],
+          [
+            "Analistas",
+            389.35
+          ]
+        ],
+        "margen_seguridad": -28.3,
+        "target_analistas": 389.35,
+        "n_analistas": 26,
+        "confianza": "alta",
+        "resumen": "Prima del 28% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 12.4%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 130,
       "ticker": "JPM",
       "nombre": "JPMorgan Chase & Co.",
       "sector": "Financial Services",
@@ -9721,7 +10767,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 119,
+      "pos": 131,
       "ticker": "NVAX",
       "nombre": "Novavax, Inc.",
       "sector": "Healthcare",
@@ -9803,7 +10849,7 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 120,
+      "pos": 132,
       "ticker": "INTC",
       "nombre": "Intel Corporation",
       "sector": "Technology",
@@ -9854,7 +10900,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 121,
+      "pos": 133,
       "ticker": "SO",
       "nombre": "The Southern Company",
       "sector": "Utilities",
@@ -9915,7 +10961,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 122,
+      "pos": 134,
       "ticker": "XEL",
       "nombre": "Xcel Energy Inc.",
       "sector": "Utilities",
@@ -9976,7 +11022,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 123,
+      "pos": 135,
       "ticker": "NEE",
       "nombre": "NextEra Energy, Inc.",
       "sector": "Utilities",
@@ -10037,7 +11083,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 124,
+      "pos": 136,
       "ticker": "ISRG",
       "nombre": "Intuitive Surgical, Inc.",
       "sector": "Healthcare",
@@ -10130,7 +11176,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 125,
+      "pos": 137,
       "ticker": "ASTS",
       "nombre": "AST SpaceMobile, Inc.",
       "sector": "Technology",
@@ -10173,7 +11219,7 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 126,
+      "pos": 138,
       "ticker": "RGTI",
       "nombre": "Rigetti Computing, Inc.",
       "sector": "Technology",
@@ -10216,7 +11262,59 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 127,
+      "pos": 139,
+      "ticker": "CLNX.MC",
+      "nombre": "Cellnex Telecom, S.A.",
+      "sector": "Real Estate",
+      "precio": 29.01,
+      "composite": 37.5,
+      "quality": 34,
+      "valuation": 37,
+      "safety": 0,
+      "momentum": 73,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Valoracion cara — multiples elevados",
+        "Deuda/EBITDA elevada (8.0x)"
+      ],
+      "confianza": "media",
+      "dcf": {
+        "ticker": "CLNX.MC",
+        "precio_actual": 29.01,
+        "wacc": 8.8,
+        "g_base": 0.0,
+        "sector": "Real Estate",
+        "escenarios_dcf": null,
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 18.78,
+            "multiple_salida": 15,
+            "ebitda_proyectado": 2632997682.94
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 27.59,
+        "precios_por_metodo": [
+          [
+            "EV/EBITDA",
+            18.78
+          ],
+          [
+            "Analistas",
+            36.41
+          ]
+        ],
+        "margen_seguridad": -4.9,
+        "target_analistas": 36.41,
+        "n_analistas": 24,
+        "confianza": "media",
+        "resumen": "Cotiza cerca de su valor intrínseco estimado."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 140,
       "ticker": "WFC",
       "nombre": "Wells Fargo & Company",
       "sector": "Financial Services",
@@ -10269,59 +11367,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 128,
-      "ticker": "CLNX.MC",
-      "nombre": "Cellnex Telecom, S.A.",
-      "sector": "Real Estate",
-      "precio": 28.69,
-      "composite": 37.0,
-      "quality": 34,
-      "valuation": 37,
-      "safety": 0,
-      "momentum": 70,
-      "senal": "NEUTRO",
-      "capas": 1,
-      "alertas": [
-        "Valoracion cara — multiples elevados",
-        "Deuda/EBITDA elevada (8.0x)"
-      ],
-      "confianza": "media",
-      "dcf": {
-        "ticker": "CLNX.MC",
-        "precio_actual": 28.69,
-        "wacc": 8.8,
-        "g_base": 0.0,
-        "sector": "Real Estate",
-        "escenarios_dcf": null,
-        "multiplos": {
-          "ev_ebitda": {
-            "precio_objetivo": 18.98,
-            "multiple_salida": 15,
-            "ebitda_proyectado": 2646631327.9
-          }
-        },
-        "reverse_dcf": null,
-        "precio_consenso": 27.7,
-        "precios_por_metodo": [
-          [
-            "EV/EBITDA",
-            18.98
-          ],
-          [
-            "Analistas",
-            36.41
-          ]
-        ],
-        "margen_seguridad": -3.5,
-        "target_analistas": 36.41,
-        "n_analistas": 24,
-        "confianza": "media",
-        "resumen": "Cotiza cerca de su valor intrínseco estimado."
-      },
-      "tipologia": "VALUE_CYCLICAL"
-    },
-    {
-      "pos": 129,
+      "pos": 141,
       "ticker": "WEC",
       "nombre": "WEC Energy Group, Inc.",
       "sector": "Utilities",
@@ -10382,7 +11428,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 130,
+      "pos": 142,
       "ticker": "SNPS",
       "nombre": "Synopsys, Inc.",
       "sector": "Technology",
@@ -10476,7 +11522,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 131,
+      "pos": 143,
       "ticker": "ORCL",
       "nombre": "Oracle Corporation",
       "sector": "Technology",
@@ -10536,7 +11582,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 132,
+      "pos": 144,
       "ticker": "VKTX",
       "nombre": "Viking Therapeutics, Inc.",
       "sector": "Healthcare",
@@ -10579,7 +11625,7 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 133,
+      "pos": 145,
       "ticker": "OKLO",
       "nombre": "Oklo Inc.",
       "sector": "Utilities",
@@ -10624,7 +11670,7 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 134,
+      "pos": 146,
       "ticker": "EH",
       "nombre": "EHang Holdings Limited",
       "sector": "Industrials",
@@ -10652,18 +11698,18 @@
         "escenarios_dcf": null,
         "multiplos": null,
         "reverse_dcf": null,
-        "precio_consenso": 19.02,
+        "precio_consenso": 19.05,
         "precios_por_metodo": [
           [
             "Analistas",
-            19.02
+            19.05
           ]
         ],
-        "margen_seguridad": 94.5,
-        "target_analistas": 19.02,
+        "margen_seguridad": 94.8,
+        "target_analistas": 19.05,
         "n_analistas": 10,
         "confianza": "media",
-        "resumen": "Infravalorada un 94% respecto al valor intrínseco estimado."
+        "resumen": "Infravalorada un 95% respecto al valor intrínseco estimado."
       },
       "tipologia": "SPECULATIVE"
     }
@@ -10672,7 +11718,7 @@
     "regimen": "NEUTRAL",
     "umbral_compra": 70,
     "alertas": [
-      "WTI +63.34% en 6M — presion inflacionista severa"
+      "WTI +66.38% en 6M — presion inflacionista severa"
     ]
   }
 }
