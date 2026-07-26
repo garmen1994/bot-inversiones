@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-26T21:34:25.809795",
+  "fecha": "2026-07-26T22:27:07.413877",
   "ranking": [
     {
       "pos": 1,
@@ -647,6 +647,269 @@
     },
     {
       "pos": 9,
+      "ticker": "RLI",
+      "nombre": "RLI Corp.",
+      "sector": "Financial Services",
+      "precio": null,
+      "composite": 83.8,
+      "quality": 80,
+      "valuation": 100,
+      "safety": 100,
+      "momentum": 45,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Precio muy por debajo de MM200 — tendencia bajista"
+      ],
+      "confianza": "media",
+      "dcf": {
+        "ticker": "RLI",
+        "precio_actual": 61.92,
+        "wacc": 7.0,
+        "g_base": 19.5,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 152.94,
+            "ev_calculado": 14116065961.83,
+            "g_fase1": 15.5,
+            "g_fase2": 13.5,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 223.53,
+            "ev_calculado": 20594804832.78,
+            "g_fase1": 19.5,
+            "g_fase2": 16.5,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 238.79,
+            "ev_calculado": 21994547712.19,
+            "g_fase1": 23.5,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 108.04,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 1398636009.52
+          },
+          "per": {
+            "precio_objetivo": 99.14,
+            "per_salida": 12,
+            "eps_proyectado": 11.59
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 2.2,
+          "g_fundamental": 19.5,
+          "diferencia": -17.3,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 122.55,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            223.53
+          ],
+          [
+            "EV/EBITDA",
+            108.04
+          ],
+          [
+            "PER",
+            99.14
+          ],
+          [
+            "Analistas",
+            59.5
+          ]
+        ],
+        "margen_seguridad": 97.9,
+        "target_analistas": 59.5,
+        "n_analistas": 4,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 98% respecto al valor intrínseco estimado. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: 2.2%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 10,
+      "ticker": "ALL",
+      "nombre": "The Allstate Corporation",
+      "sector": "Financial Services",
+      "precio": null,
+      "composite": 83.8,
+      "quality": 80,
+      "valuation": 100,
+      "safety": 100,
+      "momentum": 45,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Precio muy por debajo de MM200 — tendencia bajista"
+      ],
+      "confianza": "media",
+      "dcf": {
+        "ticker": "ALL",
+        "precio_actual": 259.97,
+        "wacc": 9.0,
+        "g_base": 6.6,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 625.6,
+            "ev_calculado": 163133155774.55,
+            "g_fase1": 2.6,
+            "g_fase2": 0.6,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 856.06,
+            "ev_calculado": 222458759362.82,
+            "g_fase1": 6.6,
+            "g_fase2": 3.6,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 1191.94,
+            "ev_calculado": 308919769125.76,
+            "g_fase1": 10.6,
+            "g_fase2": 7.6,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 491.64,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 19681691957.22
+          },
+          "per": {
+            "precio_objetivo": 485.83,
+            "per_salida": 12,
+            "eps_proyectado": 62.29
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 522.04,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            856.06
+          ],
+          [
+            "EV/EBITDA",
+            491.64
+          ],
+          [
+            "PER",
+            485.83
+          ],
+          [
+            "Analistas",
+            254.64
+          ]
+        ],
+        "margen_seguridad": 100.8,
+        "target_analistas": 254.64,
+        "n_analistas": 22,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 101% respecto al valor intrínseco estimado."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 11,
+      "ticker": "HIG",
+      "nombre": "The Hartford Insurance Group, Inc.",
+      "sector": "Financial Services",
+      "precio": null,
+      "composite": 83.0,
+      "quality": 78,
+      "valuation": 100,
+      "safety": 100,
+      "momentum": 45,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Precio muy por debajo de MM200 — tendencia bajista"
+      ],
+      "confianza": "media",
+      "dcf": {
+        "ticker": "HIG",
+        "precio_actual": 140.53,
+        "wacc": 7.4,
+        "g_base": 16.1,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 650.05,
+            "ev_calculado": 178592176681.88,
+            "g_fase1": 12.1,
+            "g_fase2": 10.1,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 934.48,
+            "ev_calculado": 256561824869.03,
+            "g_fase1": 16.1,
+            "g_fase2": 13.1,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 1121.04,
+            "ev_calculado": 307704193241.27,
+            "g_fase1": 20.1,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 271.59,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 10680140154.34
+          },
+          "per": {
+            "precio_objetivo": 256.21,
+            "per_salida": 12,
+            "eps_proyectado": 30.52
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 402.83,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            934.48
+          ],
+          [
+            "EV/EBITDA",
+            271.59
+          ],
+          [
+            "PER",
+            256.21
+          ],
+          [
+            "Analistas",
+            149.05
+          ]
+        ],
+        "margen_seguridad": 186.7,
+        "target_analistas": 149.05,
+        "n_analistas": 20,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 187% respecto al valor intrínseco estimado."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 12,
       "ticker": "SHEL",
       "nombre": "Shell plc",
       "sector": "Energy",
@@ -735,7 +998,98 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 10,
+      "pos": 13,
+      "ticker": "AFG",
+      "nombre": "American Financial Group, Inc.",
+      "sector": "Financial Services",
+      "precio": null,
+      "composite": 82.5,
+      "quality": 77,
+      "valuation": 100,
+      "safety": 100,
+      "momentum": 45,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Precio muy por debajo de MM200 — tendencia bajista"
+      ],
+      "confianza": "media",
+      "dcf": {
+        "ticker": "AFG",
+        "precio_actual": 143.76,
+        "wacc": 7.8,
+        "g_base": 9.7,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 60.93,
+            "ev_calculado": 5664133457.97,
+            "g_fase1": 5.7,
+            "g_fase2": 3.7,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 88.79,
+            "ev_calculado": 7979539348.13,
+            "g_fase1": 9.7,
+            "g_fase2": 6.7,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 129.5,
+            "ev_calculado": 11361652376.03,
+            "g_fase1": 13.7,
+            "g_fase2": 10.7,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 175.38,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 2185618028.61
+          },
+          "per": {
+            "precio_objetivo": 137.65,
+            "per_salida": 12,
+            "eps_proyectado": 16.73
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 15.7,
+          "g_fundamental": 9.7,
+          "diferencia": 6.0,
+          "interpretacion": "El mercado descuenta crecimiento muy optimista"
+        },
+        "precio_consenso": 137.25,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            88.79
+          ],
+          [
+            "EV/EBITDA",
+            175.38
+          ],
+          [
+            "PER",
+            137.65
+          ],
+          [
+            "Analistas",
+            147.17
+          ]
+        ],
+        "margen_seguridad": -4.5,
+        "target_analistas": 147.17,
+        "n_analistas": 6,
+        "confianza": "alta",
+        "resumen": "Cotiza cerca de su valor intrínseco estimado. El mercado descuenta crecimiento muy optimista (g implícito: 15.7%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 14,
       "ticker": "GILD",
       "nombre": "Gilead Sciences, Inc.",
       "sector": "Healthcare",
@@ -826,7 +1180,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 11,
+      "pos": 15,
       "ticker": "CINF",
       "nombre": "Cincinnati Financial Corporation",
       "sector": "Financial Services",
@@ -912,7 +1266,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 12,
+      "pos": 16,
       "ticker": "MKTX",
       "nombre": "MarketAxess Holdings Inc.",
       "sector": "Financial Services",
@@ -974,7 +1328,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 13,
+      "pos": 17,
       "ticker": "NXT.L",
       "nombre": "NEXT plc",
       "sector": "Consumer Cyclical",
@@ -1058,7 +1412,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 14,
+      "pos": 18,
       "ticker": "CMCSA",
       "nombre": "Comcast Corporation",
       "sector": "Communication Services",
@@ -1149,7 +1503,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 15,
+      "pos": 19,
       "ticker": "NVO",
       "nombre": "Novo Nordisk A/S",
       "sector": "Healthcare",
@@ -1209,7 +1563,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 16,
+      "pos": 20,
       "ticker": "ALTN.L",
       "nombre": "AltynGold plc",
       "sector": "Basic Materials",
@@ -1291,7 +1645,127 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 17,
+      "pos": 21,
+      "ticker": "WRB",
+      "nombre": "W. R. Berkley Corporation",
+      "sector": "Financial Services",
+      "precio": null,
+      "composite": 79.5,
+      "quality": 78,
+      "valuation": 90,
+      "safety": 100,
+      "momentum": 45,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Precio muy por debajo de MM200 — tendencia bajista"
+      ],
+      "confianza": "media",
+      "dcf": {
+        "ticker": "WRB",
+        "precio_actual": 75.46,
+        "wacc": 9.0,
+        "g_base": 7.3,
+        "sector": "Financial Services",
+        "escenarios_dcf": null,
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 66.3,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 3750000869.32
+          },
+          "per": {
+            "precio_objetivo": 52.27,
+            "per_salida": 12,
+            "eps_proyectado": 6.7
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 62.5,
+        "precios_por_metodo": [
+          [
+            "EV/EBITDA",
+            66.3
+          ],
+          [
+            "PER",
+            52.27
+          ],
+          [
+            "Analistas",
+            68.94
+          ]
+        ],
+        "margen_seguridad": -17.2,
+        "target_analistas": 68.94,
+        "n_analistas": 17,
+        "confianza": "media",
+        "resumen": "Prima del 17% sobre valor intrínseco — valoración ajustada."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 22,
+      "ticker": "MKL",
+      "nombre": "Markel Group Inc.",
+      "sector": "Financial Services",
+      "precio": null,
+      "composite": 79.2,
+      "quality": 74,
+      "valuation": 94,
+      "safety": 100,
+      "momentum": 45,
+      "senal": "NEUTRO",
+      "capas": 1,
+      "alertas": [
+        "Precio muy por debajo de MM200 — tendencia bajista"
+      ],
+      "confianza": "media",
+      "dcf": {
+        "ticker": "MKL",
+        "precio_actual": 1994.7,
+        "wacc": 8.0,
+        "g_base": 0.0,
+        "sector": "Financial Services",
+        "escenarios_dcf": null,
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 1622.95,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 2848520211.32
+          },
+          "per": {
+            "precio_objetivo": 1130.13,
+            "per_salida": 12,
+            "eps_proyectado": 138.23
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 1570.86,
+        "precios_por_metodo": [
+          [
+            "EV/EBITDA",
+            1622.95
+          ],
+          [
+            "PER",
+            1130.13
+          ],
+          [
+            "Analistas",
+            1959.5
+          ]
+        ],
+        "margen_seguridad": -21.2,
+        "target_analistas": 1959.5,
+        "n_analistas": 6,
+        "confianza": "alta",
+        "resumen": "Prima del 21% — cotiza significativamente por encima del valor intrínseco."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 23,
       "ticker": "CI",
       "nombre": "The Cigna Group",
       "sector": "Healthcare",
@@ -1382,7 +1856,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 18,
+      "pos": 24,
       "ticker": "RMD",
       "nombre": "ResMed Inc.",
       "sector": "Healthcare",
@@ -1473,7 +1947,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 19,
+      "pos": 25,
       "ticker": "CRM",
       "nombre": "Salesforce, Inc.",
       "sector": "Technology",
@@ -1564,7 +2038,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 20,
+      "pos": 26,
       "ticker": "CB",
       "nombre": "Chubb Limited",
       "sector": "Financial Services",
@@ -1624,7 +2098,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 21,
+      "pos": 27,
       "ticker": "TRI.PA",
       "nombre": "Trigano S.A.",
       "sector": "Consumer Cyclical",
@@ -1708,7 +2182,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 22,
+      "pos": 28,
       "ticker": "USB",
       "nombre": "U.S. Bancorp",
       "sector": "Financial Services",
@@ -1759,7 +2233,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 23,
+      "pos": 29,
       "ticker": "CAF.MC",
       "nombre": "Construcciones y Auxiliar de Ferrocarriles, S.A.",
       "sector": "Industrials",
@@ -1817,7 +2291,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 24,
+      "pos": 30,
       "ticker": "TROW",
       "nombre": "T. Rowe Price Group, Inc.",
       "sector": "Financial Services",
@@ -1910,7 +2384,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 25,
+      "pos": 31,
       "ticker": "KSB.DE",
       "nombre": "KSB SE & Co. KGaA",
       "sector": "Industrials",
@@ -1990,7 +2464,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 26,
+      "pos": 32,
       "ticker": "QCOM",
       "nombre": "QUALCOMM Incorporated",
       "sector": "Technology",
@@ -2081,7 +2555,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 27,
+      "pos": 33,
       "ticker": "GEST.MC",
       "nombre": "Gestamp Automoción, S.A.",
       "sector": "Consumer Cyclical",
@@ -2166,7 +2640,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 28,
+      "pos": 34,
       "ticker": "T",
       "nombre": "AT&T Inc.",
       "sector": "Communication Services",
@@ -2257,7 +2731,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 29,
+      "pos": 35,
       "ticker": "DIS",
       "nombre": "The Walt Disney Company",
       "sector": "Communication Services",
@@ -2344,7 +2818,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 30,
+      "pos": 36,
       "ticker": "BP",
       "nombre": "BP p.l.c.",
       "sector": "Energy",
@@ -2435,7 +2909,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 31,
+      "pos": 37,
       "ticker": "EOG",
       "nombre": "EOG Resources, Inc.",
       "sector": "Energy",
@@ -2528,7 +3002,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 32,
+      "pos": 38,
       "ticker": "HON",
       "nombre": "Honeywell International Inc.",
       "sector": "Industrials",
@@ -2619,7 +3093,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 33,
+      "pos": 39,
       "ticker": "HAL",
       "nombre": "Halliburton Company",
       "sector": "Energy",
@@ -2710,7 +3184,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 34,
+      "pos": 40,
       "ticker": "DVN",
       "nombre": "Devon Energy Corporation",
       "sector": "Energy",
@@ -2801,7 +3275,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 35,
+      "pos": 41,
       "ticker": "LOW",
       "nombre": "Lowe's Companies, Inc.",
       "sector": "Consumer Cyclical",
@@ -2892,7 +3366,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 36,
+      "pos": 42,
       "ticker": "FDX",
       "nombre": "FedEx Corporation",
       "sector": "Industrials",
@@ -2983,7 +3457,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 37,
+      "pos": 43,
       "ticker": "TGT",
       "nombre": "Target Corporation",
       "sector": "Consumer Defensive",
@@ -3074,7 +3548,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 38,
+      "pos": 44,
       "ticker": "FISV",
       "nombre": "Fiserv, Inc.",
       "sector": "Desconocido",
@@ -3115,7 +3589,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 39,
+      "pos": 45,
       "ticker": "ACS.MC",
       "nombre": "ACS, Actividades de Construcción y Servicios, S.A.",
       "sector": "Industrials",
@@ -3206,7 +3680,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 40,
+      "pos": 46,
       "ticker": "JD",
       "nombre": "JD.com, Inc.",
       "sector": "Consumer Cyclical",
@@ -3294,7 +3768,7 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 41,
+      "pos": 47,
       "ticker": "TMUS",
       "nombre": "T-Mobile US, Inc.",
       "sector": "Communication Services",
@@ -3385,7 +3859,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 42,
+      "pos": 48,
       "ticker": "BIIB",
       "nombre": "Biogen Inc.",
       "sector": "Healthcare",
@@ -3476,7 +3950,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 43,
+      "pos": 49,
       "ticker": "VZ",
       "nombre": "Verizon Communications Inc.",
       "sector": "Communication Services",
@@ -3567,7 +4041,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 44,
+      "pos": 50,
       "ticker": "CBOE",
       "nombre": "Cboe Global Markets, Inc.",
       "sector": "Financial Services",
@@ -3659,7 +4133,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 45,
+      "pos": 51,
       "ticker": "PFE",
       "nombre": "Pfizer Inc.",
       "sector": "Healthcare",
@@ -3750,7 +4224,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 46,
+      "pos": 52,
       "ticker": "UL",
       "nombre": "Unilever PLC",
       "sector": "Consumer Defensive",
@@ -3842,7 +4316,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 47,
+      "pos": 53,
       "ticker": "IQV",
       "nombre": "IQVIA Holdings Inc.",
       "sector": "Healthcare",
@@ -3935,7 +4409,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 48,
+      "pos": 54,
       "ticker": "TLW.L",
       "nombre": "Tullow Oil plc",
       "sector": "Energy",
@@ -3964,7 +4438,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 8.58,
+        "precio_consenso": 8.57,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -3972,11 +4446,11 @@
           ],
           [
             "Analistas",
-            16.35
+            16.33
           ]
         ],
-        "margen_seguridad": -40.1,
-        "target_analistas": 16.35,
+        "margen_seguridad": -40.2,
+        "target_analistas": 16.33,
         "n_analistas": 7,
         "confianza": "alta",
         "resumen": "Prima del 40% — cotiza significativamente por encima del valor intrínseco."
@@ -3984,7 +4458,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 49,
+      "pos": 55,
       "ticker": "PEP",
       "nombre": "PepsiCo, Inc.",
       "sector": "Consumer Defensive",
@@ -4075,7 +4549,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 50,
+      "pos": 56,
       "ticker": "CPRT",
       "nombre": "Copart, Inc.",
       "sector": "Industrials",
@@ -4166,7 +4640,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 51,
+      "pos": 57,
       "ticker": "UPS",
       "nombre": "United Parcel Service, Inc.",
       "sector": "Industrials",
@@ -4257,7 +4731,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 52,
+      "pos": 58,
       "ticker": "META",
       "nombre": "Meta Platforms, Inc.",
       "sector": "Communication Services",
@@ -4348,7 +4822,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 53,
+      "pos": 59,
       "ticker": "COP",
       "nombre": "ConocoPhillips",
       "sector": "Energy",
@@ -4439,7 +4913,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 54,
+      "pos": 60,
       "ticker": "SCHW",
       "nombre": "The Charles Schwab Corporation",
       "sector": "Financial Services",
@@ -4490,7 +4964,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 55,
+      "pos": 61,
       "ticker": "FIS",
       "nombre": "Fidelity National Information Services, Inc.",
       "sector": "Technology",
@@ -4581,7 +5055,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 56,
+      "pos": 62,
       "ticker": "PG",
       "nombre": "The Procter & Gamble Company",
       "sector": "Consumer Defensive",
@@ -4672,7 +5146,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 57,
+      "pos": 63,
       "ticker": "KMB",
       "nombre": "Kimberly-Clark Corporation",
       "sector": "Consumer Defensive",
@@ -4764,7 +5238,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 58,
+      "pos": 64,
       "ticker": "POOL",
       "nombre": "Pool Corporation",
       "sector": "Industrials",
@@ -4856,7 +5330,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 59,
+      "pos": 65,
       "ticker": "VICI",
       "nombre": "VICI Properties Inc.",
       "sector": "Real Estate",
@@ -4948,7 +5422,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 60,
+      "pos": 66,
       "ticker": "REGN",
       "nombre": "Regeneron Pharmaceuticals, Inc.",
       "sector": "Healthcare",
@@ -5041,7 +5515,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 61,
+      "pos": 67,
       "ticker": "AXP",
       "nombre": "American Express Company",
       "sector": "Financial Services",
@@ -5094,7 +5568,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 62,
+      "pos": 68,
       "ticker": "ROP",
       "nombre": "Roper Technologies, Inc.",
       "sector": "Technology",
@@ -5185,7 +5659,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 63,
+      "pos": 69,
       "ticker": "ITX.MC",
       "nombre": "Industria de Diseño Textil, S.A.",
       "sector": "Consumer Cyclical",
@@ -5245,7 +5719,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 64,
+      "pos": 70,
       "ticker": "ET",
       "nombre": "Energy Transfer LP",
       "sector": "Energy",
@@ -5333,7 +5807,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 65,
+      "pos": 71,
       "ticker": "GRF.MC",
       "nombre": "Grifols, S.A.",
       "sector": "Healthcare",
@@ -5424,7 +5898,7 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 66,
+      "pos": 72,
       "ticker": "82E.F",
       "nombre": "Itafos Inc.",
       "sector": "Basic Materials",
@@ -5480,7 +5954,7 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 67,
+      "pos": 73,
       "ticker": "CL",
       "nombre": "Colgate-Palmolive Company",
       "sector": "Consumer Defensive",
@@ -5572,7 +6046,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 68,
+      "pos": 74,
       "ticker": "NKE",
       "nombre": "NIKE, Inc.",
       "sector": "Consumer Cyclical",
@@ -5663,7 +6137,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 69,
+      "pos": 75,
       "ticker": "BDX",
       "nombre": "Becton, Dickinson and Company",
       "sector": "Healthcare",
@@ -5754,7 +6228,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 70,
+      "pos": 76,
       "ticker": "NFLX",
       "nombre": "Netflix, Inc.",
       "sector": "Communication Services",
@@ -5846,7 +6320,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 71,
+      "pos": 77,
       "ticker": "SLB",
       "nombre": "SLB N.V.",
       "sector": "Energy",
@@ -5906,7 +6380,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 72,
+      "pos": 78,
       "ticker": "ADP",
       "nombre": "Automatic Data Processing, Inc.",
       "sector": "Technology",
@@ -5997,7 +6471,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 73,
+      "pos": 79,
       "ticker": "VLO",
       "nombre": "Valero Energy Corporation",
       "sector": "Energy",
@@ -6088,7 +6562,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 74,
+      "pos": 80,
       "ticker": "MA",
       "nombre": "Mastercard Incorporated",
       "sector": "Financial Services",
@@ -6180,7 +6654,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 75,
+      "pos": 81,
       "ticker": "MSFT",
       "nombre": "Microsoft Corporation",
       "sector": "Technology",
@@ -6271,7 +6745,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 76,
+      "pos": 82,
       "ticker": "DXCM",
       "nombre": "DexCom, Inc.",
       "sector": "Healthcare",
@@ -6363,7 +6837,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 77,
+      "pos": 83,
       "ticker": "GOOGL",
       "nombre": "Alphabet Inc.",
       "sector": "Communication Services",
@@ -6454,7 +6928,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 78,
+      "pos": 84,
       "ticker": "MDT",
       "nombre": "Medtronic plc",
       "sector": "Healthcare",
@@ -6545,7 +7019,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 79,
+      "pos": 85,
       "ticker": "AON",
       "nombre": "Aon plc",
       "sector": "Financial Services",
@@ -6637,7 +7111,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 80,
+      "pos": 86,
       "ticker": "GMAB",
       "nombre": "Genmab A/S",
       "sector": "Healthcare",
@@ -6730,7 +7204,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 81,
+      "pos": 87,
       "ticker": "BRK-B",
       "nombre": "Berkshire Hathaway Inc.",
       "sector": "Financial Services",
@@ -6809,7 +7283,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 82,
+      "pos": 88,
       "ticker": "MPC",
       "nombre": "Marathon Petroleum Corporation",
       "sector": "Energy",
@@ -6901,7 +7375,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 83,
+      "pos": 89,
       "ticker": "ASML.AS",
       "nombre": "ASML Holding N.V.",
       "sector": "Technology",
@@ -6992,7 +7466,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 84,
+      "pos": 90,
       "ticker": "IBM",
       "nombre": "International Business Machines Corporation",
       "sector": "Technology",
@@ -7084,7 +7558,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 85,
+      "pos": 91,
       "ticker": "MRK",
       "nombre": "Merck & Co., Inc.",
       "sector": "Healthcare",
@@ -7178,7 +7652,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 86,
+      "pos": 92,
       "ticker": "XOM",
       "nombre": "ExxonMobil Holdings Corporation",
       "sector": "Energy",
@@ -7270,7 +7744,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 87,
+      "pos": 93,
       "ticker": "GIS",
       "nombre": "General Mills, Inc.",
       "sector": "Consumer Defensive",
@@ -7347,7 +7821,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 88,
+      "pos": 94,
       "ticker": "PODD",
       "nombre": "Insulet Corporation",
       "sector": "Healthcare",
@@ -7439,7 +7913,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 89,
+      "pos": 95,
       "ticker": "AMGN",
       "nombre": "Amgen Inc.",
       "sector": "Healthcare",
@@ -7530,7 +8004,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 90,
+      "pos": 96,
       "ticker": "ICE",
       "nombre": "Intercontinental Exchange, Inc.",
       "sector": "Financial Services",
@@ -7622,7 +8096,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 91,
+      "pos": 97,
       "ticker": "MCO",
       "nombre": "Moody's Corporation",
       "sector": "Financial Services",
@@ -7714,7 +8188,97 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 92,
+      "pos": 98,
+      "ticker": "ERIE",
+      "nombre": "Erie Indemnity Company",
+      "sector": "Financial Services",
+      "precio": null,
+      "composite": 59.6,
+      "quality": 66,
+      "valuation": 47,
+      "safety": 100,
+      "momentum": 45,
+      "senal": "ALERTA_SALIDA",
+      "capas": 0,
+      "alertas": [
+        "Valoracion cara — multiples elevados",
+        "F-Score debil (3/9) — posible deterioro",
+        "Precio muy por debajo de MM200 — tendencia bajista",
+        "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+      ],
+      "confianza": "baja",
+      "dcf": {
+        "ticker": "ERIE",
+        "precio_actual": 223.55,
+        "wacc": 9.0,
+        "g_base": 5.0,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 118.75,
+            "ev_calculado": 5251687707.26,
+            "g_fase1": 1.0,
+            "g_fase2": -1.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 159.59,
+            "ev_calculado": 7137969347.21,
+            "g_fase1": 5.0,
+            "g_fase2": 2.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 219.25,
+            "ev_calculado": 9893458260.62,
+            "g_fase1": 9.0,
+            "g_fase2": 6.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 153.22,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 1065519455.05
+          },
+          "per": {
+            "precio_objetivo": 109.02,
+            "per_salida": 12,
+            "eps_proyectado": 13.98
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 9.8,
+          "g_fundamental": 5.0,
+          "diferencia": 4.7,
+          "interpretacion": "El mercado descuenta crecimiento muy optimista"
+        },
+        "precio_consenso": 140.61,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            159.59
+          ],
+          [
+            "EV/EBITDA",
+            153.22
+          ],
+          [
+            "PER",
+            109.02
+          ]
+        ],
+        "margen_seguridad": -37.1,
+        "target_analistas": null,
+        "n_analistas": 0,
+        "confianza": "alta",
+        "resumen": "Prima del 37% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 9.8%)."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 99,
       "ticker": "HD",
       "nombre": "The Home Depot, Inc.",
       "sector": "Consumer Cyclical",
@@ -7806,7 +8370,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 93,
+      "pos": 100,
       "ticker": "TJX",
       "nombre": "The TJX Companies, Inc.",
       "sector": "Consumer Cyclical",
@@ -7898,7 +8462,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 94,
+      "pos": 101,
       "ticker": "OXY",
       "nombre": "Occidental Petroleum Corporation",
       "sector": "Energy",
@@ -7989,7 +8553,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 95,
+      "pos": 102,
       "ticker": "OKE",
       "nombre": "ONEOK, Inc.",
       "sector": "Energy",
@@ -8072,7 +8636,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 96,
+      "pos": 103,
       "ticker": "KIN.BR",
       "nombre": "Kinepolis Group NV",
       "sector": "Communication Services",
@@ -8164,7 +8728,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 97,
+      "pos": 104,
       "ticker": "BAC",
       "nombre": "Bank of America Corporation",
       "sector": "Financial Services",
@@ -8215,7 +8779,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 98,
+      "pos": 105,
       "ticker": "SPGI",
       "nombre": "S&P Global Inc.",
       "sector": "Financial Services",
@@ -8307,7 +8871,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 99,
+      "pos": 106,
       "ticker": "CVX",
       "nombre": "Chevron Corporation",
       "sector": "Energy",
@@ -8399,7 +8963,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 100,
+      "pos": 107,
       "ticker": "AAPL",
       "nombre": "Apple Inc.",
       "sector": "Technology",
@@ -8491,7 +9055,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 101,
+      "pos": 108,
       "ticker": "EPD",
       "nombre": "Enterprise Products Partners L.P.",
       "sector": "Energy",
@@ -8574,7 +9138,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 102,
+      "pos": 109,
       "ticker": "VRTX",
       "nombre": "Vertex Pharmaceuticals Incorporated",
       "sector": "Healthcare",
@@ -8666,7 +9230,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 103,
+      "pos": 110,
       "ticker": "BABA",
       "nombre": "Alibaba Group Holding Limited",
       "sector": "Consumer Cyclical",
@@ -8728,7 +9292,7 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 104,
+      "pos": 111,
       "ticker": "HSY",
       "nombre": "The Hershey Company",
       "sector": "Consumer Defensive",
@@ -8820,7 +9384,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 105,
+      "pos": 112,
       "ticker": "IDXX",
       "nombre": "IDEXX Laboratories, Inc.",
       "sector": "Healthcare",
@@ -8912,7 +9476,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 106,
+      "pos": 113,
       "ticker": "COST",
       "nombre": "Costco Wholesale Corporation",
       "sector": "Consumer Defensive",
@@ -9004,7 +9568,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 107,
+      "pos": 114,
       "ticker": "V",
       "nombre": "Visa Inc.",
       "sector": "Financial Services",
@@ -9096,7 +9660,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 108,
+      "pos": 115,
       "ticker": "VRSK",
       "nombre": "Verisk Analytics, Inc.",
       "sector": "Industrials",
@@ -9188,7 +9752,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 109,
+      "pos": 116,
       "ticker": "ROST",
       "nombre": "Ross Stores, Inc.",
       "sector": "Consumer Cyclical",
@@ -9280,7 +9844,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 110,
+      "pos": 117,
       "ticker": "KHC",
       "nombre": "The Kraft Heinz Company",
       "sector": "Consumer Defensive",
@@ -9362,7 +9926,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 111,
+      "pos": 118,
       "ticker": "FAST",
       "nombre": "Fastenal Company",
       "sector": "Industrials",
@@ -9454,7 +10018,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 112,
+      "pos": 119,
       "ticker": "MSCI",
       "nombre": "MSCI Inc.",
       "sector": "Financial Services",
@@ -9546,7 +10110,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 113,
+      "pos": 120,
       "ticker": "PBA",
       "nombre": "Pembina Pipeline Corporation",
       "sector": "Energy",
@@ -9634,7 +10198,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 114,
+      "pos": 121,
       "ticker": "GWW",
       "nombre": "W.W. Grainger, Inc.",
       "sector": "Industrials",
@@ -9726,7 +10290,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 115,
+      "pos": 122,
       "ticker": "ITW",
       "nombre": "Illinois Tool Works Inc.",
       "sector": "Industrials",
@@ -9820,7 +10384,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 116,
+      "pos": 123,
       "ticker": "MNST",
       "nombre": "Monster Beverage Corporation",
       "sector": "Consumer Defensive",
@@ -9912,7 +10476,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 117,
+      "pos": 124,
       "ticker": "KLAC",
       "nombre": "KLA Corporation",
       "sector": "Technology",
@@ -9999,7 +10563,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 118,
+      "pos": 125,
       "ticker": "LRCX",
       "nombre": "Lam Research Corporation",
       "sector": "Technology",
@@ -10086,7 +10650,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 119,
+      "pos": 126,
       "ticker": "ENG.MC",
       "nombre": "Enagás, S.A.",
       "sector": "Utilities",
@@ -10178,7 +10742,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 120,
+      "pos": 127,
       "ticker": "CSCO",
       "nombre": "Cisco Systems, Inc.",
       "sector": "Technology",
@@ -10270,7 +10834,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 121,
+      "pos": 128,
       "ticker": "CDNS",
       "nombre": "Cadence Design Systems, Inc.",
       "sector": "Technology",
@@ -10362,7 +10926,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 122,
+      "pos": 129,
       "ticker": "ABBV",
       "nombre": "AbbVie Inc.",
       "sector": "Healthcare",
@@ -10454,7 +11018,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 123,
+      "pos": 130,
       "ticker": "UNH",
       "nombre": "UnitedHealth Group Incorporated",
       "sector": "Healthcare",
@@ -10545,7 +11109,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 124,
+      "pos": 131,
       "ticker": "MCD",
       "nombre": "McDonald's Corporation",
       "sector": "Consumer Cyclical",
@@ -10636,7 +11200,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 125,
+      "pos": 132,
       "ticker": "MMM",
       "nombre": "3M Company",
       "sector": "Industrials",
@@ -10728,7 +11292,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 126,
+      "pos": 133,
       "ticker": "XYL",
       "nombre": "Xylem Inc.",
       "sector": "Industrials",
@@ -10820,7 +11384,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 127,
+      "pos": 134,
       "ticker": "MTD",
       "nombre": "Mettler-Toledo International Inc.",
       "sector": "Healthcare",
@@ -10912,7 +11476,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 128,
+      "pos": 135,
       "ticker": "PSX",
       "nombre": "Phillips 66",
       "sector": "Energy",
@@ -10973,7 +11537,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 129,
+      "pos": 136,
       "ticker": "JNJ",
       "nombre": "Johnson & Johnson",
       "sector": "Healthcare",
@@ -11065,7 +11629,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 130,
+      "pos": 137,
       "ticker": "NDAQ",
       "nombre": "Nasdaq, Inc.",
       "sector": "Financial Services",
@@ -11157,7 +11721,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 131,
+      "pos": 138,
       "ticker": "EMR",
       "nombre": "Emerson Electric Co.",
       "sector": "Industrials",
@@ -11249,7 +11813,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 132,
+      "pos": 139,
       "ticker": "CME",
       "nombre": "CME Group Inc.",
       "sector": "Financial Services",
@@ -11341,7 +11905,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 133,
+      "pos": 140,
       "ticker": "ISRG",
       "nombre": "Intuitive Surgical, Inc.",
       "sector": "Healthcare",
@@ -11433,7 +11997,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 134,
+      "pos": 141,
       "ticker": "AVGO",
       "nombre": "Broadcom Inc.",
       "sector": "Technology",
@@ -11525,7 +12089,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 135,
+      "pos": 142,
       "ticker": "ODFL",
       "nombre": "Old Dominion Freight Line, Inc.",
       "sector": "Industrials",
@@ -11617,7 +12181,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 136,
+      "pos": 143,
       "ticker": "WMT",
       "nombre": "Walmart Inc.",
       "sector": "Consumer Defensive",
@@ -11709,7 +12273,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 137,
+      "pos": 144,
       "ticker": "NVDA",
       "nombre": "NVIDIA Corporation",
       "sector": "Technology",
@@ -11798,7 +12362,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 138,
+      "pos": 145,
       "ticker": "PH",
       "nombre": "Parker-Hannifin Corporation",
       "sector": "Industrials",
@@ -11890,7 +12454,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 139,
+      "pos": 146,
       "ticker": "AMAT",
       "nombre": "Applied Materials, Inc.",
       "sector": "Technology",
@@ -11977,7 +12541,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 140,
+      "pos": 147,
       "ticker": "MU",
       "nombre": "Micron Technology, Inc.",
       "sector": "Technology",
@@ -12064,7 +12628,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 141,
+      "pos": 148,
       "ticker": "ROK",
       "nombre": "Rockwell Automation, Inc.",
       "sector": "Industrials",
@@ -12156,7 +12720,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 142,
+      "pos": 149,
       "ticker": "AMT",
       "nombre": "American Tower Corporation",
       "sector": "Real Estate",
@@ -12249,7 +12813,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 143,
+      "pos": 150,
       "ticker": "WST",
       "nombre": "West Pharmaceutical Services, Inc.",
       "sector": "Healthcare",
@@ -12341,7 +12905,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 144,
+      "pos": 151,
       "ticker": "AMZN",
       "nombre": "Amazon.com, Inc.",
       "sector": "Consumer Cyclical",
@@ -12428,7 +12992,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 145,
+      "pos": 152,
       "ticker": "KO",
       "nombre": "The Coca-Cola Company",
       "sector": "Consumer Defensive",
@@ -12520,7 +13084,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 146,
+      "pos": 153,
       "ticker": "TXN",
       "nombre": "Texas Instruments Incorporated",
       "sector": "Technology",
@@ -12612,7 +13176,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 147,
+      "pos": 154,
       "ticker": "WAT",
       "nombre": "Waters Corporation",
       "sector": "Healthcare",
@@ -12673,7 +13237,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 148,
+      "pos": 155,
       "ticker": "LLY",
       "nombre": "Eli Lilly and Company",
       "sector": "Healthcare",
@@ -12765,7 +13329,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 149,
+      "pos": 156,
       "ticker": "SYK",
       "nombre": "Stryker Corporation",
       "sector": "Healthcare",
@@ -12857,7 +13421,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 150,
+      "pos": 157,
       "ticker": "KMI",
       "nombre": "Kinder Morgan, Inc.",
       "sector": "Energy",
@@ -12946,7 +13510,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 151,
+      "pos": 158,
       "ticker": "SPG",
       "nombre": "Simon Property Group, Inc.",
       "sector": "Real Estate",
@@ -13041,7 +13605,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 152,
+      "pos": 159,
       "ticker": "AMP.MC",
       "nombre": "Amper, S.A.",
       "sector": "Technology",
@@ -13101,7 +13665,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 153,
+      "pos": 160,
       "ticker": "SAN.MC",
       "nombre": "Banco Santander, S.A.",
       "sector": "Financial Services",
@@ -13154,7 +13718,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 154,
+      "pos": 161,
       "ticker": "GE",
       "nombre": "GE Aerospace",
       "sector": "Industrials",
@@ -13246,7 +13810,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 155,
+      "pos": 162,
       "ticker": "ETN",
       "nombre": "Eaton Corporation plc",
       "sector": "Industrials",
@@ -13338,7 +13902,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 156,
+      "pos": 163,
       "ticker": "AME",
       "nombre": "AMETEK, Inc.",
       "sector": "Industrials",
@@ -13430,7 +13994,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 157,
+      "pos": 164,
       "ticker": "NNN",
       "nombre": "NNN REIT, Inc.",
       "sector": "Real Estate",
@@ -13492,7 +14056,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 158,
+      "pos": 165,
       "ticker": "ES",
       "nombre": "Eversource Energy",
       "sector": "Utilities",
@@ -13581,7 +14145,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 159,
+      "pos": 166,
       "ticker": "CAT",
       "nombre": "Caterpillar Inc.",
       "sector": "Industrials",
@@ -13668,7 +14232,70 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 160,
+      "pos": 167,
+      "ticker": "BLK",
+      "nombre": "BlackRock, Inc.",
+      "sector": "Financial Services",
+      "precio": null,
+      "composite": 46.9,
+      "quality": 49,
+      "valuation": 30,
+      "safety": 100,
+      "momentum": 45,
+      "senal": "ALERTA_SALIDA",
+      "capas": 0,
+      "alertas": [
+        "Valoracion cara — multiples elevados",
+        "F-Score debil (2/9) — posible deterioro",
+        "Precio muy por debajo de MM200 — tendencia bajista",
+        "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "BLK",
+        "precio_actual": 1055.67,
+        "wacc": 10.3,
+        "g_base": 19.5,
+        "sector": "Financial Services",
+        "escenarios_dcf": null,
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 1040.69,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 26550701298.07
+          },
+          "per": {
+            "precio_objetivo": 744.82,
+            "per_salida": 12,
+            "eps_proyectado": 101.47
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 1033.0,
+        "precios_por_metodo": [
+          [
+            "EV/EBITDA",
+            1040.69
+          ],
+          [
+            "PER",
+            744.82
+          ],
+          [
+            "Analistas",
+            1313.5
+          ]
+        ],
+        "margen_seguridad": -2.1,
+        "target_analistas": 1313.5,
+        "n_analistas": 16,
+        "confianza": "media",
+        "resumen": "Cotiza cerca de su valor intrínseco estimado."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 168,
       "ticker": "NSC",
       "nombre": "Norfolk Southern Corporation",
       "sector": "Industrials",
@@ -13760,7 +14387,69 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 161,
+      "pos": 169,
+      "ticker": "ORCL",
+      "nombre": "Oracle Corporation",
+      "sector": "Technology",
+      "precio": null,
+      "composite": 46.6,
+      "quality": 52,
+      "valuation": 44,
+      "safety": 36,
+      "momentum": 45,
+      "senal": "NEUTRO",
+      "capas": 0,
+      "alertas": [
+        "Valoracion cara — multiples elevados",
+        "Precio muy por debajo de MM200 — tendencia bajista",
+        "Deuda/EBITDA elevada (4.1x)"
+      ],
+      "confianza": "alta",
+      "dcf": {
+        "ticker": "ORCL",
+        "precio_actual": 114.99,
+        "wacc": 12.1,
+        "g_base": 16.2,
+        "sector": "Technology",
+        "escenarios_dcf": null,
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 156.61,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 66815000646.09
+          },
+          "per": {
+            "precio_objetivo": 139.19,
+            "per_salida": 20,
+            "eps_proyectado": 12.34
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 181.32,
+        "precios_por_metodo": [
+          [
+            "EV/EBITDA",
+            156.61
+          ],
+          [
+            "PER",
+            139.19
+          ],
+          [
+            "Analistas",
+            248.15
+          ]
+        ],
+        "margen_seguridad": 57.7,
+        "target_analistas": 248.15,
+        "n_analistas": 41,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 58% respecto al valor intrínseco estimado."
+      },
+      "tipologia": "VALUE_CYCLICAL"
+    },
+    {
+      "pos": 170,
       "ticker": "FER.MC",
       "nombre": "Ferrovial N.V.",
       "sector": "Industrials",
@@ -13843,7 +14532,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 162,
+      "pos": 171,
       "ticker": "O",
       "nombre": "Realty Income Corporation",
       "sector": "Real Estate",
@@ -13936,7 +14625,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 163,
+      "pos": 172,
       "ticker": "EXC",
       "nombre": "Exelon Corporation",
       "sector": "Utilities",
@@ -13998,7 +14687,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 164,
+      "pos": 173,
       "ticker": "AMD",
       "nombre": "Advanced Micro Devices, Inc.",
       "sector": "Technology",
@@ -14085,7 +14774,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 165,
+      "pos": 174,
       "ticker": "DUK",
       "nombre": "Duke Energy Corporation",
       "sector": "Utilities",
@@ -14147,7 +14836,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 166,
+      "pos": 175,
       "ticker": "TRP",
       "nombre": "TC Energy Corporation",
       "sector": "Energy",
@@ -14207,7 +14896,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 29.61,
+        "precio_consenso": 29.63,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -14219,11 +14908,11 @@
           ],
           [
             "Analistas",
-            63.46
+            63.5
           ]
         ],
-        "margen_seguridad": -58.1,
-        "target_analistas": 63.46,
+        "margen_seguridad": -58.0,
+        "target_analistas": 63.5,
         "n_analistas": 3,
         "confianza": "alta",
         "resumen": "Prima del 58% — cotiza significativamente por encima del valor intrínseco."
@@ -14231,7 +14920,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 167,
+      "pos": 176,
       "ticker": "MDLZ",
       "nombre": "Mondelez International, Inc.",
       "sector": "Consumer Defensive",
@@ -14323,7 +15012,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 168,
+      "pos": 177,
       "ticker": "ED",
       "nombre": "Consolidated Edison, Inc.",
       "sector": "Utilities",
@@ -14385,7 +15074,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 169,
+      "pos": 178,
       "ticker": "ENB",
       "nombre": "Enbridge Inc.",
       "sector": "Energy",
@@ -14423,7 +15112,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 24.97,
+        "precio_consenso": 24.98,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -14435,11 +15124,11 @@
           ],
           [
             "Analistas",
-            52.71
+            52.74
           ]
         ],
         "margen_seguridad": -56.1,
-        "target_analistas": 52.71,
+        "target_analistas": 52.74,
         "n_analistas": 4,
         "confianza": "alta",
         "resumen": "Prima del 56% — cotiza significativamente por encima del valor intrínseco."
@@ -14447,7 +15136,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 170,
+      "pos": 179,
       "ticker": "D",
       "nombre": "Dominion Energy, Inc.",
       "sector": "Utilities",
@@ -14509,7 +15198,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 171,
+      "pos": 180,
       "ticker": "CSX",
       "nombre": "CSX Corporation",
       "sector": "Industrials",
@@ -14601,7 +15290,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 172,
+      "pos": 181,
       "ticker": "JPM",
       "nombre": "JPMorgan Chase & Co.",
       "sector": "Financial Services",
@@ -14655,7 +15344,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 173,
+      "pos": 182,
       "ticker": "SBUX",
       "nombre": "Starbucks Corporation",
       "sector": "Consumer Cyclical",
@@ -14717,7 +15406,7 @@
       "tipologia": "QUALITY_GROWTH"
     },
     {
-      "pos": 174,
+      "pos": 183,
       "ticker": "CTAS",
       "nombre": "Cintas Corporation",
       "sector": "Industrials",
@@ -14811,7 +15500,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 175,
+      "pos": 184,
       "ticker": "WFC",
       "nombre": "Wells Fargo & Company",
       "sector": "Financial Services",
@@ -14865,7 +15554,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 176,
+      "pos": 185,
       "ticker": "WMB",
       "nombre": "The Williams Companies, Inc.",
       "sector": "Energy",
@@ -14927,7 +15616,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 177,
+      "pos": 186,
       "ticker": "NEE",
       "nombre": "NextEra Energy, Inc.",
       "sector": "Utilities",
@@ -14989,7 +15678,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 178,
+      "pos": 187,
       "ticker": "NVAX",
       "nombre": "Novavax, Inc.",
       "sector": "Healthcare",
@@ -15073,7 +15762,7 @@
       "tipologia": "SPECULATIVE"
     },
     {
-      "pos": 179,
+      "pos": 188,
       "ticker": "SO",
       "nombre": "The Southern Company",
       "sector": "Utilities",
@@ -15135,7 +15824,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 180,
+      "pos": 189,
       "ticker": "PLD",
       "nombre": "Prologis, Inc.",
       "sector": "Real Estate",
@@ -15197,7 +15886,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 181,
+      "pos": 190,
       "ticker": "AEP",
       "nombre": "American Electric Power Company, Inc.",
       "sector": "Utilities",
@@ -15259,7 +15948,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 182,
+      "pos": 191,
       "ticker": "DLR",
       "nombre": "Digital Realty Trust, Inc.",
       "sector": "Real Estate",
@@ -15321,7 +16010,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 183,
+      "pos": 192,
       "ticker": "XEL",
       "nombre": "Xcel Energy Inc.",
       "sector": "Utilities",
@@ -15383,7 +16072,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 184,
+      "pos": 193,
       "ticker": "INTC",
       "nombre": "Intel Corporation",
       "sector": "Technology",
@@ -15461,7 +16150,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 185,
+      "pos": 194,
       "ticker": "DE",
       "nombre": "Deere & Company",
       "sector": "Industrials",
@@ -15545,7 +16234,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 186,
+      "pos": 195,
       "ticker": "CLNX.MC",
       "nombre": "Cellnex Telecom, S.A.",
       "sector": "Real Estate",
@@ -15598,7 +16287,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 187,
+      "pos": 196,
       "ticker": "WEC",
       "nombre": "WEC Energy Group, Inc.",
       "sector": "Utilities",
@@ -15661,7 +16350,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 188,
+      "pos": 197,
       "ticker": "TFX",
       "nombre": "Teleflex Incorporated",
       "sector": "Healthcare",
@@ -15724,7 +16413,7 @@
       "tipologia": "VALUE_CYCLICAL"
     },
     {
-      "pos": 189,
+      "pos": 198,
       "ticker": "EQIX",
       "nombre": "Equinix, Inc.",
       "sector": "Real Estate",

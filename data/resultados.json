@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-26T21:34:25.571341",
+  "fecha": "2026-07-26T22:27:07.125970",
   "empresas": [
     {
       "ticker": "VID.MC",
@@ -3337,7 +3337,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 8.58,
+        "precio_consenso": 8.57,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -3345,11 +3345,11 @@
           ],
           [
             "Analistas",
-            16.35
+            16.33
           ]
         ],
-        "margen_seguridad": -40.1,
-        "target_analistas": 16.35,
+        "margen_seguridad": -40.2,
+        "target_analistas": 16.33,
         "n_analistas": 7,
         "confianza": "alta",
         "resumen": "Prima del 40% — cotiza significativamente por encima del valor intrínseco."
@@ -12119,7 +12119,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 24.97,
+        "precio_consenso": 24.98,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -12131,11 +12131,11 @@
           ],
           [
             "Analistas",
-            52.71
+            52.74
           ]
         ],
         "margen_seguridad": -56.1,
-        "target_analistas": 52.71,
+        "target_analistas": 52.74,
         "n_analistas": 4,
         "confianza": "alta",
         "resumen": "Prima del 56% — cotiza significativamente por encima del valor intrínseco."
@@ -12290,7 +12290,7 @@
           }
         },
         "reverse_dcf": null,
-        "precio_consenso": 29.61,
+        "precio_consenso": 29.63,
         "precios_por_metodo": [
           [
             "EV/EBITDA",
@@ -12302,11 +12302,11 @@
           ],
           [
             "Analistas",
-            63.46
+            63.5
           ]
         ],
-        "margen_seguridad": -58.1,
-        "target_analistas": 63.46,
+        "margen_seguridad": -58.0,
+        "target_analistas": 63.5,
         "n_analistas": 3,
         "confianza": "alta",
         "resumen": "Prima del 58% — cotiza significativamente por encima del valor intrínseco."
@@ -32452,6 +32452,1480 @@
         "n_analistas": 6,
         "confianza": "alta",
         "resumen": "Infravalorada un 57% respecto al valor intrínseco estimado."
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "nombre": "Oracle Corporation",
+      "sector": "Technology",
+      "precio": null,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 46.6,
+        "confianza": "alta",
+        "quality": {
+          "score": 52,
+          "detalle": {
+            "roic": 16,
+            "gross_profit_assets": 5,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 0
+          },
+          "pts_raw": "52/100"
+        },
+        "valuation": {
+          "score": 44,
+          "detalle": {
+            "ev_ebitda": 20,
+            "fcf_yield": 0,
+            "per": 14
+          },
+          "pts_raw": "34/100",
+          "score_original": 34,
+          "dcf_ajuste": 10,
+          "dcf_razon": "DCF: infravalorada +58% → val +10pts"
+        },
+        "safety": {
+          "score": 36,
+          "detalle": {
+            "deuda_ebitda": 9,
+            "cobertura_intereses": 27
+          },
+          "pts_raw": "36/100"
+        },
+        "momentum": {
+          "score": 45,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "dcf_ajuste": 10,
+        "dcf_razon": "DCF: infravalorada +58% → val +10pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 0,
+        "razones": [
+          "Fundamentales neutrales (F-Score 5/9)",
+          "DCF: infravalorada +58% → val +10pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados",
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Deuda/EBITDA elevada (4.1x)"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
+      },
+      "metrics": {
+        "ticker": "ORCL",
+        "nombre": "Oracle Corporation",
+        "sector": "Technology",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": null,
+        "roic": 11.4,
+        "gross_profit_to_assets": 16.94,
+        "gross_margin": 65.82,
+        "ebit_margin": 35.86,
+        "net_margin": 25.37,
+        "roe": 40.2,
+        "roa": 6.53,
+        "fcf_conversion": -138.62,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 1,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 198735219917.36,
+        "ev_ebitda": 14.96,
+        "ev_fcf": -19.26,
+        "fcf_yield": -7.15,
+        "per": 19.72,
+        "peg": 0.65,
+        "price_to_book": 8.82,
+        "deuda_ebitda": 4.1,
+        "cobertura_intereses": 5.25,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      },
+      "dcf": {
+        "ticker": "ORCL",
+        "precio_actual": 114.99,
+        "wacc": 12.1,
+        "g_base": 16.2,
+        "sector": "Technology",
+        "escenarios_dcf": null,
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 156.61,
+            "multiple_salida": 14,
+            "ebitda_proyectado": 66815000646.09
+          },
+          "per": {
+            "precio_objetivo": 139.19,
+            "per_salida": 20,
+            "eps_proyectado": 12.34
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 181.32,
+        "precios_por_metodo": [
+          [
+            "EV/EBITDA",
+            156.61
+          ],
+          [
+            "PER",
+            139.19
+          ],
+          [
+            "Analistas",
+            248.15
+          ]
+        ],
+        "margen_seguridad": 57.7,
+        "target_analistas": 248.15,
+        "n_analistas": 41,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 58% respecto al valor intrínseco estimado."
+      }
+    },
+    {
+      "ticker": "BLK",
+      "nombre": "BlackRock, Inc.",
+      "sector": "Financial Services",
+      "precio": null,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 46.9,
+        "confianza": "alta",
+        "quality": {
+          "score": 49,
+          "detalle": {
+            "roic": 15,
+            "gross_profit_assets": 2,
+            "fscore": 6,
+            "altman_z": 15,
+            "fcf_conversion": 11
+          },
+          "pts_raw": "49/100"
+        },
+        "valuation": {
+          "score": 30,
+          "detalle": {
+            "ev_ebitda": 17,
+            "fcf_yield": 7,
+            "per": 6
+          },
+          "pts_raw": "30/100",
+          "score_original": 30,
+          "dcf_ajuste": 0,
+          "dcf_razon": ""
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 45,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "dcf_ajuste": 0,
+        "dcf_razon": ""
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 0,
+        "razones": [],
+        "alertas": [
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (2/9) — posible deterioro",
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
+      },
+      "metrics": {
+        "ticker": "BLK",
+        "nombre": "BlackRock, Inc.",
+        "sector": "Financial Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": null,
+        "roic": 10.95,
+        "gross_profit_to_assets": 6.65,
+        "gross_margin": 46.7,
+        "ebit_margin": 34.0,
+        "net_margin": 22.93,
+        "roe": 9.94,
+        "roa": 3.27,
+        "fcf_conversion": 63.97,
+        "fscore": 2,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 102992638772.0,
+        "ev_ebitda": 15.77,
+        "ev_fcf": 49.32,
+        "fcf_yield": 2.07,
+        "per": 25.32,
+        "peg": 1.14,
+        "price_to_book": 2.89,
+        "deuda_ebitda": 0.32,
+        "cobertura_intereses": 13.41,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      },
+      "dcf": {
+        "ticker": "BLK",
+        "precio_actual": 1055.67,
+        "wacc": 10.3,
+        "g_base": 19.5,
+        "sector": "Financial Services",
+        "escenarios_dcf": null,
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 1040.69,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 26550701298.07
+          },
+          "per": {
+            "precio_objetivo": 744.82,
+            "per_salida": 12,
+            "eps_proyectado": 101.47
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 1033.0,
+        "precios_por_metodo": [
+          [
+            "EV/EBITDA",
+            1040.69
+          ],
+          [
+            "PER",
+            744.82
+          ],
+          [
+            "Analistas",
+            1313.5
+          ]
+        ],
+        "margen_seguridad": -2.1,
+        "target_analistas": 1313.5,
+        "n_analistas": 16,
+        "confianza": "media",
+        "resumen": "Cotiza cerca de su valor intrínseco estimado."
+      }
+    },
+    {
+      "ticker": "WRB",
+      "nombre": "W. R. Berkley Corporation",
+      "sector": "Financial Services",
+      "precio": null,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 79.5,
+        "confianza": "media",
+        "quality": {
+          "score": 78,
+          "detalle": {
+            "roic": 24,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "67/85"
+        },
+        "valuation": {
+          "score": 90,
+          "detalle": {
+            "ev_ebitda": 36,
+            "fcf_yield": 35,
+            "per": 22
+          },
+          "pts_raw": "93/100",
+          "score_original": 93,
+          "dcf_ajuste": -3,
+          "dcf_razon": "DCF: prima -17% sobre intrínseco → val -3pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 45,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "dcf_ajuste": -3,
+        "dcf_razon": "DCF: prima -17% sobre intrínseco → val -3pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoracion atractiva",
+          "FCF Yield atractivo (12.2%)",
+          "Fundamentales neutrales (F-Score 4/9)",
+          "DCF: prima -17% sobre intrínseco → val -3pts"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
+      },
+      "metrics": {
+        "ticker": "WRB",
+        "nombre": "W. R. Berkley Corporation",
+        "sector": "Financial Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": null,
+        "roic": 19.02,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": 16.44,
+        "net_margin": 12.15,
+        "roe": 18.34,
+        "roa": 4.04,
+        "fcf_conversion": 191.78,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 16800020890.54,
+        "ev_ebitda": 10.97,
+        "ev_fcf": 8.29,
+        "fcf_yield": 12.19,
+        "per": 15.99,
+        "peg": 5.2,
+        "price_to_book": 3.02,
+        "deuda_ebitda": 0.12,
+        "cobertura_intereses": 18.97,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      },
+      "dcf": {
+        "ticker": "WRB",
+        "precio_actual": 75.46,
+        "wacc": 9.0,
+        "g_base": 7.3,
+        "sector": "Financial Services",
+        "escenarios_dcf": null,
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 66.3,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 3750000869.32
+          },
+          "per": {
+            "precio_objetivo": 52.27,
+            "per_salida": 12,
+            "eps_proyectado": 6.7
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 62.5,
+        "precios_por_metodo": [
+          [
+            "EV/EBITDA",
+            66.3
+          ],
+          [
+            "PER",
+            52.27
+          ],
+          [
+            "Analistas",
+            68.94
+          ]
+        ],
+        "margen_seguridad": -17.2,
+        "target_analistas": 68.94,
+        "n_analistas": 17,
+        "confianza": "media",
+        "resumen": "Prima del 17% sobre valor intrínseco — valoración ajustada."
+      }
+    },
+    {
+      "ticker": "RLI",
+      "nombre": "RLI Corp.",
+      "sector": "Financial Services",
+      "precio": null,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 83.8,
+        "confianza": "media",
+        "quality": {
+          "score": 80,
+          "detalle": {
+            "roic": 25,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "68/85"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 39,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "99/100",
+          "score_original": 99,
+          "dcf_ajuste": 5,
+          "dcf_razon": "DCF: infravalorada +98% → val +5pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 45,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "dcf_ajuste": 5,
+        "dcf_razon": "DCF: infravalorada +98% → val +5pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoracion atractiva",
+          "FCF Yield atractivo (10.7%)",
+          "Fundamentales neutrales (F-Score 4/9)",
+          "DCF: infravalorada +98% → val +5pts"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
+      },
+      "metrics": {
+        "ticker": "RLI",
+        "nombre": "RLI Corp.",
+        "sector": "Financial Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": null,
+        "roic": 22.11,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": 27.16,
+        "net_margin": 21.43,
+        "roe": 22.68,
+        "roa": 6.55,
+        "fcf_conversion": 150.92,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 3409550439.41,
+        "ev_ebitda": 10.03,
+        "ev_fcf": 9.42,
+        "fcf_yield": 10.71,
+        "per": 13.01,
+        "peg": 1.73,
+        "price_to_book": 3.17,
+        "deuda_ebitda": 0.08,
+        "cobertura_intereses": 95.43,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      },
+      "dcf": {
+        "ticker": "RLI",
+        "precio_actual": 61.92,
+        "wacc": 7.0,
+        "g_base": 19.5,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 152.94,
+            "ev_calculado": 14116065961.83,
+            "g_fase1": 15.5,
+            "g_fase2": 13.5,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 223.53,
+            "ev_calculado": 20594804832.78,
+            "g_fase1": 19.5,
+            "g_fase2": 16.5,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 238.79,
+            "ev_calculado": 21994547712.19,
+            "g_fase1": 23.5,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 108.04,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 1398636009.52
+          },
+          "per": {
+            "precio_objetivo": 99.14,
+            "per_salida": 12,
+            "eps_proyectado": 11.59
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 2.2,
+          "g_fundamental": 19.5,
+          "diferencia": -17.3,
+          "interpretacion": "El mercado descuenta crecimiento pesimista — posible infravaloración"
+        },
+        "precio_consenso": 122.55,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            223.53
+          ],
+          [
+            "EV/EBITDA",
+            108.04
+          ],
+          [
+            "PER",
+            99.14
+          ],
+          [
+            "Analistas",
+            59.5
+          ]
+        ],
+        "margen_seguridad": 97.9,
+        "target_analistas": 59.5,
+        "n_analistas": 4,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 98% respecto al valor intrínseco estimado. El mercado descuenta crecimiento pesimista — posible infravaloración (g implícito: 2.2%)."
+      }
+    },
+    {
+      "ticker": "AFG",
+      "nombre": "American Financial Group, Inc.",
+      "sector": "Financial Services",
+      "precio": null,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 82.5,
+        "confianza": "media",
+        "quality": {
+          "score": 77,
+          "detalle": {
+            "roic": 23,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "66/85"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100",
+          "score_original": 100,
+          "dcf_ajuste": 0,
+          "dcf_razon": ""
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 45,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "dcf_ajuste": 0,
+        "dcf_razon": ""
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoracion atractiva",
+          "EV/EBITDA bajo (9.1x)",
+          "FCF Yield atractivo (12.8%)",
+          "Fundamentales neutrales (F-Score 4/9)"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
+      },
+      "metrics": {
+        "ticker": "AFG",
+        "nombre": "American Financial Group, Inc.",
+        "sector": "Financial Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": null,
+        "roic": 18.54,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": 14.2,
+        "net_margin": 10.37,
+        "roe": 17.47,
+        "roa": 2.58,
+        "fcf_conversion": 182.07,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 7166672486.91,
+        "ev_ebitda": 9.13,
+        "ev_fcf": 7.85,
+        "fcf_yield": 12.83,
+        "per": 13.67,
+        "peg": 2.3,
+        "price_to_book": 2.55,
+        "deuda_ebitda": 0.07,
+        "cobertura_intereses": 14.41,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      },
+      "dcf": {
+        "ticker": "AFG",
+        "precio_actual": 143.76,
+        "wacc": 7.8,
+        "g_base": 9.7,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 60.93,
+            "ev_calculado": 5664133457.97,
+            "g_fase1": 5.7,
+            "g_fase2": 3.7,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 88.79,
+            "ev_calculado": 7979539348.13,
+            "g_fase1": 9.7,
+            "g_fase2": 6.7,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 129.5,
+            "ev_calculado": 11361652376.03,
+            "g_fase1": 13.7,
+            "g_fase2": 10.7,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 175.38,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 2185618028.61
+          },
+          "per": {
+            "precio_objetivo": 137.65,
+            "per_salida": 12,
+            "eps_proyectado": 16.73
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 15.7,
+          "g_fundamental": 9.7,
+          "diferencia": 6.0,
+          "interpretacion": "El mercado descuenta crecimiento muy optimista"
+        },
+        "precio_consenso": 137.25,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            88.79
+          ],
+          [
+            "EV/EBITDA",
+            175.38
+          ],
+          [
+            "PER",
+            137.65
+          ],
+          [
+            "Analistas",
+            147.17
+          ]
+        ],
+        "margen_seguridad": -4.5,
+        "target_analistas": 147.17,
+        "n_analistas": 6,
+        "confianza": "alta",
+        "resumen": "Cotiza cerca de su valor intrínseco estimado. El mercado descuenta crecimiento muy optimista (g implícito: 15.7%)."
+      }
+    },
+    {
+      "ticker": "MKL",
+      "nombre": "Markel Group Inc.",
+      "sector": "Financial Services",
+      "precio": null,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 79.2,
+        "confianza": "media",
+        "quality": {
+          "score": 74,
+          "detalle": {
+            "roic": 17,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "63/85"
+        },
+        "valuation": {
+          "score": 94,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100",
+          "score_original": 100,
+          "dcf_ajuste": -6,
+          "dcf_razon": "DCF: prima -21% sobre intrínseco → val -6pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 45,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "dcf_ajuste": -6,
+        "dcf_razon": "DCF: prima -21% sobre intrínseco → val -6pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoracion atractiva",
+          "EV/EBITDA bajo (8.5x)",
+          "FCF Yield atractivo (10.2%)",
+          "Fundamentales neutrales (F-Score 5/9)",
+          "DCF: prima -21% sobre intrínseco → val -6pts"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
+      },
+      "metrics": {
+        "ticker": "MKL",
+        "nombre": "Markel Group Inc.",
+        "sector": "Financial Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": null,
+        "roic": 12.26,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": 17.99,
+        "net_margin": 12.9,
+        "roe": 11.33,
+        "roa": 3.06,
+        "fcf_conversion": 121.23,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 1,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 14976658637.48,
+        "ev_ebitda": 8.48,
+        "ev_fcf": 9.9,
+        "fcf_yield": 10.23,
+        "per": 14.43,
+        "peg": 2.53,
+        "price_to_book": 1.38,
+        "deuda_ebitda": 0.11,
+        "cobertura_intereses": 14.27,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      },
+      "dcf": {
+        "ticker": "MKL",
+        "precio_actual": 1994.7,
+        "wacc": 8.0,
+        "g_base": 0.0,
+        "sector": "Financial Services",
+        "escenarios_dcf": null,
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 1622.95,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 2848520211.32
+          },
+          "per": {
+            "precio_objetivo": 1130.13,
+            "per_salida": 12,
+            "eps_proyectado": 138.23
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 1570.86,
+        "precios_por_metodo": [
+          [
+            "EV/EBITDA",
+            1622.95
+          ],
+          [
+            "PER",
+            1130.13
+          ],
+          [
+            "Analistas",
+            1959.5
+          ]
+        ],
+        "margen_seguridad": -21.2,
+        "target_analistas": 1959.5,
+        "n_analistas": 6,
+        "confianza": "alta",
+        "resumen": "Prima del 21% — cotiza significativamente por encima del valor intrínseco."
+      }
+    },
+    {
+      "ticker": "ERIE",
+      "nombre": "Erie Indemnity Company",
+      "sector": "Financial Services",
+      "precio": null,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 59.6,
+        "confianza": "baja",
+        "quality": {
+          "score": 66,
+          "detalle": {
+            "fscore": 10,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "40/60"
+        },
+        "valuation": {
+          "score": 47,
+          "detalle": {
+            "ev_ebitda": 25,
+            "fcf_yield": 20,
+            "per": 13
+          },
+          "pts_raw": "58/100",
+          "score_original": 57,
+          "dcf_ajuste": -10,
+          "dcf_razon": "DCF: prima -37% sobre intrínseco → val -10pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60
+          },
+          "pts_raw": "60/60"
+        },
+        "momentum": {
+          "score": 45,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "dcf_ajuste": -10,
+        "dcf_razon": "DCF: prima -37% sobre intrínseco → val -10pts"
+      },
+      "señal": {
+        "señal": "ALERTA_SALIDA",
+        "capas": 0,
+        "razones": [
+          "DCF: prima -37% sobre intrínseco → val -10pts"
+        ],
+        "alertas": [
+          "Valoracion cara — multiples elevados",
+          "F-Score debil (3/9) — posible deterioro",
+          "Precio muy por debajo de MM200 — tendencia bajista",
+          "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
+      },
+      "metrics": {
+        "ticker": "ERIE",
+        "nombre": "Erie Indemnity Company",
+        "sector": "Financial Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": null,
+        "roic": null,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": null,
+        "net_margin": 13.48,
+        "roe": 24.5,
+        "roa": 16.67,
+        "fcf_conversion": 102.08,
+        "fscore": 3,
+        "fscore_señal": "débil",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 0,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 7013640194.68,
+        "ev_ebitda": 13.75,
+        "ev_fcf": 19.92,
+        "fcf_yield": 4.88,
+        "per": 20.45,
+        "peg": 2.67,
+        "price_to_book": 4.97,
+        "deuda_ebitda": -0.38,
+        "cobertura_intereses": null,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      },
+      "dcf": {
+        "ticker": "ERIE",
+        "precio_actual": 223.55,
+        "wacc": 9.0,
+        "g_base": 5.0,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 118.75,
+            "ev_calculado": 5251687707.26,
+            "g_fase1": 1.0,
+            "g_fase2": -1.0,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 159.59,
+            "ev_calculado": 7137969347.21,
+            "g_fase1": 5.0,
+            "g_fase2": 2.0,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 219.25,
+            "ev_calculado": 9893458260.62,
+            "g_fase1": 9.0,
+            "g_fase2": 6.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 153.22,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 1065519455.05
+          },
+          "per": {
+            "precio_objetivo": 109.02,
+            "per_salida": 12,
+            "eps_proyectado": 13.98
+          }
+        },
+        "reverse_dcf": {
+          "g_implicito": 9.8,
+          "g_fundamental": 5.0,
+          "diferencia": 4.7,
+          "interpretacion": "El mercado descuenta crecimiento muy optimista"
+        },
+        "precio_consenso": 140.61,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            159.59
+          ],
+          [
+            "EV/EBITDA",
+            153.22
+          ],
+          [
+            "PER",
+            109.02
+          ]
+        ],
+        "margen_seguridad": -37.1,
+        "target_analistas": null,
+        "n_analistas": 0,
+        "confianza": "alta",
+        "resumen": "Prima del 37% — cotiza significativamente por encima del valor intrínseco. El mercado descuenta crecimiento muy optimista (g implícito: 9.8%)."
+      }
+    },
+    {
+      "ticker": "HIG",
+      "nombre": "The Hartford Insurance Group, Inc.",
+      "sector": "Financial Services",
+      "precio": null,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 83.0,
+        "confianza": "media",
+        "quality": {
+          "score": 78,
+          "detalle": {
+            "roic": 21,
+            "fscore": 16,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "67/85"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100",
+          "score_original": 100,
+          "dcf_ajuste": 5,
+          "dcf_razon": "DCF: infravalorada +187% → val +5pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 45,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "dcf_ajuste": 5,
+        "dcf_razon": "DCF: infravalorada +187% → val +5pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoracion atractiva",
+          "EV/EBITDA bajo (7.7x)",
+          "FCF Yield atractivo (14.9%)",
+          "Fundamentales neutrales (F-Score 5/9)",
+          "DCF: infravalorada +187% → val +5pts"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
+      },
+      "metrics": {
+        "ticker": "HIG",
+        "nombre": "The Hartford Insurance Group, Inc.",
+        "sector": "Financial Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": null,
+        "roic": 16.87,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": 17.67,
+        "net_margin": 13.67,
+        "roe": 20.21,
+        "roa": 4.46,
+        "fcf_conversion": 149.97,
+        "fscore": 5,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 1,
+          "B1_deuda_disminuye": 0,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 1
+        },
+        "altman_z": 23114162996.12,
+        "ev_ebitda": 7.66,
+        "ev_fcf": 7.43,
+        "fcf_yield": 14.93,
+        "per": 9.71,
+        "peg": 0.12,
+        "price_to_book": 2.08,
+        "deuda_ebitda": 0.76,
+        "cobertura_intereses": 24.92,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      },
+      "dcf": {
+        "ticker": "HIG",
+        "precio_actual": 140.53,
+        "wacc": 7.4,
+        "g_base": 16.1,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 650.05,
+            "ev_calculado": 178592176681.88,
+            "g_fase1": 12.1,
+            "g_fase2": 10.1,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 934.48,
+            "ev_calculado": 256561824869.03,
+            "g_fase1": 16.1,
+            "g_fase2": 13.1,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 1121.04,
+            "ev_calculado": 307704193241.27,
+            "g_fase1": 20.1,
+            "g_fase2": 12.0,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 271.59,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 10680140154.34
+          },
+          "per": {
+            "precio_objetivo": 256.21,
+            "per_salida": 12,
+            "eps_proyectado": 30.52
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 402.83,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            934.48
+          ],
+          [
+            "EV/EBITDA",
+            271.59
+          ],
+          [
+            "PER",
+            256.21
+          ],
+          [
+            "Analistas",
+            149.05
+          ]
+        ],
+        "margen_seguridad": 186.7,
+        "target_analistas": 149.05,
+        "n_analistas": 20,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 187% respecto al valor intrínseco estimado."
+      }
+    },
+    {
+      "ticker": "ALL",
+      "nombre": "The Allstate Corporation",
+      "sector": "Financial Services",
+      "precio": null,
+      "tipologia": "VALUE_CYCLICAL",
+      "scores": {
+        "composite": 83.8,
+        "confianza": "media",
+        "quality": {
+          "score": 80,
+          "detalle": {
+            "roic": 25,
+            "fscore": 13,
+            "altman_z": 15,
+            "fcf_conversion": 15
+          },
+          "pts_raw": "68/85"
+        },
+        "valuation": {
+          "score": 100,
+          "detalle": {
+            "ev_ebitda": 40,
+            "fcf_yield": 35,
+            "per": 25
+          },
+          "pts_raw": "100/100",
+          "score_original": 100,
+          "dcf_ajuste": 5,
+          "dcf_razon": "DCF: infravalorada +101% → val +5pts"
+        },
+        "safety": {
+          "score": 100,
+          "detalle": {
+            "deuda_ebitda": 60,
+            "cobertura_intereses": 40
+          },
+          "pts_raw": "100/100"
+        },
+        "momentum": {
+          "score": 45,
+          "detalle": {},
+          "pts_raw": "0/0"
+        },
+        "dcf_ajuste": 5,
+        "dcf_razon": "DCF: infravalorada +101% → val +5pts"
+      },
+      "señal": {
+        "señal": "NEUTRO",
+        "capas": 1,
+        "razones": [
+          "Valoracion atractiva",
+          "EV/EBITDA bajo (5.0x)",
+          "FCF Yield atractivo (14.8%)",
+          "Fundamentales neutrales (F-Score 4/9)",
+          "DCF: infravalorada +101% → val +5pts"
+        ],
+        "alertas": [
+          "Precio muy por debajo de MM200 — tendencia bajista"
+        ],
+        "tipologia": "VALUE_CYCLICAL",
+        "reglas": "Reglas estándar — timing activo",
+        "macro_regimen": "PRECAUCION",
+        "macro_umbral": 72
+      },
+      "metrics": {
+        "ticker": "ALL",
+        "nombre": "The Allstate Corporation",
+        "sector": "Financial Services",
+        "pais": "United States",
+        "moneda": "USD",
+        "precio": null,
+        "roic": 28.62,
+        "gross_profit_to_assets": null,
+        "gross_margin": null,
+        "ebit_margin": 20.21,
+        "net_margin": 15.33,
+        "roe": 33.59,
+        "roa": 8.59,
+        "fcf_conversion": 96.11,
+        "fscore": 4,
+        "fscore_señal": "neutral",
+        "fscore_detalle": {
+          "A1_roa_positivo": 1,
+          "A2_cfo_positivo": 1,
+          "A3_roa_mejora": 1,
+          "A4_accruals_bajo": 0,
+          "B1_deuda_disminuye": 1,
+          "B2_liquidez_mejora": 0,
+          "B3_sin_dilución": 0,
+          "C1_margen_bruto_mejora": 0,
+          "C2_rotacion_activos": 0
+        },
+        "altman_z": 40153030657.66,
+        "ev_ebitda": 4.97,
+        "ev_fcf": 7.46,
+        "fcf_yield": 14.77,
+        "per": 5.75,
+        "peg": 3.12,
+        "price_to_book": 2.27,
+        "deuda_ebitda": 0.46,
+        "cobertura_intereses": 33.97,
+        "momentum_6m": null,
+        "momentum_12m": null,
+        "precio_vs_ma200": null,
+        "ma200": null
+      },
+      "dcf": {
+        "ticker": "ALL",
+        "precio_actual": 259.97,
+        "wacc": 9.0,
+        "g_base": 6.6,
+        "sector": "Financial Services",
+        "escenarios_dcf": {
+          "pesimista": {
+            "precio_objetivo": 625.6,
+            "ev_calculado": 163133155774.55,
+            "g_fase1": 2.6,
+            "g_fase2": 0.6,
+            "terminal_g": 1.5
+          },
+          "base": {
+            "precio_objetivo": 856.06,
+            "ev_calculado": 222458759362.82,
+            "g_fase1": 6.6,
+            "g_fase2": 3.6,
+            "terminal_g": 2.5
+          },
+          "optimista": {
+            "precio_objetivo": 1191.94,
+            "ev_calculado": 308919769125.76,
+            "g_fase1": 10.6,
+            "g_fase2": 7.6,
+            "terminal_g": 3.0
+          }
+        },
+        "multiplos": {
+          "ev_ebitda": {
+            "precio_objetivo": 491.64,
+            "multiple_salida": 10,
+            "ebitda_proyectado": 19681691957.22
+          },
+          "per": {
+            "precio_objetivo": 485.83,
+            "per_salida": 12,
+            "eps_proyectado": 62.29
+          }
+        },
+        "reverse_dcf": null,
+        "precio_consenso": 522.04,
+        "precios_por_metodo": [
+          [
+            "DCF",
+            856.06
+          ],
+          [
+            "EV/EBITDA",
+            491.64
+          ],
+          [
+            "PER",
+            485.83
+          ],
+          [
+            "Analistas",
+            254.64
+          ]
+        ],
+        "margen_seguridad": 100.8,
+        "target_analistas": 254.64,
+        "n_analistas": 22,
+        "confianza": "alta",
+        "resumen": "Infravalorada un 101% respecto al valor intrínseco estimado."
       }
     }
   ]
