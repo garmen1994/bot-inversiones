@@ -26,6 +26,10 @@ nav{padding:20px 0;margin-bottom:24px;display:flex;align-items:center;gap:12px;b
 .back{background:none;border:1px solid var(--border2);color:var(--muted);font-family:var(--mono);font-size:11px;padding:5px 12px;border-radius:4px;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s;display:inline-flex;align-items:center;gap:6px;}
 .back:hover{border-color:var(--accent);color:var(--accent);}
 .nbc{color:var(--muted);font-size:11px;}.nbc span{color:var(--text);}
+.pt-select{margin-left:auto;background:var(--bg2);border:1px solid var(--border2);color:var(--text);font-family:var(--mono);font-size:11px;padding:5px 10px;border-radius:4px;cursor:pointer;outline:none;}
+.pt-select:focus{border-color:var(--accent);}
+.cmp-link{font-size:11px;color:var(--accent);text-decoration:none;border:1px solid rgba(108,99,255,.3);padding:5px 10px;border-radius:4px;white-space:nowrap;}
+.cmp-link:hover{background:rgba(108,99,255,.12);}
 
 .page-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:12px;}
 .header-left h1{font-family:var(--display);font-size:clamp(24px,5vw,36px);font-weight:800;letter-spacing:-.03em;line-height:1;}
@@ -132,6 +136,8 @@ footer{text-align:center;padding:24px 0 0;color:var(--muted);font-size:10px;lett
   <nav>
     <a href="index.html" class="back">&#8592; Ranking</a>
     <span class="nbc">Bot Inversiones · <span>Paper Trading</span></span>
+    <select class="pt-select" id="pt-select" style="display:none" onchange="location.href='paper_trading.html?pt='+this.value"></select>
+    <a class="cmp-link" id="cmp-link" href="paper_comparativa.html" style="display:none">Comparar cohortes →</a>
   </nav>
   <div id="main">
     <div style="text-align:center;padding:60px;color:var(--muted);font-size:12px;letter-spacing:.1em">CARGANDO...</div>
@@ -142,8 +148,25 @@ footer{text-align:center;padding:24px 0 0;color:var(--muted);font-size:10px;lett
 <script>
 let data=null, chartInst=null, filtroOps='todas', filtroCartera='todas', tabPos='ew';
 
+let ptIndex=null, ptActual=1, ptCoh=null;
+
+function buildPtSelect(cohs){
+  if(cohs.length<2) return;   // con una sola cohorte no hace falta selector
+  const sel=document.getElementById('pt-select');
+  sel.innerHTML=cohs.map(c=>`<option value="${c.id}" ${c.id===ptActual?'selected':''}>${c.nombre} · desde ${c.fecha_inicio}</option>`).join('');
+  sel.style.display='';
+  document.getElementById('cmp-link').style.display='';
+}
+function ptNombre(){ return (ptIndex&&ptIndex.cohortes&&ptIndex.cohortes.length>1&&ptCoh)?` <span style="color:var(--accent)">${ptCoh.nombre}</span>`:''; }
+
 async function init(){
-  data = await loadJ('data/paper_trading.json');
+  ptIndex = await loadJ('data/paper/index.json');
+  const cohs = (ptIndex&&ptIndex.cohortes)||[];
+  ptActual = parseInt(new URLSearchParams(location.search).get('pt')||'1',10);
+  ptCoh = cohs.find(c=>c.id===ptActual) || cohs[0] || null;
+  if(ptCoh) ptActual = ptCoh.id;
+  buildPtSelect(cohs);
+  data = ptCoh ? await loadJ('data/paper/'+ptCoh.archivo) : await loadJ('data/paper_trading.json');
   if(!data||!data.semanas||!data.semanas.length){
     document.getElementById('main').innerHTML=`<div class="empty anim">
       Paper trading sin datos aún.<br>
@@ -187,7 +210,7 @@ function render(){
   document.getElementById('main').innerHTML=`
     <div class="page-header anim">
       <div class="header-left">
-        <h1>Paper Trading</h1>
+        <h1>Paper Trading${ptNombre()}</h1>
         <div class="sub">Capital simulado · inicio: ${fmt$(capital)} · ${sem.length} semanas activo</div>
       </div>
       <div class="live-badge"><div class="live-dot"></div>Actualizado ${fmtFecha(fecha)}</div>

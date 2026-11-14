@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0a0f">
+<title>Comparar cohortes · Bot Inversiones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{
+  --bg:#0a0a0f;--bg2:#111118;--bg3:#18181f;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --text:#e8e8f0;--muted:#6b6b80;
+  --green:#00e896;--yellow:#f5c542;--red:#ff4d6d;--accent:#6c63ff;
+  --mono:'DM Mono',monospace;--display:'Syne',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13px;min-height:100vh;}
+.shell{max-width:980px;margin:0 auto;padding:0 16px 60px;}
+nav{padding:20px 0;margin-bottom:24px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);}
+.back{border:1px solid var(--border2);color:var(--muted);font-size:11px;padding:5px 12px;border-radius:4px;text-decoration:none;}
+.back:hover{border-color:var(--accent);color:var(--accent);}
+.nbc{color:var(--muted);font-size:11px;}.nbc span{color:var(--text);}
+h1{font-family:var(--display);font-size:clamp(24px,5vw,34px);font-weight:800;letter-spacing:-.03em;line-height:1;}
+.sub{color:var(--muted);font-size:11px;margin:6px 0 22px;letter-spacing:.05em;line-height:1.6;}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;align-items:center;}
+.grp{display:flex;gap:6px;}
+.sep{width:1px;height:20px;background:var(--border2);margin:0 6px;}
+.btn{background:none;border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:11px;padding:5px 12px;border-radius:20px;cursor:pointer;}
+.btn:hover{border-color:var(--border2);color:var(--text);}
+.btn.on{background:var(--accent);border-color:var(--accent);color:#fff;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:18px;}
+.card h2{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;font-weight:400;}
+.chart-wrap{position:relative;height:320px;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+th{color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:400;text-align:right;padding:6px 8px;border-bottom:1px solid var(--border);}
+td{text-align:right;padding:9px 8px;border-bottom:1px solid var(--border);}
+th:first-child,td:first-child{text-align:left;}
+tr.click{cursor:pointer;}tr.click:hover td{background:var(--bg3);}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;}
+.pos{color:var(--green);}.neg{color:var(--red);}.mut{color:var(--muted);}
+.note{color:var(--muted);font-size:11px;line-height:1.7;margin-top:10px;}
+.scroll{overflow-x:auto;}
+footer{text-align:center;padding:24px 0 0;color:var(--muted);font-size:10px;letter-spacing:.08em;border-top:1px solid var(--border);margin-top:16px;}
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav>
+    <a href="paper_trading.html" class="back">&#8592; Paper trading</a>
+    <span class="nbc">Bot Inversiones · <span>Comparar cohortes</span></span>
+  </nav>
+  <h1>Cohortes</h1>
+  <div class="sub">Cada cohorte es un paper trading completo que arrancó en un mes distinto.<br>
+    El eje X son los <b>días desde el inicio de cada una</b>, para poder compararlas aunque empezaran en fechas diferentes.</div>
+
+  <div id="main"><div class="sub">CARGANDO...</div></div>
+</div>
+<footer>Bot Inversiones · paper trading simulado · sin dinero real</footer>
+
+<script>
+const COLORES=['#6c63ff','#00e896','#f5c542','#ff4d6d','#38bdf8','#fb923c','#a78bfa','#34d399','#f472b6','#facc15','#60a5fa','#f87171'];
+let D=null, chart=null, estrategia='ew', modo='ret';
+const NOMBRE={ew:'Equal Weight',sw:'Score Weighted',ls:'Long/Short'};
+
+async function loadJ(p){
+  try{const r=await fetch(p+'?t='+Date.now());if(!r.ok)throw 0;return await r.json();}catch{return null;}
+}
+const f1=v=>v==null?'—':(v>0?'+':'')+v.toFixed(2)+'%';
+const cls=v=>v==null?'mut':v>0?'pos':v<0?'neg':'';
+const col=i=>COLORES[i%COLORES.length];
+
+async function init(){
+  D=await loadJ('data/paper_comparativa.json');
+  if(!D||!D.cohortes||!D.cohortes.length){
+    document.getElementById('main').innerHTML='<div class="card">Aún no hay datos de cohortes. Ejecuta <code>python paper_cohortes.py --exportar</code>.</div>';
+    return;
+  }
+  render();
+}
+
+function setEst(e){estrategia=e;render();}
+function setModo(m){modo=m;render();}
+
+// valor de una cohorte para el modo elegido en un punto de la serie
+function valor(p){
+  const v=p[estrategia];
+  if(v==null) return null;
+  if(modo==='exc'){
+    if(estrategia==='ls'||p.sp500==null) return null;   // LS es market-neutral: sin benchmark
+    return Math.round((v-p.sp500)*100)/100;
+  }
+  return v;
+}
+
+function render(){
+  const cs=D.cohortes;
+  const modoExcOk=estrategia!=='ls';
+  if(!modoExcOk&&modo==='exc') modo='ret';
+
+  document.getElementById('main').innerHTML=`
+    <div class="controls">
+      <div class="grp">${['ew','sw','ls'].map(e=>`<button class="btn ${estrategia===e?'on':''}" onclick="setEst('${e}')">${NOMBRE[e]}</button>`).join('')}</div>
+      <div class="sep"></div>
+      <div class="grp">
+        <button class="btn ${modo==='ret'?'on':''}" onclick="setModo('ret')">Retorno %</button>
+        ${modoExcOk?`<button class="btn ${modo==='exc'?'on':''}" onclick="setModo('exc')">Exceso vs S&amp;P500</button>`:''}
+      </div>
+    </div>
+    <div class="card"><h2>${NOMBRE[estrategia]} · ${modo==='exc'?'exceso sobre el S&P500 de su misma ventana (pp)':'retorno desde el inicio de cada cohorte'}</h2>
+      <div class="chart-wrap"><canvas id="ch"></canvas></div></div>
+
+    <div class="card"><h2>Resumen por cohorte</h2><div class="scroll">${tablaResumen(cs)}</div>
+      <div class="note">Pulsa una fila para abrir esa cohorte. Los retornos de cohortes con pocos días no son comparables con los de las más antiguas: compara a la misma edad (gráfico y tabla de dispersión).</div></div>
+
+    <div class="card"><h2>Dispersión entre cohortes a la misma edad · ${NOMBRE[estrategia]}</h2><div class="scroll">${tablaDispersion(cs)}</div>
+      <div class="note">Si la hipótesis de convergencia se cumple, la dispersión a una edad dada debería reducirse conforme las cohortes más jóvenes alcancen esa edad con más datos. Ojo: las cohortes comparten mercado y señales, así que no son muestras independientes; esto mide sensibilidad a la fecha de entrada, no habilidad de la estrategia.</div></div>
+
+    <div class="card"><h2>Solape de posiciones actuales (Jaccard)</h2><div class="scroll">${tablaSolape()}</div>
+      <div class="note">100% = mismas posiciones. Si las cohortes convergen, el solape debería subir con el tiempo.</div></div>`;
+  dibujar(cs);
+}
+
+function dibujar(cs){
+  if(chart){chart.destroy();chart=null;}
+  const ds=cs.map((c,i)=>({
+    label:c.nombre,
+    data:c.serie.map(p=>({x:p.dia,y:valor(p)})).filter(p=>p.y!=null),
+    borderColor:col(i),backgroundColor:'transparent',borderWidth:2,pointRadius:0,tension:.25,
+  }));
+  // referencia S&P500 (ventana de la cohorte más antigua) solo en modo retorno
+  if(modo==='ret'&&cs[0]){
+    ds.push({label:'S&P500 (ventana '+cs[0].nombre+')',data:cs[0].serie.filter(p=>p.sp500!=null).map(p=>({x:p.dia,y:p.sp500})),
+      borderColor:'#94a3b8',borderDash:[5,4],borderWidth:1.5,pointRadius:0,tension:.25,backgroundColor:'transparent'});
+  }
+  chart=new Chart(document.getElementById('ch'),{
+    type:'line',data:{datasets:ds},
+    options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'nearest',intersect:false},parsing:false,
+      plugins:{legend:{labels:{color:'#e8e8f0',font:{family:"'DM Mono',monospace",size:11},boxWidth:12}},
+        tooltip:{backgroundColor:'#18181f',borderColor:'rgba(255,255,255,.1)',borderWidth:1,titleColor:'#6b6b80',bodyColor:'#e8e8f0',
+          callbacks:{title:i=>'Día '+i[0].parsed.x,label:c=>' '+c.dataset.label+': '+f1(c.parsed.y)}}},
+      scales:{
+        x:{type:'linear',title:{display:true,text:'días desde el inicio',color:'#6b6b80'},grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#6b6b80'}},
+        y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#6b6b80',callback:v=>v+'%'}}}}
+  });
+}
+
+function tablaResumen(cs){
+  const filas=cs.map((c,i)=>{const a=c.actual;return `<tr class="click" onclick="location.href='paper_trading.html?pt=${c.id}'">
+    <td><span class="dot" style="background:${col(i)}"></span>${c.nombre}</td><td>${c.fecha_inicio}</td><td>${c.dias}</td>
+    <td class="${cls(a.ew)}">${f1(a.ew)}</td><td class="${cls(a.sw)}">${f1(a.sw)}</td><td class="${cls(a.ls)}">${f1(a.ls)}</td>
+    <td class="${cls(a.sp500)}">${f1(a.sp500)}</td><td class="${cls(a.exceso_ew)}">${f1(a.exceso_ew)}</td><td class="${cls(a.exceso_sw)}">${f1(a.exceso_sw)}</td></tr>`}).join('');
+  return `<table><thead><tr><th>Cohorte</th><th>Inicio</th><th>Días</th><th>EW</th><th>SW</th><th>LS</th><th>S&amp;P500</th><th>Exc. EW</th><th>Exc. SW</th></tr></thead><tbody>${filas}</tbody></table>`;
+}
+
+function tablaDispersion(cs){
+  const edades=[14,30,60,90,120];
+  const filas=edades.map(edad=>{
+    const vals=[];
+    cs.forEach(c=>{
+      if(c.dias<edad) return;                       // aún no ha llegado a esa edad
+      const pts=c.serie.filter(p=>p.dia<=edad&&valor(p)!=null);
+      if(pts.length) vals.push(valor(pts[pts.length-1]));
+    });
+    if(vals.length<2) return `<tr><td>${edad} días</td><td>${vals.length}</td><td class="mut">—</td><td class="mut">—</td><td class="mut">—</td></tr>`;
+    const m=vals.reduce((a,b)=>a+b,0)/vals.length;
+    const sd=Math.sqrt(vals.reduce((a,b)=>a+(b-m)**2,0)/(vals.length-1));
+    return `<tr><td>${edad} días</td><td>${vals.length}</td><td class="${cls(m)}">${f1(m)}</td><td>${sd.toFixed(2)} pp</td><td>${f1(Math.min(...vals))} / ${f1(Math.max(...vals))}</td></tr>`;
+  }).join('');
+  return `<table><thead><tr><th>Edad</th><th>Cohortes</th><th>Media</th><th>Desv. típica</th><th>Mín / Máx</th></tr></thead><tbody>${filas}</tbody></table>`;
+}
+
+function tablaSolape(){
+  const s=D.solape||[];
+  if(!s.length) return '<span class="mut">Se necesitan al menos 2 cohortes.</span>';
+  const nom=id=>(D.cohortes.find(c=>c.id===id)||{}).nombre||('PT#'+id);
+  const p=v=>v==null?'—':Math.round(v*100)+'%';
+  return `<table><thead><tr><th>Par</th><th>EW</th><th>SW</th><th>LS long</th><th>LS short</th></tr></thead><tbody>`+
+    s.map(r=>`<tr><td>${nom(r.a)} ↔ ${nom(r.b)}</td><td>${p(r.ew)}</td><td>${p(r.sw)}</td><td>${p(r.ls_long)}</td><td>${p(r.ls_short)}</td></tr>`).join('')+`</tbody></table>`;
+}
+
+init();
+</script>
+</body>
+</html>
