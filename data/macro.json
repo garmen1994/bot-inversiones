@@ -1,31 +1,31 @@
 {
-  "fecha": "2026-11-18T16:17:51.765140",
+  "fecha": "2026-11-20T07:48:59.779943",
   "regimen": "RIESGO",
-  "puntos": -3,
+  "puntos": -4,
   "umbral_compra": 75,
   "alertas": [
-    "VIX elevado (24.51) — mercado en precaucion",
-    "SP500 bajo MM200 (-0.12%)",
-    "Cobre -14.05% (3M) — contraccion economica anticipada"
+    "VIX elevado (28.44) — mercado en precaucion",
+    "SP500 bajo MM200 (-2.34%)",
+    "Cobre -17.91% (3M) — contraccion economica anticipada"
   ],
   "señales": [
     {
       "indicador": "VIX",
-      "valor": 24.51,
+      "valor": 28.44,
       "estado": "precaucion",
-      "nota": "Volatilidad elevada (24.51)"
+      "nota": "Volatilidad elevada (28.44)"
     },
     {
       "indicador": "SP500 vs MM200",
-      "valor": -0.12,
+      "valor": -2.34,
       "estado": "precaucion",
-      "nota": "SP500 bajo MM200 (-0.12%)"
+      "nota": "SP500 bajo MM200 (-2.34%)"
     },
     {
       "indicador": "Eurostoxx vs MM200",
-      "valor": 0.98,
-      "estado": "neutral",
-      "nota": "Eurostoxx sobre MM200 (+0.98%)"
+      "valor": -0.26,
+      "estado": "precaucion",
+      "nota": "Eurostoxx bajo MM200 (-0.26%)"
     },
     {
       "indicador": "Curva 10Y-2Y",
@@ -41,44 +41,44 @@
     },
     {
       "indicador": "Petroleo WTI",
-      "valor": 83.31,
+      "valor": 82.86,
       "estado": "neutral",
-      "nota": "WTI estable (-13.53% en 6M)"
+      "nota": "WTI estable (-11.75% en 6M)"
     },
     {
       "indicador": "Oro",
-      "valor": 3760.3,
+      "valor": 3552.8999,
       "estado": "favorable",
-      "nota": "Oro cayendo (-19.65% en 3M) — apetito por riesgo"
+      "nota": "Oro cayendo (-24.32% en 3M) — apetito por riesgo"
     },
     {
       "indicador": "Cobre",
-      "valor": 5.655,
+      "valor": 5.5075,
       "estado": "riesgo",
-      "nota": "Cobre -14.05% (3M) — contraccion economica anticipada"
+      "nota": "Cobre -17.91% (3M) — contraccion economica anticipada"
     }
   ],
   "datos": {
-    "vix": 24.51,
-    "sp500": 7337.7002,
-    "sp500_ma200": 7346.6268,
-    "sp500_vs_ma200": -0.12,
-    "sp500_mom6m": -1.45,
-    "eurostoxx": 6189.2598,
-    "eurostoxx_ma200": 6129.087,
-    "eurostoxx_vs_ma200": 0.98,
-    "eurostoxx_mom6m": 1.96,
+    "vix": 28.44,
+    "sp500": 7175.8301,
+    "sp500_ma200": 7348.0204,
+    "sp500_vs_ma200": -2.34,
+    "sp500_mom6m": -3.98,
+    "eurostoxx": 6113.8599,
+    "eurostoxx_ma200": 6129.8535,
+    "eurostoxx_vs_ma200": -0.26,
+    "eurostoxx_mom6m": 0.97,
     "t10y": 0.51,
     "t2y": 0.41,
     "curva_10y_2y": 0.1,
-    "wti": 83.31,
-    "wti_mom3m": -4.31,
-    "wti_mom6m": -13.53,
-    "oro": 3760.3,
-    "oro_mom3m": -19.65,
-    "oro_mom6m": -17.21,
-    "cobre": 5.655,
-    "cobre_mom3m": -14.05,
-    "cobre_mom6m": -9.62
+    "wti": 82.86,
+    "wti_mom3m": 0.61,
+    "wti_mom6m": -11.75,
+    "oro": 3552.8999,
+    "oro_mom3m": -24.32,
+    "oro_mom6m": -21.09,
+    "cobre": 5.5075,
+    "cobre_mom3m": -17.91,
+    "cobre_mom6m": -13.42
   }
 }
