@@ -1,0 +1,92 @@
+Quiero repetir, con más histórico, un backtest de REGLAS DE SALIDA de mi bot de
+inversiones (paper trading en Python). Ya hicimos una primera versión con ~6 meses;
+ahora quiero la versión ampliada. Sigue el método de abajo y no te saltes la
+validación.
+
+## Ficheros que adjunto
+- paper_trading.py (versión actual), paper_cohortes.py
+- historial_scores.json (scores, señal y precio diarios por ticker)
+- resultados.json (tipología y sector actuales por ticker, clave "empresas")
+- paper_trading.json (histórico real del paper trading; trae el precio del S&P500
+  por snapshot desde el 02/08/2026)
+- data/scanner_state.json
+- (opcional) un histórico del S&P500 desde marzo de 2026, para activar el circuit
+  breaker también en fechas anteriores al 02/08/2026
+Los ficheros pueden venir dentro de un .zip renombrado como .txt: descomprímelos.
+
+## Método (el que funcionó la primera vez)
+1. Reproduce el MOTOR REAL de paper_trading.py (no reimplementes las reglas) sobre
+   historial_scores.json llamando a registrar_señales_semana() día a día:
+   - Construye el "ranking" de cada fecha con: ticker, señal (clave "señal" o
+     "senal"), precio, composite, tipologia y sector (de resultados.json; si falta,
+     VALUE_CYCLICAL y sector "Unknown"), alertas=[].
+   - Parchea datetime.now() y date.today() dentro de paper_trading para que
+     devuelvan la fecha reproducida, y _get_sp500_precio() para que devuelva el
+     precio de esa fecha (o None si no hay dato).
+   - Para ir rápido, mantén el estado en memoria: sustituye _cargar/_guardar por
+     funciones que devuelvan/ignoren el dict (partiendo de _cargar() con un fichero
+     inexistente).
+2. Para variar solo la regla de salida, copia paper_trading.py y haz que las dos
+   llamadas a _evaluar_cierre(...) pasen también pos=pos y ticker=ticker. Después
+   sustituye pt._evaluar_cierre por cada variante. pos["max_retorno"] ya guarda el
+   máximo retorno de la posición (sirve para trailing stops).
+3. VALIDACIÓN OBLIGATORIA antes de comparar nada: reproduce con las reglas actuales
+   un periodo que ya esté en paper_trading.json y compara EW y SW con el real.
+   En la primera versión la diferencia fue <0,02 pp (EW +8,97% y SW +5,59% del
+   02/08 al 13/11/2026). Si ahora la diferencia es mayor de ~0,1 pp, PARA y
+   diagnostica antes de seguir (versión de código distinta, datos distintos, etc.).
+4. Empieza cada backtest solo cuando el universo en el histórico sea comparable.
+   Antes, el universo era de 10 tickers el 23/03, 119 el 01/05 y ~198 desde el
+   01/06. Muéstrame la cobertura por fecha y decide la fecha mínima conmigo.
+5. Prueba varias fechas de inicio (una por mes) y recuerda que se solapan, así que
+   no son pruebas independientes.
+
+## Variantes a comparar (EW y SW, siempre las dos)
+- base: reglas actuales (take profit VALUE_CYCLICAL +40%, SPECULATIVE +30%,
+  QUALITY_GROWTH sin take profit).
+- sin take profit (llamando al original con ret limitado a TP-0,01).
+- trailing fijo 10% y 15% (activación a +10% de máximo retorno).
+- trailing escalado por volatilidad: distancia = clamp(K·σ_diaria·√21, 8%, 35%)
+  con σ_diaria = desviación típica de los log-retornos de los últimos 60 registros
+  hasta esa fecha (sin mirar el futuro), K ∈ {1,5; 2; 3}.
+- Las tipologías sin take profit (QUALITY_GROWTH) se dejan como están.
+Si hay datos suficientes, añade también: stop loss escalado por volatilidad,
+distintos umbrales de rotación y de neutro prolongado.
+
+## Métricas
+- Retorno final por cartera y por fecha de inicio, media, y peor drawdown.
+- Nº de ventas por motivo (take_profit, trailing_stop, stop_loss, señal_alerta,
+  rotacion_score...).
+- Para cada take profit: qué hizo el precio 10 y 20 días después y hasta hoy
+  (¿recorta ganadores o vende picos?).
+- Si es posible, incluye un coste por operación (por ejemplo 0,1-0,2%) como
+  análisis de sensibilidad, porque los trailing estrechos multiplican las ventas.
+
+## Resultados de la primera versión (para comparar)
+Periodo mayo-nov 2026, 6 fechas de inicio, retorno medio EW / SW:
+base 8,47% / 7,66% · sin TP 7,57% / 6,06% · trailing 10% 11,36% / 1,22% ·
+trailing 15% 8,63% / 5,57% · vol K=1,5 9,57% / 5,72% · vol K=2 8,77% / 5,68% ·
+vol K=3 7,84% / 6,37%. Solo 3 acciones distintas activaron el take profit (QCOM,
+ALTN.L, VLO) y las tres cayeron después. Conclusión entonces: ninguna variante
+mejoraba a la vez EW y SW; el trailing 10% era el mejor en EW y el peor en SW
+(señal de ruido). Se decidió mantener el take profit.
+
+## Reglas para evitar autoengaño
+- Un solo régimen de mercado (solo subida, solo lateral...) no basta: dime qué
+  regímenes cubre el histórico (caídas del S&P500, periodos laterales) y trata
+  los resultados como válidos solo para ellos.
+- Una variante solo "gana" si mejora a la vez EW y SW, en la mayoría de fechas de
+  inicio y sin disparar el número de operaciones. Si no, di claramente que no hay
+  evidencia.
+- No optimices parámetros hasta el mejor resultado: úsalo para descartar ideas,
+  y si algo parece prometedor, propón separar el histórico en dos mitades (ajustar
+  en una y comprobar en la otra).
+- Lista las limitaciones al final (tipología y sector actuales aplicados al
+  pasado, tickers sin ficha, falta de comisiones, falta de S&P500 anterior al
+  02/08, etc.).
+
+## Entregables
+1. Tabla comparativa como la de arriba, con las fechas de inicio usadas.
+2. Veredicto en lenguaje claro: qué cambiar, qué no, y con qué grado de confianza.
+3. El script (backtest_salidas.py) para ejecutarlo en mi PC, leyendo los ficheros
+   de C:\bot_inv\data y sin tocar mis datos reales.
