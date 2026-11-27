@@ -1,7 +1,7 @@
 {
   "capital_inicial": 10000,
   "capital_actual": 0,
-  "valor_total": 10201.76,
+  "valor_total": 10241.78,
   "semanas": [
     {
       "fecha": "2026-11-02",
@@ -1693,43 +1693,102 @@
       "valor_posiciones": 10201.76,
       "retorno_total": 2.02,
       "n_posiciones": 20,
+      "operaciones": []
+    },
+    {
+      "fecha": "2026-11-27",
+      "sp500_precio": 7297.49,
+      "circuit_breaker": {
+        "en_crisis": false,
+        "variacion_pct": 0.56,
+        "dias_ventana": 5,
+        "umbral_pct": -7.0
+      },
+      "equal_weight": {
+        "valor_total": 10241.78,
+        "capital_cash": 0,
+        "valor_posiciones": 10241.78,
+        "retorno_total": 2.42,
+        "n_posiciones": 20,
+        "operaciones": []
+      },
+      "scoring_weighted": {
+        "valor_total": 10233.52,
+        "capital_cash": 1931.96,
+        "valor_posiciones": 8301.56,
+        "retorno_total": 2.34,
+        "n_posiciones": 20,
+        "operaciones": []
+      },
+      "long_short": {
+        "valor_total": 10073.22,
+        "capital_cash": 774.2,
+        "valor_long": 4399.25,
+        "valor_short": 4899.77,
+        "retorno_total": 0.73,
+        "n_long": 10,
+        "n_short": 10,
+        "operaciones": [],
+        "borrow_cost_sem": 0.27
+      },
+      "valor_total": 10241.78,
+      "capital_cash": 0,
+      "valor_posiciones": 10241.78,
+      "retorno_total": 2.42,
+      "n_posiciones": 20,
       "operaciones": [],
       "señales": {
         "ERIC-B.ST": {
           "señal": "COMPRA",
-          "precio": 105.45,
-          "score": 89.2,
+          "precio": 106.9,
+          "score": 90.1,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Technology"
         },
         "ALL": {
           "señal": "COMPRA",
-          "precio": 271.39,
-          "score": 88.2,
+          "precio": 272.51,
+          "score": 88.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Financial Services"
         },
-        "INFY": {
-          "señal": "COMPRA",
-          "precio": 13.02,
-          "score": 87.0,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Technology"
-        },
         "NOVN.SW": {
           "señal": "COMPRA",
-          "precio": 128.52,
-          "score": 86.4,
+          "precio": 128.5,
+          "score": 86.1,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Healthcare"
         },
+        "BMY": {
+          "señal": "COMPRA",
+          "precio": 61.12,
+          "score": 86.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Healthcare"
+        },
+        "INFY": {
+          "señal": "COMPRA",
+          "precio": 13.07,
+          "score": 85.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Technology"
+        },
         "TRV": {
           "señal": "COMPRA",
-          "precio": 406.86,
+          "precio": 407.29,
+          "score": 85.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
+        },
+        "CS.PA": {
+          "señal": "COMPRA",
+          "precio": 45.86,
           "score": 85.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
@@ -1737,53 +1796,29 @@
         },
         "HIG": {
           "señal": "COMPRA",
-          "precio": 139.78,
+          "precio": 139.58,
           "score": 85.7,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Financial Services"
         },
-        "CS.PA": {
+        "AFG": {
           "señal": "COMPRA",
-          "precio": 45.82,
-          "score": 85.7,
+          "precio": 161.19,
+          "score": 84.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Financial Services"
-        },
-        "BMY": {
-          "señal": "COMPRA",
-          "precio": 61.56,
-          "score": 85.5,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Healthcare"
         },
         "IAG.MC": {
           "señal": "COMPRA",
-          "precio": 5.286,
-          "score": 85.3,
+          "precio": 5.318,
+          "score": 84.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Altman Z peligroso (1.42)"
           ],
           "sector": "Industrials"
-        },
-        "AFG": {
-          "señal": "COMPRA",
-          "precio": 160.76,
-          "score": 84.6,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Financial Services"
-        },
-        "ADBE": {
-          "señal": "COMPRA",
-          "precio": 232.83,
-          "score": 84.5,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [],
-          "sector": "Technology"
         },
         "HLBBF": {
           "señal": "COMPRA",
@@ -1795,17 +1830,33 @@
           ],
           "sector": "Healthcare"
         },
+        "ADBE": {
+          "señal": "COMPRA",
+          "precio": 234.79,
+          "score": 84.2,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [],
+          "sector": "Technology"
+        },
         "TSM": {
           "señal": "COMPRA",
-          "precio": 342.34,
+          "precio": 353.34,
           "score": 83.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Technology"
         },
+        "CINF": {
+          "señal": "COMPRA",
+          "precio": 193.12,
+          "score": 83.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
+        },
         "VID.MC": {
           "señal": "COMPRA",
-          "precio": 93.9,
+          "precio": 93.5,
           "score": 82.3,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
@@ -1813,47 +1864,31 @@
         },
         "HEN3.DE": {
           "señal": "COMPRA",
-          "precio": 88.24,
-          "score": 82.2,
+          "precio": 88.58,
+          "score": 82.3,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Consumer Defensive"
         },
-        "CINF": {
-          "señal": "COMPRA",
-          "precio": 192.32,
-          "score": 82.1,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Financial Services"
-        },
-        "000660.KS": {
-          "señal": "COMPRA",
-          "precio": null,
-          "score": 81.8,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Technology"
-        },
-        "PDD": {
-          "señal": "NEUTRO",
-          "precio": 87.42,
-          "score": 81.4,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Consumer Cyclical"
-        },
         "ZTS": {
           "señal": "COMPRA",
-          "precio": 82.6,
-          "score": 81.3,
+          "precio": 82.45,
+          "score": 81.6,
           "tipologia": "QUALITY_GROWTH",
           "alertas": [],
           "sector": "Healthcare"
         },
+        "USB": {
+          "señal": "COMPRA",
+          "precio": 59.29,
+          "score": 81.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
+        },
         "SHEL": {
           "señal": "COMPRA",
-          "precio": 94.13,
+          "precio": 95.47,
           "score": 81.3,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
@@ -1861,40 +1896,48 @@
         },
         "NTES": {
           "señal": "COMPRA",
-          "precio": 104.26,
-          "score": 80.8,
+          "precio": 106.85,
+          "score": 81.1,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Communication Services"
         },
-        "BHP": {
-          "señal": "COMPRA",
-          "precio": 70.77,
-          "score": 80.8,
+        "PDD": {
+          "señal": "NEUTRO",
+          "precio": 88.43,
+          "score": 81.0,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
-          "sector": "Basic Materials"
+          "sector": "Consumer Cyclical"
         },
-        "AMS.MC": {
+        "000660.KS": {
           "señal": "COMPRA",
-          "precio": 62.02,
-          "score": 80.5,
+          "precio": null,
+          "score": 80.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Technology"
         },
         "IMB.L": {
           "señal": "COMPRA",
-          "precio": 3454.5,
+          "precio": 3495.0,
           "score": 80.5,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Consumer Defensive"
         },
-        "USB": {
+        "AMS.MC": {
           "señal": "COMPRA",
-          "precio": 58.55,
-          "score": 80.4,
+          "precio": 62.76,
+          "score": 80.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Technology"
+        },
+        "TROW": {
+          "señal": "COMPRA",
+          "precio": 106.57,
+          "score": 79.9,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Financial Services"
@@ -1907,25 +1950,27 @@
           "alertas": [],
           "sector": "Energy"
         },
-        "COP": {
+        "CMCSA": {
           "señal": "COMPRA",
-          "precio": 135.02,
-          "score": 79.7,
+          "precio": 26.08,
+          "score": 79.8,
           "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Energy"
+          "alertas": [
+            "Altman Z peligroso (1.46)"
+          ],
+          "sector": "Communication Services"
         },
         "WRB": {
           "señal": "COMPRA",
-          "precio": 79.34,
-          "score": 79.7,
+          "precio": 79.31,
+          "score": 79.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Financial Services"
         },
         "CB": {
           "señal": "COMPRA",
-          "precio": 380.51,
+          "precio": 381.02,
           "score": 79.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
@@ -1933,7 +1978,7 @@
         },
         "ZURN.SW": {
           "señal": "COMPRA",
-          "precio": 646.2,
+          "precio": 649.8,
           "score": 79.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -1941,83 +1986,89 @@
           ],
           "sector": "Financial Services"
         },
-        "EOG": {
+        "COP": {
           "señal": "COMPRA",
-          "precio": 148.31,
-          "score": 79.2,
+          "precio": 136.8,
+          "score": 79.3,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Energy"
         },
-        "CMCSA": {
+        "MKL": {
           "señal": "COMPRA",
-          "precio": 25.73,
-          "score": 78.9,
+          "precio": 1986.53,
+          "score": 79.1,
           "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Altman Z peligroso (1.46)"
-          ],
-          "sector": "Communication Services"
+          "alertas": [],
+          "sector": "Financial Services"
         },
-        "GSK.L": {
+        "BHP": {
           "señal": "COMPRA",
-          "precio": 1940.5,
-          "score": 78.9,
+          "precio": 73.66,
+          "score": 79.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Basic Materials"
+        },
+        "SAN.PA": {
+          "señal": "COMPRA",
+          "precio": 97.65,
+          "score": 78.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Healthcare"
         },
         "ULVR.L": {
           "señal": "COMPRA",
-          "precio": 5064.0,
+          "precio": 5040.0,
           "score": 78.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Consumer Defensive"
         },
-        "MKL": {
+        "EOG": {
           "señal": "COMPRA",
-          "precio": 1979.48,
-          "score": 78.6,
+          "precio": 148.7,
+          "score": 78.7,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
-          "sector": "Financial Services"
+          "sector": "Energy"
         },
         "RLI": {
           "señal": "COMPRA",
-          "precio": 71.3,
-          "score": 78.3,
+          "precio": 71.61,
+          "score": 78.7,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Financial Services"
-        },
-        "BNP.PA": {
-          "señal": "COMPRA",
-          "precio": 90.92,
-          "score": 78.1,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Financial Services"
-        },
-        "SAN.PA": {
-          "señal": "COMPRA",
-          "precio": 99.01,
-          "score": 78.0,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Healthcare"
         },
         "CAP.PA": {
           "señal": "COMPRA",
-          "precio": 121.45,
-          "score": 78.0,
+          "precio": 121.75,
+          "score": 78.3,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Technology"
         },
+        "GSK.L": {
+          "señal": "COMPRA",
+          "precio": 1942.5,
+          "score": 78.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Healthcare"
+        },
+        "DBK.DE": {
+          "señal": "COMPRA",
+          "precio": 30.38,
+          "score": 78.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
+        },
         "NXT.L": {
           "señal": "COMPRA",
-          "precio": 15965.0,
+          "precio": 15865.0,
           "score": 77.9,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2025,25 +2076,17 @@
           ],
           "sector": "Consumer Cyclical"
         },
-        "DBK.DE": {
+        "GEST.MC": {
           "señal": "COMPRA",
-          "precio": 29.97,
-          "score": 77.8,
+          "precio": 3.01,
+          "score": 77.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
-          "sector": "Financial Services"
-        },
-        "MPC": {
-          "señal": "COMPRA",
-          "precio": 346.27,
-          "score": 77.5,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Energy"
+          "sector": "Consumer Cyclical"
         },
         "WIT": {
           "señal": "COMPRA",
-          "precio": 2.17,
+          "precio": 2.21,
           "score": 77.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
@@ -2051,73 +2094,81 @@
         },
         "TGT": {
           "señal": "COMPRA",
-          "precio": 172.22,
+          "precio": 171.97,
           "score": 77.3,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Consumer Defensive"
         },
-        "TROW": {
-          "señal": "COMPRA",
-          "precio": 103.55,
-          "score": 77.3,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Financial Services"
-        },
-        "SHEL.L": {
-          "señal": "COMPRA",
-          "precio": 3624.0,
-          "score": 77.1,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Energy"
-        },
-        "GEST.MC": {
-          "señal": "COMPRA",
-          "precio": 2.975,
-          "score": 76.9,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Consumer Cyclical"
-        },
-        "CI": {
-          "señal": "COMPRA",
-          "precio": 271.42,
-          "score": 76.9,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Healthcare"
-        },
         "DG.PA": {
           "señal": "COMPRA",
-          "precio": 114.7,
-          "score": 76.9,
+          "precio": 115.4,
+          "score": 77.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Altman Z peligroso (1.16)"
           ],
           "sector": "Industrials"
         },
-        "UPS": {
+        "SHEL.L": {
           "señal": "COMPRA",
-          "precio": 111.47,
-          "score": 76.5,
+          "precio": 3643.0,
+          "score": 77.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
-          "sector": "Industrials"
+          "sector": "Energy"
+        },
+        "BNP.PA": {
+          "señal": "COMPRA",
+          "precio": 91.92,
+          "score": 77.1,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
         },
         "NVO": {
           "señal": "COMPRA",
-          "precio": 40.97,
-          "score": 76.2,
+          "precio": 41.07,
+          "score": 76.7,
           "tipologia": "QUALITY_GROWTH",
           "alertas": [],
           "sector": "Healthcare"
         },
+        "MPC": {
+          "señal": "COMPRA",
+          "precio": 359.8,
+          "score": 76.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Energy"
+        },
+        "UPS": {
+          "señal": "COMPRA",
+          "precio": 112.63,
+          "score": 76.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Industrials"
+        },
+        "CI": {
+          "señal": "COMPRA",
+          "precio": 272.12,
+          "score": 75.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Healthcare"
+        },
+        "BBVA.MC": {
+          "señal": "COMPRA",
+          "precio": 22.25,
+          "score": 75.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
+        },
         "HDB": {
           "señal": "COMPRA",
-          "precio": 28.35,
+          "precio": 28.53,
           "score": 75.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
@@ -2125,55 +2176,39 @@
         },
         "FDX": {
           "señal": "COMPRA",
-          "precio": 308.87,
+          "precio": 311.6,
           "score": 75.1,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Industrials"
         },
-        "BBVA.MC": {
-          "señal": "COMPRA",
-          "precio": 21.97,
-          "score": 75.1,
+        "TRI.PA": {
+          "señal": "NEUTRO",
+          "precio": 124.0,
+          "score": 74.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Consumer Cyclical"
+        },
+        "IBN": {
+          "señal": "VIGILAR",
+          "precio": 36.29,
+          "score": 74.5,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Financial Services"
         },
         "VLO": {
           "señal": "VIGILAR",
-          "precio": 323.0,
-          "score": 74.6,
+          "precio": 329.39,
+          "score": 74.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Energy"
         },
-        "IBN": {
-          "señal": "VIGILAR",
-          "precio": 36.5,
-          "score": 74.5,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Financial Services"
-        },
-        "TRI.PA": {
-          "señal": "NEUTRO",
-          "precio": 126.3,
-          "score": 74.4,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Consumer Cyclical"
-        },
-        "005930.KS": {
-          "señal": "VIGILAR",
-          "precio": null,
-          "score": 74.3,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Technology"
-        },
         "TCEHY": {
           "señal": "VIGILAR",
-          "precio": 43.61,
+          "precio": 45.18,
           "score": 74.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2181,29 +2216,63 @@
           ],
           "sector": "Communication Services"
         },
-        "UMC": {
-          "señal": "NEUTRO",
-          "precio": 13.19,
-          "score": 73.4,
+        "005930.KS": {
+          "señal": "VIGILAR",
+          "precio": null,
+          "score": 74.0,
           "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Precio muy por debajo de MM200 — tendencia bajista",
-            "Altman Z peligroso (1.50)"
-          ],
+          "alertas": [],
           "sector": "Technology"
         },
+        "CAF.MC": {
+          "señal": "VIGILAR",
+          "precio": 68.0,
+          "score": 73.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Altman Z peligroso (1.40)"
+          ],
+          "sector": "Industrials"
+        },
         "HON": {
-          "señal": "NEUTRO",
-          "precio": 225.1,
-          "score": 73.1,
+          "señal": "VIGILAR",
+          "precio": 228.48,
+          "score": 73.7,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Industrials"
         },
+        "UMC": {
+          "señal": "NEUTRO",
+          "precio": 13.44,
+          "score": 73.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Precio muy por debajo de MM200 — tendencia bajista",
+            "Altman Z peligroso (1.51)"
+          ],
+          "sector": "Technology"
+        },
+        "DVN": {
+          "señal": "NEUTRO",
+          "precio": 42.84,
+          "score": 72.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Energy"
+        },
+        "JET2.L": {
+          "señal": "NEUTRO",
+          "precio": 1260.0,
+          "score": 72.7,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Consumer Cyclical"
+        },
         "ACS.MC": {
           "señal": "NEUTRO",
-          "precio": 81.5,
-          "score": 73.0,
+          "precio": 82.85,
+          "score": 72.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Precio muy por debajo de MM200 — tendencia bajista",
@@ -2211,213 +2280,179 @@
           ],
           "sector": "Industrials"
         },
-        "DVN": {
-          "señal": "NEUTRO",
-          "precio": 42.45,
-          "score": 73.0,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Energy"
-        },
-        "CAF.MC": {
+        "RMD": {
           "señal": "VIGILAR",
-          "precio": 66.0,
-          "score": 72.8,
+          "precio": 242.92,
+          "score": 72.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
-            "Altman Z peligroso (1.39)"
+            "Valoracion cara — multiples elevados"
           ],
-          "sector": "Industrials"
-        },
-        "PSX": {
-          "señal": "VIGILAR",
-          "precio": 236.08,
-          "score": 72.6,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Energy"
-        },
-        "NOVO-B.CO": {
-          "señal": "VIGILAR",
-          "precio": 277.05,
-          "score": 72.2,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [],
           "sector": "Healthcare"
         },
         "XOM": {
           "señal": "VIGILAR",
-          "precio": 158.08,
-          "score": 72.0,
+          "precio": 160.18,
+          "score": 72.1,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Energy"
-        },
-        "JET2.L": {
-          "señal": "NEUTRO",
-          "precio": 1268.65,
-          "score": 71.9,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Consumer Cyclical"
-        },
-        "BP": {
-          "señal": "VIGILAR",
-          "precio": 43.0,
-          "score": 71.8,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Altman Z peligroso (1.32)"
-          ],
-          "sector": "Energy"
-        },
-        "RMD": {
-          "señal": "VIGILAR",
-          "precio": 245.7,
-          "score": 71.8,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Healthcare"
-        },
-        "GILD": {
-          "señal": "VIGILAR",
-          "precio": 176.74,
-          "score": 71.7,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Healthcare"
         },
         "UL": {
           "señal": "VIGILAR",
-          "precio": 66.85,
-          "score": 71.7,
+          "precio": 66.42,
+          "score": 72.0,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Consumer Defensive"
         },
-        "KSB.DE": {
+        "PSX": {
           "señal": "VIGILAR",
-          "precio": 814.0,
-          "score": 71.3,
+          "precio": 242.12,
+          "score": 71.9,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
-          "sector": "Industrials"
+          "sector": "Energy"
         },
-        "AZN.L": {
+        "GILD": {
           "señal": "VIGILAR",
-          "precio": 14064.0,
-          "score": 71.3,
+          "precio": 177.0,
+          "score": 71.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Healthcare"
         },
-        "SCHW": {
+        "KSB.DE": {
           "señal": "VIGILAR",
-          "precio": 93.45,
-          "score": 71.0,
+          "precio": 828.0,
+          "score": 71.7,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
-          "sector": "Financial Services"
+          "sector": "Industrials"
+        },
+        "JD": {
+          "señal": "NEUTRO",
+          "precio": 27.35,
+          "score": 71.6,
+          "tipologia": "SPECULATIVE",
+          "alertas": [],
+          "sector": "Consumer Cyclical"
         },
         "DTE.DE": {
           "señal": "VIGILAR",
-          "precio": 27.15,
-          "score": 71.0,
+          "precio": 27.32,
+          "score": 71.5,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Altman Z peligroso (1.11)"
           ],
           "sector": "Communication Services"
         },
-        "CRM": {
+        "NOVO-B.CO": {
           "señal": "VIGILAR",
-          "precio": 197.21,
-          "score": 70.7,
+          "precio": 280.6,
+          "score": 71.3,
           "tipologia": "QUALITY_GROWTH",
           "alertas": [],
-          "sector": "Technology"
+          "sector": "Healthcare"
         },
         "MC.PA": {
           "señal": "NEUTRO",
-          "precio": 401.85,
+          "precio": 400.95,
           "score": 70.7,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Consumer Cyclical"
         },
+        "BP": {
+          "señal": "VIGILAR",
+          "precio": 43.25,
+          "score": 70.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Altman Z peligroso (1.32)"
+          ],
+          "sector": "Energy"
+        },
         "CSL": {
           "señal": "NEUTRO",
-          "precio": 411.61,
-          "score": 70.3,
+          "precio": 414.41,
+          "score": 70.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Industrials"
         },
-        "JD": {
-          "señal": "NEUTRO",
-          "precio": 26.38,
-          "score": 70.2,
-          "tipologia": "SPECULATIVE",
-          "alertas": [],
-          "sector": "Consumer Cyclical"
-        },
-        "CVX": {
+        "CRM": {
           "señal": "VIGILAR",
-          "precio": 210.95,
-          "score": 69.9,
-          "tipologia": "VALUE_CYCLICAL",
+          "precio": 198.21,
+          "score": 70.3,
+          "tipologia": "QUALITY_GROWTH",
           "alertas": [],
-          "sector": "Energy"
-        },
-        "ISP.MI": {
-          "señal": "NEUTRO",
-          "precio": 5.642,
-          "score": 69.8,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Financial Services"
-        },
-        "LOW": {
-          "señal": "VIGILAR",
-          "precio": 235.65,
-          "score": 69.6,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Consumer Cyclical"
+          "sector": "Technology"
         },
         "SONY": {
           "señal": "VIGILAR",
-          "precio": 28.49,
-          "score": 69.5,
+          "precio": 27.97,
+          "score": 70.1,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Altman Z peligroso (1.66)"
           ],
           "sector": "Technology"
         },
+        "CVX": {
+          "señal": "VIGILAR",
+          "precio": 212.45,
+          "score": 69.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Energy"
+        },
+        "SCHW": {
+          "señal": "VIGILAR",
+          "precio": 94.06,
+          "score": 69.7,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
+        },
         "VZ": {
           "señal": "VIGILAR",
-          "precio": 47.28,
-          "score": 69.3,
+          "precio": 47.54,
+          "score": 69.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Altman Z peligroso (1.29)"
           ],
           "sector": "Communication Services"
         },
+        "LOW": {
+          "señal": "NEUTRO",
+          "precio": 236.46,
+          "score": 69.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Consumer Cyclical"
+        },
+        "ISP.MI": {
+          "señal": "NEUTRO",
+          "precio": 5.707,
+          "score": 69.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
+        },
         "ADS.DE": {
           "señal": "VIGILAR",
-          "precio": 173.35,
+          "precio": 173.85,
           "score": 69.0,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2425,9 +2460,27 @@
           ],
           "sector": "Consumer Cyclical"
         },
+        "UCG.MI": {
+          "señal": "VIGILAR",
+          "precio": 77.0,
+          "score": 69.0,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
+        },
+        "AZN.L": {
+          "señal": "VIGILAR",
+          "precio": 13964.0,
+          "score": 68.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Healthcare"
+        },
         "MRK": {
           "señal": "NEUTRO",
-          "precio": 140.29,
+          "precio": 141.32,
           "score": 68.5,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2435,47 +2488,68 @@
           ],
           "sector": "Healthcare"
         },
-        "UCG.MI": {
-          "señal": "VIGILAR",
-          "precio": 74.37,
-          "score": 67.6,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Financial Services"
-        },
-        "T": {
-          "señal": "NEUTRO",
-          "precio": 22.97,
-          "score": 67.2,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Altman Z peligroso (0.92)"
-          ],
-          "sector": "Communication Services"
-        },
         "CBOE": {
           "señal": "VIGILAR",
-          "precio": 351.8,
-          "score": 67.1,
+          "precio": 351.12,
+          "score": 68.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Financial Services"
         },
-        "VIE.PA": {
-          "señal": "VIGILAR",
-          "precio": 34.85,
-          "score": 66.9,
+        "T": {
+          "señal": "NEUTRO",
+          "precio": 23.21,
+          "score": 68.0,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
-            "Altman Z peligroso (0.87)"
+            "Altman Z peligroso (0.92)"
           ],
-          "sector": "Industrials"
+          "sector": "Communication Services"
+        },
+        "PEP": {
+          "señal": "NEUTRO",
+          "precio": 144.6,
+          "score": 67.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Consumer Defensive"
+        },
+        "HSBA.L": {
+          "señal": "NEUTRO",
+          "precio": 1268.8,
+          "score": 67.1,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
+        },
+        "GRF.MC": {
+          "señal": "VIGILAR",
+          "precio": 11.55,
+          "score": 67.0,
+          "tipologia": "SPECULATIVE",
+          "alertas": [
+            "Altman Z peligroso (1.18)",
+            "Deuda/EBITDA elevada (5.0x)"
+          ],
+          "sector": "Healthcare"
+        },
+        "CL": {
+          "señal": "NEUTRO",
+          "precio": 99.76,
+          "score": 66.7,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Consumer Defensive"
         },
         "DIS": {
           "señal": "VIGILAR",
-          "precio": 125.6,
+          "precio": 127.24,
           "score": 66.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2483,163 +2557,67 @@
           ],
           "sector": "Communication Services"
         },
-        "HSBA.L": {
-          "señal": "NEUTRO",
-          "precio": 1250.4,
-          "score": 66.3,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Financial Services"
-        },
-        "GRF.MC": {
-          "señal": "VIGILAR",
-          "precio": 11.42,
-          "score": 66.2,
-          "tipologia": "SPECULATIVE",
-          "alertas": [
-            "Altman Z peligroso (1.17)",
-            "Deuda/EBITDA elevada (5.0x)"
-          ],
-          "sector": "Healthcare"
-        },
         "ET": {
           "señal": "VIGILAR",
-          "precio": 18.81,
-          "score": 66.2,
+          "precio": 18.96,
+          "score": 66.3,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Altman Z peligroso (1.28)"
           ],
           "sector": "Energy"
-        },
-        "CL": {
-          "señal": "NEUTRO",
-          "precio": 99.66,
-          "score": 66.2,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Consumer Defensive"
-        },
-        "SAND.ST": {
-          "señal": "NEUTRO",
-          "precio": 328.2,
-          "score": 66.2,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Industrials"
-        },
-        "PEP": {
-          "señal": "NEUTRO",
-          "precio": 143.93,
-          "score": 66.1,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Consumer Defensive"
         },
         "POOL": {
           "señal": "NEUTRO",
-          "precio": 217.52,
-          "score": 66.0,
+          "precio": 218.2,
+          "score": 66.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Industrials"
         },
+        "TMUS": {
+          "señal": "VIGILAR",
+          "precio": 170.19,
+          "score": 66.1,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Altman Z peligroso (1.49)"
+          ],
+          "sector": "Communication Services"
+        },
         "PG": {
           "señal": "VIGILAR",
-          "precio": 173.23,
-          "score": 65.6,
+          "precio": 172.86,
+          "score": 66.0,
           "tipologia": "QUALITY_GROWTH",
           "alertas": [],
           "sector": "Consumer Defensive"
         },
-        "HAL": {
-          "señal": "NEUTRO",
-          "precio": 31.61,
-          "score": 65.6,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Energy"
-        },
         "PFE": {
           "señal": "VIGILAR",
-          "precio": 28.46,
-          "score": 65.5,
+          "precio": 28.52,
+          "score": 66.0,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Healthcare"
         },
-        "TMUS": {
+        "RI.PA": {
           "señal": "VIGILAR",
-          "precio": 166.25,
-          "score": 65.2,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [
-            "Altman Z peligroso (1.47)"
-          ],
-          "sector": "Communication Services"
-        },
-        "ITX.MC": {
-          "señal": "VIGILAR",
-          "precio": 58.52,
-          "score": 65.1,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Consumer Cyclical"
-        },
-        "PBA": {
-          "señal": "VIGILAR",
-          "precio": 49.37,
-          "score": 65.1,
+          "precio": 69.74,
+          "score": 65.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
-            "Altman Z peligroso (1.28)"
+            "Altman Z peligroso (1.65)",
+            "Deuda/EBITDA elevada (4.1x)"
           ],
-          "sector": "Energy"
-        },
-        "AON": {
-          "señal": "VIGILAR",
-          "precio": 347.49,
-          "score": 65.0,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Financial Services"
-        },
-        "MKTX": {
-          "señal": "NEUTRO",
-          "precio": 165.5,
-          "score": 65.0,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Financial Services"
-        },
-        "BP.L": {
-          "señal": "VIGILAR",
-          "precio": 552.6501,
-          "score": 65.0,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Altman Z peligroso (1.24)"
-          ],
-          "sector": "Energy"
+          "sector": "Consumer Defensive"
         },
         "RIO": {
           "señal": "ALERTA_SALIDA",
-          "precio": 74.58,
-          "score": 65.0,
+          "precio": 76.47,
+          "score": 65.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "F-Score debil (3/9) — posible deterioro",
@@ -2648,11 +2626,95 @@
           ],
           "sector": "Basic Materials"
         },
+        "SAND.ST": {
+          "señal": "NEUTRO",
+          "precio": 334.9,
+          "score": 65.5,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Industrials"
+        },
+        "VIE.PA": {
+          "señal": "VIGILAR",
+          "precio": 34.98,
+          "score": 65.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Altman Z peligroso (0.87)"
+          ],
+          "sector": "Industrials"
+        },
+        "HAL": {
+          "señal": "NEUTRO",
+          "precio": 32.39,
+          "score": 65.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Energy"
+        },
         "MA": {
           "señal": "VIGILAR",
-          "precio": 659.97,
+          "precio": 666.96,
+          "score": 65.1,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Financial Services"
+        },
+        "AON": {
+          "señal": "VIGILAR",
+          "precio": 348.43,
+          "score": 64.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Financial Services"
+        },
+        "AAPL": {
+          "señal": "VIGILAR",
+          "precio": 358.54,
           "score": 64.8,
           "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Technology"
+        },
+        "UNH": {
+          "señal": "VIGILAR",
+          "precio": 351.41,
+          "score": 64.8,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [],
+          "sector": "Healthcare"
+        },
+        "PBA": {
+          "señal": "VIGILAR",
+          "precio": 49.57,
+          "score": 64.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Altman Z peligroso (1.28)"
+          ],
+          "sector": "Energy"
+        },
+        "EPD": {
+          "señal": "VIGILAR",
+          "precio": 36.28,
+          "score": 64.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Energy"
+        },
+        "MKTX": {
+          "señal": "NEUTRO",
+          "precio": 165.49,
+          "score": 64.8,
+          "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
@@ -2660,61 +2722,27 @@
         },
         "IQV": {
           "señal": "NEUTRO",
-          "precio": 251.12,
-          "score": 64.8,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Healthcare"
-        },
-        "EPD": {
-          "señal": "NEUTRO",
-          "precio": 36.06,
+          "precio": 249.39,
           "score": 64.7,
           "tipologia": "VALUE_CYCLICAL",
-          "alertas": [],
-          "sector": "Energy"
-        },
-        "UNH": {
-          "señal": "VIGILAR",
-          "precio": 346.19,
-          "score": 64.6,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [],
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
           "sector": "Healthcare"
         },
-        "AAPL": {
+        "BP.L": {
           "señal": "VIGILAR",
-          "precio": 355.58,
-          "score": 64.5,
-          "tipologia": "QUALITY_GROWTH",
+          "precio": 551.6,
+          "score": 64.7,
+          "tipologia": "VALUE_CYCLICAL",
           "alertas": [
-            "Valoracion cara — multiples elevados"
+            "Altman Z peligroso (1.24)"
           ],
-          "sector": "Technology"
-        },
-        "SAP.DE": {
-          "señal": "VIGILAR",
-          "precio": 193.26,
-          "score": 64.5,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Technology"
-        },
-        "META": {
-          "señal": "VIGILAR",
-          "precio": 609.89,
-          "score": 64.3,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [],
-          "sector": "Communication Services"
+          "sector": "Energy"
         },
         "KIN.BR": {
           "señal": "VIGILAR",
-          "precio": 49.7,
+          "precio": 49.9,
           "score": 64.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2724,54 +2752,71 @@
         },
         "QCOM": {
           "señal": "NEUTRO",
-          "precio": 168.66,
-          "score": 64.1,
+          "precio": 179.27,
+          "score": 64.0,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Technology"
         },
-        "AXP": {
-          "señal": "NEUTRO",
-          "precio": 312.39,
+        "SAP.DE": {
+          "señal": "VIGILAR",
+          "precio": 195.64,
           "score": 64.0,
-          "tipologia": "VALUE_CYCLICAL",
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Technology"
+        },
+        "META": {
+          "señal": "VIGILAR",
+          "precio": 628.96,
+          "score": 63.8,
+          "tipologia": "QUALITY_GROWTH",
           "alertas": [],
-          "sector": "Financial Services"
+          "sector": "Communication Services"
+        },
+        "ITX.MC": {
+          "señal": "VIGILAR",
+          "precio": 58.64,
+          "score": 63.6,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Consumer Cyclical"
         },
         "DXCM": {
           "señal": "VIGILAR",
-          "precio": 84.84,
-          "score": 63.8,
+          "precio": 85.15,
+          "score": 63.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Healthcare"
         },
-        "RI.PA": {
-          "señal": "VIGILAR",
-          "precio": 70.66,
-          "score": 63.8,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Altman Z peligroso (1.65)",
-            "Deuda/EBITDA elevada (4.1x)"
-          ],
-          "sector": "Consumer Defensive"
-        },
         "SLB": {
-          "señal": "NEUTRO",
-          "precio": 48.52,
-          "score": 63.5,
+          "señal": "VIGILAR",
+          "precio": 49.62,
+          "score": 63.3,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Energy"
         },
+        "AXP": {
+          "señal": "NEUTRO",
+          "precio": 316.4,
+          "score": 63.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [],
+          "sector": "Financial Services"
+        },
         "BAYN.DE": {
           "señal": "VIGILAR",
-          "precio": 53.12,
+          "precio": 52.86,
           "score": 63.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2779,19 +2824,9 @@
           ],
           "sector": "Healthcare"
         },
-        "OXY": {
-          "señal": "VIGILAR",
-          "precio": 53.95,
-          "score": 62.9,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Altman Z peligroso (1.45)"
-          ],
-          "sector": "Energy"
-        },
         "V": {
           "señal": "VIGILAR",
-          "precio": 424.39,
+          "precio": 429.56,
           "score": 62.7,
           "tipologia": "QUALITY_GROWTH",
           "alertas": [
@@ -2799,10 +2834,30 @@
           ],
           "sector": "Financial Services"
         },
+        "MDT": {
+          "señal": "VIGILAR",
+          "precio": 95.41,
+          "score": 62.7,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Healthcare"
+        },
+        "OXY": {
+          "señal": "VIGILAR",
+          "precio": 54.17,
+          "score": 62.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Altman Z peligroso (1.46)"
+          ],
+          "sector": "Energy"
+        },
         "REGN": {
           "señal": "NEUTRO",
-          "precio": 981.87,
-          "score": 62.5,
+          "precio": 992.14,
+          "score": 62.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
@@ -2811,17 +2866,7 @@
         },
         "BIIB": {
           "señal": "NEUTRO",
-          "precio": 261.44,
-          "score": 62.5,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Healthcare"
-        },
-        "MDT": {
-          "señal": "VIGILAR",
-          "precio": 96.06,
+          "precio": 264.2,
           "score": 62.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2829,30 +2874,20 @@
           ],
           "sector": "Healthcare"
         },
-        "ADP": {
-          "señal": "VIGILAR",
-          "precio": 316.72,
-          "score": 61.2,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Technology"
-        },
         "OKE": {
           "señal": "VIGILAR",
-          "precio": 86.45,
-          "score": 61.1,
+          "precio": 87.74,
+          "score": 61.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
-            "Altman Z peligroso (1.57)",
+            "Altman Z peligroso (1.58)",
             "Deuda/EBITDA elevada (4.2x)"
           ],
           "sector": "Energy"
         },
         "GWW": {
           "señal": "NEUTRO",
-          "precio": 1415.9,
+          "precio": 1431.87,
           "score": 61.1,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2860,49 +2895,59 @@
           ],
           "sector": "Industrials"
         },
+        "ADP": {
+          "señal": "VIGILAR",
+          "precio": 319.43,
+          "score": 60.8,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Technology"
+        },
+        "CSCO": {
+          "señal": "NEUTRO",
+          "precio": 97.04,
+          "score": 60.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Technology"
+        },
         "NVDA": {
           "señal": "NEUTRO",
-          "precio": 149.3,
-          "score": 60.9,
+          "precio": 150.49,
+          "score": 60.4,
           "tipologia": "QUALITY_GROWTH",
           "alertas": [
             "Precio muy por debajo de MM200 — tendencia bajista"
           ],
           "sector": "Technology"
         },
-        "ROST": {
-          "señal": "NEUTRO",
-          "precio": 223.26,
-          "score": 60.8,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Consumer Cyclical"
-        },
-        "CSCO": {
-          "señal": "NEUTRO",
-          "precio": 94.2,
-          "score": 60.5,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Technology"
-        },
         "AMGN": {
           "señal": "VIGILAR",
-          "precio": 469.24,
-          "score": 60.5,
+          "precio": 474.08,
+          "score": 60.2,
           "tipologia": "QUALITY_GROWTH",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Healthcare"
         },
+        "ROST": {
+          "señal": "NEUTRO",
+          "precio": 224.21,
+          "score": 59.7,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Consumer Cyclical"
+        },
         "BDX": {
           "señal": "VIGILAR",
-          "precio": 221.24,
+          "precio": 219.36,
           "score": 59.5,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2912,50 +2957,50 @@
         },
         "OHLA.MC": {
           "señal": "NEUTRO",
-          "precio": 0.319,
-          "score": 59.1,
+          "precio": 0.3376,
+          "score": 59.3,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
             "Precio muy por debajo de MM200 — tendencia bajista",
-            "Altman Z peligroso (1.38)"
+            "Altman Z peligroso (1.39)"
           ],
           "sector": "Industrials"
         },
         "JNJ": {
           "señal": "NEUTRO",
-          "precio": 273.94,
-          "score": 59.0,
+          "precio": 275.51,
+          "score": 58.7,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Healthcare"
         },
-        "MSFT": {
-          "señal": "VIGILAR",
-          "precio": 489.93,
-          "score": 58.0,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Technology"
-        },
         "SBUX": {
           "señal": "VIGILAR",
-          "precio": 107.74,
-          "score": 57.1,
+          "precio": 108.8,
+          "score": 57.7,
           "tipologia": "QUALITY_GROWTH",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Consumer Cyclical"
         },
+        "MSFT": {
+          "señal": "VIGILAR",
+          "precio": 492.85,
+          "score": 56.8,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Technology"
+        },
         "KMB": {
           "señal": "NEUTRO",
-          "precio": 109.45,
-          "score": 54.6,
+          "precio": 109.11,
+          "score": 54.5,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
@@ -2964,7 +3009,7 @@
         },
         "BRK-B": {
           "señal": "ALERTA_SALIDA",
-          "precio": 579.32,
+          "precio": 580.79,
           "score": 53.0,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -2976,8 +3021,8 @@
         },
         "GOOGL": {
           "señal": "NEUTRO",
-          "precio": 273.1,
-          "score": 52.2,
+          "precio": 274.96,
+          "score": 52.9,
           "tipologia": "QUALITY_GROWTH",
           "alertas": [
             "Valoracion cara — multiples elevados",
@@ -2987,19 +3032,29 @@
         },
         "TRP": {
           "señal": "VIGILAR",
-          "precio": 62.88,
-          "score": 50.7,
+          "precio": 63.38,
+          "score": 50.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
-            "Altman Z peligroso (0.73)",
+            "Altman Z peligroso (0.74)",
             "Deuda/EBITDA elevada (6.0x)"
           ],
           "sector": "Energy"
         },
+        "ISRG": {
+          "señal": "VIGILAR",
+          "precio": 430.18,
+          "score": 50.6,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Healthcare"
+        },
         "AMZN": {
           "señal": "VIGILAR",
-          "precio": 244.43,
-          "score": 50.2,
+          "precio": 254.12,
+          "score": 50.4,
           "tipologia": "QUALITY_GROWTH",
           "alertas": [
             "Valoracion cara — multiples elevados"
@@ -3008,69 +3063,16 @@
         },
         "BAC": {
           "señal": "NEUTRO",
-          "precio": 48.54,
-          "score": 49.8,
+          "precio": 49.07,
+          "score": 49.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [],
           "sector": "Financial Services"
         },
-        "ISRG": {
-          "señal": "NEUTRO",
-          "precio": 427.18,
-          "score": 48.6,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Healthcare"
-        },
-        "LSEG.L": {
-          "señal": "NEUTRO",
-          "precio": 10275.0,
-          "score": 43.8,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados"
-          ],
-          "sector": "Financial Services"
-        },
-        "BMW.DE": {
-          "señal": "NEUTRO",
-          "precio": 57.16,
-          "score": 42.6,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Altman Z peligroso (0.80)",
-            "Deuda/EBITDA elevada (5.2x)"
-          ],
-          "sector": "Consumer Cyclical"
-        },
-        "FER.MC": {
-          "señal": "NEUTRO",
-          "precio": 53.64,
-          "score": 42.1,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados",
-            "Deuda/EBITDA elevada (4.2x)"
-          ],
-          "sector": "Industrials"
-        },
-        "DE": {
-          "señal": "NEUTRO",
-          "precio": 641.02,
-          "score": 42.1,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados",
-            "Deuda/EBITDA elevada (4.8x)"
-          ],
-          "sector": "Industrials"
-        },
         "D": {
           "señal": "NEUTRO",
-          "precio": 67.99,
-          "score": 41.8,
+          "precio": 67.94,
+          "score": 43.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
@@ -3079,10 +3081,42 @@
           ],
           "sector": "Utilities"
         },
+        "LSEG.L": {
+          "señal": "NEUTRO",
+          "precio": 10470.0,
+          "score": 43.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados"
+          ],
+          "sector": "Financial Services"
+        },
+        "FER.MC": {
+          "señal": "NEUTRO",
+          "precio": 54.88,
+          "score": 42.3,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Deuda/EBITDA elevada (4.2x)"
+          ],
+          "sector": "Industrials"
+        },
+        "BMW.DE": {
+          "señal": "NEUTRO",
+          "precio": 58.66,
+          "score": 41.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Altman Z peligroso (0.80)",
+            "Deuda/EBITDA elevada (5.2x)"
+          ],
+          "sector": "Consumer Cyclical"
+        },
         "ES": {
           "señal": "NEUTRO",
-          "precio": 72.55,
-          "score": 40.5,
+          "precio": 73.02,
+          "score": 41.3,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
@@ -3091,22 +3125,21 @@
           ],
           "sector": "Utilities"
         },
-        "DUK": {
+        "DE": {
           "señal": "NEUTRO",
-          "precio": 131.9,
-          "score": 40.2,
+          "precio": 654.24,
+          "score": 40.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
-            "Altman Z peligroso (0.73)",
-            "Deuda/EBITDA elevada (5.4x)"
+            "Deuda/EBITDA elevada (6.2x)"
           ],
-          "sector": "Utilities"
+          "sector": "Industrials"
         },
         "O": {
           "señal": "NEUTRO",
-          "precio": 60.25,
-          "score": 39.2,
+          "precio": 60.51,
+          "score": 40.7,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
@@ -3115,9 +3148,21 @@
           ],
           "sector": "Real Estate"
         },
+        "DUK": {
+          "señal": "NEUTRO",
+          "precio": 131.91,
+          "score": 40.6,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Altman Z peligroso (0.73)",
+            "Deuda/EBITDA elevada (5.4x)"
+          ],
+          "sector": "Utilities"
+        },
         "AMT": {
           "señal": "NEUTRO",
-          "precio": 184.59,
+          "precio": 184.93,
           "score": 39.1,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -3127,37 +3172,38 @@
           ],
           "sector": "Real Estate"
         },
-        "ORCL": {
-          "señal": "NEUTRO",
-          "precio": 103.88,
-          "score": 39.1,
-          "tipologia": "QUALITY_GROWTH",
-          "alertas": [
-            "Precio muy por debajo de MM200 — tendencia bajista",
-            "Altman Z peligroso (1.45)"
-          ],
-          "sector": "Technology"
-        },
-        "INTC": {
-          "señal": "NEUTRO",
-          "precio": 54.47,
-          "score": 37.4,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados",
-            "Precio muy por debajo de MM200 — tendencia bajista"
-          ],
-          "sector": "Technology"
-        },
         "EXC": {
           "señal": "NEUTRO",
-          "precio": 46.51,
-          "score": 37.2,
+          "precio": 46.66,
+          "score": 38.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
             "Altman Z peligroso (0.77)",
             "Deuda/EBITDA elevada (5.9x)"
+          ],
+          "sector": "Utilities"
+        },
+        "ORCL": {
+          "señal": "NEUTRO",
+          "precio": 107.13,
+          "score": 38.2,
+          "tipologia": "QUALITY_GROWTH",
+          "alertas": [
+            "Precio muy por debajo de MM200 — tendencia bajista",
+            "Altman Z peligroso (1.48)"
+          ],
+          "sector": "Technology"
+        },
+        "AEP": {
+          "señal": "NEUTRO",
+          "precio": 127.67,
+          "score": 37.2,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Altman Z peligroso (0.98)",
+            "Deuda/EBITDA elevada (5.2x)"
           ],
           "sector": "Utilities"
         },
@@ -3174,43 +3220,42 @@
           ],
           "sector": "Communication Services"
         },
+        "INTC": {
+          "señal": "NEUTRO",
+          "precio": 57.4,
+          "score": 36.4,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Precio muy por debajo de MM200 — tendencia bajista"
+          ],
+          "sector": "Technology"
+        },
         "SAN.MC": {
           "señal": "NEUTRO",
-          "precio": 10.47,
-          "score": 36.5,
+          "precio": 10.902,
+          "score": 36.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados"
           ],
           "sector": "Financial Services"
         },
-        "AEP": {
-          "señal": "NEUTRO",
-          "precio": 127.59,
-          "score": 36.4,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados",
-            "Altman Z peligroso (0.98)",
-            "Deuda/EBITDA elevada (5.2x)"
-          ],
-          "sector": "Utilities"
-        },
         "WMB": {
           "señal": "NEUTRO",
-          "precio": 66.45,
-          "score": 35.5,
+          "precio": 67.13,
+          "score": 35.9,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
-            "Altman Z peligroso (1.28)",
+            "Altman Z peligroso (1.29)",
             "Deuda/EBITDA elevada (4.2x)"
           ],
           "sector": "Energy"
         },
         "XEL": {
           "señal": "NEUTRO",
-          "precio": 81.11,
+          "precio": 81.47,
           "score": 34.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -3221,21 +3266,44 @@
           "sector": "Utilities"
         },
         "DLR": {
-          "señal": "ALERTA_SALIDA",
-          "precio": 166.43,
-          "score": 34.0,
+          "señal": "NEUTRO",
+          "precio": 167.16,
+          "score": 34.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
-            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL",
             "Deuda/EBITDA elevada (4.8x)"
           ],
           "sector": "Real Estate"
         },
-        "JPM": {
+        "SO": {
+          "señal": "NEUTRO",
+          "precio": 95.04,
+          "score": 33.9,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Altman Z peligroso (1.02)",
+            "Deuda/EBITDA elevada (4.9x)"
+          ],
+          "sector": "Utilities"
+        },
+        "WEC": {
+          "señal": "NEUTRO",
+          "precio": 119.08,
+          "score": 33.1,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "Altman Z peligroso (1.16)",
+            "Deuda/EBITDA elevada (5.5x)"
+          ],
+          "sector": "Utilities"
+        },
+        "MUFG": {
           "señal": "ALERTA_SALIDA",
-          "precio": 316.74,
-          "score": 32.8,
+          "precio": 20.02,
+          "score": 33.0,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
@@ -3244,36 +3312,45 @@
           ],
           "sector": "Financial Services"
         },
-        "SO": {
+        "JPM": {
           "señal": "ALERTA_SALIDA",
-          "precio": 95.0,
+          "precio": 322.96,
           "score": 32.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
-            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL",
-            "Altman Z peligroso (1.02)",
-            "Deuda/EBITDA elevada (4.9x)"
+            "F-Score debil (2/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
           ],
-          "sector": "Utilities"
+          "sector": "Financial Services"
         },
-        "WEC": {
-          "señal": "ALERTA_SALIDA",
-          "precio": 119.09,
-          "score": 32.2,
+        "TFX": {
+          "señal": "NEUTRO",
+          "precio": 168.31,
+          "score": 32.1,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
-            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL",
-            "Altman Z peligroso (1.16)",
-            "Deuda/EBITDA elevada (5.5x)"
+            "Deuda/EBITDA elevada (5.0x)"
           ],
-          "sector": "Utilities"
+          "sector": "Healthcare"
+        },
+        "SMFG": {
+          "señal": "ALERTA_SALIDA",
+          "precio": 23.05,
+          "score": 31.8,
+          "tipologia": "VALUE_CYCLICAL",
+          "alertas": [
+            "Valoracion cara — multiples elevados",
+            "F-Score debil (2/9) — posible deterioro",
+            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
+          ],
+          "sector": "Financial Services"
         },
         "NEE": {
           "señal": "ALERTA_SALIDA",
-          "precio": 85.41,
-          "score": 32.1,
+          "precio": 84.95,
+          "score": 31.4,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
@@ -3283,45 +3360,10 @@
           ],
           "sector": "Utilities"
         },
-        "TFX": {
-          "señal": "NEUTRO",
-          "precio": 168.28,
-          "score": 32.1,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados",
-            "Deuda/EBITDA elevada (5.0x)"
-          ],
-          "sector": "Healthcare"
-        },
         "WFC": {
           "señal": "ALERTA_SALIDA",
-          "precio": 80.94,
-          "score": 31.9,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados",
-            "F-Score debil (2/9) — posible deterioro",
-            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
-          ],
-          "sector": "Financial Services"
-        },
-        "MUFG": {
-          "señal": "ALERTA_SALIDA",
-          "precio": 19.56,
-          "score": 31.3,
-          "tipologia": "VALUE_CYCLICAL",
-          "alertas": [
-            "Valoracion cara — multiples elevados",
-            "F-Score debil (2/9) — posible deterioro",
-            "Score o F-Score en zona de deterioro — VALUE_CYCLICAL"
-          ],
-          "sector": "Financial Services"
-        },
-        "SMFG": {
-          "señal": "ALERTA_SALIDA",
-          "precio": 22.59,
-          "score": 30.7,
+          "precio": 82.28,
+          "score": 30.2,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
@@ -3332,8 +3374,8 @@
         },
         "PLD": {
           "señal": "ALERTA_SALIDA",
-          "precio": 127.03,
-          "score": 29.2,
+          "precio": 126.95,
+          "score": 29.9,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
@@ -3344,7 +3386,7 @@
         },
         "CLNX.MC": {
           "señal": "ALERTA_SALIDA",
-          "precio": 25.61,
+          "precio": 25.6,
           "score": 28.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -3357,7 +3399,7 @@
         },
         "STLAM.MI": {
           "señal": "ALERTA_SALIDA",
-          "precio": 3.48,
+          "precio": 3.576,
           "score": 27.8,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
@@ -3372,8 +3414,8 @@
         },
         "EQIX": {
           "señal": "ALERTA_SALIDA",
-          "precio": 978.22,
-          "score": 26.1,
+          "precio": 984.87,
+          "score": 26.6,
           "tipologia": "VALUE_CYCLICAL",
           "alertas": [
             "Valoracion cara — multiples elevados",
@@ -3389,13 +3431,13 @@
     "ERIC-B.ST": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 108.8,
-      "precio_actual": 105.45,
+      "precio_actual": 106.9,
       "capital_invertido": 500,
-      "valor_actual": 484.6,
-      "retorno_actual": -3.08,
+      "valor_actual": 491.27,
+      "retorno_actual": -1.75,
       "max_retorno": 0.0,
       "min_retorno": -6.07,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 90.1,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Technology",
@@ -3404,13 +3446,13 @@
     "ALL": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 264.57,
-      "precio_actual": 271.39,
+      "precio_actual": 272.51,
       "capital_invertido": 1000,
-      "valor_actual": 1025.78,
-      "retorno_actual": 2.58,
-      "max_retorno": 2.69,
+      "valor_actual": 1030.01,
+      "retorno_actual": 3.0,
+      "max_retorno": 3.0,
       "min_retorno": -4.1,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 89.6,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Financial Services",
@@ -3419,13 +3461,13 @@
     "BMY": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 62.84,
-      "precio_actual": 61.56,
+      "precio_actual": 61.12,
       "capital_invertido": 500,
-      "valor_actual": 489.82,
-      "retorno_actual": -2.04,
+      "valor_actual": 486.31,
+      "retorno_actual": -2.74,
       "max_retorno": 0.94,
       "min_retorno": -7.16,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 87.9,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Healthcare",
@@ -3434,13 +3476,13 @@
     "ADBE": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 252.041,
-      "precio_actual": 232.83,
+      "precio_actual": 234.79,
       "capital_invertido": 500,
-      "valor_actual": 461.89,
-      "retorno_actual": -7.62,
+      "valor_actual": 465.78,
+      "retorno_actual": -6.84,
       "max_retorno": 0.0,
       "min_retorno": -12.05,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 87.6,
       "tipologia": "QUALITY_GROWTH",
       "sector": "Technology",
@@ -3449,13 +3491,13 @@
     "TRV": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 399.5,
-      "precio_actual": 406.86,
+      "precio_actual": 407.29,
       "capital_invertido": 500,
-      "valor_actual": 509.21,
-      "retorno_actual": 1.84,
-      "max_retorno": 1.84,
+      "valor_actual": 509.75,
+      "retorno_actual": 1.95,
+      "max_retorno": 1.95,
       "min_retorno": -2.23,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 87.3,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Financial Services",
@@ -3464,13 +3506,13 @@
     "NOVN.SW": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 131.52,
-      "precio_actual": 128.52,
+      "precio_actual": 128.5,
       "capital_invertido": 500,
-      "valor_actual": 488.59,
-      "retorno_actual": -2.28,
+      "valor_actual": 488.52,
+      "retorno_actual": -2.3,
       "max_retorno": 2.28,
       "min_retorno": -3.25,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 87.2,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Healthcare",
@@ -3479,13 +3521,13 @@
     "CS.PA": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 42.97,
-      "precio_actual": 45.82,
+      "precio_actual": 45.86,
       "capital_invertido": 500,
-      "valor_actual": 533.16,
-      "retorno_actual": 6.63,
+      "valor_actual": 533.63,
+      "retorno_actual": 6.73,
       "max_retorno": 9.61,
       "min_retorno": 0.0,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 86.3,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Financial Services",
@@ -3494,13 +3536,13 @@
     "AFG": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 156.03,
-      "precio_actual": 160.76,
+      "precio_actual": 161.19,
       "capital_invertido": 500,
-      "valor_actual": 515.16,
-      "retorno_actual": 3.03,
+      "valor_actual": 516.54,
+      "retorno_actual": 3.31,
       "max_retorno": 3.43,
       "min_retorno": -0.93,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 86.0,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Financial Services",
@@ -3509,13 +3551,13 @@
     "IAG.MC": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 5.008,
-      "precio_actual": 5.286,
+      "precio_actual": 5.318,
       "capital_invertido": 819.2,
-      "valor_actual": 864.67,
-      "retorno_actual": 5.55,
+      "valor_actual": 869.91,
+      "retorno_actual": 6.19,
       "max_retorno": 9.5,
       "min_retorno": 0.0,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 85.6,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Industrials",
@@ -3532,7 +3574,7 @@
       "retorno_actual": 23.24,
       "max_retorno": 28.03,
       "min_retorno": 0.0,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 85.4,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Healthcare",
@@ -3543,13 +3585,13 @@
     "HEN3.DE": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 81.5,
-      "precio_actual": 88.24,
+      "precio_actual": 88.58,
       "capital_invertido": 500,
-      "valor_actual": 541.35,
-      "retorno_actual": 8.27,
-      "max_retorno": 8.34,
+      "valor_actual": 543.44,
+      "retorno_actual": 8.69,
+      "max_retorno": 8.69,
       "min_retorno": -0.86,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 84.2,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Consumer Defensive",
@@ -3558,13 +3600,13 @@
     "AMS.MC": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 59.4,
-      "precio_actual": 62.02,
+      "precio_actual": 62.76,
       "capital_invertido": 500,
-      "valor_actual": 522.05,
-      "retorno_actual": 4.41,
-      "max_retorno": 4.88,
+      "valor_actual": 528.28,
+      "retorno_actual": 5.66,
+      "max_retorno": 5.66,
       "min_retorno": -1.68,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 83.8,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Technology",
@@ -3573,13 +3615,13 @@
     "CI": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 296.19,
-      "precio_actual": 271.42,
+      "precio_actual": 272.12,
       "capital_invertido": 500,
-      "valor_actual": 458.19,
-      "retorno_actual": -8.36,
+      "valor_actual": 459.37,
+      "retorno_actual": -8.13,
       "max_retorno": 1.91,
       "min_retorno": -8.36,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 83.3,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Healthcare",
@@ -3588,13 +3630,13 @@
     "USB": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 60.52,
-      "precio_actual": 58.55,
+      "precio_actual": 59.29,
       "capital_invertido": 500,
-      "valor_actual": 483.72,
-      "retorno_actual": -3.26,
+      "valor_actual": 489.84,
+      "retorno_actual": -2.03,
       "max_retorno": 1.02,
       "min_retorno": -5.39,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 83.2,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Financial Services",
@@ -3603,13 +3645,13 @@
     "VID.MC": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 88.3,
-      "precio_actual": 93.9,
+      "precio_actual": 93.5,
       "capital_invertido": 500,
-      "valor_actual": 531.71,
-      "retorno_actual": 6.34,
+      "valor_actual": 529.45,
+      "retorno_actual": 5.89,
       "max_retorno": 6.34,
       "min_retorno": -1.13,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 83.1,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Consumer Cyclical",
@@ -3618,13 +3660,13 @@
     "SHEL": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 105.11,
-      "precio_actual": 94.13,
+      "precio_actual": 95.47,
       "capital_invertido": 500,
-      "valor_actual": 447.77,
-      "retorno_actual": -10.45,
+      "valor_actual": 454.14,
+      "retorno_actual": -9.17,
       "max_retorno": 0.0,
       "min_retorno": -11.36,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 83.1,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Energy",
@@ -3633,13 +3675,13 @@
     "CINF": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 184.04,
-      "precio_actual": 192.32,
+      "precio_actual": 193.12,
       "capital_invertido": 400.0,
-      "valor_actual": 418.0,
-      "retorno_actual": 4.5,
-      "max_retorno": 4.5,
+      "valor_actual": 419.73,
+      "retorno_actual": 4.93,
+      "max_retorno": 4.93,
       "min_retorno": 0.0,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 83.0,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Financial Services",
@@ -3648,13 +3690,13 @@
     "HIG": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 135.7,
-      "precio_actual": 139.78,
+      "precio_actual": 139.58,
       "capital_invertido": 320.0,
-      "valor_actual": 329.62,
-      "retorno_actual": 3.01,
+      "valor_actual": 329.15,
+      "retorno_actual": 2.86,
       "max_retorno": 3.56,
       "min_retorno": -1.19,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 82.1,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Financial Services",
@@ -3663,13 +3705,13 @@
     "WRB": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 75.3375,
-      "precio_actual": 79.34,
+      "precio_actual": 79.31,
       "capital_invertido": 256.0,
-      "valor_actual": 269.6,
-      "retorno_actual": 5.31,
+      "valor_actual": 269.5,
+      "retorno_actual": 5.27,
       "max_retorno": 5.76,
       "min_retorno": -0.12,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 81.3,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Financial Services",
@@ -3678,13 +3720,13 @@
     "CB": {
       "fecha_entrada": "2026-11-02",
       "precio_compra": 369.9,
-      "precio_actual": 380.51,
+      "precio_actual": 381.02,
       "capital_invertido": 204.8,
-      "valor_actual": 210.67,
-      "retorno_actual": 2.87,
+      "valor_actual": 210.96,
+      "retorno_actual": 3.01,
       "max_retorno": 3.19,
       "min_retorno": -1.88,
-      "semanas": 3.43,
+      "semanas": 3.57,
       "score_entrada": 81.1,
       "tipologia": "VALUE_CYCLICAL",
       "sector": "Financial Services",
@@ -3692,10 +3734,10 @@
     }
   },
   "metricas": {
-    "ret_total": 2.02,
-    "cagr": 35.53,
-    "volatilidad": 13.84,
-    "sharpe": 2.05,
+    "ret_total": 2.42,
+    "cagr": 41.77,
+    "volatilidad": 13.59,
+    "sharpe": 2.42,
     "max_drawdown": -2.84,
     "n_ops_cerradas": 0,
     "win_rate": null,
@@ -3703,22 +3745,22 @@
     "avg_win": null,
     "avg_loss": null,
     "pnl_total_eur": null,
-    "sp500_ret": -4.99,
-    "alpha_vs_sp500": 7.01,
-    "semanas_activo": 17
+    "sp500_ret": -3.47,
+    "alpha_vs_sp500": 5.89,
+    "semanas_activo": 18
   },
   "equal_weight": {
     "posiciones_abiertas": {
       "ERIC-B.ST": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 108.8,
-        "precio_actual": 105.45,
+        "precio_actual": 106.9,
         "capital_invertido": 500,
-        "valor_actual": 484.6,
-        "retorno_actual": -3.08,
+        "valor_actual": 491.27,
+        "retorno_actual": -1.75,
         "max_retorno": 0.0,
         "min_retorno": -6.07,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 90.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Technology",
@@ -3727,13 +3769,13 @@
       "ALL": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 264.57,
-        "precio_actual": 271.39,
+        "precio_actual": 272.51,
         "capital_invertido": 1000,
-        "valor_actual": 1025.78,
-        "retorno_actual": 2.58,
-        "max_retorno": 2.69,
+        "valor_actual": 1030.01,
+        "retorno_actual": 3.0,
+        "max_retorno": 3.0,
         "min_retorno": -4.1,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 89.6,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -3742,13 +3784,13 @@
       "BMY": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 62.84,
-        "precio_actual": 61.56,
+        "precio_actual": 61.12,
         "capital_invertido": 500,
-        "valor_actual": 489.82,
-        "retorno_actual": -2.04,
+        "valor_actual": 486.31,
+        "retorno_actual": -2.74,
         "max_retorno": 0.94,
         "min_retorno": -7.16,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.9,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare",
@@ -3757,13 +3799,13 @@
       "ADBE": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 252.041,
-        "precio_actual": 232.83,
+        "precio_actual": 234.79,
         "capital_invertido": 500,
-        "valor_actual": 461.89,
-        "retorno_actual": -7.62,
+        "valor_actual": 465.78,
+        "retorno_actual": -6.84,
         "max_retorno": 0.0,
         "min_retorno": -12.05,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.6,
         "tipologia": "QUALITY_GROWTH",
         "sector": "Technology",
@@ -3772,13 +3814,13 @@
       "TRV": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 399.5,
-        "precio_actual": 406.86,
+        "precio_actual": 407.29,
         "capital_invertido": 500,
-        "valor_actual": 509.21,
-        "retorno_actual": 1.84,
-        "max_retorno": 1.84,
+        "valor_actual": 509.75,
+        "retorno_actual": 1.95,
+        "max_retorno": 1.95,
         "min_retorno": -2.23,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -3787,13 +3829,13 @@
       "NOVN.SW": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 131.52,
-        "precio_actual": 128.52,
+        "precio_actual": 128.5,
         "capital_invertido": 500,
-        "valor_actual": 488.59,
-        "retorno_actual": -2.28,
+        "valor_actual": 488.52,
+        "retorno_actual": -2.3,
         "max_retorno": 2.28,
         "min_retorno": -3.25,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.2,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare",
@@ -3802,13 +3844,13 @@
       "CS.PA": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 42.97,
-        "precio_actual": 45.82,
+        "precio_actual": 45.86,
         "capital_invertido": 500,
-        "valor_actual": 533.16,
-        "retorno_actual": 6.63,
+        "valor_actual": 533.63,
+        "retorno_actual": 6.73,
         "max_retorno": 9.61,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 86.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -3817,13 +3859,13 @@
       "AFG": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 156.03,
-        "precio_actual": 160.76,
+        "precio_actual": 161.19,
         "capital_invertido": 500,
-        "valor_actual": 515.16,
-        "retorno_actual": 3.03,
+        "valor_actual": 516.54,
+        "retorno_actual": 3.31,
         "max_retorno": 3.43,
         "min_retorno": -0.93,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 86.0,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -3832,13 +3874,13 @@
       "IAG.MC": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 5.008,
-        "precio_actual": 5.286,
+        "precio_actual": 5.318,
         "capital_invertido": 819.2,
-        "valor_actual": 864.67,
-        "retorno_actual": 5.55,
+        "valor_actual": 869.91,
+        "retorno_actual": 6.19,
         "max_retorno": 9.5,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 85.6,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Industrials",
@@ -3855,7 +3897,7 @@
         "retorno_actual": 23.24,
         "max_retorno": 28.03,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 85.4,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare",
@@ -3866,13 +3908,13 @@
       "HEN3.DE": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 81.5,
-        "precio_actual": 88.24,
+        "precio_actual": 88.58,
         "capital_invertido": 500,
-        "valor_actual": 541.35,
-        "retorno_actual": 8.27,
-        "max_retorno": 8.34,
+        "valor_actual": 543.44,
+        "retorno_actual": 8.69,
+        "max_retorno": 8.69,
         "min_retorno": -0.86,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 84.2,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Consumer Defensive",
@@ -3881,13 +3923,13 @@
       "AMS.MC": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 59.4,
-        "precio_actual": 62.02,
+        "precio_actual": 62.76,
         "capital_invertido": 500,
-        "valor_actual": 522.05,
-        "retorno_actual": 4.41,
-        "max_retorno": 4.88,
+        "valor_actual": 528.28,
+        "retorno_actual": 5.66,
+        "max_retorno": 5.66,
         "min_retorno": -1.68,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.8,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Technology",
@@ -3896,13 +3938,13 @@
       "CI": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 296.19,
-        "precio_actual": 271.42,
+        "precio_actual": 272.12,
         "capital_invertido": 500,
-        "valor_actual": 458.19,
-        "retorno_actual": -8.36,
+        "valor_actual": 459.37,
+        "retorno_actual": -8.13,
         "max_retorno": 1.91,
         "min_retorno": -8.36,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare",
@@ -3911,13 +3953,13 @@
       "USB": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 60.52,
-        "precio_actual": 58.55,
+        "precio_actual": 59.29,
         "capital_invertido": 500,
-        "valor_actual": 483.72,
-        "retorno_actual": -3.26,
+        "valor_actual": 489.84,
+        "retorno_actual": -2.03,
         "max_retorno": 1.02,
         "min_retorno": -5.39,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.2,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -3926,13 +3968,13 @@
       "VID.MC": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 88.3,
-        "precio_actual": 93.9,
+        "precio_actual": 93.5,
         "capital_invertido": 500,
-        "valor_actual": 531.71,
-        "retorno_actual": 6.34,
+        "valor_actual": 529.45,
+        "retorno_actual": 5.89,
         "max_retorno": 6.34,
         "min_retorno": -1.13,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Consumer Cyclical",
@@ -3941,13 +3983,13 @@
       "SHEL": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 105.11,
-        "precio_actual": 94.13,
+        "precio_actual": 95.47,
         "capital_invertido": 500,
-        "valor_actual": 447.77,
-        "retorno_actual": -10.45,
+        "valor_actual": 454.14,
+        "retorno_actual": -9.17,
         "max_retorno": 0.0,
         "min_retorno": -11.36,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Energy",
@@ -3956,13 +3998,13 @@
       "CINF": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 184.04,
-        "precio_actual": 192.32,
+        "precio_actual": 193.12,
         "capital_invertido": 400.0,
-        "valor_actual": 418.0,
-        "retorno_actual": 4.5,
-        "max_retorno": 4.5,
+        "valor_actual": 419.73,
+        "retorno_actual": 4.93,
+        "max_retorno": 4.93,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.0,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -3971,13 +4013,13 @@
       "HIG": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 135.7,
-        "precio_actual": 139.78,
+        "precio_actual": 139.58,
         "capital_invertido": 320.0,
-        "valor_actual": 329.62,
-        "retorno_actual": 3.01,
+        "valor_actual": 329.15,
+        "retorno_actual": 2.86,
         "max_retorno": 3.56,
         "min_retorno": -1.19,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 82.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -3986,13 +4028,13 @@
       "WRB": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 75.3375,
-        "precio_actual": 79.34,
+        "precio_actual": 79.31,
         "capital_invertido": 256.0,
-        "valor_actual": 269.6,
-        "retorno_actual": 5.31,
+        "valor_actual": 269.5,
+        "retorno_actual": 5.27,
         "max_retorno": 5.76,
         "min_retorno": -0.12,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 81.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4001,13 +4043,13 @@
       "CB": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 369.9,
-        "precio_actual": 380.51,
+        "precio_actual": 381.02,
         "capital_invertido": 204.8,
-        "valor_actual": 210.67,
-        "retorno_actual": 2.87,
+        "valor_actual": 210.96,
+        "retorno_actual": 3.01,
         "max_retorno": 3.19,
         "min_retorno": -1.88,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 81.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4015,9 +4057,9 @@
       }
     },
     "capital_actual": 0,
-    "valor_posiciones": 10201.76,
-    "valor_total": 10201.76,
-    "ret_total": 2.02,
+    "valor_posiciones": 10241.78,
+    "valor_total": 10241.78,
+    "ret_total": 2.42,
     "ops_semana": [],
     "longs_cooldown": {}
   },
@@ -4026,13 +4068,13 @@
       "ERIC-B.ST": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 108.8,
-        "precio_actual": 105.45,
+        "precio_actual": 106.9,
         "capital_invertido": 435.2,
-        "valor_actual": 421.8,
-        "retorno_actual": -3.08,
+        "valor_actual": 427.6,
+        "retorno_actual": -1.75,
         "max_retorno": 0.0,
         "min_retorno": -6.07,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 90.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Technology",
@@ -4044,13 +4086,13 @@
       "ALL": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 264.57,
-        "precio_actual": 271.39,
+        "precio_actual": 272.51,
         "capital_invertido": 264.57,
-        "valor_actual": 271.39,
-        "retorno_actual": 2.58,
-        "max_retorno": 2.69,
+        "valor_actual": 272.51,
+        "retorno_actual": 3.0,
+        "max_retorno": 3.0,
         "min_retorno": -4.1,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 89.6,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4062,13 +4104,13 @@
       "BMY": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 62.84,
-        "precio_actual": 61.56,
+        "precio_actual": 61.12,
         "capital_invertido": 439.88,
-        "valor_actual": 430.92,
-        "retorno_actual": -2.04,
+        "valor_actual": 427.84,
+        "retorno_actual": -2.74,
         "max_retorno": 0.94,
         "min_retorno": -7.16,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.9,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare",
@@ -4080,13 +4122,13 @@
       "ADBE": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 252.041,
-        "precio_actual": 232.83,
+        "precio_actual": 234.79,
         "capital_invertido": 252.04,
-        "valor_actual": 232.83,
-        "retorno_actual": -7.62,
+        "valor_actual": 234.79,
+        "retorno_actual": -6.84,
         "max_retorno": 0.0,
         "min_retorno": -12.05,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.6,
         "tipologia": "QUALITY_GROWTH",
         "sector": "Technology",
@@ -4098,13 +4140,13 @@
       "TRV": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 399.5,
-        "precio_actual": 406.86,
+        "precio_actual": 407.29,
         "capital_invertido": 399.5,
-        "valor_actual": 406.86,
-        "retorno_actual": 1.84,
-        "max_retorno": 1.84,
+        "valor_actual": 407.29,
+        "retorno_actual": 1.95,
+        "max_retorno": 1.95,
         "min_retorno": -2.23,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4116,13 +4158,13 @@
       "NOVN.SW": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 131.52,
-        "precio_actual": 128.52,
+        "precio_actual": 128.5,
         "capital_invertido": 394.56,
-        "valor_actual": 385.56,
-        "retorno_actual": -2.28,
+        "valor_actual": 385.5,
+        "retorno_actual": -2.3,
         "max_retorno": 2.28,
         "min_retorno": -3.25,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.2,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare",
@@ -4134,13 +4176,13 @@
       "CS.PA": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 42.97,
-        "precio_actual": 45.82,
+        "precio_actual": 45.86,
         "capital_invertido": 472.67,
-        "valor_actual": 504.02,
-        "retorno_actual": 6.63,
+        "valor_actual": 504.46,
+        "retorno_actual": 6.73,
         "max_retorno": 9.61,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 86.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4152,13 +4194,13 @@
       "AFG": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 156.03,
-        "precio_actual": 160.76,
+        "precio_actual": 161.19,
         "capital_invertido": 468.09,
-        "valor_actual": 482.28,
-        "retorno_actual": 3.03,
+        "valor_actual": 483.57,
+        "retorno_actual": 3.31,
         "max_retorno": 3.43,
         "min_retorno": -0.93,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 86.0,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4170,13 +4212,13 @@
       "IAG.MC": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 5.008,
-        "precio_actual": 5.286,
+        "precio_actual": 5.318,
         "capital_invertido": 470.75,
-        "valor_actual": 496.88,
-        "retorno_actual": 5.55,
+        "valor_actual": 499.89,
+        "retorno_actual": 6.19,
         "max_retorno": 9.5,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 85.6,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Industrials",
@@ -4196,7 +4238,7 @@
         "retorno_actual": 23.24,
         "max_retorno": 28.03,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 85.4,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare",
@@ -4210,13 +4252,13 @@
       "HEN3.DE": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 81.5,
-        "precio_actual": 88.24,
+        "precio_actual": 88.58,
         "capital_invertido": 407.5,
-        "valor_actual": 441.2,
-        "retorno_actual": 8.27,
-        "max_retorno": 8.34,
+        "valor_actual": 442.9,
+        "retorno_actual": 8.69,
+        "max_retorno": 8.69,
         "min_retorno": -0.86,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 84.2,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Consumer Defensive",
@@ -4228,13 +4270,13 @@
       "AMS.MC": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 59.4,
-        "precio_actual": 62.02,
+        "precio_actual": 62.76,
         "capital_invertido": 415.8,
-        "valor_actual": 434.14,
-        "retorno_actual": 4.41,
-        "max_retorno": 4.88,
+        "valor_actual": 439.32,
+        "retorno_actual": 5.66,
+        "max_retorno": 5.66,
         "min_retorno": -1.68,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.8,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Technology",
@@ -4246,13 +4288,13 @@
       "CI": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 296.19,
-        "precio_actual": 271.42,
+        "precio_actual": 272.12,
         "capital_invertido": 296.19,
-        "valor_actual": 271.42,
-        "retorno_actual": -8.36,
+        "valor_actual": 272.12,
+        "retorno_actual": -8.13,
         "max_retorno": 1.91,
         "min_retorno": -8.36,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare",
@@ -4264,13 +4306,13 @@
       "USB": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 60.52,
-        "precio_actual": 58.55,
+        "precio_actual": 59.29,
         "capital_invertido": 423.64,
-        "valor_actual": 409.85,
-        "retorno_actual": -3.26,
+        "valor_actual": 415.03,
+        "retorno_actual": -2.03,
         "max_retorno": 1.02,
         "min_retorno": -5.39,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.2,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4282,13 +4324,13 @@
       "VID.MC": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 88.3,
-        "precio_actual": 93.9,
+        "precio_actual": 93.5,
         "capital_invertido": 441.5,
-        "valor_actual": 469.5,
-        "retorno_actual": 6.34,
+        "valor_actual": 467.5,
+        "retorno_actual": 5.89,
         "max_retorno": 6.34,
         "min_retorno": -1.13,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Consumer Cyclical",
@@ -4300,13 +4342,13 @@
       "SHEL": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 105.11,
-        "precio_actual": 94.13,
+        "precio_actual": 95.47,
         "capital_invertido": 420.44,
-        "valor_actual": 376.52,
-        "retorno_actual": -10.45,
+        "valor_actual": 381.88,
+        "retorno_actual": -9.17,
         "max_retorno": 0.0,
         "min_retorno": -11.36,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Energy",
@@ -4318,13 +4360,13 @@
       "CINF": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 184.04,
-        "precio_actual": 192.32,
+        "precio_actual": 193.12,
         "capital_invertido": 368.08,
-        "valor_actual": 384.64,
-        "retorno_actual": 4.5,
-        "max_retorno": 4.5,
+        "valor_actual": 386.24,
+        "retorno_actual": 4.93,
+        "max_retorno": 4.93,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 83.0,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4336,13 +4378,13 @@
       "HIG": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 135.7,
-        "precio_actual": 139.78,
+        "precio_actual": 139.58,
         "capital_invertido": 407.1,
-        "valor_actual": 419.34,
-        "retorno_actual": 3.01,
+        "valor_actual": 418.74,
+        "retorno_actual": 2.86,
         "max_retorno": 3.56,
         "min_retorno": -1.19,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 82.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4354,13 +4396,13 @@
       "WRB": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 75.3375,
-        "precio_actual": 79.34,
+        "precio_actual": 79.31,
         "capital_invertido": 452.03,
-        "valor_actual": 476.04,
-        "retorno_actual": 5.31,
+        "valor_actual": 475.86,
+        "retorno_actual": 5.27,
         "max_retorno": 5.76,
         "min_retorno": -0.12,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 81.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4372,13 +4414,13 @@
       "CB": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 369.9,
-        "precio_actual": 380.51,
+        "precio_actual": 381.02,
         "capital_invertido": 369.9,
-        "valor_actual": 380.51,
-        "retorno_actual": 2.87,
+        "valor_actual": 381.02,
+        "retorno_actual": 3.01,
         "max_retorno": 3.19,
         "min_retorno": -1.88,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 81.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services",
@@ -4389,9 +4431,9 @@
       }
     },
     "capital_actual": 1931.96,
-    "valor_posiciones": 8273.2,
-    "valor_total": 10205.16,
-    "ret_total": 2.05,
+    "valor_posiciones": 8301.56,
+    "valor_total": 10233.52,
+    "ret_total": 2.34,
     "ops_semana": [],
     "longs_cooldown": {}
   },
@@ -4400,15 +4442,15 @@
       "ERIC-B.ST": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 108.8,
-        "precio_actual": 105.45,
+        "precio_actual": 106.9,
         "capital_invertido": 435.2,
-        "valor_actual": 421.8,
+        "valor_actual": 427.6,
         "n_acciones": 4,
         "fraccionable": false,
-        "retorno_actual": -3.08,
+        "retorno_actual": -1.75,
         "max_retorno": 0.0,
         "min_retorno": -6.07,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 90.1,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Technology"
@@ -4416,15 +4458,15 @@
       "ALL": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 264.57,
-        "precio_actual": 271.39,
+        "precio_actual": 272.51,
         "capital_invertido": 500,
-        "valor_actual": 512.89,
+        "valor_actual": 515.01,
         "n_acciones": 1.889859,
         "fraccionable": true,
-        "retorno_actual": 2.58,
-        "max_retorno": 2.69,
+        "retorno_actual": 3.0,
+        "max_retorno": 3.0,
         "min_retorno": -4.1,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 89.6,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services"
@@ -4432,15 +4474,15 @@
       "BMY": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 62.84,
-        "precio_actual": 61.56,
+        "precio_actual": 61.12,
         "capital_invertido": 500,
-        "valor_actual": 489.82,
+        "valor_actual": 486.31,
         "n_acciones": 7.956715,
         "fraccionable": true,
-        "retorno_actual": -2.04,
+        "retorno_actual": -2.74,
         "max_retorno": 0.94,
         "min_retorno": -7.16,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.9,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare"
@@ -4448,15 +4490,15 @@
       "ADBE": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 252.041,
-        "precio_actual": 232.83,
+        "precio_actual": 234.79,
         "capital_invertido": 500,
-        "valor_actual": 461.89,
+        "valor_actual": 465.78,
         "n_acciones": 1.983804,
         "fraccionable": true,
-        "retorno_actual": -7.62,
+        "retorno_actual": -6.84,
         "max_retorno": 0.0,
         "min_retorno": -12.05,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.6,
         "tipologia": "QUALITY_GROWTH",
         "sector": "Technology"
@@ -4464,15 +4506,15 @@
       "TRV": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 399.5,
-        "precio_actual": 406.86,
+        "precio_actual": 407.29,
         "capital_invertido": 500,
-        "valor_actual": 509.21,
+        "valor_actual": 509.75,
         "n_acciones": 1.251564,
         "fraccionable": true,
-        "retorno_actual": 1.84,
-        "max_retorno": 1.84,
+        "retorno_actual": 1.95,
+        "max_retorno": 1.95,
         "min_retorno": -2.23,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services"
@@ -4480,15 +4522,15 @@
       "NOVN.SW": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 131.52,
-        "precio_actual": 128.52,
+        "precio_actual": 128.5,
         "capital_invertido": 500,
-        "valor_actual": 488.59,
+        "valor_actual": 488.52,
         "n_acciones": 3.801703,
         "fraccionable": true,
-        "retorno_actual": -2.28,
+        "retorno_actual": -2.3,
         "max_retorno": 2.28,
         "min_retorno": -3.25,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 87.2,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare"
@@ -4496,15 +4538,15 @@
       "CS.PA": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 42.97,
-        "precio_actual": 45.82,
+        "precio_actual": 45.86,
         "capital_invertido": 472.67,
-        "valor_actual": 504.02,
+        "valor_actual": 504.46,
         "n_acciones": 11,
         "fraccionable": false,
-        "retorno_actual": 6.63,
+        "retorno_actual": 6.73,
         "max_retorno": 9.61,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 86.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services"
@@ -4512,15 +4554,15 @@
       "AFG": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 156.03,
-        "precio_actual": 160.76,
+        "precio_actual": 161.19,
         "capital_invertido": 398.03,
-        "valor_actual": 410.1,
+        "valor_actual": 411.19,
         "n_acciones": 2.551,
         "fraccionable": true,
-        "retorno_actual": 3.03,
+        "retorno_actual": 3.31,
         "max_retorno": 3.43,
         "min_retorno": -0.93,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 86.0,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services"
@@ -4528,15 +4570,15 @@
       "IAG.MC": {
         "fecha_entrada": "2026-11-02",
         "precio_compra": 5.008,
-        "precio_actual": 5.286,
+        "precio_actual": 5.318,
         "capital_invertido": 295.47,
-        "valor_actual": 311.87,
+        "valor_actual": 313.76,
         "n_acciones": 59,
         "fraccionable": false,
-        "retorno_actual": 5.55,
+        "retorno_actual": 6.19,
         "max_retorno": 9.5,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 85.6,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Industrials"
@@ -4552,7 +4594,7 @@
         "retorno_actual": 23.24,
         "max_retorno": 28.03,
         "min_retorno": 0.0,
-        "semanas": 3.43,
+        "semanas": 3.57,
         "score_entrada": 85.4,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Healthcare"
@@ -4562,18 +4604,18 @@
       "CLNX.MC": {
         "fecha_entrada": "2026-11-02",
         "precio_entrada": 26.25,
-        "precio_actual": 25.61,
+        "precio_actual": 25.6,
         "capital_nominal": 551.25,
         "n_acciones": 21,
-        "valor_actual": 564.69,
-        "retorno_bruto": 2.44,
-        "retorno_neto": 1.32,
-        "retorno_actual": 1.32,
+        "valor_actual": 564.9,
+        "retorno_bruto": 2.48,
+        "retorno_neto": 1.31,
+        "retorno_actual": 1.31,
         "max_retorno": 4.48,
         "min_retorno": -3.25,
-        "borrow_acum": 0.72,
-        "ultima_fecha_borrow": "2026-11-26",
-        "semanas": 3.43,
+        "borrow_acum": 0.75,
+        "ultima_fecha_borrow": "2026-11-27",
+        "semanas": 3.57,
         "score_entrada": 30.4,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Real Estate"
@@ -4581,18 +4623,18 @@
       "PLD": {
         "fecha_entrada": "2026-11-02",
         "precio_entrada": 129.895,
-        "precio_actual": 127.03,
+        "precio_actual": 126.95,
         "capital_nominal": 519.59,
         "n_acciones": 4,
-        "valor_actual": 531.05,
-        "retorno_bruto": 2.21,
-        "retorno_neto": 1.01,
-        "retorno_actual": 1.01,
+        "valor_actual": 531.37,
+        "retorno_bruto": 2.27,
+        "retorno_neto": 1.02,
+        "retorno_actual": 1.02,
         "max_retorno": 4.19,
         "min_retorno": -0.84,
-        "borrow_acum": 0.72,
-        "ultima_fecha_borrow": "2026-11-26",
-        "semanas": 3.43,
+        "borrow_acum": 0.75,
+        "ultima_fecha_borrow": "2026-11-27",
+        "semanas": 3.57,
         "score_entrada": 31.3,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Real Estate"
@@ -4600,18 +4642,18 @@
       "NEE": {
         "fecha_entrada": "2026-11-02",
         "precio_entrada": 85.26,
-        "precio_actual": 85.41,
+        "precio_actual": 84.95,
         "capital_nominal": 511.56,
         "n_acciones": 6,
-        "valor_actual": 510.66,
-        "retorno_bruto": -0.18,
-        "retorno_neto": -1.4,
-        "retorno_actual": -1.4,
+        "valor_actual": 513.42,
+        "retorno_bruto": 0.36,
+        "retorno_neto": -0.91,
+        "retorno_actual": -0.91,
         "max_retorno": 0.98,
         "min_retorno": -3.48,
-        "borrow_acum": 0.69,
-        "ultima_fecha_borrow": "2026-11-26",
-        "semanas": 3.43,
+        "borrow_acum": 0.72,
+        "ultima_fecha_borrow": "2026-11-27",
+        "semanas": 3.57,
         "score_entrada": 31.4,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Utilities"
@@ -4619,18 +4661,18 @@
       "SO": {
         "fecha_entrada": "2026-11-02",
         "precio_entrada": 94.4719,
-        "precio_actual": 95.0,
+        "precio_actual": 95.04,
         "capital_nominal": 472.36,
         "n_acciones": 5,
-        "valor_actual": 469.72,
-        "retorno_bruto": -0.56,
-        "retorno_neto": -1.88,
-        "retorno_actual": -1.88,
+        "valor_actual": 469.52,
+        "retorno_bruto": -0.6,
+        "retorno_neto": -1.98,
+        "retorno_actual": -1.98,
         "max_retorno": 2.23,
         "min_retorno": -2.11,
-        "borrow_acum": 0.67,
-        "ultima_fecha_borrow": "2026-11-26",
-        "semanas": 3.43,
+        "borrow_acum": 0.7,
+        "ultima_fecha_borrow": "2026-11-27",
+        "semanas": 3.57,
         "score_entrada": 31.6,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Utilities"
@@ -4638,18 +4680,18 @@
       "WEC": {
         "fecha_entrada": "2026-11-02",
         "precio_entrada": 116.98,
-        "precio_actual": 119.09,
+        "precio_actual": 119.08,
         "capital_nominal": 467.92,
         "n_acciones": 4,
-        "valor_actual": 459.48,
+        "valor_actual": 459.52,
         "retorno_bruto": -1.8,
-        "retorno_neto": -3.15,
-        "retorno_actual": -3.15,
+        "retorno_neto": -3.2,
+        "retorno_actual": -3.2,
         "max_retorno": 0.68,
-        "min_retorno": -3.19,
-        "borrow_acum": 0.67,
-        "ultima_fecha_borrow": "2026-11-26",
-        "semanas": 3.43,
+        "min_retorno": -3.2,
+        "borrow_acum": 0.7,
+        "ultima_fecha_borrow": "2026-11-27",
+        "semanas": 3.57,
         "score_entrada": 33.2,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Utilities"
@@ -4657,18 +4699,18 @@
       "WFC": {
         "fecha_entrada": "2026-11-02",
         "precio_entrada": 85.76,
-        "precio_actual": 80.94,
+        "precio_actual": 82.28,
         "capital_nominal": 514.56,
         "n_acciones": 6,
-        "valor_actual": 543.48,
-        "retorno_bruto": 5.62,
-        "retorno_neto": 4.39,
-        "retorno_actual": 4.39,
+        "valor_actual": 535.44,
+        "retorno_bruto": 4.06,
+        "retorno_neto": 2.78,
+        "retorno_actual": 2.78,
         "max_retorno": 5.94,
         "min_retorno": -1.24,
-        "borrow_acum": 0.69,
-        "ultima_fecha_borrow": "2026-11-26",
-        "semanas": 3.43,
+        "borrow_acum": 0.72,
+        "ultima_fecha_borrow": "2026-11-27",
+        "semanas": 3.57,
         "score_entrada": 33.9,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services"
@@ -4676,18 +4718,18 @@
       "JPM": {
         "fecha_entrada": "2026-11-02",
         "precio_entrada": 341.27,
-        "precio_actual": 316.74,
+        "precio_actual": 322.96,
         "capital_nominal": 341.27,
         "n_acciones": 1,
-        "valor_actual": 365.8,
-        "retorno_bruto": 7.19,
-        "retorno_neto": 5.33,
-        "retorno_actual": 5.33,
+        "valor_actual": 359.58,
+        "retorno_bruto": 5.37,
+        "retorno_neto": 3.43,
+        "retorno_actual": 3.43,
         "max_retorno": 7.07,
         "min_retorno": -2.35,
-        "borrow_acum": 0.48,
-        "ultima_fecha_borrow": "2026-11-26",
-        "semanas": 3.43,
+        "borrow_acum": 0.5,
+        "ultima_fecha_borrow": "2026-11-27",
+        "semanas": 3.57,
         "score_entrada": 34.0,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Financial Services"
@@ -4695,18 +4737,18 @@
       "DLR": {
         "fecha_entrada": "2026-11-02",
         "precio_entrada": 174.76,
-        "precio_actual": 166.43,
+        "precio_actual": 167.16,
         "capital_nominal": 524.28,
         "n_acciones": 3,
-        "valor_actual": 549.27,
-        "retorno_bruto": 4.77,
-        "retorno_neto": 3.55,
-        "retorno_actual": 3.55,
+        "valor_actual": 547.08,
+        "retorno_bruto": 4.35,
+        "retorno_neto": 3.08,
+        "retorno_actual": 3.08,
         "max_retorno": 6.2,
         "min_retorno": -5.66,
-        "borrow_acum": 0.72,
-        "ultima_fecha_borrow": "2026-11-26",
-        "semanas": 3.43,
+        "borrow_acum": 0.75,
+        "ultima_fecha_borrow": "2026-11-27",
+        "semanas": 3.57,
         "score_entrada": 34.2,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Real Estate"
@@ -4714,18 +4756,18 @@
       "XEL": {
         "fecha_entrada": "2026-11-02",
         "precio_entrada": 78.9,
-        "precio_actual": 81.11,
+        "precio_actual": 81.47,
         "capital_nominal": 552.3,
         "n_acciones": 7,
-        "valor_actual": 536.83,
-        "retorno_bruto": -2.8,
-        "retorno_neto": -3.96,
-        "retorno_actual": -3.96,
+        "valor_actual": 534.31,
+        "retorno_bruto": -3.26,
+        "retorno_neto": -4.46,
+        "retorno_actual": -4.46,
         "max_retorno": 0.03,
-        "min_retorno": -4.01,
-        "borrow_acum": 0.72,
-        "ultima_fecha_borrow": "2026-11-26",
-        "semanas": 3.43,
+        "min_retorno": -4.46,
+        "borrow_acum": 0.75,
+        "ultima_fecha_borrow": "2026-11-27",
+        "semanas": 3.57,
         "score_entrada": 35.0,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Utilities"
@@ -4733,18 +4775,18 @@
       "WMB": {
         "fecha_entrada": "2026-11-03",
         "precio_entrada": 74.115,
-        "precio_actual": 66.45,
+        "precio_actual": 67.13,
         "capital_nominal": 444.68,
         "n_acciones": 6,
-        "valor_actual": 490.67,
-        "retorno_bruto": 10.34,
-        "retorno_neto": 8.9,
-        "retorno_actual": 8.9,
+        "valor_actual": 486.59,
+        "retorno_bruto": 9.42,
+        "retorno_neto": 7.92,
+        "retorno_actual": 7.92,
         "max_retorno": 13.16,
         "min_retorno": 0.0,
-        "borrow_acum": 0.51,
-        "ultima_fecha_borrow": "2026-11-26",
-        "semanas": 3.29,
+        "borrow_acum": 0.53,
+        "ultima_fecha_borrow": "2026-11-27",
+        "semanas": 3.43,
         "score_entrada": 39.6,
         "tipologia": "VALUE_CYCLICAL",
         "sector": "Energy"
@@ -4753,22 +4795,22 @@
     "capital_long": 673.97,
     "capital_short": 100.23,
     "capital_actual": 774.2,
-    "valor_long": 4387.06,
+    "valor_long": 4399.25,
     "valor_short": 4899.77,
-    "valor_posiciones": 9286.83,
-    "valor_total": 10061.03,
-    "ret_total": 0.61,
+    "valor_posiciones": 9299.02,
+    "valor_total": 10073.22,
+    "ret_total": 0.73,
     "ops_semana": [],
     "borrow_cost_sem": 0.27,
-    "borrow_cost_acum": 6.42,
+    "borrow_cost_acum": 6.69,
     "shorts_cooldown": {}
   },
-  "ultima_actualizacion": "2026-11-26",
+  "ultima_actualizacion": "2026-11-27",
   "metricas_sw": {
-    "ret_total": 2.05,
-    "cagr": 36.22,
-    "volatilidad": 10.83,
-    "sharpe": 2.63,
+    "ret_total": 2.34,
+    "cagr": 40.11,
+    "volatilidad": 10.62,
+    "sharpe": 2.95,
     "max_drawdown": -2.22,
     "n_ops_cerradas": 0,
     "win_rate": null,
@@ -4776,18 +4818,18 @@
     "avg_win": null,
     "avg_loss": null,
     "pnl_total_eur": null,
-    "sp500_ret": -4.99,
-    "alpha_vs_sp500": 7.04,
-    "semanas_activo": 17
+    "sp500_ret": -3.47,
+    "alpha_vs_sp500": 5.81,
+    "semanas_activo": 18
   },
   "metricas_ls": {
-    "ret_total": 0.61,
-    "cagr": 9.7,
-    "volatilidad": 7.0,
-    "sharpe": 1.36,
+    "ret_total": 0.73,
+    "cagr": 11.25,
+    "volatilidad": 6.86,
+    "sharpe": 1.59,
     "max_drawdown": -1.69,
     "beta": 0.06,
-    "borrow_total": 6.42,
+    "borrow_total": 6.69,
     "n_ops_long": 0,
     "n_ops_short": 0,
     "win_rate_long": null,
@@ -4796,6 +4838,6 @@
     "avg_win_short": null,
     "avg_loss_long": null,
     "avg_loss_short": null,
-    "semanas_activo": 17
+    "semanas_activo": 18
   }
 }

@@ -1,84 +1,84 @@
 {
-  "fecha": "2026-11-26T16:35:02.583373",
+  "fecha": "2026-11-27T21:32:56.692713",
   "regimen": "RIESGO",
   "puntos": -4,
   "umbral_compra": 75,
   "alertas": [
-    "VIX elevado (26.77) — mercado en precaucion",
-    "SP500 bajo MM200 (-2.31%)",
-    "Cobre -17.19% (3M) — contraccion economica anticipada"
+    "VIX elevado (23.81) — mercado en precaucion",
+    "SP500 bajo MM200 (-0.77%)",
+    "Cobre -15.06% (3M) — contraccion economica anticipada"
   ],
   "señales": [
     {
       "indicador": "VIX",
-      "valor": 26.77,
+      "valor": 23.81,
       "estado": "precaucion",
-      "nota": "Volatilidad elevada (26.77)"
+      "nota": "Volatilidad elevada (23.81)"
     },
     {
       "indicador": "SP500 vs MM200",
-      "valor": -2.31,
+      "valor": -0.77,
       "estado": "precaucion",
-      "nota": "SP500 bajo MM200 (-2.31%)"
+      "nota": "SP500 bajo MM200 (-0.77%)"
     },
     {
       "indicador": "Eurostoxx vs MM200",
-      "valor": -1.67,
+      "valor": -0.65,
       "estado": "precaucion",
-      "nota": "Eurostoxx bajo MM200 (-1.67%)"
+      "nota": "Eurostoxx bajo MM200 (-0.65%)"
     },
     {
       "indicador": "Curva 10Y-2Y",
-      "valor": 0.06,
+      "valor": 0.07,
       "estado": "neutral",
-      "nota": "Curva plana (0.06%) — atencion"
+      "nota": "Curva plana (0.07%) — atencion"
     },
     {
       "indicador": "T10Y",
-      "valor": 0.48,
+      "valor": 0.49,
       "estado": "favorable",
-      "nota": "Tipos bajos (0.48%) — favorece valoracion"
+      "nota": "Tipos bajos (0.49%) — favorece valoracion"
     },
     {
       "indicador": "Petroleo WTI",
-      "valor": 84.82,
+      "valor": 83.08,
       "estado": "neutral",
-      "nota": "WTI estable (-7.96% en 6M)"
+      "nota": "WTI estable (-9.85% en 6M)"
     },
     {
       "indicador": "Oro",
-      "valor": 3599.2,
+      "valor": 3668.5,
       "estado": "favorable",
-      "nota": "Oro cayendo (-19.69% en 3M) — apetito por riesgo"
+      "nota": "Oro cayendo (-18.14% en 3M) — apetito por riesgo"
     },
     {
       "indicador": "Cobre",
-      "valor": 5.46,
+      "valor": 5.6005,
       "estado": "riesgo",
-      "nota": "Cobre -17.19% (3M) — contraccion economica anticipada"
+      "nota": "Cobre -15.06% (3M) — contraccion economica anticipada"
     }
   ],
   "datos": {
-    "vix": 26.77,
-    "sp500": 7182.7798,
-    "sp500_ma200": 7352.4909,
-    "sp500_vs_ma200": -2.31,
-    "sp500_mom6m": -5.24,
-    "eurostoxx": 6026.1802,
-    "eurostoxx_ma200": 6128.8006,
-    "eurostoxx_vs_ma200": -1.67,
-    "eurostoxx_mom6m": -1.26,
-    "t10y": 0.48,
+    "vix": 23.81,
+    "sp500": 7297.4902,
+    "sp500_ma200": 7354.271,
+    "sp500_vs_ma200": -0.77,
+    "sp500_mom6m": -3.98,
+    "eurostoxx": 6089.2002,
+    "eurostoxx_ma200": 6129.2632,
+    "eurostoxx_vs_ma200": -0.65,
+    "eurostoxx_mom6m": 0.45,
+    "t10y": 0.49,
     "t2y": 0.42,
-    "curva_10y_2y": 0.06,
-    "wti": 84.82,
-    "wti_mom3m": -1.1,
-    "wti_mom6m": -7.96,
-    "oro": 3599.2,
-    "oro_mom3m": -19.69,
-    "oro_mom6m": -20.13,
-    "cobre": 5.46,
-    "cobre_mom3m": -17.19,
-    "cobre_mom6m": -16.31
+    "curva_10y_2y": 0.07,
+    "wti": 83.08,
+    "wti_mom3m": -3.13,
+    "wti_mom6m": -9.85,
+    "oro": 3668.5,
+    "oro_mom3m": -18.14,
+    "oro_mom6m": -18.59,
+    "cobre": 5.6005,
+    "cobre_mom3m": -15.06,
+    "cobre_mom6m": -14.16
   }
 }
